@@ -12,7 +12,12 @@
       "currentBand": "7.5",
       "xp": 5840,
       "streak": 65,
-      "completedModules": ["mod-101", "mod-102", "mod-201", "mod-301"],
+      "completedModules": [
+        "mod-101",
+        "mod-102",
+        "mod-201",
+        "mod-301"
+      ],
       "createdAt": "2026-09-01T08:00:00.000Z"
     },
     {
@@ -22,12 +27,16 @@
       "passwordHash": "Vip@123",
       "provider": "google",
       "role": "vip",
-      "plan": "VIP Unlimited",
+      "plan": "VIP Unlimited (12 Tháng)",
       "targetBand": "7.5",
       "currentBand": "6.5",
       "xp": 2490,
       "streak": 42,
-      "completedModules": ["mod-101", "mod-102", "mod-201"],
+      "completedModules": [
+        "mod-101",
+        "mod-102",
+        "mod-201"
+      ],
       "createdAt": "2026-09-15T10:30:00.000Z"
     },
     {
@@ -42,7 +51,9 @@
       "currentBand": "5.0",
       "xp": 1420,
       "streak": 14,
-      "completedModules": ["mod-101"],
+      "completedModules": [
+        "mod-101"
+      ],
       "createdAt": "2026-10-10T14:20:00.000Z"
     }
   ],
@@ -174,6 +185,18 @@
     }
   ],
   "orders": [
+    {
+      "id": "ORD-2026-6713",
+      "userId": "usr-vip-02",
+      "userName": "Nguyễn Minh Anh",
+      "userEmail": "minhanh@theieltsdictionary.vn",
+      "planName": "VIP Unlimited (12 Tháng)",
+      "amountVnd": 1490000,
+      "paymentMethod": "VietQR SePay Auto",
+      "transferCode": "TIDVIP 3656",
+      "status": "completed",
+      "createdAt": "2026-11-04T06:29:59.577Z"
+    },
     {
       "id": "ORD-2026-8801",
       "userId": "usr-vip-02",
