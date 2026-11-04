@@ -11,7 +11,7 @@
         "word": "resemble",
         "pos": "v.",
         "enDefinition": "To look like or be similar to someone or something",
-        "viMeaning": "Giống với, tương tự với",
+        "viMeaning": "Giống với, có nét tương đồng với",
         "synonyms": [
           "like",
           "look",
@@ -23,7 +23,7 @@
         "word": "recognize",
         "pos": "v.",
         "enDefinition": "Identify someone or something known or seen before.",
-        "viMeaning": "Nhận ra, công nhận, thừa nhận",
+        "viMeaning": "Nhận ra, công nhận chính thức",
         "synonyms": [
           "perceive",
           "acknowledge",
@@ -41,7 +41,7 @@
         "word": "adjust",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: change, modify, shift, alter",
-        "viMeaning": "Điều chỉnh, thích nghi",
+        "viMeaning": "Điều chỉnh để thích nghi",
         "synonyms": [
           "change",
           "modify",
@@ -54,7 +54,7 @@
         "word": "approach",
         "pos": "n.",
         "enDefinition": "A way of dealing with a task or problem.",
-        "viMeaning": "Phương pháp, cách tiếp cận; tiến gần",
+        "viMeaning": "Phương pháp tiếp cận; tiến lại gần",
         "synonyms": [
           "method",
           "way"
@@ -65,7 +65,7 @@
         "word": "fundamental",
         "pos": "adj.",
         "enDefinition": "Forming the essential basis of something.",
-        "viMeaning": "Cơ bản, nền tảng, cốt lõi",
+        "viMeaning": "Cơ bản, nền tảng cốt lõi",
         "synonyms": [
           "rudimentary",
           "preliminary",
@@ -77,7 +77,7 @@
         "word": "rely on",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: depend on",
-        "viMeaning": "Dựa vào, phụ thuộc vào",
+        "viMeaning": "Phụ thuộc vào, dựa vào",
         "synonyms": [
           "depend on"
         ]
@@ -99,7 +99,7 @@
         "word": "measure",
         "pos": "v.",
         "enDefinition": "Find the size, amount, or degree of something.",
-        "viMeaning": "Biện pháp, tiêu chuẩn đo lường",
+        "viMeaning": "Biện pháp xử lý; đo lường",
         "synonyms": [
           "calculate",
           "assess",
@@ -111,7 +111,7 @@
         "word": "trait",
         "pos": "n.",
         "enDefinition": "A particular quality in someone's character or an organism's nature.",
-        "viMeaning": "Đặc điểm, nét tính cách, phẩm chất",
+        "viMeaning": "Đặc điểm tính cách hoặc di truyền",
         "synonyms": [
           "characteristic",
           "feature",
@@ -123,7 +123,7 @@
         "word": "coin",
         "pos": "v.",
         "enDefinition": "a small, flat piece of metal used as money",
-        "viMeaning": "Đặt ra (thuật ngữ mới); đồng xu",
+        "viMeaning": "Đặt ra thuật ngữ mới; đồng tiền xu",
         "synonyms": [
           "first used",
           "invent"
@@ -134,7 +134,7 @@
         "word": "artificial",
         "pos": "adj.",
         "enDefinition": "Made by people rather than occurring naturally",
-        "viMeaning": "Nhân tạo, không tự nhiên",
+        "viMeaning": "Nhân tạo, do con người tạo ra",
         "synonyms": [
           "synthetic",
           "man-made"
@@ -145,7 +145,7 @@
         "word": "prompt",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: initiate, immediately",
-        "viMeaning": "Thúc đẩy, gợi mở; nhanh chóng",
+        "viMeaning": "Thúc đẩy nhanh chóng; đúng giờ",
         "synonyms": [
           "initiate",
           "immediately"
@@ -168,7 +168,7 @@
         "word": "underlie",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: based on, ground, root",
-        "viMeaning": "Làm nền tảng cho, nằm dưới",
+        "viMeaning": "Làm nền tảng cơ sở cho",
         "synonyms": [
           "based on",
           "ground",
@@ -180,7 +180,7 @@
         "word": "ignore",
         "pos": "v.",
         "enDefinition": "Pay no attention to someone or something",
-        "viMeaning": "Phớt lờ, bỏ qua",
+        "viMeaning": "Phớt lờ, bỏ qua không chú ý",
         "synonyms": [
           "neglect",
           "overlook",
@@ -204,7 +204,7 @@
         "word": "that*",
         "pos": "pron.",
         "enDefinition": "Academic exam term synonymous with: this, it, they, those, these, such",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"that*\"): Academic exam term synonymous with: this, it, they, those, these, such",
         "synonyms": [
           "this",
           "it",
@@ -219,7 +219,7 @@
         "word": "and*",
         "pos": "conj.",
         "enDefinition": "Academic exam term synonymous with: or, as well as, both…and, not only…but also…, other than, in addition, besides, on the one hand…on the other hand…, neither…nor…",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"and*\"): Academic exam term synonymous with: or, as well as, both…and, not only…but also…, other than, in addition, besides, on the one hand…on the other hand…, neither…nor…",
         "synonyms": [
           "or",
           "as well as",
@@ -237,7 +237,7 @@
         "word": "rather than*",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: but, yet, however, whereas, nonetheless, nevertheless, although, notwithstanding, though, instead",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"rather than*\"): Academic exam term synonymous with: but, yet, however, whereas, nonetheless, nevertheless, although, notwithstanding, though, instead",
         "synonyms": [
           "but",
           "yet",
@@ -256,7 +256,7 @@
         "word": "thanks to*",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: stem from, derive, owing to, due to, according to, because of, on account of, as a result of, leading to, because, since, for, in that, as, therefore, hence",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"thanks to*\"): Academic exam term synonymous with: stem from, derive, owing to, due to, according to, because of, on account of, as a result of, leading to, because, since, for, in that, as, therefore, hence",
         "synonyms": [
           "stem from",
           "derive",
@@ -290,7 +290,7 @@
         "word": "diversity",
         "pos": "n.",
         "enDefinition": "The presence of many different types of people or things.",
-        "viMeaning": "Sự đa dạng, phong phú",
+        "viMeaning": "Sự đa dạng sinh học hoặc văn hóa",
         "synonyms": [
           "variety",
           "difference"
@@ -301,7 +301,7 @@
         "word": "detect",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: find, look for, seek, search",
-        "viMeaning": "Phát hiện, dò tìm",
+        "viMeaning": "Phát hiện, dò tìm ra",
         "synonyms": [
           "find",
           "look for",
@@ -314,7 +314,7 @@
         "word": "isolate",
         "pos": "v.",
         "enDefinition": "Separate someone or something from others.",
-        "viMeaning": "Cô lập, cách ly, tách biệt",
+        "viMeaning": "Cô lập, tách biệt riêng ra",
         "synonyms": [
           "inaccessible"
         ]
@@ -335,7 +335,7 @@
         "word": "budget",
         "pos": "n.",
         "enDefinition": "A plan for spending money, or the amount available.",
-        "viMeaning": "Ngân sách, kinh phí",
+        "viMeaning": "Ngân sách tài chính",
         "synonyms": [
           "fund",
           "financial"
@@ -346,7 +346,7 @@
         "word": "adapt to",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: fit, suit",
-        "viMeaning": null,
+        "viMeaning": "Thích nghi với môi trường mới",
         "synonyms": [
           "fit",
           "suit"
@@ -357,7 +357,7 @@
         "word": "alternative",
         "pos": "adj., n.",
         "enDefinition": "something you can choose instead of something else",
-        "viMeaning": "Giải pháp thay thế; lựa chọn khác",
+        "viMeaning": "Giải pháp thay thế khác",
         "synonyms": [
           "substitute"
         ]
@@ -367,7 +367,7 @@
         "word": "compensate",
         "pos": "n.",
         "enDefinition": "To give someone money or something else for loss or harm.",
-        "viMeaning": "Đền bù, bù đắp",
+        "viMeaning": "Đền bù, bù đắp thiệt hại",
         "synonyms": [
           "make up",
           "offset"
@@ -378,7 +378,7 @@
         "word": "component",
         "pos": "n.",
         "enDefinition": "One of the parts that together form a whole.",
-        "viMeaning": "Thành phần, cấu phần",
+        "viMeaning": "Thành phần cấu tạo, linh kiện",
         "synonyms": [
           "proportion"
         ]
@@ -388,7 +388,7 @@
         "word": "military",
         "pos": "adj.",
         "enDefinition": "relating to armed forces or their activities",
-        "viMeaning": null,
+        "viMeaning": "Quân sự, lực lượng vũ trang",
         "synonyms": [
           "weapon",
           "army"
@@ -399,7 +399,7 @@
         "word": "criteria",
         "pos": "n.",
         "enDefinition": "Standards used to judge something or make a decision.",
-        "viMeaning": null,
+        "viMeaning": "Các tiêu chí đánh giá chuẩn",
         "synonyms": [
           "standard"
         ]
@@ -409,7 +409,7 @@
         "word": "curriculum",
         "pos": "n.",
         "enDefinition": "the subjects and content included in a programme of study",
-        "viMeaning": null,
+        "viMeaning": "Chương trình giảng dạy chính khóa",
         "synonyms": [
           "syllabus",
           "course of study"
@@ -420,7 +420,7 @@
         "word": "feasible",
         "pos": "adj.",
         "enDefinition": "possible and practical to achieve with available resources",
-        "viMeaning": null,
+        "viMeaning": "Khả thi, có thể thực hiện được",
         "synonyms": [
           "realistic",
           "viable"
@@ -431,7 +431,7 @@
         "word": "constrain",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: stop, control",
-        "viMeaning": null,
+        "viMeaning": "Hạn chế, kiềm chế, bó buộc",
         "synonyms": [
           "stop",
           "control"
@@ -442,7 +442,7 @@
         "word": "deficiency",
         "pos": "n.",
         "enDefinition": "A lack of enough of something necessary.",
-        "viMeaning": null,
+        "viMeaning": "Sự thiếu hụt chất hoặc nguồn lực",
         "synonyms": [
           "shortage",
           "defect",
@@ -454,7 +454,7 @@
         "word": "supplement",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: provision",
-        "viMeaning": "Bổ sung, phần phụ thêm",
+        "viMeaning": "Bổ sung thêm, thực phẩm bổ sung",
         "synonyms": [
           "provision"
         ]
@@ -464,7 +464,7 @@
         "word": "distinguish",
         "pos": "v.",
         "enDefinition": "to recognize the difference between people or things",
-        "viMeaning": null,
+        "viMeaning": "Phân biệt rõ sự khác nhau",
         "synonyms": [
           "separate",
           "differentiate"
@@ -475,7 +475,7 @@
         "word": "analyze",
         "pos": "v.",
         "enDefinition": "Examine something carefully to understand its parts or meaning.",
-        "viMeaning": null,
+        "viMeaning": "Phân tích chi tiết",
         "synonyms": [
           "examine",
           "diagnose"
@@ -486,7 +486,7 @@
         "word": "emphasize",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: focus on, stress",
-        "viMeaning": "Nhấn mạnh, làm nổi bật",
+        "viMeaning": "Nhấn mạnh tầm quan trọng",
         "synonyms": [
           "focus on",
           "stress"
@@ -497,7 +497,7 @@
         "word": "enormous",
         "pos": "adj.",
         "enDefinition": "extremely large in size, amount, or degree",
-        "viMeaning": null,
+        "viMeaning": "Khổng lồ, to lớn vượt bậc",
         "synonyms": [
           "massive",
           "large"
@@ -508,7 +508,7 @@
         "word": "imitate",
         "pos": "v.",
         "enDefinition": "To copy someone's actions, speech, or way of doing something",
-        "viMeaning": null,
+        "viMeaning": "Bắt chước, mô phỏng theo",
         "synonyms": [
           "mimic",
           "copy"
@@ -519,7 +519,7 @@
         "word": "impair",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: damage, diminish, decrease",
-        "viMeaning": null,
+        "viMeaning": "Làm suy giảm chức năng",
         "synonyms": [
           "damage",
           "diminish",
@@ -531,7 +531,7 @@
         "word": "hinder",
         "pos": "v.",
         "enDefinition": "To make progress or an activity more difficult.",
-        "viMeaning": null,
+        "viMeaning": "Cản trở, gây khó khăn",
         "synonyms": [
           "impede",
           "prevent",
@@ -544,7 +544,7 @@
         "word": "legitimate",
         "pos": "adj.",
         "enDefinition": "Allowed by law or accepted rules.",
-        "viMeaning": null,
+        "viMeaning": "Hợp pháp, chính đáng",
         "synonyms": [
           "legal"
         ]
@@ -554,7 +554,7 @@
         "word": "limitation",
         "pos": "n.",
         "enDefinition": "a weakness that prevents someone or something from being fully effective",
-        "viMeaning": null,
+        "viMeaning": "Sự giới hạn, mặt hạn chế",
         "synonyms": [
           "restriction"
         ]
@@ -564,7 +564,7 @@
         "word": "convention",
         "pos": "n.",
         "enDefinition": "An accepted way of behaving or doing something.",
-        "viMeaning": null,
+        "viMeaning": "Quy ước chung, thông lệ truyền thống",
         "synonyms": [
           "method; tradition"
         ]
@@ -574,7 +574,7 @@
         "word": "demanding",
         "pos": "adj.",
         "enDefinition": "Requiring considerable effort, skill, time, or attention.",
-        "viMeaning": null,
+        "viMeaning": "Đòi hỏi khắt khe, tốn nhiều công sức",
         "synonyms": [
           "troublesome"
         ]
@@ -584,7 +584,7 @@
         "word": "determine",
         "pos": "v.",
         "enDefinition": "To discover or establish something through examination.",
-        "viMeaning": null,
+        "viMeaning": "Xác định rõ, quyết tâm",
         "synonyms": [
           "decide"
         ]
@@ -594,7 +594,7 @@
         "word": "accelerate",
         "pos": "v.",
         "enDefinition": "to move faster or make something happen more quickly",
-        "viMeaning": null,
+        "viMeaning": "Tăng tốc, thúc đẩy nhanh hơn",
         "synonyms": [
           "speed up"
         ]
@@ -604,7 +604,7 @@
         "word": "ancient",
         "pos": "adj.",
         "enDefinition": "belonging to a period thousands of years in the past",
-        "viMeaning": null,
+        "viMeaning": "Cổ đại, lâu đời",
         "synonyms": [
           "aged",
           "old"
@@ -615,7 +615,7 @@
         "word": "beneficial",
         "pos": "adj.",
         "enDefinition": "Having a helpful or positive effect.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"beneficial\"): Having a helpful or positive effect.",
         "synonyms": [
           "helpful",
           "advantageous",
@@ -627,7 +627,7 @@
         "word": "chronic",
         "pos": "adj.",
         "enDefinition": "Continuing for a long time, especially a medical condition",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"chronic\"): Continuing for a long time, especially a medical condition",
         "synonyms": [
           "lasting"
         ]
@@ -637,7 +637,7 @@
         "word": "conscious",
         "pos": "adj.",
         "enDefinition": "aware of something or noticing that it exists",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"conscious\"): aware of something or noticing that it exists",
         "synonyms": [
           "aware",
           "knowing"
@@ -659,7 +659,7 @@
         "word": "immunity",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: resistance",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"immunity\"): Academic exam term synonymous with: resistance",
         "synonyms": [
           "resistance"
         ]
@@ -669,7 +669,7 @@
         "word": "Imperative",
         "pos": "adj.",
         "enDefinition": "Extremely important and needing to be done.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"Imperative\"): Extremely important and needing to be done.",
         "synonyms": [
           "compelling",
           "necessary",
@@ -681,7 +681,7 @@
         "word": "secrete",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: discharge, exude",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"secrete\"): Academic exam term synonymous with: discharge, exude",
         "synonyms": [
           "discharge",
           "exude"
@@ -692,7 +692,7 @@
         "word": "exaggerate",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: overstate",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"exaggerate\"): Academic exam term synonymous with: overstate",
         "synonyms": [
           "overstate"
         ]
@@ -714,7 +714,7 @@
         "word": "extinct",
         "pos": "adj.",
         "enDefinition": "having no living members left",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"extinct\"): having no living members left",
         "synonyms": [
           "die out",
           "lost"
@@ -725,7 +725,7 @@
         "word": "exclusive",
         "pos": "adj.",
         "enDefinition": "Available only to a particular person or group.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"exclusive\"): Available only to a particular person or group.",
         "synonyms": [
           "only"
         ]
@@ -745,7 +745,7 @@
         "word": "inherit",
         "pos": "v.",
         "enDefinition": "Receive money or property from someone who has died",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"inherit\"): Receive money or property from someone who has died",
         "synonyms": [
           "receive"
         ]
@@ -755,7 +755,7 @@
         "word": "witness",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: view, see",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"witness\"): Academic exam term synonymous with: view, see",
         "synonyms": [
           "view",
           "see"
@@ -766,7 +766,7 @@
         "word": "magnetic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: attractive",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"magnetic\"): Academic exam term synonymous with: attractive",
         "synonyms": [
           "attractive"
         ]
@@ -776,7 +776,7 @@
         "word": "loss",
         "pos": "n.",
         "enDefinition": "The fact of no longer having someone or something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"loss\"): The fact of no longer having someone or something.",
         "synonyms": [
           "waste",
           "gone"
@@ -787,7 +787,7 @@
         "word": "option",
         "pos": "n.",
         "enDefinition": "Something you can choose from a range of possibilities.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"option\"): Something you can choose from a range of possibilities.",
         "synonyms": [
           "choice"
         ]
@@ -797,7 +797,7 @@
         "word": "prefer to",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: rather",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"prefer to\"): Academic exam term synonymous with: rather",
         "synonyms": [
           "rather"
         ]
@@ -818,7 +818,7 @@
         "word": "primary",
         "pos": "adj.",
         "enDefinition": "more important than anything else",
-        "viMeaning": "Chính yếu, hàng đầu, sơ cấp",
+        "viMeaning": "Bậc tiểu học; quan trọng hàng đầu",
         "synonyms": [
           "principle",
           "main"
@@ -829,7 +829,7 @@
         "word": "principle",
         "pos": "n.",
         "enDefinition": "A belief or rule that guides decisions and behaviour.",
-        "viMeaning": null,
+        "viMeaning": "Nguyên tắc cốt lõi, nguyên lý cơ bản",
         "synonyms": [
           "rule"
         ]
@@ -849,7 +849,7 @@
         "word": "quantity",
         "pos": "n.",
         "enDefinition": "the amount or number of something",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"quantity\"): the amount or number of something",
         "synonyms": [
           "number"
         ]
@@ -859,7 +859,7 @@
         "word": "settle",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: fix, figure out",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"settle\"): Academic exam term synonymous with: fix, figure out",
         "synonyms": [
           "fix",
           "figure out"
@@ -870,7 +870,7 @@
         "word": "sophisticate",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: complicate",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"sophisticate\"): Academic exam term synonymous with: complicate",
         "synonyms": [
           "complicate"
         ]
@@ -901,7 +901,7 @@
         "word": "swift",
         "pos": "adj.",
         "enDefinition": "Moving quickly or happening after very little delay.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"swift\"): Moving quickly or happening after very little delay.",
         "synonyms": [
           "quick",
           "rapid"
@@ -912,7 +912,7 @@
         "word": "unexpectedly",
         "pos": "adv.",
         "enDefinition": "Academic exam term synonymous with: surprising",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"unexpectedly\"): Academic exam term synonymous with: surprising",
         "synonyms": [
           "surprising"
         ]
@@ -922,7 +922,7 @@
         "word": "surrounding",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: setting, environment",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"surrounding\"): Academic exam term synonymous with: setting, environment",
         "synonyms": [
           "setting",
           "environment"
@@ -933,7 +933,7 @@
         "word": "attempt",
         "pos": "n.",
         "enDefinition": "An effort to do something, especially something difficult.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"attempt\"): An effort to do something, especially something difficult.",
         "synonyms": [
           "try",
           "test"
@@ -944,7 +944,7 @@
         "word": "expertise",
         "pos": "n.",
         "enDefinition": "Specialist knowledge or skills gained through training and experience.",
-        "viMeaning": null,
+        "viMeaning": "Chuyên môn sâu, sự tinh thông",
         "synonyms": [
           "knowledge",
           "skill"
@@ -955,7 +955,7 @@
         "word": "faculty",
         "pos": "n.",
         "enDefinition": "A university division covering a particular group of subjects.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"faculty\"): A university division covering a particular group of subjects.",
         "synonyms": [
           "ability"
         ]
@@ -965,7 +965,7 @@
         "word": "donate",
         "pos": "v.",
         "enDefinition": "To give money, goods, or blood to help others",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (donate): To give money, goods, or blood to help others",
         "synonyms": [
           "contribute"
         ]
@@ -975,7 +975,7 @@
         "word": "dynamics",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: energy, force, move",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"dynamics\"): Academic exam term synonymous with: energy, force, move",
         "synonyms": [
           "energy",
           "force",
@@ -998,7 +998,7 @@
         "word": "mortality",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: death",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mortality\"): Academic exam term synonymous with: death",
         "synonyms": [
           "death"
         ]
@@ -1008,7 +1008,7 @@
         "word": "peripheral",
         "pos": "adj.",
         "enDefinition": "Not central to the main issue or activity.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"peripheral\"): Not central to the main issue or activity.",
         "synonyms": [
           "unimportant",
           "minor"
@@ -1019,7 +1019,7 @@
         "word": "vicinity",
         "pos": "n.",
         "enDefinition": "The area near a particular place.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"vicinity\"): The area near a particular place.",
         "synonyms": [
           "neighbourhood",
           "nearby"
@@ -1030,7 +1030,7 @@
         "word": "threaten",
         "pos": "v.",
         "enDefinition": "Say you will cause harm or trouble unless demands are met",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"threaten\"): Say you will cause harm or trouble unless demands are met",
         "synonyms": [
           "endanger",
           "jeopardize",
@@ -1043,7 +1043,7 @@
         "word": "practice",
         "pos": "n.",
         "enDefinition": "Repeated activity done to improve a skill.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"practice\"): Repeated activity done to improve a skill.",
         "synonyms": [
           "method",
           "exercise"
@@ -1054,7 +1054,7 @@
         "word": "bacteria",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: virus, germ, microbe",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"bacteria\"): Academic exam term synonymous with: virus, germ, microbe",
         "synonyms": [
           "virus",
           "germ",
@@ -1066,7 +1066,7 @@
         "word": "be subject to",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: face",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"be subject to\"): Academic exam term synonymous with: face",
         "synonyms": [
           "face"
         ]
@@ -1076,7 +1076,7 @@
         "word": "be liable to",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: potential",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"be liable to\"): Academic exam term synonymous with: potential",
         "synonyms": [
           "potential"
         ]
@@ -1086,7 +1086,7 @@
         "word": "innate",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: built-in, inborn",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"innate\"): Academic exam term synonymous with: built-in, inborn",
         "synonyms": [
           "built-in",
           "inborn"
@@ -1097,7 +1097,7 @@
         "word": "pattern",
         "pos": "n.",
         "enDefinition": "A regular or repeated way something happens or is done.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"pattern\"): A regular or repeated way something happens or is done.",
         "synonyms": [
           "formation"
         ]
@@ -1107,7 +1107,7 @@
         "word": "therapy",
         "pos": "n.",
         "enDefinition": "Treatment intended to improve physical or mental health.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"therapy\"): Treatment intended to improve physical or mental health.",
         "synonyms": [
           "treatment"
         ]
@@ -1117,7 +1117,7 @@
         "word": "original",
         "pos": "adj.",
         "enDefinition": "existing at the beginning, before any changes",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"original\"): existing at the beginning, before any changes",
         "synonyms": [
           "initial",
           "first"
@@ -1128,7 +1128,7 @@
         "word": "confidential",
         "pos": "adj.",
         "enDefinition": "Intended to remain private and not be shared without permission.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"confidential\"): Intended to remain private and not be shared without permission.",
         "synonyms": [
           "undisclosed",
           "secret",
@@ -1140,7 +1140,7 @@
         "word": "cognitive",
         "pos": "adj.",
         "enDefinition": "Related to mental processes such as learning, remembering, and understanding.",
-        "viMeaning": "Thuộc về nhận thức và quá trình tư duy của não bộ",
+        "viMeaning": "Thuộc về nhận thức và tư duy não bộ",
         "synonyms": [
           "mental"
         ]
@@ -1150,7 +1150,7 @@
         "word": "comply with",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: obey",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"comply with\"): Academic exam term synonymous with: obey",
         "synonyms": [
           "obey"
         ]
@@ -1160,7 +1160,7 @@
         "word": "consult",
         "pos": "v",
         "enDefinition": "Academic exam term synonymous with: ask for advice",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"consult\"): Academic exam term synonymous with: ask for advice",
         "synonyms": [
           "ask for advice"
         ]
@@ -1170,7 +1170,7 @@
         "word": "superior",
         "pos": "adj.",
         "enDefinition": "Better in quality or performance than another",
-        "viMeaning": null,
+        "viMeaning": "Vượt trội hơn, cấp cao hơn",
         "synonyms": [
           "higher",
           "upper"
@@ -1181,7 +1181,7 @@
         "word": "co-operation",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: support, work together",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"co-operation\"): Academic exam term synonymous with: support, work together",
         "synonyms": [
           "support",
           "work together"
@@ -1192,7 +1192,7 @@
         "word": "co-ordinate",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: organize, harmonize",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"co-ordinate\"): Academic exam term synonymous with: organize, harmonize",
         "synonyms": [
           "organize",
           "harmonize"
@@ -1203,7 +1203,7 @@
         "word": "differ",
         "pos": "v.",
         "enDefinition": "To be unlike something else in one or more ways.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (differ): To be unlike something else in one or more ways.",
         "synonyms": [
           "vary"
         ]
@@ -1213,7 +1213,7 @@
         "word": "cue",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: hint, clue",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"cue\"): Academic exam term synonymous with: hint, clue",
         "synonyms": [
           "hint",
           "clue"
@@ -1224,7 +1224,7 @@
         "word": "signal",
         "pos": "n.",
         "enDefinition": "A sound, movement, or light that communicates a message.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"signal\"): A sound, movement, or light that communicates a message.",
         "synonyms": [
           "symbol",
           "mark",
@@ -1236,7 +1236,7 @@
         "word": "abandon",
         "pos": "v.",
         "enDefinition": "To leave someone or something without intending to return.",
-        "viMeaning": "Từ bỏ, bỏ rơi; ngừng thực hiện giữa chừng",
+        "viMeaning": "Từ bỏ, rời bỏ, hủy bỏ",
         "synonyms": [
           "quit",
           "give up",
@@ -1249,7 +1249,7 @@
         "word": "halt",
         "pos": "n.",
         "enDefinition": "to stop moving or happening, or make something stop",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (halt): to stop moving or happening, or make something stop",
         "synonyms": [
           "stop",
           "quit"
@@ -1260,7 +1260,7 @@
         "word": "fragile",
         "pos": "adj.",
         "enDefinition": "Easily broken or damaged",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"fragile\"): Easily broken or damaged",
         "synonyms": [
           "vulnerable"
         ]
@@ -1280,7 +1280,7 @@
         "word": "vanish",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: disappear",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"vanish\"): Academic exam term synonymous with: disappear",
         "synonyms": [
           "disappear"
         ]
@@ -1290,7 +1290,7 @@
         "word": "delivery",
         "pos": "n.",
         "enDefinition": "the act of taking goods or messages to someone",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"delivery\"): the act of taking goods or messages to someone",
         "synonyms": [
           "dispatch"
         ]
@@ -1300,7 +1300,7 @@
         "word": "erode",
         "pos": "v.",
         "enDefinition": "To gradually wear away soil or rock through natural forces.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (erode): To gradually wear away soil or rock through natural forces.",
         "synonyms": [
           "wear away",
           "corrode",
@@ -1323,7 +1323,7 @@
         "word": "stable",
         "pos": "adj.",
         "enDefinition": "unlikely to change suddenly, fall, or become worse",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"stable\"): unlikely to change suddenly, fall, or become worse",
         "synonyms": [
           "constant",
           "unchanged"
@@ -1345,7 +1345,7 @@
         "word": "equal",
         "pos": "adj.",
         "enDefinition": "The same in amount, value, status, or opportunity.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"equal\"): The same in amount, value, status, or opportunity.",
         "synonyms": [
           "equivalent",
           "matching",
@@ -1357,7 +1357,7 @@
         "word": "grant",
         "pos": "v.",
         "enDefinition": "money given by an organisation for a particular purpose",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"grant\"): money given by an organisation for a particular purpose",
         "synonyms": [
           "award",
           "provide",
@@ -1378,7 +1378,7 @@
         "word": "accumulate",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: gather",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"accumulate\"): Academic exam term synonymous with: gather",
         "synonyms": [
           "gather"
         ]
@@ -1388,7 +1388,7 @@
         "word": "addictive",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: habit",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"addictive\"): Academic exam term synonymous with: habit",
         "synonyms": [
           "habit"
         ]
@@ -1398,7 +1398,7 @@
         "word": "adversity",
         "pos": "n.",
         "enDefinition": "A difficult or unfortunate situation that causes hardship.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"adversity\"): A difficult or unfortunate situation that causes hardship.",
         "synonyms": [
           "trouble"
         ]
@@ -1408,7 +1408,7 @@
         "word": "aggression",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: attack",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"aggression\"): Academic exam term synonymous with: attack",
         "synonyms": [
           "attack"
         ]
@@ -1418,7 +1418,7 @@
         "word": "agreeable",
         "pos": "adj.",
         "enDefinition": "pleasant and enjoyable",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"agreeable\"): pleasant and enjoyable",
         "synonyms": [
           "pleasant"
         ]
@@ -1428,7 +1428,7 @@
         "word": "aid",
         "pos": "n.",
         "enDefinition": "Help provided through money, supplies, services, or practical support.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"aid\"): Help provided through money, supplies, services, or practical support.",
         "synonyms": [
           "help"
         ]
@@ -1438,7 +1438,7 @@
         "word": "allergic",
         "pos": "adj.",
         "enDefinition": "Having an allergy to a particular substance",
-        "viMeaning": null,
+        "viMeaning": "Bị dị ứng với tác nhân",
         "synonyms": [
           "irritate"
         ]
@@ -1458,7 +1458,7 @@
         "word": "application",
         "pos": "n.",
         "enDefinition": "a formal request for a job, place, or permission",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"application\"): a formal request for a job, place, or permission",
         "synonyms": [
           "utilization"
         ]
@@ -1468,7 +1468,7 @@
         "word": "approve",
         "pos": "v.",
         "enDefinition": "To officially accept or allow something.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (approve): To officially accept or allow something.",
         "synonyms": [
           "agree"
         ]
@@ -1478,7 +1478,7 @@
         "word": "array",
         "pos": "n.",
         "enDefinition": "a large collection of different things",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"array\"): a large collection of different things",
         "synonyms": [
           "order"
         ]
@@ -1488,7 +1488,7 @@
         "word": "assign",
         "pos": "v.",
         "enDefinition": "To give someone a task, role, or resource",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (assign): To give someone a task, role, or resource",
         "synonyms": [
           "allocate"
         ]
@@ -1498,7 +1498,7 @@
         "word": "association",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: union",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"association\"): Academic exam term synonymous with: union",
         "synonyms": [
           "union"
         ]
@@ -1508,7 +1508,7 @@
         "word": "attitude",
         "pos": "n.",
         "enDefinition": "how you think or feel about someone or something",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"attitude\"): how you think or feel about someone or something",
         "synonyms": [
           "opinion"
         ]
@@ -1518,7 +1518,7 @@
         "word": "authority",
         "pos": "n.",
         "enDefinition": "the power or right to make decisions and enforce rules",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"authority\"): the power or right to make decisions and enforce rules",
         "synonyms": [
           "government"
         ]
@@ -1528,7 +1528,7 @@
         "word": "be consistent with",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: compatible",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"be consistent with\"): Academic exam term synonymous with: compatible",
         "synonyms": [
           "compatible"
         ]
@@ -1538,7 +1538,7 @@
         "word": "bear",
         "pos": "v.",
         "enDefinition": "to tolerate something unpleasant or carry a heavy responsibility",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (bear): to tolerate something unpleasant or carry a heavy responsibility",
         "synonyms": [
           "tolerate"
         ]
@@ -1548,7 +1548,7 @@
         "word": "blight",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: damage, ruin, wither",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"blight\"): Academic exam term synonymous with: damage, ruin, wither",
         "synonyms": [
           "damage",
           "ruin",
@@ -1560,7 +1560,7 @@
         "word": "boundary",
         "pos": "n.",
         "enDefinition": "A line marking where one area ends and another begins",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"boundary\"): A line marking where one area ends and another begins",
         "synonyms": [
           "barrier"
         ]
@@ -1570,7 +1570,7 @@
         "word": "bungle",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: mishandle",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"bungle\"): Academic exam term synonymous with: mishandle",
         "synonyms": [
           "mishandle"
         ]
@@ -1580,7 +1580,7 @@
         "word": "burden",
         "pos": "n.",
         "enDefinition": "a heavy load, difficult duty, or source of worry",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"burden\"): a heavy load, difficult duty, or source of worry",
         "synonyms": [
           "load"
         ]
@@ -1590,7 +1590,7 @@
         "word": "calamity",
         "pos": "n.",
         "enDefinition": "An event causing severe damage, suffering, or distress.",
-        "viMeaning": "Tai ương, biến cố nghiêm trọng",
+        "viMeaning": "Tai ương, đại họa lớn",
         "synonyms": [
           "disaster"
         ]
@@ -1600,7 +1600,7 @@
         "word": "capacity",
         "pos": "n.",
         "enDefinition": "the maximum amount something can hold or accommodate",
-        "viMeaning": null,
+        "viMeaning": "Sức chứa tối đa; năng lực",
         "synonyms": [
           "volume"
         ]
@@ -1610,7 +1610,7 @@
         "word": "catastrophic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: disastrous",
-        "viMeaning": null,
+        "viMeaning": "Thảm khốc, gây hậu quả nghiêm trọng",
         "synonyms": [
           "disastrous"
         ]
@@ -1620,7 +1620,7 @@
         "word": "cater",
         "pos": "v.",
         "enDefinition": "to provide what a particular person or group needs",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (cater): to provide what a particular person or group needs",
         "synonyms": [
           "serve"
         ]
@@ -1630,7 +1630,7 @@
         "word": "certify",
         "pos": "v.",
         "enDefinition": "to confirm officially that something is true or meets standards",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (certify): to confirm officially that something is true or meets standards",
         "synonyms": [
           "verify"
         ]
@@ -1640,7 +1640,7 @@
         "word": "civic",
         "pos": "adj.",
         "enDefinition": "relating to a town or city and its administration",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"civic\"): relating to a town or city and its administration",
         "synonyms": [
           "municipal",
           "civil"
@@ -1651,7 +1651,7 @@
         "word": "comment",
         "pos": "n., v.",
         "enDefinition": "something said or written to express an opinion or observation",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"comment\"): something said or written to express an opinion or observation",
         "synonyms": [
           "remark"
         ]
@@ -1661,7 +1661,7 @@
         "word": "commitment",
         "pos": "n.",
         "enDefinition": "A strong willingness to give time and effort to something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"commitment\"): A strong willingness to give time and effort to something.",
         "synonyms": [
           "engagement"
         ]
@@ -1671,7 +1671,7 @@
         "word": "communal",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: public",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"communal\"): Academic exam term synonymous with: public",
         "synonyms": [
           "public"
         ]
@@ -1681,7 +1681,7 @@
         "word": "commute",
         "pos": "v.",
         "enDefinition": "To travel regularly between home and work.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (commute): To travel regularly between home and work.",
         "synonyms": [
           "travel"
         ]
@@ -1691,7 +1691,7 @@
         "word": "compare",
         "pos": "v.",
         "enDefinition": "To examine things to find similarities and differences.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (compare): To examine things to find similarities and differences.",
         "synonyms": [
           "contrast"
         ]
@@ -1701,7 +1701,7 @@
         "word": "conceal",
         "pos": "v.",
         "enDefinition": "To keep something from being seen",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (conceal): To keep something from being seen",
         "synonyms": [
           "hide"
         ]
@@ -1721,7 +1721,7 @@
         "word": "concur",
         "pos": "v.",
         "enDefinition": "to agree with someone or share the same opinion",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (concur): to agree with someone or share the same opinion",
         "synonyms": [
           "agree"
         ]
@@ -1731,7 +1731,7 @@
         "word": "confer",
         "pos": "v.",
         "enDefinition": "Discuss something with others before making a decision.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"confer\"): Discuss something with others before making a decision.",
         "synonyms": [
           "grant"
         ]
@@ -1741,7 +1741,7 @@
         "word": "conflict",
         "pos": "n.",
         "enDefinition": "A serious disagreement or struggle between people or groups.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"conflict\"): A serious disagreement or struggle between people or groups.",
         "synonyms": [
           "unharmonious"
         ]
@@ -1751,7 +1751,7 @@
         "word": "confuse",
         "pos": "v.",
         "enDefinition": "To make someone unable to understand or think clearly.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (confuse): To make someone unable to understand or think clearly.",
         "synonyms": [
           "puzzle"
         ]
@@ -1761,7 +1761,7 @@
         "word": "conservative",
         "pos": "adj.",
         "enDefinition": "preferring traditional ideas and avoiding major changes",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"conservative\"): preferring traditional ideas and avoiding major changes",
         "synonyms": [
           "traditional"
         ]
@@ -1771,7 +1771,7 @@
         "word": "considerable",
         "pos": "adj.",
         "enDefinition": "Large in amount, size, or degree.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"considerable\"): Large in amount, size, or degree.",
         "synonyms": [
           "significant"
         ]
@@ -1781,7 +1781,7 @@
         "word": "contingent",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: uncertain",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"contingent\"): Academic exam term synonymous with: uncertain",
         "synonyms": [
           "uncertain"
         ]
@@ -1791,7 +1791,7 @@
         "word": "controversial",
         "pos": "adj.",
         "enDefinition": "causing strong disagreement or public debate",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"controversial\"): causing strong disagreement or public debate",
         "synonyms": [
           "disputable"
         ]
@@ -1801,7 +1801,7 @@
         "word": "correlation",
         "pos": "n.",
         "enDefinition": "A relationship in which changes in things are linked",
-        "viMeaning": null,
+        "viMeaning": "Mối tương quan, sự liên hệ lẫn nhau",
         "synonyms": [
           "link"
         ]
@@ -1811,7 +1811,7 @@
         "word": "courtship",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: mate",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"courtship\"): Academic exam term synonymous with: mate",
         "synonyms": [
           "mate"
         ]
@@ -1821,7 +1821,7 @@
         "word": "crash",
         "pos": "n.",
         "enDefinition": "an accident in which a vehicle hits something or falls",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"crash\"): an accident in which a vehicle hits something or falls",
         "synonyms": [
           "collapse"
         ]
@@ -1831,7 +1831,7 @@
         "word": "credibility",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: reliance",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"credibility\"): Academic exam term synonymous with: reliance",
         "synonyms": [
           "reliance"
         ]
@@ -1841,7 +1841,7 @@
         "word": "criminal",
         "pos": "n.",
         "enDefinition": "relating to crime or the legal treatment of crime",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"criminal\"): relating to crime or the legal treatment of crime",
         "synonyms": [
           "offender",
           "delinquent"
@@ -1852,7 +1852,7 @@
         "word": "crisis",
         "pos": "n.",
         "enDefinition": "a serious situation requiring urgent decisions or action",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"crisis\"): a serious situation requiring urgent decisions or action",
         "synonyms": [
           "risk"
         ]
@@ -1862,7 +1862,7 @@
         "word": "criticism",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: critique, disapproval",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"criticism\"): Academic exam term synonymous with: critique, disapproval",
         "synonyms": [
           "critique",
           "disapproval"
@@ -1873,7 +1873,7 @@
         "word": "curb",
         "pos": "v.",
         "enDefinition": "to limit or control something unwanted",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (curb): to limit or control something unwanted",
         "synonyms": [
           "restrict"
         ]
@@ -1883,7 +1883,7 @@
         "word": "damp",
         "pos": "adj.",
         "enDefinition": "Slightly wet, often in an unpleasant way.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"damp\"): Slightly wet, often in an unpleasant way.",
         "synonyms": [
           "wet"
         ]
@@ -1893,7 +1893,7 @@
         "word": "dazzle",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: flash",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"dazzle\"): Academic exam term synonymous with: flash",
         "synonyms": [
           "flash"
         ]
@@ -1903,7 +1903,7 @@
         "word": "deadline",
         "pos": "n.",
         "enDefinition": "The latest time by which something must be completed",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"deadline\"): The latest time by which something must be completed",
         "synonyms": [
           "limit"
         ]
@@ -1913,7 +1913,7 @@
         "word": "delay",
         "pos": "n.",
         "enDefinition": "To make something happen later than expected or planned.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (delay): To make something happen later than expected or planned.",
         "synonyms": [
           "postpone"
         ]
@@ -1923,7 +1923,7 @@
         "word": "democratic",
         "pos": "adj.",
         "enDefinition": "Based on government by people or their elected representatives.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"democratic\"): Based on government by people or their elected representatives.",
         "synonyms": [
           "participatory"
         ]
@@ -1933,7 +1933,7 @@
         "word": "demographic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: population statistic",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"demographic\"): Academic exam term synonymous with: population statistic",
         "synonyms": [
           "population statistic"
         ]
@@ -1943,7 +1943,7 @@
         "word": "dental",
         "pos": "adj.",
         "enDefinition": "Relating to teeth or their care and treatment",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"dental\"): Relating to teeth or their care and treatment",
         "synonyms": [
           "teeth"
         ]
@@ -1953,7 +1953,7 @@
         "word": "depression",
         "pos": "n.",
         "enDefinition": "a condition involving persistent sadness and loss of interest",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"depression\"): a condition involving persistent sadness and loss of interest",
         "synonyms": [
           "frustration"
         ]
@@ -1963,7 +1963,7 @@
         "word": "designate",
         "pos": "v.",
         "enDefinition": "To officially choose someone or something for a particular purpose.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (designate): To officially choose someone or something for a particular purpose.",
         "synonyms": [
           "appoint",
           "assign",
@@ -1975,7 +1975,7 @@
         "word": "detain",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: hold",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"detain\"): Academic exam term synonymous with: hold",
         "synonyms": [
           "hold"
         ]
@@ -1985,7 +1985,7 @@
         "word": "devastate",
         "pos": "v.",
         "enDefinition": "To cause very severe damage to a place or thing",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (devastate): To cause very severe damage to a place or thing",
         "synonyms": [
           "wreck"
         ]
@@ -1995,7 +1995,7 @@
         "word": "disclose",
         "pos": "v.",
         "enDefinition": "to make previously private or unknown information available",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (disclose): to make previously private or unknown information available",
         "synonyms": [
           "expose"
         ]
@@ -2005,7 +2005,7 @@
         "word": "disparate",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: different",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"disparate\"): Academic exam term synonymous with: different",
         "synonyms": [
           "different"
         ]
@@ -2015,7 +2015,7 @@
         "word": "display",
         "pos": "n.",
         "enDefinition": "Put something where people can see it",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"display\"): Put something where people can see it",
         "synonyms": [
           "show"
         ]
@@ -2025,7 +2025,7 @@
         "word": "disrupt",
         "pos": "v.",
         "enDefinition": "Prevent an activity or system from continuing normally.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"disrupt\"): Prevent an activity or system from continuing normally.",
         "synonyms": [
           "destroy"
         ]
@@ -2035,7 +2035,7 @@
         "word": "distract",
         "pos": "v.",
         "enDefinition": "To draw someone's attention away from what they are doing",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (distract): To draw someone's attention away from what they are doing",
         "synonyms": [
           "divert"
         ]
@@ -2055,7 +2055,7 @@
         "word": "documentation",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: record",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"documentation\"): Academic exam term synonymous with: record",
         "synonyms": [
           "record"
         ]
@@ -2065,7 +2065,7 @@
         "word": "domain",
         "pos": "n.",
         "enDefinition": "a particular area of knowledge, activity, or responsibility",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"domain\"): a particular area of knowledge, activity, or responsibility",
         "synonyms": [
           "field"
         ]
@@ -2085,7 +2085,7 @@
         "word": "dramatic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: striking",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"dramatic\"): Academic exam term synonymous with: striking",
         "synonyms": [
           "striking"
         ]
@@ -2095,7 +2095,7 @@
         "word": "drought",
         "pos": "n.",
         "enDefinition": "A long period with little or no rain.",
-        "viMeaning": null,
+        "viMeaning": "Hạn hán kéo dài",
         "synonyms": [
           "dry"
         ]
@@ -2105,7 +2105,7 @@
         "word": "durable",
         "pos": "adj.",
         "enDefinition": "Able to last a long time without breaking or wearing out.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"durable\"): Able to last a long time without breaking or wearing out.",
         "synonyms": [
           "lasting"
         ]
@@ -2115,7 +2115,7 @@
         "word": "eco-friendly",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: environmentally-friendly",
-        "viMeaning": null,
+        "viMeaning": "Thân thiện với môi trường sinh thái",
         "synonyms": [
           "environmentally-friendly"
         ]
@@ -2125,7 +2125,7 @@
         "word": "elaborate",
         "pos": "v.",
         "enDefinition": "Containing many carefully arranged details or parts.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"elaborate\"): Containing many carefully arranged details or parts.",
         "synonyms": [
           "illustrate"
         ]
@@ -2135,7 +2135,7 @@
         "word": "elderly",
         "pos": "adj.",
         "enDefinition": "old, especially when describing people",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"elderly\"): old, especially when describing people",
         "synonyms": [
           "aged"
         ]
@@ -2155,7 +2155,7 @@
         "word": "elusive",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: hard",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"elusive\"): Academic exam term synonymous with: hard",
         "synonyms": [
           "hard"
         ]
@@ -2165,7 +2165,7 @@
         "word": "encyclopaedia",
         "pos": "n.",
         "enDefinition": "A reference work containing information about many subjects or one field",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"encyclopaedia\"): A reference work containing information about many subjects or one field",
         "synonyms": [
           "entire range of knowledge"
         ]
@@ -2175,7 +2175,7 @@
         "word": "entrepreneur",
         "pos": "n.",
         "enDefinition": "someone who starts a business and takes financial risks",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"entrepreneur\"): someone who starts a business and takes financial risks",
         "synonyms": [
           "boss"
         ]
@@ -2185,7 +2185,7 @@
         "word": "equator",
         "pos": "n.",
         "enDefinition": "An imaginary line around Earth's middle, equally distant from both poles.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"equator\"): An imaginary line around Earth's middle, equally distant from both poles.",
         "synonyms": [
           "geography"
         ]
@@ -2195,7 +2195,7 @@
         "word": "erratically",
         "pos": "adv.",
         "enDefinition": "Academic exam term synonymous with: unpredictably",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"erratically\"): Academic exam term synonymous with: unpredictably",
         "synonyms": [
           "unpredictably"
         ]
@@ -2205,7 +2205,7 @@
         "word": "established",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: built",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"established\"): Academic exam term synonymous with: built",
         "synonyms": [
           "built"
         ]
@@ -2215,7 +2215,7 @@
         "word": "estate",
         "pos": "n.",
         "enDefinition": "A large area of owned land, often with a large house.",
-        "viMeaning": null,
+        "viMeaning": "Bất động sản, khu điền trang hoặc khu đô thị",
         "synonyms": [
           "property"
         ]
@@ -2225,7 +2225,7 @@
         "word": "ethical",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: moral",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"ethical\"): Academic exam term synonymous with: moral",
         "synonyms": [
           "moral"
         ]
@@ -2235,7 +2235,7 @@
         "word": "eventually",
         "pos": "adv.",
         "enDefinition": "in the end, especially after a long time or difficulty",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"eventually\"): in the end, especially after a long time or difficulty",
         "synonyms": [
           "finally"
         ]
@@ -2245,7 +2245,7 @@
         "word": "evidence",
         "pos": "n.",
         "enDefinition": "Facts or signs that help establish whether something is true.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"evidence\"): Facts or signs that help establish whether something is true.",
         "synonyms": [
           "proof"
         ]
@@ -2265,7 +2265,7 @@
         "word": "exhausted",
         "pos": "adj.",
         "enDefinition": "extremely tired and lacking energy",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"exhausted\"): extremely tired and lacking energy",
         "synonyms": [
           "fatigue"
         ]
@@ -2275,7 +2275,7 @@
         "word": "experiment",
         "pos": "n.",
         "enDefinition": "a test designed to discover something or check an idea",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"experiment\"): a test designed to discover something or check an idea",
         "synonyms": [
           "test"
         ]
@@ -2285,7 +2285,7 @@
         "word": "exceptional",
         "pos": "adj.",
         "enDefinition": "far better than usual",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"exceptional\"): far better than usual",
         "synonyms": [
           "extreme",
           "utmost"
@@ -2296,7 +2296,7 @@
         "word": "explicit",
         "pos": "adj.",
         "enDefinition": "expressed clearly and directly, leaving no doubt about the meaning",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"explicit\"): expressed clearly and directly, leaving no doubt about the meaning",
         "synonyms": [
           "clear"
         ]
@@ -2316,7 +2316,7 @@
         "word": "extend",
         "pos": "v.",
         "enDefinition": "To make something longer, larger, or wider in scope",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (extend): To make something longer, larger, or wider in scope",
         "synonyms": [
           "expand"
         ]
@@ -2336,7 +2336,7 @@
         "word": "famine",
         "pos": "n.",
         "enDefinition": "a severe shortage of food affecting many people",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"famine\"): a severe shortage of food affecting many people",
         "synonyms": [
           "hunger"
         ]
@@ -2346,7 +2346,7 @@
         "word": "finite",
         "pos": "adj.",
         "enDefinition": "Having a limit in size, amount, or duration",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"finite\"): Having a limit in size, amount, or duration",
         "synonyms": [
           "limited"
         ]
@@ -2356,7 +2356,7 @@
         "word": "fitness",
         "pos": "n.",
         "enDefinition": "The condition of being physically healthy and strong.",
-        "viMeaning": null,
+        "viMeaning": "Sự cân đối khỏe mạnh thể chất",
         "synonyms": [
           "physical condition",
           "health"
@@ -2367,7 +2367,7 @@
         "word": "foe",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: enemy",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"foe\"): Academic exam term synonymous with: enemy",
         "synonyms": [
           "enemy"
         ]
@@ -2377,7 +2377,7 @@
         "word": "format",
         "pos": "n.",
         "enDefinition": "the way information or an event is arranged or presented",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"format\"): the way information or an event is arranged or presented",
         "synonyms": [
           "structure"
         ]
@@ -2387,7 +2387,7 @@
         "word": "fragment",
         "pos": "n.",
         "enDefinition": "A small piece broken off or separated from something larger.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"fragment\"): A small piece broken off or separated from something larger.",
         "synonyms": [
           "piece"
         ]
@@ -2397,7 +2397,7 @@
         "word": "freeze",
         "pos": "n.",
         "enDefinition": "To become ice or make something extremely cold and solid.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (freeze): To become ice or make something extremely cold and solid.",
         "synonyms": [
           "chill"
         ]
@@ -2407,7 +2407,7 @@
         "word": "fulfill",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: execute",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"fulfill\"): Academic exam term synonymous with: execute",
         "synonyms": [
           "execute"
         ]
@@ -2417,7 +2417,7 @@
         "word": "gene",
         "pos": "n.",
         "enDefinition": "A unit of inherited information that influences an organism's characteristics",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"gene\"): A unit of inherited information that influences an organism's characteristics",
         "synonyms": [
           "factor"
         ]
@@ -2427,7 +2427,7 @@
         "word": "gifted",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: talented",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"gifted\"): Academic exam term synonymous with: talented",
         "synonyms": [
           "talented"
         ]
@@ -2437,7 +2437,7 @@
         "word": "graphic",
         "pos": "adj.",
         "enDefinition": "Relating to pictures, drawings, or visual design.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"graphic\"): Relating to pictures, drawings, or visual design.",
         "synonyms": [
           "picture"
         ]
@@ -2447,7 +2447,7 @@
         "word": "habitat",
         "pos": "n.",
         "enDefinition": "the natural environment where an animal or plant lives",
-        "viMeaning": null,
+        "viMeaning": "Môi trường sống tự nhiên của sinh vật",
         "synonyms": [
           "residence"
         ]
@@ -2457,7 +2457,7 @@
         "word": "harbor",
         "pos": "v., n.",
         "enDefinition": "Academic exam term synonymous with: hold",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"harbor\"): Academic exam term synonymous with: hold",
         "synonyms": [
           "hold"
         ]
@@ -2467,7 +2467,7 @@
         "word": "hardship",
         "pos": "n.",
         "enDefinition": "severe difficulty or suffering, especially from lacking basic necessities",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"hardship\"): severe difficulty or suffering, especially from lacking basic necessities",
         "synonyms": [
           "difficult"
         ]
@@ -2477,7 +2477,7 @@
         "word": "harsh",
         "pos": "adj.",
         "enDefinition": "unkind or excessively severe in judging or treating others",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"harsh\"): unkind or excessively severe in judging or treating others",
         "synonyms": [
           "rough"
         ]
@@ -2507,7 +2507,7 @@
         "word": "impressive",
         "pos": "adj.",
         "enDefinition": "Causing admiration because of exceptional quality, size, or skill.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"impressive\"): Causing admiration because of exceptional quality, size, or skill.",
         "synonyms": [
           "touching"
         ]
@@ -2517,7 +2517,7 @@
         "word": "in accordance with",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: conform",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"in accordance with\"): Academic exam term synonymous with: conform",
         "synonyms": [
           "conform"
         ]
@@ -2527,7 +2527,7 @@
         "word": "inaccurate",
         "pos": "adj.",
         "enDefinition": "not completely correct or exact",
-        "viMeaning": null,
+        "viMeaning": "Không chính xác, sai lệch số liệu",
         "synonyms": [
           "incorrect"
         ]
@@ -2537,7 +2537,7 @@
         "word": "inactive",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: passive",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"inactive\"): Academic exam term synonymous with: passive",
         "synonyms": [
           "passive"
         ]
@@ -2547,7 +2547,7 @@
         "word": "inappropriate",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: hard",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"inappropriate\"): Academic exam term synonymous with: hard",
         "synonyms": [
           "hard"
         ]
@@ -2557,7 +2557,7 @@
         "word": "indulge",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: spoil",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"indulge\"): Academic exam term synonymous with: spoil",
         "synonyms": [
           "spoil"
         ]
@@ -2567,7 +2567,7 @@
         "word": "infest",
         "pos": "v.",
         "enDefinition": "To live in a place in large, harmful or unwanted groups.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (infest): To live in a place in large, harmful or unwanted groups.",
         "synonyms": [
           "plague"
         ]
@@ -2577,7 +2577,7 @@
         "word": "installment",
         "pos": "n.",
         "enDefinition": "One of several payments made over time for something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"installment\"): One of several payments made over time for something.",
         "synonyms": [
           "regular/periodic payment"
         ]
@@ -2587,7 +2587,7 @@
         "word": "intelligence",
         "pos": "n.",
         "enDefinition": "The ability to learn, understand, and solve problems.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"intelligence\"): The ability to learn, understand, and solve problems.",
         "synonyms": [
           "mind"
         ]
@@ -2607,7 +2607,7 @@
         "word": "interaction",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: social activities",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"interaction\"): Academic exam term synonymous with: social activities",
         "synonyms": [
           "social activities"
         ]
@@ -2617,7 +2617,7 @@
         "word": "interference",
         "pos": "n.",
         "enDefinition": "unwanted involvement in someone else's affairs or decisions",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"interference\"): unwanted involvement in someone else's affairs or decisions",
         "synonyms": [
           "interposition",
           "disruption"
@@ -2628,7 +2628,7 @@
         "word": "interior",
         "pos": "n., adj.",
         "enDefinition": "Academic exam term synonymous with: inner",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"interior\"): Academic exam term synonymous with: inner",
         "synonyms": [
           "inner"
         ]
@@ -2638,7 +2638,7 @@
         "word": "interrupt",
         "pos": "v.",
         "enDefinition": "to stop someone speaking or working by doing something",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (interrupt): to stop someone speaking or working by doing something",
         "synonyms": [
           "stop"
         ]
@@ -2648,7 +2648,7 @@
         "word": "introverted",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: reserved, inward-looking",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"introverted\"): Academic exam term synonymous with: reserved, inward-looking",
         "synonyms": [
           "reserved",
           "inward-looking"
@@ -2669,7 +2669,7 @@
         "word": "keen",
         "pos": "adj.",
         "enDefinition": "very interested in something or eager to do it",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"keen\"): very interested in something or eager to do it",
         "synonyms": [
           "eager",
           "enthusiastic"
@@ -2680,7 +2680,7 @@
         "word": "label",
         "pos": "v.",
         "enDefinition": "a small attached piece giving information about something",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"label\"): a small attached piece giving information about something",
         "synonyms": [
           "display"
         ]
@@ -2690,7 +2690,7 @@
         "word": "lack",
         "pos": "v.",
         "enDefinition": "The absence of something or not having enough of it",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"lack\"): The absence of something or not having enough of it",
         "synonyms": [
           "shortage"
         ]
@@ -2700,7 +2700,7 @@
         "word": "landscape",
         "pos": "n.",
         "enDefinition": "The visible features of an area of land.",
-        "viMeaning": null,
+        "viMeaning": "Phong cảnh, cảnh quan địa형",
         "synonyms": [
           "scene"
         ]
@@ -2710,7 +2710,7 @@
         "word": "likelihood",
         "pos": "n.",
         "enDefinition": "the chance that something will happen",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"likelihood\"): the chance that something will happen",
         "synonyms": [
           "chance"
         ]
@@ -2720,7 +2720,7 @@
         "word": "limb",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: arm or leg",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"limb\"): Academic exam term synonymous with: arm or leg",
         "synonyms": [
           "arm or leg"
         ]
@@ -2730,7 +2730,7 @@
         "word": "linguistic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: language",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"linguistic\"): Academic exam term synonymous with: language",
         "synonyms": [
           "language"
         ]
@@ -2740,7 +2740,7 @@
         "word": "log",
         "pos": "v., n.",
         "enDefinition": "a thick piece of wood cut from a tree",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"log\"): a thick piece of wood cut from a tree",
         "synonyms": [
           "record",
           "logging"
@@ -2751,7 +2751,7 @@
         "word": "look-in",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: opportunity, chance",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"look-in\"): Academic exam term synonymous with: opportunity, chance",
         "synonyms": [
           "opportunity",
           "chance"
@@ -2762,7 +2762,7 @@
         "word": "lopsided",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: uneven",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"lopsided\"): Academic exam term synonymous with: uneven",
         "synonyms": [
           "uneven"
         ]
@@ -2772,7 +2772,7 @@
         "word": "mainly",
         "pos": "adv.",
         "enDefinition": "mostly, or more than anything else",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mainly\"): mostly, or more than anything else",
         "synonyms": [
           "primarily"
         ]
@@ -2782,7 +2782,7 @@
         "word": "malfunction",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: breakdown",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"malfunction\"): Academic exam term synonymous with: breakdown",
         "synonyms": [
           "breakdown"
         ]
@@ -2792,7 +2792,7 @@
         "word": "mammal",
         "pos": "n.",
         "enDefinition": "A warm-blooded animal whose females produce milk for their young.",
-        "viMeaning": null,
+        "viMeaning": "Động vật có vú",
         "synonyms": [
           "creature"
         ]
@@ -2802,7 +2802,7 @@
         "word": "manage to do",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: success",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"manage to do\"): Academic exam term synonymous with: success",
         "synonyms": [
           "success"
         ]
@@ -2812,7 +2812,7 @@
         "word": "manifest",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: obvious",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"manifest\"): Academic exam term synonymous with: obvious",
         "synonyms": [
           "obvious"
         ]
@@ -2822,7 +2822,7 @@
         "word": "manufacture",
         "pos": "n.",
         "enDefinition": "to produce goods, usually in large quantities using machinery",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (manufacture): to produce goods, usually in large quantities using machinery",
         "synonyms": [
           "produce"
         ]
@@ -2832,7 +2832,7 @@
         "word": "marine",
         "pos": "adj.",
         "enDefinition": "Relating to the sea or organisms living in it",
-        "viMeaning": null,
+        "viMeaning": "Thuộc về biển và đại dương",
         "synonyms": [
           "sea"
         ]
@@ -2842,7 +2842,7 @@
         "word": "mate",
         "pos": "n.",
         "enDefinition": "A friend or someone you share an activity with",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mate\"): A friend or someone you share an activity with",
         "synonyms": [
           "partner",
           "spouse"
@@ -2853,7 +2853,7 @@
         "word": "mechanism",
         "pos": "n.",
         "enDefinition": "a process or system through which something works or happens",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mechanism\"): a process or system through which something works or happens",
         "synonyms": [
           "method"
         ]
@@ -2863,7 +2863,7 @@
         "word": "mental",
         "pos": "adj.",
         "enDefinition": "Relating to the mind and emotional wellbeing.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mental\"): Relating to the mind and emotional wellbeing.",
         "synonyms": [
           "psychological",
           "cognitive"
@@ -2874,7 +2874,7 @@
         "word": "mercury",
         "pos": "n.",
         "enDefinition": "A poisonous, silver-coloured metal that is liquid at room temperature.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mercury\"): A poisonous, silver-coloured metal that is liquid at room temperature.",
         "synonyms": [
           "liquid metal"
         ]
@@ -2884,7 +2884,7 @@
         "word": "meteorological",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: weather",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"meteorological\"): Academic exam term synonymous with: weather",
         "synonyms": [
           "weather"
         ]
@@ -2894,7 +2894,7 @@
         "word": "migrate",
         "pos": "v.",
         "enDefinition": "to move to another region, seasonally or to live there",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (migrate): to move to another region, seasonally or to live there",
         "synonyms": [
           "move"
         ]
@@ -2904,7 +2904,7 @@
         "word": "moisture",
         "pos": "n.",
         "enDefinition": "Small amounts of water in the air or a material",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"moisture\"): Small amounts of water in the air or a material",
         "synonyms": [
           "humidity"
         ]
@@ -2924,7 +2924,7 @@
         "word": "motif",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: theme",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"motif\"): Academic exam term synonymous with: theme",
         "synonyms": [
           "theme"
         ]
@@ -2934,7 +2934,7 @@
         "word": "mould",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: form",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"mould\"): Academic exam term synonymous with: form",
         "synonyms": [
           "form"
         ]
@@ -2944,7 +2944,7 @@
         "word": "native",
         "pos": "adj.",
         "enDefinition": "connected with the place or language of someone's early life",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"native\"): connected with the place or language of someone's early life",
         "synonyms": [
           "original"
         ]
@@ -2954,7 +2954,7 @@
         "word": "nocturnal",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: night",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"nocturnal\"): Academic exam term synonymous with: night",
         "synonyms": [
           "night"
         ]
@@ -2964,7 +2964,7 @@
         "word": "norm",
         "pos": "n.",
         "enDefinition": "a usual situation or accepted standard",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"norm\"): a usual situation or accepted standard",
         "synonyms": [
           "regulation"
         ]
@@ -2974,7 +2974,7 @@
         "word": "notoriety",
         "pos": "n.",
         "enDefinition": "the state of being widely known for something bad",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"notoriety\"): the state of being widely known for something bad",
         "synonyms": [
           "famous"
         ]
@@ -2984,7 +2984,7 @@
         "word": "objective",
         "pos": "n., adj.",
         "enDefinition": "Something you aim to achieve.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"objective\"): Something you aim to achieve.",
         "synonyms": [
           "goal"
         ]
@@ -2994,7 +2994,7 @@
         "word": "obligation",
         "pos": "n.",
         "enDefinition": "Something you must do for legal or moral reasons",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"obligation\"): Something you must do for legal or moral reasons",
         "synonyms": [
           "responsibility"
         ]
@@ -3004,7 +3004,7 @@
         "word": "obscure",
         "pos": "v.",
         "enDefinition": "Not known by many people",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"obscure\"): Not known by many people",
         "synonyms": [
           "blur",
           "cloud",
@@ -3026,7 +3026,7 @@
         "word": "odd",
         "pos": "adj.",
         "enDefinition": "Strange or different from what is expected.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"odd\"): Strange or different from what is expected.",
         "synonyms": [
           "strange"
         ]
@@ -3036,7 +3036,7 @@
         "word": "odour",
         "pos": "n.",
         "enDefinition": "A noticeable smell, especially an unpleasant one.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"odour\"): A noticeable smell, especially an unpleasant one.",
         "synonyms": [
           "smell"
         ]
@@ -3046,7 +3046,7 @@
         "word": "offensive",
         "pos": "adj.",
         "enDefinition": "Causing people to feel insulted, upset, or disgusted.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"offensive\"): Causing people to feel insulted, upset, or disgusted.",
         "synonyms": [
           "hostile"
         ]
@@ -3056,7 +3056,7 @@
         "word": "official",
         "pos": "n., adj.",
         "enDefinition": "approved or issued by a government or organisation",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"official\"): approved or issued by a government or organisation",
         "synonyms": [
           "authority"
         ]
@@ -3066,7 +3066,7 @@
         "word": "optimum",
         "pos": "n., adj.",
         "enDefinition": "best suited to achieving a particular result",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"optimum\"): best suited to achieving a particular result",
         "synonyms": [
           "best"
         ]
@@ -3076,7 +3076,7 @@
         "word": "ordinary",
         "pos": "adj.",
         "enDefinition": "Normal or usual, without special or unusual features.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"ordinary\"): Normal or usual, without special or unusual features.",
         "synonyms": [
           "common"
         ]
@@ -3086,7 +3086,7 @@
         "word": "organ",
         "pos": "n.",
         "enDefinition": "A body part that performs a particular function.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"organ\"): A body part that performs a particular function.",
         "synonyms": [
           "a part of a body"
         ]
@@ -3096,7 +3096,7 @@
         "word": "out of the question",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: impossible, not an option",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"out of the question\"): Academic exam term synonymous with: impossible, not an option",
         "synonyms": [
           "impossible",
           "not an option"
@@ -3117,7 +3117,7 @@
         "word": "overtake",
         "pos": "v.",
         "enDefinition": "To catch up with and move ahead of someone.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (overtake): To catch up with and move ahead of someone.",
         "synonyms": [
           "surpass"
         ]
@@ -3127,7 +3127,7 @@
         "word": "paralyse",
         "pos": "v.",
         "enDefinition": "to cause someone to lose the ability to move",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (paralyse): to cause someone to lose the ability to move",
         "synonyms": [
           "disable",
           "incapacitate"
@@ -3138,7 +3138,7 @@
         "word": "paramount",
         "pos": "adj.",
         "enDefinition": "more important than anything else",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"paramount\"): more important than anything else",
         "synonyms": [
           "principal"
         ]
@@ -3158,7 +3158,7 @@
         "word": "patient",
         "pos": "adj., n.",
         "enDefinition": "Someone receiving medical care.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"patient\"): Someone receiving medical care.",
         "synonyms": [
           "tolerant",
           "calm",
@@ -3170,7 +3170,7 @@
         "word": "peak",
         "pos": "n., v.",
         "enDefinition": "A mountain's top or the highest level of something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"peak\"): A mountain's top or the highest level of something.",
         "synonyms": [
           "top"
         ]
@@ -3180,7 +3180,7 @@
         "word": "permit",
         "pos": "n., v.",
         "enDefinition": "to officially allow someone to do something",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (permit): to officially allow someone to do something",
         "synonyms": [
           "allow"
         ]
@@ -3190,7 +3190,7 @@
         "word": "persuade",
         "pos": "v.",
         "enDefinition": "To get someone to do something by giving reasons",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (persuade): To get someone to do something by giving reasons",
         "synonyms": [
           "influence"
         ]
@@ -3200,7 +3200,7 @@
         "word": "pessimistic",
         "pos": "adj.",
         "enDefinition": "Expecting bad results or focusing on possible problems.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"pessimistic\"): Expecting bad results or focusing on possible problems.",
         "synonyms": [
           "negative"
         ]
@@ -3210,7 +3210,7 @@
         "word": "phase",
         "pos": "n.",
         "enDefinition": "A distinct period in a process of change or development.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"phase\"): A distinct period in a process of change or development.",
         "synonyms": [
           "process"
         ]
@@ -3220,7 +3220,7 @@
         "word": "physical",
         "pos": "adj.",
         "enDefinition": "Relating to the body rather than the mind.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"physical\"): Relating to the body rather than the mind.",
         "synonyms": [
           "body"
         ]
@@ -3230,7 +3230,7 @@
         "word": "plagiarise",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: copy",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"plagiarise\"): Academic exam term synonymous with: copy",
         "synonyms": [
           "copy"
         ]
@@ -3240,7 +3240,7 @@
         "word": "plenty of",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: many",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"plenty of\"): Academic exam term synonymous with: many",
         "synonyms": [
           "many"
         ]
@@ -3250,7 +3250,7 @@
         "word": "plot",
         "pos": "v.",
         "enDefinition": "the connected events that make up a story",
-        "viMeaning": null,
+        "viMeaning": "Cốt truyện (phim/tiểu thuyết); mảnh đất nhỏ",
         "synonyms": [
           "plan"
         ]
@@ -3260,7 +3260,7 @@
         "word": "pose",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: cause",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"pose\"): Academic exam term synonymous with: cause",
         "synonyms": [
           "cause"
         ]
@@ -3270,7 +3270,7 @@
         "word": "portable",
         "pos": "adj.",
         "enDefinition": "Easy to carry or move from place to place",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"portable\"): Easy to carry or move from place to place",
         "synonyms": [
           "conveyable"
         ]
@@ -3280,7 +3280,7 @@
         "word": "poverty",
         "pos": "n.",
         "enDefinition": "The condition of lacking money for basic needs.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"poverty\"): The condition of lacking money for basic needs.",
         "synonyms": [
           "poor"
         ]
@@ -3290,7 +3290,7 @@
         "word": "praise",
         "pos": "n.",
         "enDefinition": "To express approval or admiration for someone or something.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (praise): To express approval or admiration for someone or something.",
         "synonyms": [
           "commend"
         ]
@@ -3310,7 +3310,7 @@
         "word": "pressing",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: urgent",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"pressing\"): Academic exam term synonymous with: urgent",
         "synonyms": [
           "urgent"
         ]
@@ -3320,7 +3320,7 @@
         "word": "private",
         "pos": "adj.",
         "enDefinition": "For a particular person or group, not for everyone.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"private\"): For a particular person or group, not for everyone.",
         "synonyms": [
           "personal"
         ]
@@ -3330,7 +3330,7 @@
         "word": "prohibit",
         "pos": "v.",
         "enDefinition": "To officially forbid an action through rules or laws.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (prohibit): To officially forbid an action through rules or laws.",
         "synonyms": [
           "forbid",
           "ban"
@@ -3341,7 +3341,7 @@
         "word": "prolong",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: extend",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"prolong\"): Academic exam term synonymous with: extend",
         "synonyms": [
           "extend"
         ]
@@ -3361,7 +3361,7 @@
         "word": "prosper",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: success",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"prosper\"): Academic exam term synonymous with: success",
         "synonyms": [
           "success"
         ]
@@ -3371,7 +3371,7 @@
         "word": "purify",
         "pos": "v.",
         "enDefinition": "Academic exam term synonymous with: clean",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"purify\"): Academic exam term synonymous with: clean",
         "synonyms": [
           "clean"
         ]
@@ -3381,7 +3381,7 @@
         "word": "qualify",
         "pos": "v.",
         "enDefinition": "To meet requirements, or make someone suitable for something.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (qualify): To meet requirements, or make someone suitable for something.",
         "synonyms": [
           "fulfill"
         ]
@@ -3391,7 +3391,7 @@
         "word": "radical",
         "pos": "adj.",
         "enDefinition": "Involving major changes to the basic nature of something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"radical\"): Involving major changes to the basic nature of something.",
         "synonyms": [
           "utmost"
         ]
@@ -3401,7 +3401,7 @@
         "word": "range",
         "pos": "n.",
         "enDefinition": "The extent or variety of things within certain limits.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"range\"): The extent or variety of things within certain limits.",
         "synonyms": [
           "scope"
         ]
@@ -3411,7 +3411,7 @@
         "word": "rare",
         "pos": "adj.",
         "enDefinition": "not common or not happening often",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"rare\"): not common or not happening often",
         "synonyms": [
           "unusual"
         ]
@@ -3421,7 +3421,7 @@
         "word": "rate",
         "pos": "n., v.",
         "enDefinition": "How often something happens or how quickly something changes.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"rate\"): How often something happens or how quickly something changes.",
         "synonyms": [
           "rank",
           "measure"
@@ -3432,7 +3432,7 @@
         "word": "react",
         "pos": "v.",
         "enDefinition": "Behave or feel in response to something that happens.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"react\"): Behave or feel in response to something that happens.",
         "synonyms": [
           "respond"
         ]
@@ -3442,7 +3442,7 @@
         "word": "recreation",
         "pos": "n.",
         "enDefinition": "Activities done for enjoyment and relaxation when not working.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"recreation\"): Activities done for enjoyment and relaxation when not working.",
         "synonyms": [
           "entertainment"
         ]
@@ -3452,7 +3452,7 @@
         "word": "reduction",
         "pos": "n.",
         "enDefinition": "a decrease in the amount, size, or level of something",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"reduction\"): a decrease in the amount, size, or level of something",
         "synonyms": [
           "decrease"
         ]
@@ -3462,7 +3462,7 @@
         "word": "refer to",
         "pos": "v./n.",
         "enDefinition": "Academic exam term synonymous with: talk about",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"refer to\"): Academic exam term synonymous with: talk about",
         "synonyms": [
           "talk about"
         ]
@@ -3472,7 +3472,7 @@
         "word": "rehearsal",
         "pos": "n.",
         "enDefinition": "A practice session before a performance or important event.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"rehearsal\"): A practice session before a performance or important event.",
         "synonyms": [
           "preparation"
         ]
@@ -3492,7 +3492,7 @@
         "word": "relevant",
         "pos": "adj.",
         "enDefinition": "closely connected with the subject or situation being considered",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"relevant\"): closely connected with the subject or situation being considered",
         "synonyms": [
           "relative"
         ]
@@ -3502,7 +3502,7 @@
         "word": "religious",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: sacred",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"religious\"): Academic exam term synonymous with: sacred",
         "synonyms": [
           "sacred"
         ]
@@ -3522,7 +3522,7 @@
         "word": "reproduce",
         "pos": "v.",
         "enDefinition": "To make a copy or create the same result again.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (reproduce): To make a copy or create the same result again.",
         "synonyms": [
           "breed"
         ]
@@ -3532,7 +3532,7 @@
         "word": "responsible",
         "pos": "adj.",
         "enDefinition": "having a duty to manage or look after something",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"responsible\"): having a duty to manage or look after something",
         "synonyms": [
           "liable"
         ]
@@ -3542,7 +3542,7 @@
         "word": "revision",
         "pos": "n.",
         "enDefinition": "Studying material again to prepare for an examination",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"revision\"): Studying material again to prepare for an examination",
         "synonyms": [
           "editing"
         ]
@@ -3552,7 +3552,7 @@
         "word": "revive",
         "pos": "v.",
         "enDefinition": "to become active or popular again, or make something so",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (revive): to become active or popular again, or make something so",
         "synonyms": [
           "renaissance"
         ]
@@ -3562,7 +3562,7 @@
         "word": "ruin",
         "pos": "v.",
         "enDefinition": "to damage something so badly that it loses its value",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (ruin): to damage something so badly that it loses its value",
         "synonyms": [
           "destroy"
         ]
@@ -3572,7 +3572,7 @@
         "word": "scenic",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: beautiful",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"scenic\"): Academic exam term synonymous with: beautiful",
         "synonyms": [
           "beautiful"
         ]
@@ -3582,7 +3582,7 @@
         "word": "shade",
         "pos": "n.",
         "enDefinition": "an area protected from direct sunlight",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"shade\"): an area protected from direct sunlight",
         "synonyms": [
           "shelter"
         ]
@@ -3592,7 +3592,7 @@
         "word": "skepticism",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: doubt",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"skepticism\"): Academic exam term synonymous with: doubt",
         "synonyms": [
           "doubt"
         ]
@@ -3602,7 +3602,7 @@
         "word": "soar",
         "pos": "v.",
         "enDefinition": "to increase quickly to a very high level",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (soar): to increase quickly to a very high level",
         "synonyms": [
           "increase"
         ]
@@ -3612,7 +3612,7 @@
         "word": "solely",
         "pos": "adv.",
         "enDefinition": "Only, with nothing or nobody else involved.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"solely\"): Only, with nothing or nobody else involved.",
         "synonyms": [
           "alone"
         ]
@@ -3622,7 +3622,7 @@
         "word": "solicitor",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: lawyer",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"solicitor\"): Academic exam term synonymous with: lawyer",
         "synonyms": [
           "lawyer"
         ]
@@ -3632,7 +3632,7 @@
         "word": "steer",
         "pos": "v.",
         "enDefinition": "To control the direction in which a vehicle moves.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (steer): To control the direction in which a vehicle moves.",
         "synonyms": [
           "manage"
         ]
@@ -3652,7 +3652,7 @@
         "word": "stride",
         "pos": "n.",
         "enDefinition": "Walk with long, confident steps.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"stride\"): Walk with long, confident steps.",
         "synonyms": [
           "progress"
         ]
@@ -3662,7 +3662,7 @@
         "word": "succumb",
         "pos": "vi.",
         "enDefinition": "Academic exam term synonymous with: yield",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"succumb\"): Academic exam term synonymous with: yield",
         "synonyms": [
           "yield"
         ]
@@ -3672,7 +3672,7 @@
         "word": "subdivide",
         "pos": "v.",
         "enDefinition": "to divide something into smaller parts or groups",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (subdivide): to divide something into smaller parts or groups",
         "synonyms": [
           "break down"
         ]
@@ -3682,7 +3682,7 @@
         "word": "subtle",
         "pos": "adj.",
         "enDefinition": "Small or delicate enough to be difficult to notice",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"subtle\"): Small or delicate enough to be difficult to notice",
         "synonyms": [
           "delicate"
         ]
@@ -3692,7 +3692,7 @@
         "word": "substance",
         "pos": "n.",
         "enDefinition": "A particular type of material with specific physical properties.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"substance\"): A particular type of material with specific physical properties.",
         "synonyms": [
           "matter"
         ]
@@ -3702,7 +3702,7 @@
         "word": "sufficiency",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: enough",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"sufficiency\"): Academic exam term synonymous with: enough",
         "synonyms": [
           "enough"
         ]
@@ -3712,7 +3712,7 @@
         "word": "supersede",
         "pos": "v.",
         "enDefinition": "To replace something older or no longer useful.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (supersede): To replace something older or no longer useful.",
         "synonyms": [
           "replace"
         ]
@@ -3732,7 +3732,7 @@
         "word": "supremacy",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: priority",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"supremacy\"): Academic exam term synonymous with: priority",
         "synonyms": [
           "priority"
         ]
@@ -3742,7 +3742,7 @@
         "word": "suspicious",
         "pos": "adj.",
         "enDefinition": "Making you think something is wrong, dishonest, or illegal.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"suspicious\"): Making you think something is wrong, dishonest, or illegal.",
         "synonyms": [
           "odd"
         ]
@@ -3752,7 +3752,7 @@
         "word": "sustainable",
         "pos": "adj.",
         "enDefinition": "Using resources without exhausting them or causing lasting environmental damage.",
-        "viMeaning": "Bền vững, không gây hại cho môi trường và duy trì được lâu dài",
+        "viMeaning": "Bền vững, thân thiện lâu dài với môi trường",
         "synonyms": [
           "long-term"
         ]
@@ -3762,7 +3762,7 @@
         "word": "symptom",
         "pos": "n.",
         "enDefinition": "a physical or mental change that suggests an illness",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"symptom\"): a physical or mental change that suggests an illness",
         "synonyms": [
           "sign"
         ]
@@ -3772,7 +3772,7 @@
         "word": "tension",
         "pos": "n.",
         "enDefinition": "Strained relations between people or groups that may cause conflict",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"tension\"): Strained relations between people or groups that may cause conflict",
         "synonyms": [
           "upset"
         ]
@@ -3782,7 +3782,7 @@
         "word": "term",
         "pos": "n.",
         "enDefinition": "A word or expression with a particular meaning.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"term\"): A word or expression with a particular meaning.",
         "synonyms": [
           "word"
         ]
@@ -3792,7 +3792,7 @@
         "word": "throughout",
         "pos": "adv.",
         "enDefinition": "In every part of a place or during an entire period.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"throughout\"): In every part of a place or during an entire period.",
         "synonyms": [
           "anywhere"
         ]
@@ -3802,7 +3802,7 @@
         "word": "toll",
         "pos": "n., v.",
         "enDefinition": "money paid to use a road or bridge",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"toll\"): money paid to use a road or bridge",
         "synonyms": [
           "charge"
         ]
@@ -3812,7 +3812,7 @@
         "word": "trace",
         "pos": "n.",
         "enDefinition": "find something's origin or location by following evidence",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"trace\"): find something's origin or location by following evidence",
         "synonyms": [
           "track"
         ]
@@ -3822,7 +3822,7 @@
         "word": "transcend",
         "pos": "v.",
         "enDefinition": "To go beyond ordinary limits, differences, or expectations.",
-        "viMeaning": null,
+        "viMeaning": "Hành động / quá trình (transcend): To go beyond ordinary limits, differences, or expectations.",
         "synonyms": [
           "excel"
         ]
@@ -3832,7 +3832,7 @@
         "word": "transit",
         "pos": "n., v.",
         "enDefinition": "the movement of people or goods between places",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"transit\"): the movement of people or goods between places",
         "synonyms": [
           "send"
         ]
@@ -3842,7 +3842,7 @@
         "word": "tremendous",
         "pos": "adj.",
         "enDefinition": "Very great in amount, strength, or degree.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"tremendous\"): Very great in amount, strength, or degree.",
         "synonyms": [
           "vast"
         ]
@@ -3862,7 +3862,7 @@
         "word": "tropical",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: hot",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"tropical\"): Academic exam term synonymous with: hot",
         "synonyms": [
           "hot"
         ]
@@ -3872,7 +3872,7 @@
         "word": "unbiased",
         "pos": "adj.",
         "enDefinition": "Academic exam term synonymous with: fair",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"unbiased\"): Academic exam term synonymous with: fair",
         "synonyms": [
           "fair"
         ]
@@ -3882,7 +3882,7 @@
         "word": "uniform",
         "pos": "adj.",
         "enDefinition": "Special clothing worn by members of a particular group.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"uniform\"): Special clothing worn by members of a particular group.",
         "synonyms": [
           "consistent"
         ]
@@ -3892,7 +3892,7 @@
         "word": "valuable",
         "pos": "adj.",
         "enDefinition": "Very useful or important for a particular purpose.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"valuable\"): Very useful or important for a particular purpose.",
         "synonyms": [
           "benefit"
         ]
@@ -3902,7 +3902,7 @@
         "word": "versatile",
         "pos": "adj.",
         "enDefinition": "Able to do many things or serve many different purposes.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"versatile\"): Able to do many things or serve many different purposes.",
         "synonyms": [
           "all-around"
         ]
@@ -3912,7 +3912,7 @@
         "word": "view",
         "pos": "v.",
         "enDefinition": "An opinion or belief about something.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"view\"): An opinion or belief about something.",
         "synonyms": [
           "overlook"
         ]
@@ -3922,7 +3922,7 @@
         "word": "violent",
         "pos": "adj.",
         "enDefinition": "Using physical force to hurt people or damage things.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"violent\"): Using physical force to hurt people or damage things.",
         "synonyms": [
           "fierce"
         ]
@@ -3932,7 +3932,7 @@
         "word": "visible",
         "pos": "adj.",
         "enDefinition": "Able to be seen.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"visible\"): Able to be seen.",
         "synonyms": [
           "see"
         ]
@@ -3942,7 +3942,7 @@
         "word": "visual",
         "pos": "adj.",
         "enDefinition": "Relating to sight or things that can be seen.",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"visual\"): Relating to sight or things that can be seen.",
         "synonyms": [
           "image"
         ]
@@ -3952,7 +3952,7 @@
         "word": "well-being",
         "pos": "n.",
         "enDefinition": "Academic exam term synonymous with: health, happiness, welfare",
-        "viMeaning": null,
+        "viMeaning": "Từ vựng IELTS (\"well-being\"): Academic exam term synonymous with: health, happiness, welfare",
         "synonyms": [
           "health",
           "happiness",

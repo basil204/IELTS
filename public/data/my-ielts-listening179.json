@@ -4,7 +4,7 @@
     "word": "reserve",
     "type": "v.",
     "enDefinition": "Arrange to keep something for a particular person or purpose.",
-    "viMeaning": "Đặt trước, dự trữ, bảo tồn",
+    "viMeaning": "Đặt chỗ trước; khu bảo tồn thiên nhiên",
     "replace": [
       "book"
     ]
@@ -14,7 +14,7 @@
     "word": "in advance",
     "type": "",
     "enDefinition": "Before a planned event or a particular time.",
-    "viMeaning": null,
+    "viMeaning": "Trước thời hạn, đặt trước",
     "replace": [
       "ahead",
       "before"
@@ -25,7 +25,7 @@
     "word": "have to",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: must, should, need, require, necessary, be supposed to, demand, order",
-    "viMeaning": null,
+    "viMeaning": "Bắt buộc phải thực hiện",
     "replace": [
       "must",
       "should",
@@ -42,7 +42,7 @@
     "word": "adjust",
     "type": "v.",
     "enDefinition": "Core IELTS Listening keyword replaced by: change, alter, modify, shift, revert",
-    "viMeaning": "Điều chỉnh, thích nghi",
+    "viMeaning": "Điều chỉnh để thích nghi",
     "replace": [
       "change",
       "alter",
@@ -69,7 +69,7 @@
     "word": "but",
     "type": "conj.",
     "enDefinition": "Used to connect contrasting ideas or correct an earlier statement.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"but\" (đồng nghĩa với: however, yet, instead)",
     "replace": [
       "however",
       "yet",
@@ -81,7 +81,7 @@
     "word": "because",
     "type": "conj.",
     "enDefinition": "Introduces the reason why something happens or is true.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"because\" (đồng nghĩa với: why, as a result, therefore)",
     "replace": [
       "why",
       "as a result",
@@ -94,7 +94,7 @@
     "word": "diversity",
     "type": "n.",
     "enDefinition": "The presence of many different types of people or things.",
-    "viMeaning": "Sự đa dạng, phong phú",
+    "viMeaning": "Sự đa dạng sinh học hoặc văn hóa",
     "replace": [
       "a variety of",
       "a number of",
@@ -108,7 +108,7 @@
     "word": "fee",
     "type": "n.",
     "enDefinition": "Money charged for a service, course, or professional advice.",
-    "viMeaning": null,
+    "viMeaning": "Khoản lệ phí, học phí",
     "replace": [
       "money",
       "cost",
@@ -125,7 +125,7 @@
     "word": "establish",
     "type": "v.",
     "enDefinition": "to start an organisation, system, or lasting arrangement",
-    "viMeaning": "Thành lập, thiết lập, xác lập",
+    "viMeaning": "Thành lập, thiết lập vững chắc",
     "replace": [
       "build",
       "create",
@@ -139,7 +139,7 @@
     "word": "transfer",
     "type": "v.",
     "enDefinition": "To move someone or something from one place to another.",
-    "viMeaning": null,
+    "viMeaning": "Chuyển giao, di chuyển sang nơi khác",
     "replace": [
       "move",
       "relocate"
@@ -150,7 +150,7 @@
     "word": "habitat",
     "type": "n.",
     "enDefinition": "the natural environment where an animal or plant lives",
-    "viMeaning": null,
+    "viMeaning": "Môi trường sống tự nhiên của sinh vật",
     "replace": [
       "live",
       "territory"
@@ -161,7 +161,7 @@
     "word": "international",
     "type": "adj.",
     "enDefinition": "Involving two or more countries.",
-    "viMeaning": null,
+    "viMeaning": "Quốc tế, đa quốc gia",
     "replace": [
       "countries",
       "continents",
@@ -173,7 +173,7 @@
     "word": "export",
     "type": "v.",
     "enDefinition": "to send goods to another country for sale",
-    "viMeaning": null,
+    "viMeaning": "Xuất khẩu hàng hóa ra nước ngoài",
     "replace": [
       "abroad",
       "overseas"
@@ -184,7 +184,7 @@
     "word": "vegetation",
     "type": "n.",
     "enDefinition": "plants growing together in a particular area",
-    "viMeaning": null,
+    "viMeaning": "Thảm thực vật, cây cối nói chung",
     "replace": [
       "plant",
       "tree",
@@ -197,7 +197,7 @@
     "word": "animal",
     "type": "n.",
     "enDefinition": "a living creature that feeds on plants or other creatures",
-    "viMeaning": null,
+    "viMeaning": "Động vật nói chung",
     "replace": [
       "mammal",
       "wildlife",
@@ -210,7 +210,7 @@
     "word": "feature",
     "type": "n.",
     "enDefinition": "a noticeable or important part of something",
-    "viMeaning": null,
+    "viMeaning": "Đặc trưng nổi bật, tính năng chính",
     "replace": [
       "characteristic",
       "trait",
@@ -222,7 +222,7 @@
     "word": "emigrate",
     "type": "v.",
     "enDefinition": "To leave your country to live permanently in another",
-    "viMeaning": null,
+    "viMeaning": "Di cư sang định cư ở nước khác",
     "replace": [
       "move",
       "go away"
@@ -233,7 +233,7 @@
     "word": "food",
     "type": "n.",
     "enDefinition": "Things people or animals eat to live and grow.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"food\" (đồng nghĩa với: feed on, eat)",
     "replace": [
       "feed on",
       "eat"
@@ -244,7 +244,7 @@
     "word": "allergic",
     "type": "adj.",
     "enDefinition": "Having an allergy to a particular substance",
-    "viMeaning": null,
+    "viMeaning": "Bị dị ứng với tác nhân",
     "replace": [
       "can't eat"
     ]
@@ -254,7 +254,7 @@
     "word": "fitness",
     "type": "n.",
     "enDefinition": "The condition of being physically healthy and strong.",
-    "viMeaning": null,
+    "viMeaning": "Sự cân đối khỏe mạnh thể chất",
     "replace": [
       "health",
       "medical",
@@ -268,7 +268,7 @@
     "word": "tradition",
     "type": "n.",
     "enDefinition": "A belief or custom passed down through generations.",
-    "viMeaning": null,
+    "viMeaning": "Truyền thống lâu đời",
     "replace": [
       "custom",
       "convention",
@@ -281,7 +281,7 @@
     "word": "entertainment",
     "type": "n.",
     "enDefinition": "Performances or activities that people enjoy watching or doing.",
-    "viMeaning": null,
+    "viMeaning": "Hoạt động giải trí",
     "replace": [
       "recreation",
       "leisure"
@@ -292,7 +292,7 @@
     "word": "press",
     "type": "n.",
     "enDefinition": "Push firmly against something.",
-    "viMeaning": null,
+    "viMeaning": "Báo chí truyền thông",
     "replace": [
       "media",
       "TV",
@@ -305,7 +305,7 @@
     "word": "online",
     "type": "n.",
     "enDefinition": "Available through the internet or connected to a computer network.",
-    "viMeaning": null,
+    "viMeaning": "Trực tuyến trên mạng Internet",
     "replace": [
       "Internet",
       "website"
@@ -316,7 +316,7 @@
     "word": "publicity",
     "type": "n.",
     "enDefinition": "Attention given to someone or something by the media.",
-    "viMeaning": null,
+    "viMeaning": "Sự quảng bá rộng rãi trước công chúng",
     "replace": [
       "website",
       "media",
@@ -329,7 +329,7 @@
     "word": "picture",
     "type": "n.",
     "enDefinition": "an image made by drawing, painting, or taking a photograph",
-    "viMeaning": null,
+    "viMeaning": "Bức tranh, hình ảnh chụp",
     "replace": [
       "photo",
       "photograph",
@@ -342,7 +342,7 @@
     "word": "jewellery",
     "type": "n.",
     "enDefinition": "Decorative objects worn on the body, such as rings and necklaces.",
-    "viMeaning": null,
+    "viMeaning": "Đồ trang sức quý giá",
     "replace": [
       "rings",
       "bracelets",
@@ -358,7 +358,7 @@
     "word": "artwork",
     "type": "n.",
     "enDefinition": "Core IELTS Listening keyword replaced by: painting, drawing, craft",
-    "viMeaning": null,
+    "viMeaning": "Tác phẩm nghệ thuật",
     "replace": [
       "painting",
       "drawing",
@@ -370,7 +370,7 @@
     "word": "statue",
     "type": "n.",
     "enDefinition": "A sculpture representing a person or animal.",
-    "viMeaning": null,
+    "viMeaning": "Bức tượng điêu khắc",
     "replace": [
       "sculpture",
       "carving"
@@ -381,7 +381,7 @@
     "word": "movie",
     "type": "n.",
     "enDefinition": "a recorded story or sequence of moving images for watching",
-    "viMeaning": null,
+    "viMeaning": "Bộ phim điện ảnh",
     "replace": [
       "film",
       "documentary",
@@ -393,7 +393,7 @@
     "word": "geology",
     "type": "n.",
     "enDefinition": "Core IELTS Listening keyword replaced by: cliff, fossil, rock, landscape",
-    "viMeaning": null,
+    "viMeaning": "Địa chất học",
     "replace": [
       "cliff",
       "fossil",
@@ -406,7 +406,7 @@
     "word": "countryside",
     "type": "adj.",
     "enDefinition": "land outside towns and cities, including fields, woods, and farms",
-    "viMeaning": null,
+    "viMeaning": "Vùng nông thôn yên bình",
     "replace": [
       "rural area"
     ]
@@ -416,7 +416,7 @@
     "word": "urban",
     "type": "adj.",
     "enDefinition": "Relating to cities or towns rather than the countryside.",
-    "viMeaning": null,
+    "viMeaning": "Thuộc về đô thị và thành phố",
     "replace": [
       "city",
       "metropolitan"
@@ -427,7 +427,7 @@
     "word": "coastline",
     "type": "n.",
     "enDefinition": "Core IELTS Listening keyword replaced by: shore, seaside",
-    "viMeaning": null,
+    "viMeaning": "Đường bờ biển",
     "replace": [
       "shore",
       "seaside"
@@ -438,7 +438,7 @@
     "word": "environment",
     "type": "n.",
     "enDefinition": "The natural world, including land, water, air, and living things.",
-    "viMeaning": null,
+    "viMeaning": "Môi trường tự nhiên và xã hội",
     "replace": [
       "neighbourhood",
       "surrounding"
@@ -449,7 +449,7 @@
     "word": "noisy",
     "type": "adj.",
     "enDefinition": "making a lot of loud or unpleasant sounds",
-    "viMeaning": null,
+    "viMeaning": "Ồn ào, nhiều tiếng động",
     "replace": [
       "disturbing",
       "not quiet"
@@ -460,7 +460,7 @@
     "word": "capacity",
     "type": "n.",
     "enDefinition": "the maximum amount something can hold or accommodate",
-    "viMeaning": null,
+    "viMeaning": "Sức chứa tối đa; năng lực",
     "replace": [
       "volume",
       "room",
@@ -473,7 +473,7 @@
     "word": "outdoor",
     "type": "adj.",
     "enDefinition": "happening, used, or located outside a building",
-    "viMeaning": null,
+    "viMeaning": "Ngoài trời, hoạt động dã ngoại",
     "replace": [
       "gardens",
       "park",
@@ -485,7 +485,7 @@
     "word": "accommodation",
     "type": "n.",
     "enDefinition": "a place where someone can live or stay",
-    "viMeaning": null,
+    "viMeaning": "Chỗ ở, nơi lưu trú",
     "replace": [
       "living",
       "dwelling",
@@ -497,7 +497,7 @@
     "word": "place",
     "type": "n.",
     "enDefinition": "A particular area, position, or location.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"place\" (đồng nghĩa với: where, spot, location)",
     "replace": [
       "where",
       "spot",
@@ -510,7 +510,7 @@
     "word": "near",
     "type": "adj.",
     "enDefinition": "close to a place, time, or state",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"near\" (đồng nghĩa với: close, not far from, nearby)",
     "replace": [
       "close",
       "not far from",
@@ -522,7 +522,7 @@
     "word": "remote",
     "type": "adj.",
     "enDefinition": "Far away from towns, cities, or other people.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"remote\" (đồng nghĩa với: isolated, distant)",
     "replace": [
       "isolated",
       "distant"
@@ -533,7 +533,7 @@
     "word": "advantage",
     "type": "n.",
     "enDefinition": "Something that makes success more likely than for others.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"advantage\" (đồng nghĩa với: benefit, positive, good thing)",
     "replace": [
       "benefit",
       "positive",
@@ -546,7 +546,7 @@
     "word": "disadvantage",
     "type": "n.",
     "enDefinition": "something that makes success harder or reduces something's value",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"disadvantage\" (đồng nghĩa với: drawback, shortcoming, negative)",
     "replace": [
       "drawback",
       "shortcoming",
@@ -559,7 +559,7 @@
     "word": "education",
     "type": "n.",
     "enDefinition": "The process of learning or teaching knowledge and skills.",
-    "viMeaning": null,
+    "viMeaning": "Nền giáo dục và đào tạo",
     "replace": [
       "schools",
       "colleges",
@@ -571,7 +571,7 @@
     "word": "ordinary people",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: people, inhabitants, the public, men and women",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"ordinary people\" (đồng nghĩa với: people, inhabitants, the public)",
     "replace": [
       "people",
       "inhabitants",
@@ -584,7 +584,7 @@
     "word": "student",
     "type": "n.",
     "enDefinition": "a person who studies at a school, college, or university",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"student\" (đồng nghĩa với: pupil, undergraduate, postgraduate)",
     "replace": [
       "pupil",
       "undergraduate",
@@ -596,7 +596,7 @@
     "word": "purpose",
     "type": "n.",
     "enDefinition": "the reason for doing something or what something is intended for",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"purpose\" (đồng nghĩa với: aim, goal, target)",
     "replace": [
       "aim",
       "goal",
@@ -609,7 +609,7 @@
     "word": "learn",
     "type": "v.",
     "enDefinition": "To gain knowledge or a skill through study or experience.",
-    "viMeaning": null,
+    "viMeaning": "Học tập, tiếp thu kiến thức",
     "replace": [
       "acquire",
       "get",
@@ -632,7 +632,7 @@
     "word": "reference materials",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: books, journals, magazines",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"reference materials\" (đồng nghĩa với: books, journals, magazines)",
     "replace": [
       "books",
       "journals",
@@ -644,7 +644,7 @@
     "word": "extensive",
     "type": "adj.",
     "enDefinition": "covering many subjects or involving a large amount",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"extensive\" (đồng nghĩa với: comprehensive, a lot of, many)",
     "replace": [
       "comprehensive",
       "a lot of",
@@ -656,7 +656,7 @@
     "word": "expertise",
     "type": "n.",
     "enDefinition": "Specialist knowledge or skills gained through training and experience.",
-    "viMeaning": null,
+    "viMeaning": "Chuyên môn sâu, sự tinh thông",
     "replace": [
       "ability",
       "skill"
@@ -667,7 +667,7 @@
     "word": "group",
     "type": "n.",
     "enDefinition": "People or things together or connected by a shared feature.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"group\" (đồng nghĩa với: team)",
     "replace": [
       "team"
     ]
@@ -677,7 +677,7 @@
     "word": "associate",
     "type": "v.",
     "enDefinition": "to connect people or things in your mind",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"associate\" (đồng nghĩa với: relate to, connect, link)",
     "replace": [
       "relate to",
       "connect",
@@ -689,7 +689,7 @@
     "word": "approach",
     "type": "n.",
     "enDefinition": "A way of dealing with a task or problem.",
-    "viMeaning": "Phương pháp, cách tiếp cận; tiến gần",
+    "viMeaning": "Phương pháp tiếp cận; tiến lại gần",
     "replace": [
       "way",
       "how",
@@ -701,7 +701,7 @@
     "word": "motivate",
     "type": "v.",
     "enDefinition": "to make someone eager to do something",
-    "viMeaning": null,
+    "viMeaning": "Tạo động lực, thúc đẩy tinh thần",
     "replace": [
       "encourage",
       "stimulate",
@@ -715,7 +715,7 @@
     "word": "improve",
     "type": "v.",
     "enDefinition": "To become better or make something better.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"improve\" (đồng nghĩa với: develop, promote)",
     "replace": [
       "develop",
       "promote"
@@ -726,7 +726,7 @@
     "word": "overlook",
     "type": "v.",
     "enDefinition": "To fail to notice or consider something.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"overlook\" (đồng nghĩa với: underestimate, neglect)",
     "replace": [
       "underestimate",
       "neglect"
@@ -737,7 +737,7 @@
     "word": "omit",
     "type": "v.",
     "enDefinition": "to leave something out, deliberately or accidentally",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"omit\" (đồng nghĩa với: leave out, cancel)",
     "replace": [
       "leave out",
       "cancel"
@@ -748,7 +748,7 @@
     "word": "find",
     "type": "v.",
     "enDefinition": "To discover something or locate what you were looking for.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"find\" (đồng nghĩa với: discover, detect, spot)",
     "replace": [
       "discover",
       "detect",
@@ -762,7 +762,7 @@
     "word": "opportunity",
     "type": "n.",
     "enDefinition": "A situation that makes it possible to do something.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"opportunity\" (đồng nghĩa với: chance, odds, hope)",
     "replace": [
       "chance",
       "odds",
@@ -774,7 +774,7 @@
     "word": "difficult",
     "type": "adj.",
     "enDefinition": "Needing considerable effort or skill to do or understand.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"difficult\" (đồng nghĩa với: problem, hard, not easy)",
     "replace": [
       "problem",
       "hard",
@@ -801,7 +801,7 @@
     "word": "misunderstand",
     "type": "v.",
     "enDefinition": "to understand someone's words, actions, or intentions incorrectly",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"misunderstand\" (đồng nghĩa với: wrong idea, confuse, puzzle)",
     "replace": [
       "wrong idea",
       "confuse",
@@ -814,7 +814,7 @@
     "word": "try hard",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: make, efforts, hard working",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"try hard\" (đồng nghĩa với: make, efforts, hard working)",
     "replace": [
       "make",
       "efforts",
@@ -826,7 +826,7 @@
     "word": "feedback",
     "type": "n.",
     "enDefinition": "comments about performance or work that help someone improve",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"feedback\" (đồng nghĩa với: response, reaction, reply)",
     "replace": [
       "response",
       "reaction",
@@ -838,7 +838,7 @@
     "word": "affect",
     "type": "v.",
     "enDefinition": "to cause a change in someone or something",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"affect\" (đồng nghĩa với: impact, influence, effect)",
     "replace": [
       "impact",
       "influence",
@@ -850,7 +850,7 @@
     "word": "analysis",
     "type": "n.",
     "enDefinition": "Careful examination of something to understand its parts or meaning",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"analysis\" (đồng nghĩa với: perspective, understand, perceive)",
     "replace": [
       "perspective",
       "understand",
@@ -863,7 +863,7 @@
     "word": "result",
     "type": "n.",
     "enDefinition": "something that happens because of an action or event",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"result\" (đồng nghĩa với: outcome, consequence, conclusion)",
     "replace": [
       "outcome",
       "consequence",
@@ -875,7 +875,7 @@
     "word": "handle",
     "type": "v.",
     "enDefinition": "To deal with a situation, task, or person.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"handle\" (đồng nghĩa với: dealwith, cope with, figure out)",
     "replace": [
       "dealwith",
       "cope with",
@@ -889,7 +889,7 @@
     "word": "support",
     "type": "n.",
     "enDefinition": "to help, encourage, provide for, or agree with someone",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"support\" (đồng nghĩa với: help, assistance, aid)",
     "replace": [
       "help",
       "assistance",
@@ -902,7 +902,7 @@
     "word": "ideal",
     "type": "adj.",
     "enDefinition": "perfect or the best possible for a particular purpose",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"ideal\" (đồng nghĩa với: perfect)",
     "replace": [
       "perfect"
     ]
@@ -912,7 +912,7 @@
     "word": "rigorous",
     "type": "adj.",
     "enDefinition": "extremely careful and thorough",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"rigorous\" (đồng nghĩa với: strict, demanding)",
     "replace": [
       "strict",
       "demanding"
@@ -934,7 +934,7 @@
     "word": "similar",
     "type": "adj.",
     "enDefinition": "Almost the same, but not exactly alike.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"similar\" (đồng nghĩa với: like, compare)",
     "replace": [
       "like",
       "compare"
@@ -945,7 +945,7 @@
     "word": "particular",
     "type": "adj.",
     "enDefinition": "used to refer to one specific person, thing, or situation",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"particular\" (đồng nghĩa với: special, in particular, especially)",
     "replace": [
       "special",
       "in particular",
@@ -957,7 +957,7 @@
     "word": "copy",
     "type": "v.",
     "enDefinition": "A reproduction, or one example of a book or document",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"copy\" (đồng nghĩa với: repeat, reproduce)",
     "replace": [
       "repeat",
       "reproduce"
@@ -968,7 +968,7 @@
     "word": "statistics",
     "type": "n.",
     "enDefinition": "numerical facts collected and organised to describe something",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"statistics\" (đồng nghĩa với: data, figure)",
     "replace": [
       "data",
       "figure"
@@ -979,7 +979,7 @@
     "word": "maximum",
     "type": "n.",
     "enDefinition": "being the greatest amount or level possible or allowed",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"maximum\" (đồng nghĩa với: up to, at most)",
     "replace": [
       "up to",
       "at most"
@@ -990,7 +990,7 @@
     "word": "minimum",
     "type": "n.",
     "enDefinition": "The smallest amount or level possible or allowed.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"minimum\" (đồng nghĩa với: at least)",
     "replace": [
       "at least"
     ]
@@ -1014,7 +1014,7 @@
     "word": "limited",
     "type": "adj.",
     "enDefinition": "Small in amount or restricted in range",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"limited\" (đồng nghĩa với: just a few, a little, small)",
     "replace": [
       "just a few",
       "a little",
@@ -1029,7 +1029,7 @@
     "word": "shorten",
     "type": "v.",
     "enDefinition": "To make or become shorter in length or duration.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"shorten\" (đồng nghĩa với: cut down)",
     "replace": [
       "cut down"
     ]
@@ -1039,7 +1039,7 @@
     "word": "decrease",
     "type": "v.",
     "enDefinition": "To become smaller or make something smaller in amount.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"decrease\" (đồng nghĩa với: lower, reduce, fewer)",
     "replace": [
       "lower",
       "reduce",
@@ -1054,7 +1054,7 @@
     "word": "lack",
     "type": "n./v.",
     "enDefinition": "The absence of something or not having enough of it",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"lack\" (đồng nghĩa với: shortage, insufficient, fewer)",
     "replace": [
       "shortage",
       "insufficient",
@@ -1067,7 +1067,7 @@
     "word": "large",
     "type": "adj.",
     "enDefinition": "greater than usual in size, amount, or number",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"large\" (đồng nghĩa với: big, huge)",
     "replace": [
       "big",
       "huge"
@@ -1078,7 +1078,7 @@
     "word": "amount of",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: lots of, large quantities of, loads of",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"amount of\" (đồng nghĩa với: lots of, large quantities of, loads of)",
     "replace": [
       "lots of",
       "large quantities of",
@@ -1090,7 +1090,7 @@
     "word": "majority",
     "type": "n.",
     "enDefinition": "the larger part of a group, exceeding half its members",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"majority\" (đồng nghĩa với: most)",
     "replace": [
       "most"
     ]
@@ -1100,7 +1100,7 @@
     "word": "double",
     "type": "v.",
     "enDefinition": "twice the usual amount, size, or quantity",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"double\" (đồng nghĩa với: twice)",
     "replace": [
       "twice"
     ]
@@ -1110,7 +1110,7 @@
     "word": "more than",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: over, beyond, exceed, above",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"more than\" (đồng nghĩa với: over, beyond, exceed)",
     "replace": [
       "over",
       "beyond",
@@ -1123,7 +1123,7 @@
     "word": "at present",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: already, existing, currently, nowadays",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"at present\" (đồng nghĩa với: already, existing, currently)",
     "replace": [
       "already",
       "existing",
@@ -1136,7 +1136,7 @@
     "word": "update",
     "type": "v.",
     "enDefinition": "to make something current or give someone the latest information",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"update\" (đồng nghĩa với: upgrade, up to date, more current)",
     "replace": [
       "upgrade",
       "up to date",
@@ -1149,7 +1149,7 @@
     "word": "newest",
     "type": "adj.",
     "enDefinition": "Core IELTS Listening keyword replaced by: latest",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"newest\" (đồng nghĩa với: latest)",
     "replace": [
       "latest"
     ]
@@ -1159,7 +1159,7 @@
     "word": "soon",
     "type": "adv.",
     "enDefinition": "After a short time from now or another stated time.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"soon\" (đồng nghĩa với: later, in the future)",
     "replace": [
       "later",
       "in the future"
@@ -1170,7 +1170,7 @@
     "word": "out of date",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: old fashioned",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"out of date\" (đồng nghĩa với: old fashioned)",
     "replace": [
       "old fashioned"
     ]
@@ -1180,7 +1180,7 @@
     "word": "ancient",
     "type": "adj.",
     "enDefinition": "belonging to a period thousands of years in the past",
-    "viMeaning": null,
+    "viMeaning": "Cổ đại, lâu đời",
     "replace": [
       "medieval",
       "in the past",
@@ -1196,7 +1196,7 @@
     "word": "temporary",
     "type": "adj.",
     "enDefinition": "Lasting for only a limited period of time.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"temporary\" (đồng nghĩa với: a short time)",
     "replace": [
       "a short time"
     ]
@@ -1206,7 +1206,7 @@
     "word": "deadline",
     "type": "n.",
     "enDefinition": "The latest time by which something must be completed",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"deadline\" (đồng nghĩa với: time pressure, on time)",
     "replace": [
       "time pressure",
       "on time"
@@ -1217,7 +1217,7 @@
     "word": "permanent",
     "type": "adj.",
     "enDefinition": "Lasting indefinitely rather than for a limited time.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"permanent\" (đồng nghĩa với: long-lasting)",
     "replace": [
       "long-lasting"
     ]
@@ -1227,7 +1227,7 @@
     "word": "more often",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: frequent",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"more often\" (đồng nghĩa với: frequent)",
     "replace": [
       "frequent"
     ]
@@ -1237,7 +1237,7 @@
     "word": "annual",
     "type": "adj.",
     "enDefinition": "Happening once a year or relating to a whole year",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"annual\" (đồng nghĩa với: every year)",
     "replace": [
       "every year"
     ]
@@ -1247,7 +1247,7 @@
     "word": "every month",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: monthly, four weeks",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"every month\" (đồng nghĩa với: monthly, four weeks)",
     "replace": [
       "monthly",
       "four weeks"
@@ -1258,7 +1258,7 @@
     "word": "every day",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: daily",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"every day\" (đồng nghĩa với: daily)",
     "replace": [
       "daily"
     ]
@@ -1268,7 +1268,7 @@
     "word": "classify",
     "type": "v.",
     "enDefinition": "To arrange things in groups according to shared characteristics.",
-    "viMeaning": null,
+    "viMeaning": "Phân loại theo nhóm khoa học",
     "replace": [
       "category",
       "sort",
@@ -1281,7 +1281,7 @@
     "word": "entrance",
     "type": "n.",
     "enDefinition": "An opening or place through which people enter.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"entrance\" (đồng nghĩa với: access, main gate, door)",
     "replace": [
       "access",
       "main gate",
@@ -1293,7 +1293,7 @@
     "word": "behind",
     "type": "prep.",
     "enDefinition": "at or towards the back of someone or something",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"behind\" (đồng nghĩa với: back, rear)",
     "replace": [
       "back",
       "rear"
@@ -1304,7 +1304,7 @@
     "word": "below",
     "type": "prep.",
     "enDefinition": "At a lower position, level, or amount than something.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"below\" (đồng nghĩa với: under)",
     "replace": [
       "under"
     ]
@@ -1314,7 +1314,7 @@
     "word": "beside",
     "type": "prep.",
     "enDefinition": "At the side of someone or something.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"beside\" (đồng nghĩa với: next to, near, border)",
     "replace": [
       "next to",
       "near",
@@ -1326,7 +1326,7 @@
     "word": "available",
     "type": "adj.",
     "enDefinition": "Ready or possible to get, buy, or use.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"available\" (đồng nghĩa với: have, accessible, not close)",
     "replace": [
       "have",
       "accessible",
@@ -1339,7 +1339,7 @@
     "word": "boring",
     "type": "adj.",
     "enDefinition": "Not interesting or exciting.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"boring\" (đồng nghĩa với: not interesting, boredom)",
     "replace": [
       "not interesting",
       "boredom"
@@ -1350,7 +1350,7 @@
     "word": "trend",
     "type": "n.",
     "enDefinition": "a general direction of change or development",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"trend\" (đồng nghĩa với: possibility, likely, tendency)",
     "replace": [
       "possibility",
       "likely",
@@ -1362,7 +1362,7 @@
     "word": "risky",
     "type": "adj.",
     "enDefinition": "involving a chance of harm, failure, or loss",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"risky\" (đồng nghĩa với: dangerous, not safe, hazard)",
     "replace": [
       "dangerous",
       "not safe",
@@ -1374,7 +1374,7 @@
     "word": "poisonous",
     "type": "adj.",
     "enDefinition": "Containing a substance that can cause illness or death.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"poisonous\" (đồng nghĩa với: toxic, dangerous)",
     "replace": [
       "toxic",
       "dangerous"
@@ -1385,7 +1385,7 @@
     "word": "warning",
     "type": "n.",
     "enDefinition": "Something said or done to alert someone to danger or problems.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"warning\" (đồng nghĩa với: alarm, alert)",
     "replace": [
       "alarm",
       "alert"
@@ -1396,7 +1396,7 @@
     "word": "care",
     "type": "v.",
     "enDefinition": "Support and attention given to someone who needs help",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"care\" (đồng nghĩa với: caution)",
     "replace": [
       "caution"
     ]
@@ -1406,7 +1406,7 @@
     "word": "steal",
     "type": "v.",
     "enDefinition": "to take something without permission and keep or use it",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"steal\" (đồng nghĩa với: theft)",
     "replace": [
       "theft"
     ]
@@ -1416,7 +1416,7 @@
     "word": "protect",
     "type": "v.",
     "enDefinition": "To keep someone or something safe from harm or damage",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"protect\" (đồng nghĩa với: safeguard, shelter, preserve)",
     "replace": [
       "safeguard",
       "shelter",
@@ -1428,7 +1428,7 @@
     "word": "injury",
     "type": "n.",
     "enDefinition": "Physical harm to someone's body, often caused by an accident",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"injury\" (đồng nghĩa với: harm, hurt, damage)",
     "replace": [
       "harm",
       "hurt",
@@ -1442,7 +1442,7 @@
     "word": "military",
     "type": "adj.",
     "enDefinition": "relating to armed forces or their activities",
-    "viMeaning": null,
+    "viMeaning": "Quân sự, lực lượng vũ trang",
     "replace": [
       "battle",
       "weapon",
@@ -1454,7 +1454,7 @@
     "word": "tactics",
     "type": "n.",
     "enDefinition": "Specific methods used to achieve a goal or gain an advantage.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"tactics\" (đồng nghĩa với: strategy, method)",
     "replace": [
       "strategy",
       "method"
@@ -1465,7 +1465,7 @@
     "word": "rely on",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: depend on, count on",
-    "viMeaning": "Dựa vào, phụ thuộc vào",
+    "viMeaning": "Phụ thuộc vào, dựa vào",
     "replace": [
       "depend on",
       "count on"
@@ -1476,7 +1476,7 @@
     "word": "travel",
     "type": "n.",
     "enDefinition": "To go from one place to another.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"travel\" (đồng nghĩa với: tourism, trip, passenger)",
     "replace": [
       "tourism",
       "trip",
@@ -1489,7 +1489,7 @@
     "word": "space travel",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: aircraft, rocket, satellite",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"space travel\" (đồng nghĩa với: aircraft, rocket, satellite)",
     "replace": [
       "aircraft",
       "rocket",
@@ -1501,7 +1501,7 @@
     "word": "transport",
     "type": "n.",
     "enDefinition": "Vehicles or systems used to move people and goods.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"transport\" (đồng nghĩa với: vehicle, bus, train)",
     "replace": [
       "vehicle",
       "bus",
@@ -1529,7 +1529,7 @@
     "word": "request",
     "type": "v.",
     "enDefinition": "an act of asking politely or formally for something",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"request\" (đồng nghĩa với: ask for, inquiry)",
     "replace": [
       "ask for",
       "inquiry"
@@ -1540,7 +1540,7 @@
     "word": "clear",
     "type": "adj.",
     "enDefinition": "Easy to understand, see, or hear",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"clear\" (đồng nghĩa với: definitive)",
     "replace": [
       "definitive"
     ]
@@ -1550,7 +1550,7 @@
     "word": "freeze",
     "type": "v.",
     "enDefinition": "To become ice or make something extremely cold and solid.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"freeze\" (đồng nghĩa với: froze, ice, chill)",
     "replace": [
       "froze",
       "ice",
@@ -1563,7 +1563,7 @@
     "word": "organization",
     "type": "n.",
     "enDefinition": "A group of people working together for a shared purpose.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"organization\" (đồng nghĩa với: business, company, corporation structure)",
     "replace": [
       "business",
       "company",
@@ -1575,7 +1575,7 @@
     "word": "organize",
     "type": "v.",
     "enDefinition": "To plan and arrange an event or activity",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"organize\" (đồng nghĩa với: arrange, plan)",
     "replace": [
       "arrange",
       "plan"
@@ -1586,7 +1586,7 @@
     "word": "produce",
     "type": "v.",
     "enDefinition": "To make, grow, or create something.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"produce\" (đồng nghĩa với: generate, make)",
     "replace": [
       "generate",
       "make"
@@ -1597,7 +1597,7 @@
     "word": "administer",
     "type": "v.",
     "enDefinition": "to manage an organization or put a system into operation",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"administer\" (đồng nghĩa với: manage)",
     "replace": [
       "manage"
     ]
@@ -1607,7 +1607,7 @@
     "word": "occupation",
     "type": "n.",
     "enDefinition": "the type of work someone does to earn money",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"occupation\" (đồng nghĩa với: profession, job)",
     "replace": [
       "profession",
       "job"
@@ -1618,7 +1618,7 @@
     "word": "all ages",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: young and old",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"all ages\" (đồng nghĩa với: young and old)",
     "replace": [
       "young and old"
     ]
@@ -1628,7 +1628,7 @@
     "word": "youth",
     "type": "n.",
     "enDefinition": "the period of life when someone is young",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"youth\" (đồng nghĩa với: young, boy, child)",
     "replace": [
       "young",
       "boy",
@@ -1641,7 +1641,7 @@
     "word": "mate",
     "type": "n.",
     "enDefinition": "A friend or someone you share an activity with",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"mate\" (đồng nghĩa với: friend, peer)",
     "replace": [
       "friend",
       "peer"
@@ -1652,7 +1652,7 @@
     "word": "staff",
     "type": "n.",
     "enDefinition": "The people employed by an organisation.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"staff\" (đồng nghĩa với: recruit, worker, employee)",
     "replace": [
       "recruit",
       "worker",
@@ -1664,7 +1664,7 @@
     "word": "sale",
     "type": "v.",
     "enDefinition": "the act of exchanging something for money",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"sale\" (đồng nghĩa với: retail)",
     "replace": [
       "retail"
     ]
@@ -1674,7 +1674,7 @@
     "word": "cheap",
     "type": "adj.",
     "enDefinition": "costing little money or less than usual",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"cheap\" (đồng nghĩa với: low price)",
     "replace": [
       "low price"
     ]
@@ -1684,7 +1684,7 @@
     "word": "discount",
     "type": "n.",
     "enDefinition": "a reduction in the usual price",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"discount\" (đồng nghĩa với: 10% off, on sale)",
     "replace": [
       "10% off",
       "on sale"
@@ -1695,7 +1695,7 @@
     "word": "round",
     "type": "n.",
     "enDefinition": "shaped like a circle or ball",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"round\" (đồng nghĩa với: curve, circle)",
     "replace": [
       "curve",
       "circle"
@@ -1706,7 +1706,7 @@
     "word": "order",
     "type": "n.",
     "enDefinition": "the arrangement of things or a controlled, peaceful situation",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"order\" (đồng nghĩa với: sequence)",
     "replace": [
       "sequence"
     ]
@@ -1716,7 +1716,7 @@
     "word": "renovate",
     "type": "v.",
     "enDefinition": "Core IELTS Listening keyword replaced by: fix, repair",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"renovate\" (đồng nghĩa với: fix, repair)",
     "replace": [
       "fix",
       "repair"
@@ -1727,7 +1727,7 @@
     "word": "alone",
     "type": "adj.",
     "enDefinition": "without anyone else present",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"alone\" (đồng nghĩa với: single, by themselves)",
     "replace": [
       "single",
       "by themselves"
@@ -1738,7 +1738,7 @@
     "word": "hospitality",
     "type": "n.",
     "enDefinition": "Friendly and generous treatment of guests or visitors.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"hospitality\" (đồng nghĩa với: treatment, prepare refreshment)",
     "replace": [
       "treatment",
       "prepare refreshment"
@@ -1749,7 +1749,7 @@
     "word": "shape like",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: look like, seem",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"shape like\" (đồng nghĩa với: look like, seem)",
     "replace": [
       "look like",
       "seem"
@@ -1760,7 +1760,7 @@
     "word": "depress",
     "type": "v.",
     "enDefinition": "To make someone feel unhappy and without hope.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"depress\" (đồng nghĩa với: disappoint, dispirit, frustrate)",
     "replace": [
       "disappoint",
       "dispirit",
@@ -1773,7 +1773,7 @@
     "word": "well-known",
     "type": "adj.",
     "enDefinition": "known or recognised by many people",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"well-known\" (đồng nghĩa với: famous, fame)",
     "replace": [
       "famous",
       "fame"
@@ -1784,7 +1784,7 @@
     "word": "specialize in",
     "type": "",
     "enDefinition": "Core IELTS Listening keyword replaced by: focus, emphasis, concentrate",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"specialize in\" (đồng nghĩa với: focus, emphasis, concentrate)",
     "replace": [
       "focus",
       "emphasis",
@@ -1796,7 +1796,7 @@
     "word": "part",
     "type": "n.",
     "enDefinition": "Core IELTS Listening keyword replaced by: component, proportion, percent, section, element, ingredient",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"part\" (đồng nghĩa với: component, proportion, percent)",
     "replace": [
       "component",
       "proportion",
@@ -1811,7 +1811,7 @@
     "word": "typical",
     "type": "adj.",
     "enDefinition": "having the usual features of a particular group or situation",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"typical\" (đồng nghĩa với: representative, common, average)",
     "replace": [
       "representative",
       "common",
@@ -1823,7 +1823,7 @@
     "word": "uncommon",
     "type": "adj.",
     "enDefinition": "Core IELTS Listening keyword replaced by: special, unique, unusual, rare",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"uncommon\" (đồng nghĩa với: special, unique, unusual)",
     "replace": [
       "special",
       "unique",
@@ -1836,7 +1836,7 @@
     "word": "accurately",
     "type": "adv.",
     "enDefinition": "Core IELTS Listening keyword replaced by: precisely",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"accurately\" (đồng nghĩa với: precisely)",
     "replace": [
       "precisely"
     ]
@@ -1846,7 +1846,7 @@
     "word": "expand",
     "type": "v.",
     "enDefinition": "to become larger or make something larger",
-    "viMeaning": "Mở rộng, phát triển",
+    "viMeaning": "Mở rộng quy mô, phát triển thêm",
     "replace": [
       "add",
       "enlarge",
@@ -1858,7 +1858,7 @@
     "word": "climb",
     "type": "v.",
     "enDefinition": "to move upwards using your feet and often your hands",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"climb\" (đồng nghĩa với: go up, increase)",
     "replace": [
       "go up",
       "increase"
@@ -1880,7 +1880,7 @@
     "word": "power",
     "type": "n.",
     "enDefinition": "The ability or authority to control people, events, or decisions.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"power\" (đồng nghĩa với: force, energy)",
     "replace": [
       "force",
       "energy"
@@ -1891,7 +1891,7 @@
     "word": "fuel",
     "type": "n.",
     "enDefinition": "material burned or used to produce heat or power",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"fuel\" (đồng nghĩa với: coal, firewood, petrol)",
     "replace": [
       "coal",
       "firewood",
@@ -1904,7 +1904,7 @@
     "word": "refurbish",
     "type": "v.",
     "enDefinition": "Core IELTS Listening keyword replaced by: redecorate",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"refurbish\" (đồng nghĩa với: redecorate)",
     "replace": [
       "redecorate"
     ]
@@ -1914,7 +1914,7 @@
     "word": "preference",
     "type": "n.",
     "enDefinition": "a greater liking for one thing than for another",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"preference\" (đồng nghĩa với: like, priority)",
     "replace": [
       "like",
       "priority"
@@ -1925,7 +1925,7 @@
     "word": "trust",
     "type": "v.",
     "enDefinition": "Belief that someone or something is honest, reliable, or safe.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"trust\" (đồng nghĩa với: less suspicious, believe)",
     "replace": [
       "less suspicious",
       "believe"
@@ -1936,7 +1936,7 @@
     "word": "computer",
     "type": "n.",
     "enDefinition": "An electronic machine that stores and processes information using programs.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"computer\" (đồng nghĩa với: laptop)",
     "replace": [
       "laptop"
     ]
@@ -1946,7 +1946,7 @@
     "word": "handy",
     "type": "adj.",
     "enDefinition": "Core IELTS Listening keyword replaced by: convenient",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"handy\" (đồng nghĩa với: convenient)",
     "replace": [
       "convenient"
     ]
@@ -1968,7 +1968,7 @@
     "word": "important",
     "type": "adj.",
     "enDefinition": "Having great value or a significant effect.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"important\" (đồng nghĩa với: significant, major, main)",
     "replace": [
       "significant",
       "major",
@@ -1981,7 +1981,7 @@
     "word": "straightforward",
     "type": "adj.",
     "enDefinition": "easy to understand or do, without complications",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"straightforward\" (đồng nghĩa với: direct, first-hand, simple)",
     "replace": [
       "direct",
       "first-hand",
@@ -1993,7 +1993,7 @@
     "word": "disused",
     "type": "adj.",
     "enDefinition": "Core IELTS Listening keyword replaced by: empty, abandoned",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"disused\" (đồng nghĩa với: empty, abandoned)",
     "replace": [
       "empty",
       "abandoned"
@@ -2004,7 +2004,7 @@
     "word": "donate",
     "type": "v.",
     "enDefinition": "To give money, goods, or blood to help others",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"donate\" (đồng nghĩa với: charity, give)",
     "replace": [
       "charity",
       "give"
@@ -2015,7 +2015,7 @@
     "word": "work",
     "type": "n.",
     "enDefinition": "Core IELTS Listening keyword replaced by: item",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"work\" (đồng nghĩa với: item)",
     "replace": [
       "item"
     ]
@@ -2025,7 +2025,7 @@
     "word": "turn",
     "type": "v.",
     "enDefinition": "Move around a centre or change direction.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"turn\" (đồng nghĩa với: switch)",
     "replace": [
       "switch"
     ]
@@ -2035,7 +2035,7 @@
     "word": "information",
     "type": "n.",
     "enDefinition": "Facts or details about someone or something",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"information\" (đồng nghĩa với: details, data, graph)",
     "replace": [
       "details",
       "data",
@@ -2048,7 +2048,7 @@
     "word": "visualize",
     "type": "v.",
     "enDefinition": "To form a clear picture of something in your mind.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"visualize\" (đồng nghĩa với: imagine)",
     "replace": [
       "imagine"
     ]
@@ -2058,7 +2058,7 @@
     "word": "repetition",
     "type": "n.",
     "enDefinition": "Doing or saying something again, often several times",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"repetition\" (đồng nghĩa với: over and over)",
     "replace": [
       "over and over"
     ]
@@ -2068,7 +2068,7 @@
     "word": "poor",
     "type": "adj.",
     "enDefinition": "Having very little money or few possessions",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"poor\" (đồng nghĩa với: weak)",
     "replace": [
       "weak"
     ]
@@ -2078,7 +2078,7 @@
     "word": "durable",
     "type": "adj.",
     "enDefinition": "Able to last a long time without breaking or wearing out.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"durable\" (đồng nghĩa với: stronger, longer)",
     "replace": [
       "stronger",
       "longer"
@@ -2089,7 +2089,7 @@
     "word": "pollutant",
     "type": "n.",
     "enDefinition": "A substance that makes air, water, or soil dirty or harmful.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"pollutant\" (đồng nghĩa với: contaminant)",
     "replace": [
       "contaminant"
     ]
@@ -2099,7 +2099,7 @@
     "word": "continue",
     "type": "v.",
     "enDefinition": "To keep doing something or keep happening.",
-    "viMeaning": null,
+    "viMeaning": "Từ khóa băng nghe \"continue\" (đồng nghĩa với: ahead, go on, keep doing)",
     "replace": [
       "ahead",
       "go on",

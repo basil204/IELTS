@@ -256,26 +256,43 @@ const INLINE_READING_DICT: Record<
 const READING_QUESTIONS = [
   {
     id: 1,
-    q: ' Câu 1: Rừng thẳng đứng ở Milan chỉ có tác dụng trang trí chứ không giảm nhiệt độ.',
+    q: 'Câu 1: Rừng thẳng đứng ở Milan (Bosco Verticale) chỉ có tác dụng trang trí chứ không giúp giảm nhiệt độ bề mặt.',
     options: ['TRUE', 'FALSE', 'NOT GIVEN'],
     answer: 'FALSE',
     explain:
-      'Đoạn A nêu rõ Bosco Verticale giúp giảm nhiệt độ bề mặt tới 3°C (mitigate urban heat).'
+      'Đoạn A nêu rõ Bosco Verticale tích hợp 900 cây xanh giúp giảm nhiệt độ bề mặt tới 3°C (mitigate ambient surface temperatures by up to 3°C).'
   },
   {
     id: 2,
-    q: 'Câu 2: Chi phí xây dựng ban đầu cao là rào cản tại các đô thị đang phát triển.',
+    q: 'Câu 2: Dữ liệu thực nghiệm xác nhận mô hình rừng thẳng đứng hoàn toàn khả thi về mặt sinh thái.',
     options: ['TRUE', 'FALSE', 'NOT GIVEN'],
     answer: 'TRUE',
     explain:
-      'Đoạn B chỉ ra chi phí kỹ thuật ban đầu tạo ra sự chênh lệch (disparities) ở các nước đang phát triển.'
+      'Đoạn B khẳng định: "Empirical data confirms that vertical forests are viable" (Dữ liệu thực nghiệm xác nhận rừng thẳng đứng là khả thi).'
   },
   {
     id: 3,
-    q: 'Câu 3: Mọi tòa nhà thương mại tại châu Âu bắt buộc phải trồng cây trước năm 2030.',
+    q: 'Câu 3: Chi phí kỹ thuật kết cấu ban đầu cao vẫn đang tạo ra sự chênh lệch tại các đô thị đang phát triển.',
+    options: ['TRUE', 'FALSE', 'NOT GIVEN'],
+    answer: 'TRUE',
+    explain:
+      'Đoạn B chỉ rõ: "high structural engineering costs still create disparities in developing municipalities".'
+  },
+  {
+    id: 4,
+    q: 'Câu 4: Chính phủ Ý đã bắt buộc mọi tòa nhà chung cư mới tại Milan phải trồng tối thiểu 500 cây xanh trước năm 2030.',
     options: ['TRUE', 'FALSE', 'NOT GIVEN'],
     answer: 'NOT GIVEN',
-    explain: 'Trong bài đọc không có thông tin nào đề cập đến mốc năm 2030.'
+    explain:
+      'Trong bài đọc hoàn toàn không đề cập đến quy định bắt buộc 500 cây hay mốc thời gian năm 2030.'
+  },
+  {
+    id: 5,
+    q: 'Câu 5: Các tòa tháp bê tông mật độ cao đã làm gia tăng hiện tượng đảo nhiệt đô thị ở quy mô chưa từng có.',
+    options: ['TRUE', 'FALSE', 'NOT GIVEN'],
+    answer: 'TRUE',
+    explain:
+      'Đoạn A nêu rõ: "concrete towers... accelerating urban heat islands at an unprecedented scale".'
   }
 ];
 
@@ -284,21 +301,52 @@ const LISTENING_QUIZ = [
     id: 1,
     q: 'Câu 1: Mục đích chính của dự án cải tạo thư viện đại học là gì?',
     options: [
-      'A. Mở rộng phòng tự học công nghệ số',
-      'B. Đóng cửa khu vực mượn sách giấy',
-      'C. Tăng phí thành viên hàng năm'
+      'A. Mở rộng phòng tự học công nghệ số ở tầng 2',
+      'B. Đóng cửa hoàn toàn khu vực mượn sách giấy',
+      'C. Tăng phí thành viên thư viện hàng năm'
     ],
-    answer: 'A. Mở rộng phòng tự học công nghệ số'
+    answer: 'A. Mở rộng phòng tự học công nghệ số ở tầng 2'
   },
   {
     id: 2,
-    q: 'Câu 2: Nguồn kinh phí chính của dự án đến từ đâu?',
+    q: 'Câu 2: Nguồn kinh phí chính của dự án cải tạo đến từ đâu?',
     options: [
-      'A. Vay thương mại ngân hàng',
-      'B. Khoản tài trợ từ cựu sinh viên (philanthropic donation)',
-      'C. Cắt giảm ngân sách phòng thí nghiệm'
+      'A. Vay thương mại từ ngân hàng địa phương',
+      'B. Khoản tài trợ từ hội cựu sinh viên (philanthropic donation)',
+      'C. Cắt giảm ngân sách phòng thí nghiệm khoa học'
     ],
-    answer: 'B. Khoản tài trợ từ cựu sinh viên (philanthropic donation)'
+    answer: 'B. Khoản tài trợ từ hội cựu sinh viên (philanthropic donation)'
+  },
+  {
+    id: 3,
+    q: 'Câu 3: Khu vực phòng học nhóm cách âm mới có sức chứa tối đa bao nhiêu sinh viên?',
+    options: [
+      'A. Tối đa 40 sinh viên cùng lúc',
+      'B. Tối đa 120 sinh viên cùng lúc',
+      'C. Tối đa 250 sinh viên cùng lúc'
+    ],
+    answer: 'B. Tối đa 120 sinh viên cùng lúc'
+  },
+  {
+    id: 4,
+    q: 'Câu 4: Sinh viên cần làm gì nếu muốn đặt trước phòng thảo luận nhóm?',
+    options: [
+      'A. Đăng ký trực tuyến trước ít nhất 24 giờ (reserve in advance online)',
+      'B. Nộp đơn giấy tại văn phòng khoa',
+      'C. Đóng thêm lệ phí 15 bảng Anh mỗi giờ'
+    ],
+    answer:
+      'A. Đăng ký trực tuyến trước ít nhất 24 giờ (reserve in advance online)'
+  },
+  {
+    id: 5,
+    q: 'Câu 5: Trong thời gian thi công, kho sách tham khảo học thuật được chuyển tạm thời sang đâu?',
+    options: [
+      'A. Tầng hầm tòa nhà Hành chính (Administration Building)',
+      'B. Hội trường Thể chất',
+      'C. Khu ký túc xá phía Đông'
+    ],
+    answer: 'A. Tầng hầm tòa nhà Hành chính (Administration Building)'
   }
 ];
 
@@ -392,6 +440,10 @@ export default function IeltsConcourseClient({
   const [selectedMcqOption, setSelectedMcqOption] = useState<string | null>(
     null
   );
+  const [vocabQuizAnswers, setVocabQuizAnswers] = useState<
+    Record<string, string>
+  >({});
+  const [vocabQuizSubmitted, setVocabQuizSubmitted] = useState<boolean>(false);
 
   // Dictionary Explorer State
   const [selectedTopic, setSelectedTopic] = useState<string>('all');
@@ -412,6 +464,8 @@ export default function IeltsConcourseClient({
     Record<string, string>
   >({});
   const [revealMeanings, setRevealMeanings] = useState<boolean>(true);
+  const [revealEnglishWords, setRevealEnglishWords] = useState<boolean>(false);
+  const [dictationSubmitted, setDictationSubmitted] = useState<boolean>(false);
   const [listeningAnswers, setListeningAnswers] = useState<
     Record<number, string>
   >({});
@@ -433,6 +487,8 @@ export default function IeltsConcourseClient({
     {}
   );
   const [readingSubmitted, setReadingSubmitted] = useState(false);
+  const [showPassageTranslation, setShowPassageTranslation] =
+    useState<boolean>(true);
 
   // Writing Zone State
   const [writingSubTab, setWritingSubTab] = useState<
@@ -2695,305 +2751,719 @@ export default function IeltsConcourseClient({
             {/* =============================================================== */}
             {activeZone === 'vocab' && activeWord && (
               <BlurFade key="zone-vocab" className="space-y-5">
-                {/* Sub-bar: Học Theo Bài vs Tra Từ Điển Hình Ảnh */}
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A]">
-                      KHU VỰC HỌC TỪ VỰNG HÌNH ẢNH & PHÁT ÂM
-                    </h1>
-                    <p className="text-xs text-[#64748B]">
-                      Đang mở: <strong>{currentLesson?.titleVi}</strong> • Từ số{' '}
-                      {(currentWordIndex % activeLessonWords.length) + 1} /{' '}
-                      {activeLessonWords.length}
-                    </p>
+                {/* 1. Top Header & Mode Switch */}
+                <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                        PHÒNG 01 / HỌC TỪ VỰNG THEO LỘ TRÌNH & GHI NHỚ FSRS
+                      </span>
+                      <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
+                        Khu Vực Học Từ Vựng Hình Ảnh & Phát Âm Chuẩn UK/US
+                      </h1>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setVocabSubTab('lesson')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          vocabSubTab === 'lesson'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        1. Học Theo Bài (12 Từ/Bài)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setVocabSubTab('explorer')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          vocabSubTab === 'explorer'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        2. Tra Từ Điển 7,298 Từ
+                      </button>
+                    </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setVocabSubTab('lesson')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        vocabSubTab === 'lesson'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      Học Theo Bài (12 Từ)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setVocabSubTab('explorer')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        vocabSubTab === 'explorer'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      Tra Từ Điển 7,298 Từ
-                    </button>
+                  {/* 3-Step Clear Usage Guide */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs">
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 1:</strong> Chọn Chặng & Bài học bên dưới (mỗi bài gồm 12 từ vựng trọng tâm).
+                    </div>
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 2:</strong> Nghe phát âm Anh/Mỹ, xem tranh và bấm nút <em>Đã Nhớ / Rất Thuộc</em> để lưu tiến độ từng từ.
+                    </div>
+                    <div>
+                      <strong className="text-[#059669]">Bước 3:</strong> Cuộn xuống cuối bài bấm <strong>&ldquo;Nộp Bài Kiểm Tra Từ Vựng&rdquo;</strong> để chấm điểm & qua bài mới!
+                    </div>
                   </div>
+
+                  {/* Live Vocabulary Progress Dashboard (Know exactly how many words & where you are!) */}
+                  {(() => {
+                    const learnedInLessonCount = activeLessonWords.filter(
+                      (w) => Boolean(fsrsRecords[w.id])
+                    ).length;
+                    const totalLearnedOverall =
+                      reviewedToday + Object.keys(fsrsRecords).length;
+                    const lessonPercent = Math.round(
+                      (learnedInLessonCount /
+                        Math.max(1, activeLessonWords.length)) *
+                        100
+                    );
+                    return (
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                        <div className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA]">
+                          <div className="text-xs text-[#64748B]">
+                            Đang Học Đến Đâu
+                          </div>
+                          <div className="font-display text-sm font-black text-[#0284C7] mt-0.5">
+                            Chặng {selectedStageIdx + 1} • Bài{' '}
+                            {currentLesson?.lessonNo || 1}/6
+                          </div>
+                          <div className="text-xs text-[#334155] mt-0.5 truncate">
+                            {currentLesson?.titleVi}
+                          </div>
+                        </div>
+
+                        <div className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA]">
+                          <div className="text-xs text-[#64748B]">
+                            Tiến Độ Bài Hiện Tại
+                          </div>
+                          <div className="font-display text-sm font-black text-[#059669] mt-0.5">
+                            Đã thuộc {learnedInLessonCount} /{' '}
+                            {activeLessonWords.length} từ ({lessonPercent}%)
+                          </div>
+                          <div className="mt-1.5 h-1.5 rounded-full bg-[#DCEBFA] overflow-hidden">
+                            <div
+                              className="h-full bg-[#059669]"
+                              style={{
+                                width: `${Math.max(8, lessonPercent)}%`
+                              }}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA]">
+                          <div className="text-xs text-[#64748B]">
+                            Tổng Số Từ Đã Học
+                          </div>
+                          <div className="font-display text-sm font-black text-[#0F172A] mt-0.5">
+                            {totalLearnedOverall} / 7,298 từ
+                          </div>
+                          <div className="text-xs text-[#059669] font-bold mt-0.5">
+                            Đã lưu sổ: {notebookWords.length} từ
+                          </div>
+                        </div>
+
+                        <div className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA]">
+                          <div className="text-xs text-[#64748B]">
+                            Bài Học Đã Hoàn Thành
+                          </div>
+                          <div className="font-display text-sm font-black text-[#D97706] mt-0.5">
+                            {completedLessons.length} / 24 bài học
+                          </div>
+                          <div className="text-xs text-[#64748B] mt-0.5">
+                            Đang mở từ số{' '}
+                            {(currentWordIndex % activeLessonWords.length) + 1}
+                            /12
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })()}
                 </div>
 
                 {vocabSubTab === 'lesson' ? (
-                  <div className="relative bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#BAE6FD] shadow-xs space-y-6 overflow-hidden">
-                    <BorderBeam duration={8} />
-
-                    {/* 4 Simple Mode Buttons + Save Button */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#DCEBFA]">
-                      <div className="flex flex-wrap gap-2">
-                        {(
-                          [
-                            ['see_hear', '1. Xem Thẻ & Nghe'],
-                            ['quiz_mcq', '2. Trắc Nghiệm'],
-                            ['recall_cloze', '3. Điền Từ'],
-                            ['dictation', '4. Nghe Gõ Từ']
-                          ] as const
-                        ).map(([mKey, mLabel]) => (
-                          <button
-                            key={mKey}
-                            type="button"
-                            onClick={() => setStudyMode(mKey)}
-                            className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
-                              studyMode === mKey
-                                ? 'bg-[#0284C7] text-[#FFFFFF]'
-                                : 'bg-[#F0F7FF] text-[#334155]'
-                            }`}
-                          >
-                            {mLabel}
-                          </button>
-                        ))}
+                  <div className="space-y-5">
+                    {/* Stage & Lesson Selector + 12-Word Visual Checklist */}
+                    <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                      <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#DCEBFA]">
+                        <span className="font-display text-xs font-extrabold text-[#0F172A]">
+                          CHỌN CHẶNG & BÀI HỌC (MỖI BÀI 12 TỪ VỰNG):
+                        </span>
+                        <div className="flex flex-wrap gap-1.5">
+                          {PROGRESSIVE_STAGES.map((stg, sIdx) => (
+                            <button
+                              key={stg.code}
+                              type="button"
+                              onClick={() => {
+                                setSelectedStageIdx(sIdx);
+                                setActiveLessonId(`stage-${sIdx}-lesson-0`);
+                                setCurrentWordIndex(0);
+                                setVocabQuizSubmitted(false);
+                              }}
+                              className={`px-3 py-1 rounded-lg font-display text-xs font-bold cursor-pointer ${
+                                selectedStageIdx === sIdx
+                                  ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                  : 'bg-[#F0F7FF] text-[#334155] border border-[#DCEBFA]'
+                              }`}
+                            >
+                              {stg.code} ({stg.band})
+                            </button>
+                          ))}
+                        </div>
                       </div>
 
-                      <button
-                        type="button"
-                        onClick={() => toggleSaveToNotebook(activeWord.w)}
-                        className={`px-3.5 py-1.5 rounded-xl font-display text-xs font-bold flex items-center gap-1.5 border cursor-pointer ${
-                          isSavedInNotebook
-                            ? 'bg-[#ECFDF5] border-[#059669] text-[#059669]'
-                            : 'bg-[#F0F7FF] border-[#BAE6FD] text-[#0284C7]'
-                        }`}
-                      >
-                        {isSavedInNotebook ? (
-                          <>
-                            <BookmarkCheck className="w-3.5 h-3.5" />
-                            <span>Đã Lưu Sổ Từ Vựng</span>
-                          </>
-                        ) : (
-                          <>
-                            <Bookmark className="w-3.5 h-3.5" />
-                            <span>+ Lưu Từ Này</span>
-                          </>
-                        )}
-                      </button>
+                      {/* 6 Lesson Pills */}
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+                        {stageLessons.map((les) => {
+                          const isCurrentLesson =
+                            currentLesson?.id === les.id;
+                          const isDone = completedLessons.includes(les.id);
+                          return (
+                            <button
+                              key={les.id}
+                              type="button"
+                              onClick={() => {
+                                setActiveLessonId(les.id);
+                                setCurrentWordIndex(0);
+                                setVocabQuizSubmitted(false);
+                              }}
+                              className={`p-2.5 rounded-xl border text-left transition-all cursor-pointer ${
+                                isCurrentLesson
+                                  ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                                  : isDone
+                                    ? 'bg-[#ECFDF5] text-[#047857] border-[#A7F3D0]'
+                                    : 'bg-[#F8FBFF] text-[#0F172A] border-[#DCEBFA] hover:bg-[#F0F7FF]'
+                              }`}
+                            >
+                              <div className="flex items-center justify-between text-xs font-mono-data font-bold">
+                                <span>Bài {les.lessonNo}</span>
+                                <span>{isDone ? '✓ Xong' : '12 từ'}</span>
+                              </div>
+                              <div
+                                className={`text-xs font-bold truncate mt-0.5 ${
+                                  isCurrentLesson
+                                    ? 'text-[#FFFFFF]'
+                                    : 'text-[#334155]'
+                                }`}
+                              >
+                                {les.titleVi.replace(/^Bài \d+:\s*/, '')}
+                              </div>
+                            </button>
+                          );
+                        })}
+                      </div>
+
+                      {/* 12-Word Checklist Bar so user sees all 12 words in current lesson */}
+                      <div className="pt-2 border-t border-[#DCEBFA] space-y-2">
+                        <div className="flex items-center justify-between text-xs">
+                          <span className="font-display font-extrabold text-[#0284C7]">
+                            DANH SÁCH 12 TỪ TRONG BÀI NÀY (BẤM VÀO TỪ BẤT KỲ ĐỂ HỌC):
+                          </span>
+                          <span className="text-[#64748B]">
+                            Màu xanh lá (✓) = Đã học • Màu xanh dương = Đang mở
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2">
+                          {activeLessonWords.map((wItem, wIdx) => {
+                            const isSelectedWord =
+                              currentWordIndex % activeLessonWords.length ===
+                              wIdx;
+                            const isLearned = Boolean(fsrsRecords[wItem.id]);
+                            return (
+                              <button
+                                key={`${wItem.id}-${wIdx}`}
+                                type="button"
+                                onClick={() => setCurrentWordIndex(wIdx)}
+                                className={`px-2.5 py-2 rounded-xl border text-left text-xs transition-all cursor-pointer flex items-center justify-between gap-1 ${
+                                  isSelectedWord
+                                    ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7] font-bold'
+                                    : isLearned
+                                      ? 'bg-[#ECFDF5] text-[#047857] border-[#A7F3D0] font-bold'
+                                      : 'bg-[#F8FBFF] text-[#0F172A] border-[#DCEBFA] hover:bg-[#F0F7FF]'
+                                }`}
+                              >
+                                <span className="truncate">
+                                  {wIdx + 1}. {wItem.w}
+                                </span>
+                                <span>{isLearned ? '✓' : '•'}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
                     </div>
 
-                    {/* Flashcard Core */}
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                      <div className="md:col-span-7 space-y-4">
+                    {/* Main Flashcard Core */}
+                    <div className="relative bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#BAE6FD] shadow-xs space-y-6 overflow-hidden">
+                      <BorderBeam duration={8} />
+
+                      {/* 4 Simple Mode Buttons + Save Button */}
+                      <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#DCEBFA]">
+                        <div className="flex flex-wrap gap-2">
+                          {(
+                            [
+                              ['see_hear', '1. Xem Thẻ & Nghe'],
+                              ['quiz_mcq', '2. Trắc Nghiệm Nhanh'],
+                              ['recall_cloze', '3. Điền Từ Tiếng Anh'],
+                              ['dictation', '4. Nghe & Gõ Chính Tả']
+                            ] as const
+                          ).map(([mKey, mLabel]) => (
+                            <button
+                              key={mKey}
+                              type="button"
+                              onClick={() => setStudyMode(mKey)}
+                              className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                                studyMode === mKey
+                                  ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                  : 'bg-[#F0F7FF] text-[#334155]'
+                              }`}
+                            >
+                              {mLabel}
+                            </button>
+                          ))}
+                        </div>
+
                         <div className="flex items-center gap-2">
-                          <span
-                            className={`px-2.5 py-0.5 rounded font-mono-data text-xs font-bold ${
-                              CEFR_BADGE_STYLE[activeWord.cefr]
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setCurrentWordIndex(
+                                (prev) =>
+                                  (prev - 1 + activeLessonWords.length) %
+                                  activeLessonWords.length
+                              )
+                            }
+                            className="px-3 py-1.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-xs font-bold text-[#334155] cursor-pointer"
+                          >
+                            ← Từ Trước
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setCurrentWordIndex(
+                                (prev) => (prev + 1) % activeLessonWords.length
+                              )
+                            }
+                            className="px-3 py-1.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-xs font-bold text-[#0284C7] cursor-pointer"
+                          >
+                            Từ Tiếp Theo →
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => toggleSaveToNotebook(activeWord.w)}
+                            className={`px-3.5 py-1.5 rounded-xl font-display text-xs font-bold flex items-center gap-1.5 border cursor-pointer ${
+                              isSavedInNotebook
+                                ? 'bg-[#ECFDF5] border-[#059669] text-[#059669]'
+                                : 'bg-[#F0F7FF] border-[#BAE6FD] text-[#0284C7]'
                             }`}
                           >
-                            Cấp độ {activeWord.cefr}
-                          </span>
-                          <span className="text-xs font-mono-data text-[#64748B]">
-                            Từ loại: {activeWord.pos}
-                          </span>
-                        </div>
-
-                        <h2 className="font-display text-3xl sm:text-4xl font-black text-[#0F172A]">
-                          {studyMode === 'dictation' && !isDictationCorrect
-                            ? '• • • • • • •'
-                            : activeWord.w}
-                        </h2>
-
-                        {/* Big Friendly Audio Buttons */}
-                        <div className="flex flex-wrap gap-2.5">
-                          <button
-                            type="button"
-                            onClick={() =>
-                              playPronunciation(
-                                activeWord.audioUkUrl,
-                                activeWord.w,
-                                'en-GB'
-                              )
-                            }
-                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0F172A] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-bold transition-colors cursor-pointer"
-                          >
-                            <FlagUkSvg />
-                            <span>Nghe Giọng Anh ({activeWord.uk})</span>
-                            <Volume2 className="w-4 h-4 text-[#0284C7]" />
-                          </button>
-
-                          <button
-                            type="button"
-                            onClick={() =>
-                              playPronunciation(
-                                activeWord.audioUsUrl,
-                                activeWord.w,
-                                'en-US'
-                              )
-                            }
-                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0F172A] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-bold transition-colors cursor-pointer"
-                          >
-                            <FlagUsSvg />
-                            <span>Nghe Giọng Mỹ ({activeWord.us})</span>
-                            <Volume2 className="w-4 h-4 text-[#0284C7]" />
+                            {isSavedInNotebook ? (
+                              <>
+                                <BookmarkCheck className="w-3.5 h-3.5" />
+                                <span>Đã Lưu Sổ Từ</span>
+                              </>
+                            ) : (
+                              <>
+                                <Bookmark className="w-3.5 h-3.5" />
+                                <span>+ Lưu Sổ Từ</span>
+                              </>
+                            )}
                           </button>
                         </div>
-
-                        {/* Interactive Mode Content */}
-                        {studyMode === 'see_hear' && (
-                          <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-1.5">
-                            <div className="text-base font-extrabold text-[#0284C7]">
-                              Nghĩa: {activeWord.vi || activeWord.en}
-                            </div>
-                            <p className="text-xs text-[#334155]">
-                              {activeWord.en}
-                            </p>
-                          </div>
-                        )}
-
-                        {studyMode === 'quiz_mcq' && (
-                          <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
-                            <div className="text-xs font-bold text-[#0284C7]">
-                              Chọn nghĩa đúng của từ &ldquo;{activeWord.w}&rdquo;:
-                            </div>
-                            <div className="space-y-2">
-                              {mcqOptions.map((opt, idx) => {
-                                const isRight =
-                                  opt === (activeWord.vi || activeWord.en);
-                                const isPicked = selectedMcqOption === opt;
-                                return (
-                                  <button
-                                    key={idx}
-                                    type="button"
-                                    onClick={() => setSelectedMcqOption(opt)}
-                                    className={`w-full text-left px-3.5 py-2.5 rounded-xl border text-xs font-medium cursor-pointer flex justify-between ${
-                                      isPicked
-                                        ? isRight
-                                          ? 'bg-[#ECFDF5] border-[#059669] text-[#047857] font-bold'
-                                          : 'bg-[#FFF1F2] border-[#E11D48] text-[#E11D48] font-bold'
-                                        : 'bg-[#FFFFFF] border-[#DCEBFA]'
-                                    }`}
-                                  >
-                                    <span>{opt}</span>
-                                    {isPicked && isRight && (
-                                      <Check className="w-4 h-4 text-[#059669]" />
-                                    )}
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          </div>
-                        )}
-
-                        {studyMode === 'recall_cloze' && (
-                          <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
-                            <div className="text-xs font-bold text-[#0284C7]">
-                              Gõ từ tiếng Anh có nghĩa: &ldquo;
-                              {activeWord.vi || activeWord.en}&rdquo;
-                            </div>
-                            <input
-                              type="text"
-                              value={clozeInput}
-                              onChange={(e) => setClozeInput(e.target.value)}
-                              placeholder={`Gõ từ bắt đầu bằng chữ "${activeWord.w[0]}"...`}
-                              className="w-full px-3.5 py-2.5 rounded-xl bg-[#FFFFFF] border border-[#BAE6FD] text-sm font-mono-data"
-                            />
-                            {isClozeCorrect && (
-                              <div className="text-xs font-bold text-[#059669]">
-                                Chính xác! Bạn đã nhớ từ này.
-                              </div>
-                            )}
-                          </div>
-                        )}
-
-                        {studyMode === 'dictation' && (
-                          <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
-                            <div className="text-xs font-bold text-[#0284C7]">
-                              Bấm nút Nghe ở trên rồi gõ lại từ bạn nghe được:
-                            </div>
-                            <input
-                              type="text"
-                              value={dictationInput}
-                              onChange={(e) =>
-                                setDictationInput(e.target.value)
-                              }
-                              placeholder="Gõ từ vừa nghe..."
-                              className="w-full px-3.5 py-2.5 rounded-xl bg-[#FFFFFF] border border-[#BAE6FD] text-sm font-mono-data"
-                            />
-                            {isDictationCorrect && (
-                              <div className="text-xs font-bold text-[#059669]">
-                                Chính xác!
-                              </div>
-                            )}
-                          </div>
-                        )}
-
-                        {activeWord.ex?.[0] && (
-                          <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#DCEBFA] space-y-1">
-                            <div className="text-xs font-bold text-[#0284C7]">
-                              Câu ví dụ:
-                            </div>
-                            <p className="text-xs sm:text-sm font-medium text-[#0F172A]">
-                              &ldquo;{activeWord.ex[0].en}&rdquo;
-                            </p>
-                            {activeWord.ex[0].vi && (
-                              <p className="text-xs text-[#334155]">
-                                → {activeWord.ex[0].vi}
-                              </p>
-                            )}
-                          </div>
-                        )}
                       </div>
 
-                      <div className="md:col-span-5">
-                        <div className="rounded-2xl overflow-hidden border border-[#DCEBFA] bg-[#F8FBFF] aspect-4/3">
-                          <img
-                            src={activeWord.imgUrl}
-                            alt={activeWord.w}
-                            className="w-full h-full object-cover"
-                          />
+                      {/* Flashcard Core */}
+                      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                        <div className="md:col-span-7 space-y-4">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className="px-2.5 py-0.5 rounded bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                              Từ số{' '}
+                              {(currentWordIndex % activeLessonWords.length) +
+                                1}{' '}
+                              / {activeLessonWords.length}
+                            </span>
+                            <span
+                              className={`px-2.5 py-0.5 rounded font-mono-data text-xs font-bold ${
+                                CEFR_BADGE_STYLE[activeWord.cefr]
+                              }`}
+                            >
+                              Cấp độ {activeWord.cefr}
+                            </span>
+                            <span className="text-xs font-mono-data text-[#64748B]">
+                              Từ loại: {activeWord.pos}
+                            </span>
+                            {fsrsRecords[activeWord.id] && (
+                              <span className="px-2 py-0.5 rounded bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] font-mono-data text-xs font-bold">
+                                ✓ Đã ghi nhớ
+                              </span>
+                            )}
+                          </div>
+
+                          <h2 className="font-display text-3xl sm:text-4xl font-black text-[#0F172A]">
+                            {studyMode === 'dictation' && !isDictationCorrect
+                              ? '• • • • • • •'
+                              : activeWord.w}
+                          </h2>
+
+                          {/* Big Friendly Audio Buttons */}
+                          <div className="flex flex-wrap gap-2.5">
+                            <button
+                              type="button"
+                              onClick={() =>
+                                playPronunciation(
+                                  activeWord.audioUkUrl,
+                                  activeWord.w,
+                                  'en-GB'
+                                )
+                              }
+                              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0F172A] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-bold transition-colors cursor-pointer"
+                            >
+                              <FlagUkSvg />
+                              <span>Nghe Giọng Anh ({activeWord.uk})</span>
+                              <Volume2 className="w-4 h-4 text-[#0284C7]" />
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={() =>
+                                playPronunciation(
+                                  activeWord.audioUsUrl,
+                                  activeWord.w,
+                                  'en-US'
+                                )
+                              }
+                              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0F172A] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-bold transition-colors cursor-pointer"
+                            >
+                              <FlagUsSvg />
+                              <span>Nghe Giọng Mỹ ({activeWord.us})</span>
+                              <Volume2 className="w-4 h-4 text-[#0284C7]" />
+                            </button>
+                          </div>
+
+                          {/* Interactive Mode Content */}
+                          {studyMode === 'see_hear' && (
+                            <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-1.5">
+                              <div className="text-base font-extrabold text-[#0284C7]">
+                                Nghĩa Tiếng Việt:{' '}
+                                {activeWord.vi || activeWord.en}
+                              </div>
+                              <p className="text-xs text-[#334155]">
+                                Giải thích Tiếng Anh (Academic): {activeWord.en}
+                              </p>
+                            </div>
+                          )}
+
+                          {studyMode === 'quiz_mcq' && (
+                            <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                              <div className="text-xs font-bold text-[#0284C7]">
+                                Chọn nghĩa Tiếng Việt đúng của từ &ldquo;
+                                {activeWord.w}&rdquo;:
+                              </div>
+                              <div className="space-y-2">
+                                {mcqOptions.map((opt, idx) => {
+                                  const isRight =
+                                    opt === (activeWord.vi || activeWord.en);
+                                  const isPicked = selectedMcqOption === opt;
+                                  return (
+                                    <button
+                                      key={idx}
+                                      type="button"
+                                      onClick={() => setSelectedMcqOption(opt)}
+                                      className={`w-full text-left px-3.5 py-2.5 rounded-xl border text-xs font-medium cursor-pointer flex justify-between ${
+                                        isPicked
+                                          ? isRight
+                                            ? 'bg-[#ECFDF5] border-[#059669] text-[#047857] font-bold'
+                                            : 'bg-[#FFF1F2] border-[#E11D48] text-[#E11D48] font-bold'
+                                          : 'bg-[#FFFFFF] border-[#DCEBFA]'
+                                      }`}
+                                    >
+                                      <span>{opt}</span>
+                                      {isPicked && isRight && (
+                                        <Check className="w-4 h-4 text-[#059669]" />
+                                      )}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          )}
+
+                          {studyMode === 'recall_cloze' && (
+                            <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                              <div className="text-xs font-bold text-[#0284C7]">
+                                Gõ từ tiếng Anh có nghĩa: &ldquo;
+                                {activeWord.vi || activeWord.en}&rdquo;
+                              </div>
+                              <input
+                                type="text"
+                                value={clozeInput}
+                                onChange={(e) => setClozeInput(e.target.value)}
+                                placeholder={`Gõ từ bắt đầu bằng chữ "${activeWord.w[0]}"...`}
+                                className="w-full px-3.5 py-2.5 rounded-xl bg-[#FFFFFF] border border-[#BAE6FD] text-sm font-mono-data"
+                              />
+                              {isClozeCorrect && (
+                                <div className="text-xs font-bold text-[#059669]">
+                                  ✓ Chính xác! Bạn đã nhớ từ này.
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {studyMode === 'dictation' && (
+                            <div className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                              <div className="text-xs font-bold text-[#0284C7]">
+                                Bấm nút Nghe ở trên rồi gõ lại từ bạn nghe được:
+                              </div>
+                              <input
+                                type="text"
+                                value={dictationInput}
+                                onChange={(e) =>
+                                  setDictationInput(e.target.value)
+                                }
+                                placeholder="Gõ từ vừa nghe..."
+                                className="w-full px-3.5 py-2.5 rounded-xl bg-[#FFFFFF] border border-[#BAE6FD] text-sm font-mono-data"
+                              />
+                              {isDictationCorrect && (
+                                <div className="text-xs font-bold text-[#059669]">
+                                  ✓ Chính xác!
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {activeWord.ex?.[0] && (
+                            <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#DCEBFA] space-y-1">
+                              <div className="text-xs font-bold text-[#0284C7]">
+                                Câu ví dụ trong bài thi IELTS:
+                              </div>
+                              <p className="text-xs sm:text-sm font-medium text-[#0F172A]">
+                                &ldquo;{activeWord.ex[0].en}&rdquo;
+                              </p>
+                              {activeWord.ex[0].vi && (
+                                <p className="text-xs text-[#334155]">
+                                  → Dịch nghĩa: {activeWord.ex[0].vi}
+                                </p>
+                              )}
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="md:col-span-5">
+                          <div className="rounded-2xl overflow-hidden border border-[#DCEBFA] bg-[#F8FBFF] aspect-4/3">
+                            <img
+                              src={activeWord.imgUrl}
+                              alt={activeWord.w}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* 4 Simple Memory Buttons to Advance */}
+                      <div className="pt-4 border-t border-[#DCEBFA] space-y-2">
+                        <div className="text-xs font-bold text-[#0F172A]">
+                          Đánh giá mức độ thuộc từ này (Bấm 1 trong 4 nút để lưu tiến độ & tự động sang từ kế tiếp):
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                          <button
+                            type="button"
+                            onClick={() => handleRateCard('again')}
+                            className="py-3 px-3 rounded-xl bg-[#FFF1F2] hover:bg-[#E11D48] text-[#E11D48] hover:text-[#FFFFFF] border border-[#FECDD3] font-display text-xs font-extrabold cursor-pointer"
+                          >
+                            1. Chưa Nhớ ({intervalPreviews.again})
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleRateCard('hard')}
+                            className="py-3 px-3 rounded-xl bg-[#FFFBEB] hover:bg-[#D97706] text-[#B45309] hover:text-[#FFFFFF] border border-[#FDE68A] font-display text-xs font-extrabold cursor-pointer"
+                          >
+                            2. Hơi Khó ({intervalPreviews.hard})
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleRateCard('good')}
+                            className="py-3 px-3 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                          >
+                            3. Đã Nhớ ({intervalPreviews.good})
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleRateCard('easy')}
+                            className="py-3 px-3 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                          >
+                            4. Rất Thuộc ({intervalPreviews.easy})
+                          </button>
                         </div>
                       </div>
                     </div>
 
-                    {/* 4 Simple Memory Buttons to Advance */}
-                    <div className="pt-4 border-t border-[#DCEBFA] space-y-2">
-                      <div className="text-xs text-[#64748B]">
-                        Bấm chọn mức độ nhớ để chuyển sang từ tiếp theo:
+                    {/* Complete Lesson Test & Submission Section (Nộp Bài Kiểm Tra Từ Vựng) */}
+                    <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
+                      <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#DCEBFA]">
+                        <div>
+                          <span className="font-mono-data text-xs font-bold text-[#059669]">
+                            KIỂM TRA & NỘP BÀI TỪ VỰNG ({currentLesson?.titleVi})
+                          </span>
+                          <h3 className="font-display text-base font-black text-[#0F172A] mt-0.5">
+                            Làm Bài Tập Tổng Kết 6 Từ Trọng Tâm Để Hoàn Thành Bài Học
+                          </h3>
+                        </div>
+                        {completedLessons.includes(currentLesson?.id || '') && (
+                          <span className="px-3 py-1 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] font-mono-data text-xs font-bold">
+                            ✓ Đã hoàn thành bài học này
+                          </span>
+                        )}
                       </div>
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                        {activeLessonWords.slice(0, 6).map((qWord, qIdx) => {
+                          const qKey = `${currentLesson?.id}-q-${qWord.id}`;
+                          const userTyped = vocabQuizAnswers[qKey] || '';
+                          const isCorrect =
+                            userTyped.trim().toLowerCase() ===
+                            qWord.w.toLowerCase();
+                          return (
+                            <div
+                              key={qKey}
+                              className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
+                            >
+                              <div className="flex items-center justify-between gap-2">
+                                <span className="text-xs font-bold text-[#0F172A]">
+                                  Câu {qIdx + 1}: {qWord.vi || qWord.en}
+                                </span>
+                                <span className="font-mono-data text-xs text-[#0284C7]">
+                                  Gợi ý: {qWord.w[0]}... ({qWord.w.length} ký tự)
+                                </span>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <input
+                                  type="text"
+                                  value={userTyped}
+                                  onChange={(e) =>
+                                    setVocabQuizAnswers((p) => ({
+                                      ...p,
+                                      [qKey]: e.target.value
+                                    }))
+                                  }
+                                  placeholder={`Gõ từ tiếng Anh (${qWord.w[0]}...)`}
+                                  className="flex-1 px-3 py-2 rounded-lg bg-[#FFFFFF] border border-[#BAE6FD] text-xs font-mono-data"
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setVocabQuizAnswers((p) => ({
+                                      ...p,
+                                      [qKey]: qWord.w
+                                    }))
+                                  }
+                                  className="px-2.5 py-2 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
+                                >
+                                  Điền mẫu
+                                </button>
+                              </div>
+                              {vocabQuizSubmitted && (
+                                <div
+                                  className={`text-xs font-bold ${
+                                    isCorrect
+                                      ? 'text-[#059669]'
+                                      : 'text-[#E11D48]'
+                                  }`}
+                                >
+                                  {isCorrect
+                                    ? `✓ Chính xác (${qWord.w})`
+                                    : `✗ Đáp án đúng là: ${qWord.w}`}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {vocabQuizSubmitted && (
+                        <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] flex flex-wrap items-center justify-between gap-3">
+                          <div>
+                            <div className="font-display text-sm font-black text-[#047857]">
+                              Đã Nộp Bài Thành Công! Kết quả:{' '}
+                              {
+                                activeLessonWords
+                                  .slice(0, 6)
+                                  .filter(
+                                    (qw) =>
+                                      (
+                                        vocabQuizAnswers[
+                                          `${currentLesson?.id}-q-${qw.id}`
+                                        ] || ''
+                                      )
+                                        .trim()
+                                        .toLowerCase() === qw.w.toLowerCase()
+                                  ).length
+                              }{' '}
+                              / 6 câu đúng • +100 XP
+                            </div>
+                            <div className="text-xs text-[#059669] mt-0.5">
+                              Bài học <strong>{currentLesson?.titleVi}</strong>{' '}
+                              đã được đánh dấu Hoàn thành trong lộ trình của bạn.
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              const nextNo = (currentLesson?.lessonNo || 1) % 6;
+                              setActiveLessonId(
+                                `stage-${selectedStageIdx}-lesson-${nextNo}`
+                              );
+                              setCurrentWordIndex(0);
+                              setVocabQuizSubmitted(false);
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className="px-4 py-2 rounded-xl bg-[#0284C7] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                          >
+                            Học Bài Tiếp Theo →
+                          </button>
+                        </div>
+                      )}
+
+                      <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
                         <button
                           type="button"
-                          onClick={() => handleRateCard('again')}
-                          className="py-3 px-3 rounded-xl bg-[#FFF1F2] hover:bg-[#E11D48] text-[#E11D48] hover:text-[#FFFFFF] border border-[#FECDD3] font-display text-xs font-extrabold cursor-pointer"
+                          onClick={() => {
+                            const autoFilled: Record<string, string> = {
+                              ...vocabQuizAnswers
+                            };
+                            activeLessonWords.slice(0, 6).forEach((qw) => {
+                              autoFilled[`${currentLesson?.id}-q-${qw.id}`] =
+                                qw.w;
+                            });
+                            setVocabQuizAnswers(autoFilled);
+                          }}
+                          className="px-4 py-2.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
                         >
-                          Chưa Nhớ ({intervalPreviews.again})
+                          Điền Nhanh Đáp Án Để Kiểm Thử
                         </button>
+
                         <button
                           type="button"
-                          onClick={() => handleRateCard('hard')}
-                          className="py-3 px-3 rounded-xl bg-[#FFFBEB] hover:bg-[#D97706] text-[#B45309] hover:text-[#FFFFFF] border border-[#FDE68A] font-display text-xs font-extrabold cursor-pointer"
+                          onClick={() => {
+                            setVocabQuizSubmitted(true);
+                            if (
+                              currentLesson &&
+                              !completedLessons.includes(currentLesson.id)
+                            ) {
+                              const nextDone = [
+                                ...completedLessons,
+                                currentLesson.id
+                              ];
+                              setCompletedLessons(nextDone);
+                              try {
+                                localStorage.setItem(
+                                  STORAGE_COMPLETED_LESSONS_KEY,
+                                  JSON.stringify(nextDone)
+                                );
+                              } catch {
+                                // ignore
+                              }
+                            }
+                            setUserXp((x) => x + 100);
+                          }}
+                          className="px-6 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
                         >
-                          Hơi Khó ({intervalPreviews.hard})
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => handleRateCard('good')}
-                          className="py-3 px-3 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
-                        >
-                          Đã Nhớ ({intervalPreviews.good})
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => handleRateCard('easy')}
-                          className="py-3 px-3 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
-                        >
-                          Rất Thuộc ({intervalPreviews.easy})
+                          Nộp Bài Từ Vựng & Hoàn Thành Bài Học
                         </button>
                       </div>
                     </div>
@@ -3091,50 +3561,65 @@ export default function IeltsConcourseClient({
             {/* =============================================================== */}
             {activeZone === 'listening' && (
               <BlurFade key="zone-listening" className="space-y-5">
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A]">
-                      KHU VỰC HỌC NGHE (IELTS LISTENING STUDIO)
-                    </h1>
-                    <p className="text-xs text-[#64748B]">
-                      Luyện nghe bài hội thoại, gõ chính tả từ vựng & đối chiếu từ đồng nghĩa.
-                    </p>
+                <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <span className="font-mono-data text-xs font-bold text-[#059669]">
+                        PHÒNG 02 / LUYỆN NGHE BĂNG THI & CHÉP CHÍNH TẢ 22 CHỦ ĐỀ
+                      </span>
+                      <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
+                        Khu Vực Học Nghe (IELTS Listening Studio)
+                      </h1>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setListeningSubTab('audio_test')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          listeningSubTab === 'audio_test'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        1. Nghe Hội Thoại (5 Câu)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setListeningSubTab('dictation_22')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          listeningSubTab === 'dictation_22'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        2. Nghe Chép Từ (22 Chủ Đề)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setListeningSubTab('paraphrase_179')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          listeningSubTab === 'paraphrase_179'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        3. 179 Từ Đồng Nghĩa Băng Nghe
+                      </button>
+                    </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setListeningSubTab('audio_test')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        listeningSubTab === 'audio_test'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      1. Nghe Hội Thoại & Trắc Nghiệm
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setListeningSubTab('dictation_22')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        listeningSubTab === 'dictation_22'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      2. Nghe Chép Từ (22 Chủ Đề)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setListeningSubTab('paraphrase_179')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        listeningSubTab === 'paraphrase_179'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      3. 179 Từ Đồng Nghĩa Băng Nghe
-                    </button>
+                  {/* 3-Step Listening Guide */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-xs">
+                    <div>
+                      <strong className="text-[#059669]">Bước 1:</strong> Chọn chế độ <em>Nghe Hội Thoại (5 câu)</em> hoặc <em>Nghe Chép Từ (22 chủ đề)</em>.
+                    </div>
+                    <div>
+                      <strong className="text-[#059669]">Bước 2:</strong> Bấm biểu tượng Loa màu xanh để nghe giọng đọc chuẩn Anh-Anh và điền/chọn đáp án.
+                    </div>
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 3:</strong> Bấm nút <strong>&ldquo;Nộp Bài Nghe & Chấm Điểm&rdquo;</strong> ở cuối trang để xem điểm số & đáp án!
+                    </div>
                   </div>
                 </div>
 
@@ -3143,10 +3628,10 @@ export default function IeltsConcourseClient({
                     <div className="p-4 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] flex flex-wrap items-center justify-between gap-4">
                       <div>
                         <div className="font-display text-base font-extrabold text-[#0F172A]">
-                          Băng Nghe Part 1: Dự Án Cải Tạo Thư Viện Đại Học
+                          Băng Nghe IELTS Part 1: Dự Án Cải Tạo Thư Viện Đại Học (5 Câu Hỏi)
                         </div>
                         <p className="text-xs text-[#334155] mt-0.5">
-                          Bấm nút Phát Băng Nghe bên cạnh, sau đó chọn đáp án đúng cho 2 câu hỏi bên dưới.
+                          Bấm nút Phát Băng Nghe bên phải, lắng nghe thông tin và chọn đáp án đúng cho 5 câu hỏi bên dưới.
                         </p>
                       </div>
 
@@ -3155,77 +3640,146 @@ export default function IeltsConcourseClient({
                         onClick={() =>
                           playPronunciation(
                             '',
-                            'Welcome to the university library renovation briefing. Thanks to a generous philanthropic donation from our alumni, we are expanding the digital self-study commons on the second floor.',
+                            'Welcome to the university library renovation briefing. Thanks to a generous philanthropic donation from our alumni, we are expanding the digital self-study commons on the second floor. The new soundproof group study rooms will accommodate up to 120 students at a time. Please remember to reserve a discussion room in advance online at least 24 hours ahead. During construction, academic reference books are temporarily relocated to the basement of the Administration Building.',
                             'en-GB'
                           )
                         }
                         className="px-4 py-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold inline-flex items-center gap-2 cursor-pointer"
                       >
                         <Play className="w-4 h-4" />
-                        <span>Bấm Phát Băng Nghe (Giọng Anh Chuẩn)</span>
+                        <span>Bấm Phát Băng Nghe (Giọng Bản Xứ)</span>
                       </button>
                     </div>
 
                     <div className="space-y-4">
-                      {LISTENING_QUIZ.map((q) => (
-                        <div
-                          key={q.id}
-                          className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2.5"
-                        >
-                          <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                            {q.q}
-                          </div>
-                          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                            {q.options.map((opt) => {
-                              const chosen = listeningAnswers[q.id] === opt;
-                              return (
-                                <button
-                                  key={opt}
-                                  type="button"
-                                  onClick={() =>
-                                    setListeningAnswers((p) => ({
-                                      ...p,
-                                      [q.id]: opt
-                                    }))
-                                  }
-                                  className={`p-3 rounded-xl border text-left text-xs font-bold cursor-pointer ${
-                                    chosen
-                                      ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
-                                      : 'bg-[#FFFFFF] border-[#DCEBFA] text-[#0F172A]'
-                                  }`}
-                                >
-                                  {opt}
-                                </button>
-                              );
-                            })}
-                          </div>
-                          {listeningSubmitted && (
-                            <div className="text-xs font-bold text-[#059669]">
-                              Đáp án đúng: {q.answer}
+                      {LISTENING_QUIZ.map((q) => {
+                        const chosen = listeningAnswers[q.id];
+                        const isRight = chosen === q.answer;
+                        return (
+                          <div
+                            key={q.id}
+                            className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2.5"
+                          >
+                            <div className="font-display text-sm font-extrabold text-[#0F172A]">
+                              {q.q}
                             </div>
-                          )}
-                        </div>
-                      ))}
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                              {q.options.map((opt) => {
+                                const isOptSelected = chosen === opt;
+                                return (
+                                  <button
+                                    key={opt}
+                                    type="button"
+                                    onClick={() =>
+                                      setListeningAnswers((p) => ({
+                                        ...p,
+                                        [q.id]: opt
+                                      }))
+                                    }
+                                    className={`p-3 rounded-xl border text-left text-xs font-bold cursor-pointer ${
+                                      isOptSelected
+                                        ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                                        : 'bg-[#FFFFFF] border-[#DCEBFA] text-[#0F172A] hover:bg-[#F0F7FF]'
+                                    }`}
+                                  >
+                                    {opt}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                            {listeningSubmitted && (
+                              <div
+                                className={`text-xs font-bold ${
+                                  isRight ? 'text-[#059669]' : 'text-[#E11D48]'
+                                }`}
+                              >
+                                {isRight
+                                  ? `✓ Chính xác! (${q.answer})`
+                                  : `✗ Chưa đúng — Đáp án chuẩn là: ${q.answer}`}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
 
-                    <button
-                      type="button"
-                      onClick={() => setListeningSubmitted(true)}
-                      className="px-5 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
-                    >
-                      Nộp Bài Nghe & Xem Đáp Án
-                    </button>
+                    {listeningSubmitted && (
+                      <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] space-y-2">
+                        <div className="font-display text-sm font-black text-[#047857]">
+                          Kết Quả Bài Nghe Hội Thoại: Đúng{' '}
+                          {
+                            LISTENING_QUIZ.filter(
+                              (q) => listeningAnswers[q.id] === q.answer
+                            ).length
+                          }{' '}
+                          / {LISTENING_QUIZ.length} câu • Quy đổi Band Listening:{' '}
+                          {LISTENING_QUIZ.filter(
+                            (q) => listeningAnswers[q.id] === q.answer
+                          ).length >= 4
+                            ? '8.0'
+                            : '6.5'}
+                        </div>
+                        <div className="text-xs text-[#334155]">
+                          <strong>Lời thoại băng nghe (Transcript dịch nghĩa):</strong> Chào mừng các bạn đến với buổi thông báo cải tạo thư viện đại học. Nhờ khoản tài trợ từ hội cựu sinh viên, chúng tôi đang mở rộng phòng tự học công nghệ số ở tầng 2. Khu phòng học nhóm cách âm mới có sức chứa 120 sinh viên. Vui lòng đặt phòng trực tuyến trước ít nhất 24 giờ. Trong thời gian thi công, sách tham khảo học thuật được chuyển tạm xuống tầng hầm tòa nhà Hành chính.
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-[#DCEBFA]">
+                      <div className="flex gap-2">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const nextAns: Record<number, string> = {};
+                            LISTENING_QUIZ.forEach((q) => {
+                              nextAns[q.id] = q.answer;
+                            });
+                            setListeningAnswers(nextAns);
+                          }}
+                          className="px-4 py-2.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
+                        >
+                          Điền Nhanh Đáp Án Mẫu
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setListeningAnswers({});
+                            setListeningSubmitted(false);
+                          }}
+                          className="px-4 py-2.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-[#334155] font-display text-xs font-bold cursor-pointer"
+                        >
+                          Làm Lại Từ Đầu
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setListeningSubmitted(true);
+                          setUserXp((x) => x + 80);
+                        }}
+                        className="px-6 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                      >
+                        Nộp Bài Nghe & Chấm Điểm (5 Câu)
+                      </button>
+                    </div>
                   </div>
                 )}
 
                 {listeningSubTab === 'dictation_22' && (
                   <div className="bg-[#FFFFFF] rounded-2xl border border-[#DCEBFA] overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-                    <div className="lg:col-span-4 p-4 bg-[#F8FBFF] border-r border-[#DCEBFA] max-h-[500px] overflow-y-auto space-y-1">
+                    <div className="lg:col-span-4 p-4 bg-[#F8FBFF] border-r border-[#DCEBFA] max-h-[620px] overflow-y-auto space-y-1">
+                      <div className="px-2 pb-2 text-xs font-display font-extrabold text-[#0284C7]">
+                        CHỌN 1 TRONG 22 CHỦ ĐỀ NGHE:
+                      </div>
                       {chapters.map((ch) => (
                         <button
                           key={ch.key}
                           type="button"
-                          onClick={() => setSelectedChapterKey(ch.key)}
+                          onClick={() => {
+                            setSelectedChapterKey(ch.key);
+                            setDictationSubmitted(false);
+                          }}
                           className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-bold flex justify-between cursor-pointer ${
                             ch.key === selectedChapterKey
                               ? 'bg-[#0284C7] text-[#FFFFFF]'
@@ -3240,75 +3794,200 @@ export default function IeltsConcourseClient({
                       ))}
                     </div>
 
-                    <div className="lg:col-span-8 p-5 space-y-3 max-h-[500px] overflow-y-auto">
-                      <div className="flex items-center justify-between pb-2 border-b border-[#DCEBFA]">
-                        <span className="font-display text-sm font-extrabold">
-                          {activeChapter?.titleVi} — Bấm loa nghe và gõ lại từ
-                        </span>
-                        <button
-                          type="button"
-                          onClick={() => setRevealMeanings((r) => !r)}
-                          className="px-3 py-1 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
-                        >
-                          {revealMeanings ? 'Ẩn Nghĩa' : 'Hiện Nghĩa'}
-                        </button>
-                      </div>
+                    <div className="lg:col-span-8 p-5 space-y-4 max-h-[620px] overflow-y-auto">
+                      {(() => {
+                        const chapterSlice = (
+                          activeChapter?.words || []
+                        ).slice(0, 15);
+                        const correctCount = chapterSlice.filter((item, i) => {
+                          const k = `${activeChapter?.key}-${item.word}-${i}`;
+                          return (
+                            (chapterDictationMap[k] || '')
+                              .trim()
+                              .toLowerCase() === item.word.toLowerCase()
+                          );
+                        }).length;
 
-                      {(activeChapter?.words || []).slice(0, 15).map((item, i) => {
-                        const k = `${activeChapter?.key}-${item.word}-${i}`;
-                        const val = chapterDictationMap[k] || '';
-                        const ok =
-                          val.trim().toLowerCase() === item.word.toLowerCase();
                         return (
-                          <div
-                            key={k}
-                            className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-2"
-                          >
-                            <div className="flex items-center gap-2.5">
-                              <button
-                                type="button"
-                                onClick={() =>
-                                  playPronunciation(
-                                    item.audioUrl || '',
-                                    item.word,
-                                    'en-GB'
-                                  )
-                                }
-                                className="p-2 rounded-lg bg-[#0284C7] text-[#FFFFFF] cursor-pointer"
-                              >
-                                <Volume2 className="w-3.5 h-3.5" />
-                              </button>
+                          <>
+                            <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#DCEBFA]">
                               <div>
-                                <div className="font-display text-sm font-bold text-[#0F172A]">
-                                  {item.word}
+                                <div className="font-display text-sm font-extrabold text-[#0F172A]">
+                                  {activeChapter?.titleVi} — Bấm loa nghe và gõ lại từ tiếng Anh
                                 </div>
-                                <div className="text-xs text-[#64748B]">
+                                <div className="text-xs text-[#059669] font-bold mt-0.5">
+                                  Tiến độ: Đã gõ đúng {correctCount} /{' '}
+                                  {chapterSlice.length} từ trong bài này
+                                </div>
+                              </div>
+
+                              <div className="flex flex-wrap gap-1.5">
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setRevealEnglishWords((r) => !r)
+                                  }
+                                  className="px-3 py-1.5 rounded-lg bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
+                                >
+                                  {revealEnglishWords
+                                    ? 'Ẩn Chữ Tiếng Anh'
+                                    : 'Hiện Chữ Tiếng Anh'}
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => setRevealMeanings((r) => !r)}
+                                  className="px-3 py-1.5 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
+                                >
                                   {revealMeanings
-                                    ? item.viMeaning || item.enDefinition
-                                    : '[Đã ẩn nghĩa]'}
-                                </div>
+                                    ? 'Ẩn Nghĩa Tiếng Việt'
+                                    : 'Hiện Nghĩa Tiếng Việt'}
+                                </button>
                               </div>
                             </div>
 
-                            <input
-                              type="text"
-                              value={val}
-                              onChange={(e) =>
-                                setChapterDictationMap((p) => ({
-                                  ...p,
-                                  [k]: e.target.value
-                                }))
-                              }
-                              placeholder="Gõ lại từ..."
-                              className={`px-3 py-1.5 rounded-lg border text-xs font-mono-data w-36 ${
-                                ok
-                                  ? 'bg-[#ECFDF5] border-[#059669] text-[#059669] font-bold'
-                                  : 'bg-[#FFFFFF] border-[#BAE6FD]'
-                              }`}
-                            />
-                          </div>
+                            <div className="space-y-2.5">
+                              {chapterSlice.map((item, i) => {
+                                const k = `${activeChapter?.key}-${item.word}-${i}`;
+                                const val = chapterDictationMap[k] || '';
+                                const ok =
+                                  val.trim().toLowerCase() ===
+                                  item.word.toLowerCase();
+                                const showWord =
+                                  revealEnglishWords ||
+                                  dictationSubmitted ||
+                                  ok;
+
+                                return (
+                                  <div
+                                    key={k}
+                                    className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3"
+                                  >
+                                    <div className="flex items-center gap-3 min-w-0 flex-1">
+                                      <button
+                                        type="button"
+                                        onClick={() =>
+                                          playPronunciation(
+                                            item.audioUrl || '',
+                                            item.word,
+                                            'en-GB'
+                                          )
+                                        }
+                                        className="p-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] cursor-pointer shrink-0"
+                                      >
+                                        <Volume2 className="w-4 h-4" />
+                                      </button>
+                                      <div className="min-w-0">
+                                        <div className="flex items-center gap-2">
+                                          <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                                            Câu {i + 1}:
+                                          </span>
+                                          <span className="font-display text-sm font-extrabold text-[#0F172A]">
+                                            {showWord
+                                              ? item.word
+                                              : `Bấm loa nghe (Gợi ý: ${item.word[0]}... • ${item.word.length} ký tự)`}
+                                          </span>
+                                        </div>
+                                        <div className="text-xs text-[#334155] mt-0.5">
+                                          {revealMeanings
+                                            ? `Nghĩa Tiếng Việt: ${item.viMeaning}`
+                                            : '[Đã ẩn nghĩa Tiếng Việt]'}
+                                        </div>
+                                        {dictationSubmitted && !ok && (
+                                          <div className="text-xs font-bold text-[#E11D48] mt-0.5">
+                                            ✗ Đáp án đúng là: {item.word}
+                                          </div>
+                                        )}
+                                      </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-2">
+                                      <input
+                                        type="text"
+                                        value={val}
+                                        onChange={(e) =>
+                                          setChapterDictationMap((p) => ({
+                                            ...p,
+                                            [k]: e.target.value
+                                          }))
+                                        }
+                                        placeholder="Gõ từ nghe được..."
+                                        className={`px-3 py-2 rounded-xl border text-xs font-mono-data w-40 ${
+                                          ok
+                                            ? 'bg-[#ECFDF5] border-[#059669] text-[#059669] font-bold'
+                                            : 'bg-[#FFFFFF] border-[#BAE6FD]'
+                                        }`}
+                                      />
+                                      {ok && (
+                                        <span className="text-xs font-bold text-[#059669]">
+                                          ✓ Đúng
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+
+                            {dictationSubmitted && (
+                              <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] flex flex-wrap items-center justify-between gap-3">
+                                <div>
+                                  <div className="font-display text-sm font-black text-[#047857]">
+                                    Đã Nộp Bài Chép Chính Tả! Kết quả: Đúng{' '}
+                                    {correctCount} / {chapterSlice.length} từ •
+                                    +80 XP
+                                  </div>
+                                  <div className="text-xs text-[#059669] mt-0.5">
+                                    Toàn bộ đáp án Tiếng Anh và nghĩa Tiếng Việt đã được hiển thị để bạn đối chiếu.
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+
+                            <div className="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-[#DCEBFA]">
+                              <div className="flex flex-wrap gap-2">
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    const filled: Record<string, string> = {
+                                      ...chapterDictationMap
+                                    };
+                                    chapterSlice.forEach((item, i) => {
+                                      filled[
+                                        `${activeChapter?.key}-${item.word}-${i}`
+                                      ] = item.word;
+                                    });
+                                    setChapterDictationMap(filled);
+                                  }}
+                                  className="px-3.5 py-2 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
+                                >
+                                  Điền Nhanh Đáp Án Mẫu
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setChapterDictationMap({});
+                                    setDictationSubmitted(false);
+                                  }}
+                                  className="px-3.5 py-2 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-[#334155] font-display text-xs font-bold cursor-pointer"
+                                >
+                                  Làm Lại Bài Này
+                                </button>
+                              </div>
+
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setDictationSubmitted(true);
+                                  setUserXp((x) => x + 80);
+                                }}
+                                className="px-5 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                              >
+                                Nộp Bài Nghe Chép Từ & Chấm Điểm
+                              </button>
+                            </div>
+                          </>
                         );
-                      })}
+                      })()}
                     </div>
                   </div>
                 )}
@@ -3334,8 +4013,8 @@ export default function IeltsConcourseClient({
                             <Volume2 className="w-3.5 h-3.5" />
                           </button>
                         </div>
-                        <p className="text-xs text-[#64748B]">
-                          {item.viMeaning || item.enDefinition}
+                        <p className="text-xs font-bold text-[#0284C7]">
+                          Nghĩa Tiếng Việt: {item.viMeaning}
                         </p>
                         <div className="flex flex-wrap gap-1.5 pt-1">
                           {item.replace.map((eq, i) => (
@@ -3359,34 +4038,49 @@ export default function IeltsConcourseClient({
             {/* =============================================================== */}
             {activeZone === 'speaking' && (
               <BlurFade key="zone-speaking" className="space-y-5">
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A]">
-                      KHU VỰC HỌC NÓI (IELTS SPEAKING STUDIO)
-                    </h1>
-                    <p className="text-xs text-[#64748B]">
-                      Chọn chủ đề, nghe từ vựng gợi ý, bấm thu âm hoặc nhập bài nói để chấm điểm.
-                    </p>
+                <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <span className="font-mono-data text-xs font-bold text-[#D97706]">
+                        PHÒNG 03 / LUYỆN NÓI SPEAKING PART 2 & CHẤM ĐIỂM AI
+                      </span>
+                      <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
+                        Khu Vực Học Nói (IELTS Speaking Studio)
+                      </h1>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      {SPEAKING_TOPICS.map((tp, idx) => (
+                        <button
+                          key={tp.id}
+                          type="button"
+                          onClick={() => {
+                            setSelectedSpeakingIdx(idx);
+                            setSpeakingGraded(false);
+                          }}
+                          className={`px-3.5 py-2 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                            selectedSpeakingIdx === idx
+                              ? 'bg-[#0284C7] text-[#FFFFFF]'
+                              : 'bg-[#F0F7FF] text-[#334155]'
+                          }`}
+                        >
+                          {tp.title}
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
-                    {SPEAKING_TOPICS.map((tp, idx) => (
-                      <button
-                        key={tp.id}
-                        type="button"
-                        onClick={() => {
-                          setSelectedSpeakingIdx(idx);
-                          setSpeakingGraded(false);
-                        }}
-                        className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
-                          selectedSpeakingIdx === idx
-                            ? 'bg-[#0284C7] text-[#FFFFFF]'
-                            : 'bg-[#F0F7FF] text-[#334155]'
-                        }`}
-                      >
-                        Chủ đề {idx + 1}
-                      </button>
-                    ))}
+                  {/* 3-Step Speaking Guide */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#FFFBEB] border border-[#FDE68A] text-xs">
+                    <div>
+                      <strong className="text-[#D97706]">Bước 1:</strong> Đọc đề bài (có dịch Tiếng Việt) & bấm nghe 5 từ vựng gợi ý bên trái.
+                    </div>
+                    <div>
+                      <strong className="text-[#D97706]">Bước 2:</strong> Bấm <em>Thu Âm Giọng Nói</em> hoặc bấm <em>Nạp Bài Nói Mẫu Band 8.0</em>.
+                    </div>
+                    <div>
+                      <strong className="text-[#059669]">Bước 3:</strong> Bấm <strong>&ldquo;Nộp Bài Nói & Chấm Điểm AI&rdquo;</strong> để nhận bảng điểm 4 tiêu chí!
+                    </div>
                   </div>
                 </div>
 
@@ -3394,13 +4088,22 @@ export default function IeltsConcourseClient({
                   {/* Left: Cue Card & Target Words */}
                   <div className="lg:col-span-5 bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
                     <span className="px-2.5 py-1 rounded bg-[#FFFBEB] border border-[#FDE68A] text-[#D97706] font-mono-data text-xs font-bold">
-                      SPEAKING PART 2 CUE CARD
+                      ĐỀ BÀI SPEAKING PART 2
                     </span>
                     <h2 className="font-display text-base font-extrabold text-[#0F172A]">
                       {activeSpeakingTopic.prompt}
                     </h2>
+                    <div className="p-3 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs text-[#334155]">
+                      <strong>Dịch đề bài Tiếng Việt:</strong>{' '}
+                      {selectedSpeakingIdx === 0
+                        ? 'Hãy mô tả một thiết bị hoặc ứng dụng công nghệ hiện đại giúp cuộc sống hàng ngày của bạn trở nên dễ dàng hơn.'
+                        : 'Hãy mô tả một giải pháp bảo vệ môi trường mà bạn nghĩ các thành phố lớn nên áp dụng.'}
+                    </div>
 
                     <div className="space-y-1.5 text-xs text-[#334155]">
+                      <div className="font-bold text-[#0F172A]">
+                        Gợi ý triển khai ý (Cue Card):
+                      </div>
                       {activeSpeakingTopic.cues.map((c, i) => (
                         <div key={i}>{c}</div>
                       ))}
@@ -3408,7 +4111,7 @@ export default function IeltsConcourseClient({
 
                     <div className="pt-3 border-t border-[#DCEBFA] space-y-2">
                       <div className="text-xs font-bold text-[#0284C7]">
-                        5 Từ Vựng Ăn Điểm Nên Dùng (Bấm để nghe phát âm):
+                        5 Từ Vựng Ăn Điểm Nên Dùng (Bấm để nghe phát âm & tự động chèn):
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {activeSpeakingTopic.targetWords.map((tw) => {
@@ -3419,7 +4122,14 @@ export default function IeltsConcourseClient({
                             <button
                               key={tw}
                               type="button"
-                              onClick={() => playPronunciation('', tw, 'en-GB')}
+                              onClick={() => {
+                                playPronunciation('', tw, 'en-GB');
+                                if (!used) {
+                                  setSpeakingTranscript((prev) =>
+                                    prev ? `${prev} ${tw}` : tw
+                                  );
+                                }
+                              }}
                               className={`px-3 py-1.5 rounded-xl font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer ${
                                 used
                                   ? 'bg-[#059669] text-[#FFFFFF]'
@@ -3441,7 +4151,14 @@ export default function IeltsConcourseClient({
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <button
                         type="button"
-                        onClick={() => setIsRecordingSpeaking((r) => !r)}
+                        onClick={() => {
+                          setIsRecordingSpeaking((r) => !r);
+                          if (!speakingTranscript) {
+                            setSpeakingTranscript(
+                              activeSpeakingTopic.sampleAnswer
+                            );
+                          }
+                        }}
                         className={`px-4 py-2.5 rounded-xl font-display text-xs font-extrabold inline-flex items-center gap-2 cursor-pointer ${
                           isRecordingSpeaking
                             ? 'bg-[#E11D48] text-[#FFFFFF]'
@@ -3451,8 +4168,8 @@ export default function IeltsConcourseClient({
                         <Mic className="w-4 h-4" />
                         <span>
                           {isRecordingSpeaking
-                            ? 'Đang Thu Âm... (Bấm Để Dừng)'
-                            : 'Bấm Bắt Đầu Thu Âm Giọng Nói'}
+                            ? 'Đang Thu Âm... (Bấm Để Dừng & Lưu Bản Thu)'
+                            : '1. Bấm Bắt Đầu Thu Âm Giọng Nói'}
                         </span>
                       </button>
 
@@ -3462,11 +4179,10 @@ export default function IeltsConcourseClient({
                           setSpeakingTranscript(
                             activeSpeakingTopic.sampleAnswer
                           );
-                          setSpeakingGraded(true);
                         }}
                         className="px-3.5 py-2 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
                       >
-                        Nạp Bài Nói Mẫu Band 8.0
+                        2. Nạp Bài Nói Mẫu Band 8.0
                       </button>
                     </div>
 
@@ -3474,11 +4190,11 @@ export default function IeltsConcourseClient({
                       rows={5}
                       value={speakingTranscript}
                       onChange={(e) => setSpeakingTranscript(e.target.value)}
-                      placeholder="Nội dung bài nói của bạn sẽ hiển thị tại đây (hoặc gõ trực tiếp để kiểm tra từ vựng)..."
+                      placeholder="Nội dung bài nói của bạn sẽ hiển thị tại đây (hoặc bấm nút 'Nạp Bài Nói Mẫu Band 8.0' ở trên rồi bấm Nộp Bài)..."
                       className="w-full p-4 rounded-xl bg-[#F8FBFF] border border-[#BAE6FD] text-xs sm:text-sm text-[#0F172A]"
                     />
 
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
                       <button
                         type="button"
                         onClick={() =>
@@ -3497,38 +4213,67 @@ export default function IeltsConcourseClient({
 
                       <button
                         type="button"
-                        onClick={() => setSpeakingGraded(true)}
+                        onClick={() => {
+                          if (!speakingTranscript.trim()) {
+                            setSpeakingTranscript(
+                              activeSpeakingTopic.sampleAnswer
+                            );
+                          }
+                          setSpeakingGraded(true);
+                          setUserXp((x) => x + 90);
+                        }}
                         className="px-5 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
                       >
-                        Chấm Điểm Bài Nói Ngay
+                        3. Nộp Bài Nói & Chấm Điểm AI Ngay
                       </button>
                     </div>
 
                     {speakingGraded && (
-                      <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-                        <div>
-                          <div className="text-xs text-[#047857]">Độ Trôi Chảy</div>
-                          <div className="font-display text-lg font-black text-[#059669]">
-                            7.5
+                      <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] space-y-3">
+                        <div className="flex items-center justify-between border-b border-[#A7F3D0] pb-2">
+                          <span className="font-display text-sm font-black text-[#047857]">
+                            ĐÃ NỘP BÀI NÓI! BẢNG ĐIỂM AI 4 TIÊU CHÍ (+90 XP):
+                          </span>
+                          <span className="px-2.5 py-0.5 rounded-lg bg-[#059669] text-[#FFFFFF] font-display text-xs font-black">
+                            Overall Speaking: 7.5
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                          <div className="p-2.5 rounded-lg bg-[#FFFFFF] border border-[#A7F3D0]">
+                            <div className="text-xs text-[#047857]">
+                              Độ Trôi Chảy
+                            </div>
+                            <div className="font-display text-lg font-black text-[#059669]">
+                              7.5
+                            </div>
+                          </div>
+                          <div className="p-2.5 rounded-lg bg-[#FFFFFF] border border-[#A7F3D0]">
+                            <div className="text-xs text-[#047857]">
+                              Từ Vựng (LR)
+                            </div>
+                            <div className="font-display text-lg font-black text-[#059669]">
+                              8.0
+                            </div>
+                          </div>
+                          <div className="p-2.5 rounded-lg bg-[#FFFFFF] border border-[#A7F3D0]">
+                            <div className="text-xs text-[#047857]">
+                              Ngữ Pháp
+                            </div>
+                            <div className="font-display text-lg font-black text-[#059669]">
+                              7.5
+                            </div>
+                          </div>
+                          <div className="p-2.5 rounded-lg bg-[#FFFFFF] border border-[#A7F3D0]">
+                            <div className="text-xs text-[#047857]">
+                              Phát Âm
+                            </div>
+                            <div className="font-display text-lg font-black text-[#059669]">
+                              7.5
+                            </div>
                           </div>
                         </div>
-                        <div>
-                          <div className="text-xs text-[#047857]">Từ Vựng</div>
-                          <div className="font-display text-lg font-black text-[#059669]">
-                            8.0
-                          </div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-[#047857]">Ngữ Pháp</div>
-                          <div className="font-display text-lg font-black text-[#059669]">
-                            7.5
-                          </div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-[#047857]">Phát Âm</div>
-                          <div className="font-display text-lg font-black text-[#059669]">
-                            7.5
-                          </div>
+                        <div className="text-xs text-[#334155]">
+                          <strong>Nhận xét AI bằng Tiếng Việt:</strong> Bài nói có bố cục rõ ràng, sử dụng tốt các từ vựng học thuật C1 ({activeSpeakingTopic.targetWords.slice(0, 3).join(', ')}). Cần chú ý nhấn trọng âm từ và giữ nhịp nói đều ở phần kết luận.
                         </div>
                       </div>
                     )}
@@ -3542,39 +4287,54 @@ export default function IeltsConcourseClient({
             {/* =============================================================== */}
             {activeZone === 'reading' && (
               <BlurFade key="zone-reading" className="space-y-5">
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A]">
-                      KHU VỰC HỌC ĐỌC (READING & TRA TỪ 1-CHẠM)
-                    </h1>
-                    <p className="text-xs text-[#64748B]">
-                      Bấm trực tiếp vào các từ gạch chân màu xanh trong bài đọc để xem nghĩa Tiếng Việt ngay lập tức.
-                    </p>
+                <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                        PHÒNG 04 / ĐỌC HIỂU HỌC THUẬT & TRA TỪ TRỰC TIẾP 1-CHẠM
+                      </span>
+                      <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
+                        Khu Vực Học Đọc (IELTS Reading & 538 Từ Khóa)
+                      </h1>
+                    </div>
+
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setReadingSubTab('passage')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          readingSubTab === 'passage'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        1. Làm Bài Đọc (5 Câu)
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setReadingSubTab('keywords_538')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          readingSubTab === 'keywords_538'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        2. Kho 538 Từ Khóa Reading
+                      </button>
+                    </div>
                   </div>
 
-                  <div className="flex gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setReadingSubTab('passage')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        readingSubTab === 'passage'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      1. Bài Đọc & Câu Hỏi
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setReadingSubTab('keywords_538')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        readingSubTab === 'keywords_538'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      2. 538 Từ Khóa Bài Đọc
-                    </button>
+                  {/* 3-Step Reading Guide */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs">
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 1:</strong> Đọc bài bên trái và bấm vào các <em>từ gạch chân màu xanh</em> để xem nghĩa Tiếng Việt ngay.
+                    </div>
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 2:</strong> Chọn đáp án <em>TRUE / FALSE / NOT GIVEN</em> cho 5 câu hỏi bên phải.
+                    </div>
+                    <div>
+                      <strong className="text-[#059669]">Bước 3:</strong> Bấm <strong>&ldquo;Nộp Bài Đọc & Chấm Điểm&rdquo;</strong> để xem điểm số & giải thích chi tiết!
+                    </div>
                   </div>
                 </div>
 
@@ -3582,65 +4342,94 @@ export default function IeltsConcourseClient({
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                     {/* Left: Passage with 1-Click Words + Inline Dictionary Box */}
                     <div className="lg:col-span-7 bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
-                      <h2 className="font-display text-base font-extrabold text-[#0F172A]">
-                        Vertical Forests & Urban Climate Architecture
-                      </h2>
-
-                      <p className="text-sm text-[#0F172A] leading-relaxed">
-                        <strong>[Đoạn A]</strong> High-density metropolises have made concrete towers{' '}
+                      <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#DCEBFA]">
+                        <h2 className="font-display text-base font-extrabold text-[#0F172A]">
+                          Bài Đọc: Rừng Thẳng Đứng & Kiến Trúc Khí Hậu Đô Thị
+                        </h2>
                         <button
                           type="button"
-                          onClick={() => setSelectedInlineWord('ubiquitous')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          onClick={() =>
+                            setShowPassageTranslation((prev) => !prev)
+                          }
+                          className="px-3 py-1 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
                         >
-                          ubiquitous
+                          {showPassageTranslation
+                            ? 'Ẩn Dịch Tiếng Việt'
+                            : 'Hiện Dịch Tiếng Việt'}
                         </button>
-                        , accelerating urban heat islands at an{' '}
-                        <button
-                          type="button"
-                          onClick={() => setSelectedInlineWord('unprecedented')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
-                        >
-                          unprecedented
-                        </button>{' '}
-                        scale. Milan&apos;s Bosco Verticale demonstrates how integrating 900 trees into residential facades can{' '}
-                        <button
-                          type="button"
-                          onClick={() => setSelectedInlineWord('mitigate')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
-                        >
-                          mitigate
-                        </button>{' '}
-                        ambient surface temperatures by up to 3°C.
-                      </p>
+                      </div>
 
-                      <p className="text-sm text-[#0F172A] leading-relaxed">
-                        <strong>[Đoạn B]</strong>{' '}
-                        <button
-                          type="button"
-                          onClick={() => setSelectedInlineWord('Empirical')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
-                        >
-                          Empirical
-                        </button>{' '}
-                        data confirms that vertical forests are{' '}
-                        <button
-                          type="button"
-                          onClick={() => setSelectedInlineWord('viable')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
-                        >
-                          viable
-                        </button>
-                        , though high structural engineering costs still create{' '}
-                        <button
-                          type="button"
-                          onClick={() => setSelectedInlineWord('disparities')}
-                          className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
-                        >
-                          disparities
-                        </button>{' '}
-                        in developing municipalities.
-                      </p>
+                      <div className="space-y-2">
+                        <p className="text-sm text-[#0F172A] leading-relaxed">
+                          <strong>[Đoạn A]</strong> High-density metropolises have made concrete towers{' '}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedInlineWord('ubiquitous')}
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            ubiquitous
+                          </button>
+                          , accelerating urban heat islands at an{' '}
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setSelectedInlineWord('unprecedented')
+                            }
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            unprecedented
+                          </button>{' '}
+                          scale. Milan&apos;s Bosco Verticale demonstrates how integrating 900 trees into residential facades can{' '}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedInlineWord('mitigate')}
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            mitigate
+                          </button>{' '}
+                          ambient surface temperatures by up to 3°C.
+                        </p>
+                        {showPassageTranslation && (
+                          <p className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-xs text-[#334155]">
+                            <strong>Dịch Đoạn A:</strong> Các siêu đô thị mật độ cao đã khiến những tòa tháp bê tông trở nên <em>phổ biến khắp nơi (ubiquitous)</em>, làm gia tăng hiện tượng đảo nhiệt đô thị ở quy mô <em>chưa từng có tiền lệ (unprecedented)</em>. Công trình Bosco Verticale tại Milan chứng minh việc tích hợp 900 cây xanh vào mặt tiền chung cư có thể <em>giảm thiểu (mitigate)</em> nhiệt độ bề mặt tới 3°C.
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="text-sm text-[#0F172A] leading-relaxed">
+                          <strong>[Đoạn B]</strong>{' '}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedInlineWord('Empirical')}
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            Empirical
+                          </button>{' '}
+                          data confirms that vertical forests are{' '}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedInlineWord('viable')}
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            viable
+                          </button>
+                          , though high structural engineering costs still create{' '}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedInlineWord('disparities')}
+                            className="px-1.5 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-bold underline cursor-pointer"
+                          >
+                            disparities
+                          </button>{' '}
+                          in developing municipalities.
+                        </p>
+                        {showPassageTranslation && (
+                          <p className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] text-xs text-[#334155]">
+                            <strong>Dịch Đoạn B:</strong> Dữ liệu <em>thực nghiệm (Empirical)</em> xác nhận rằng các khu rừng thẳng đứng hoàn toàn <em>khả thi (viable)</em>, mặc dù chi phí kỹ thuật kết cấu cao vẫn tạo ra <em>sự chênh lệch lớn (disparities)</em> tại các đô thị đang phát triển.
+                          </p>
+                        )}
+                      </div>
 
                       {/* Inline Dictionary Card */}
                       {selectedInlineWord &&
@@ -3649,15 +4438,17 @@ export default function IeltsConcourseClient({
                             <div>
                               <div className="flex items-center gap-2">
                                 <span className="font-display text-base font-black text-[#0284C7]">
-                                  {selectedInlineWord}
+                                  Từ đang tra: {selectedInlineWord}
                                 </span>
                                 <span className="font-mono-data text-xs text-[#64748B]">
-                                  {INLINE_READING_DICT[selectedInlineWord].ipa} •{' '}
+                                  {INLINE_READING_DICT[selectedInlineWord].ipa}{' '}
+                                  •{' '}
                                   {INLINE_READING_DICT[selectedInlineWord].cefr}
                                 </span>
                               </div>
                               <div className="text-xs sm:text-sm font-bold text-[#0F172A] mt-1">
-                                Nghĩa: {INLINE_READING_DICT[selectedInlineWord].vi}
+                                Nghĩa Tiếng Việt:{' '}
+                                {INLINE_READING_DICT[selectedInlineWord].vi}
                               </div>
                             </div>
 
@@ -3673,7 +4464,7 @@ export default function IeltsConcourseClient({
                                 }
                                 className="px-3 py-1.5 rounded-lg bg-[#FFFFFF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
                               >
-                                Nghe
+                                Nghe Phát Âm
                               </button>
                               <button
                                 type="button"
@@ -3689,56 +4480,106 @@ export default function IeltsConcourseClient({
                         )}
                     </div>
 
-                    {/* Right: Questions */}
+                    {/* Right: 5 Questions + Submit & Scorecard */}
                     <div className="lg:col-span-5 bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
-                      <h3 className="font-display text-base font-extrabold text-[#0F172A]">
-                        Chọn Đáp Án TRUE / FALSE / NOT GIVEN
-                      </h3>
+                      <div className="flex items-center justify-between pb-2 border-b border-[#DCEBFA]">
+                        <h3 className="font-display text-base font-extrabold text-[#0F172A]">
+                          Bài Tập 5 Câu (TRUE / FALSE / NOT GIVEN)
+                        </h3>
+                        <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                          Đã chọn {Object.keys(readingAnswers).length}/5 câu
+                        </span>
+                      </div>
 
-                      {READING_QUESTIONS.map((q) => (
-                        <div
-                          key={q.id}
-                          className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
-                        >
-                          <div className="text-xs font-bold text-[#0F172A]">
-                            {q.q}
-                          </div>
-                          <div className="grid grid-cols-3 gap-2">
-                            {q.options.map((opt) => (
-                              <button
-                                key={opt}
-                                type="button"
-                                onClick={() =>
-                                  setReadingAnswers((p) => ({
-                                    ...p,
-                                    [q.id]: opt
-                                  }))
-                                }
-                                className={`py-1.5 rounded-lg font-mono-data text-xs font-bold border cursor-pointer ${
-                                  readingAnswers[q.id] === opt
-                                    ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
-                                    : 'bg-[#FFFFFF] border-[#DCEBFA]'
-                                }`}
-                              >
-                                {opt}
-                              </button>
-                            ))}
-                          </div>
-                          {readingSubmitted && (
-                            <div className="text-xs text-[#059669] font-bold">
-                              Đáp án: {q.answer} — {q.explain}
+                      <div className="space-y-3 max-h-[420px] overflow-y-auto pr-1">
+                        {READING_QUESTIONS.map((q) => {
+                          const userAns = readingAnswers[q.id];
+                          const isCorrect = userAns === q.answer;
+                          return (
+                            <div
+                              key={q.id}
+                              className="p-3.5 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
+                            >
+                              <div className="text-xs font-bold text-[#0F172A]">
+                                {q.q}
+                              </div>
+                              <div className="grid grid-cols-3 gap-2">
+                                {q.options.map((opt) => (
+                                  <button
+                                    key={opt}
+                                    type="button"
+                                    onClick={() =>
+                                      setReadingAnswers((p) => ({
+                                        ...p,
+                                        [q.id]: opt
+                                      }))
+                                    }
+                                    className={`py-1.5 rounded-lg font-mono-data text-xs font-bold border cursor-pointer ${
+                                      readingAnswers[q.id] === opt
+                                        ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                                        : 'bg-[#FFFFFF] border-[#DCEBFA]'
+                                    }`}
+                                  >
+                                    {opt}
+                                  </button>
+                                ))}
+                              </div>
+                              {readingSubmitted && (
+                                <div
+                                  className={`text-xs font-bold ${
+                                    isCorrect
+                                      ? 'text-[#059669]'
+                                      : 'text-[#E11D48]'
+                                  }`}
+                                >
+                                  {isCorrect ? '✓ Chính xác!' : '✗ Chưa đúng'} —
+                                  Đáp án chuẩn: {q.answer}. ({q.explain})
+                                </div>
+                              )}
                             </div>
-                          )}
-                        </div>
-                      ))}
+                          );
+                        })}
+                      </div>
 
-                      <button
-                        type="button"
-                        onClick={() => setReadingSubmitted(true)}
-                        className="w-full py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
-                      >
-                        Chấm Điểm Bài Đọc & Xem Giải Thích
-                      </button>
+                      {readingSubmitted && (
+                        <div className="p-3.5 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-xs">
+                          <div className="font-display font-black text-[#047857] text-sm">
+                            Đã Nộp Bài Đọc! Kết quả: Đúng{' '}
+                            {
+                              READING_QUESTIONS.filter(
+                                (q) => readingAnswers[q.id] === q.answer
+                              ).length
+                            }{' '}
+                            / {READING_QUESTIONS.length} câu • +100 XP
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="flex flex-wrap gap-2 pt-2 border-t border-[#DCEBFA]">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const filled: Record<number, string> = {};
+                            READING_QUESTIONS.forEach((q) => {
+                              filled[q.id] = q.answer;
+                            });
+                            setReadingAnswers(filled);
+                          }}
+                          className="flex-1 py-2.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
+                        >
+                          Điền Nhanh Đáp Án
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setReadingSubmitted(true);
+                            setUserXp((x) => x + 100);
+                          }}
+                          className="flex-1 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                        >
+                          Nộp Bài Đọc & Chấm Điểm
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ) : (
@@ -3760,8 +4601,8 @@ export default function IeltsConcourseClient({
                             + Lưu Sổ
                           </button>
                         </div>
-                        <p className="text-xs text-[#334155]">
-                          {item.viMeaning || item.enDefinition}
+                        <p className="text-xs font-bold text-[#0284C7]">
+                          Nghĩa Tiếng Việt: {item.viMeaning}
                         </p>
                         <div className="flex flex-wrap gap-1 pt-1">
                           {item.synonyms.map((s, i) => (
@@ -3785,47 +4626,67 @@ export default function IeltsConcourseClient({
             {/* =============================================================== */}
             {activeZone === 'writing' && (
               <BlurFade key="zone-writing" className="space-y-5">
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A]">
-                      KHU VỰC HỌC VIẾT (WRITING AI & NÂNG CẤP CÂU)
-                    </h1>
-                    <p className="text-xs text-[#64748B]">
-                      Viết bài luận, bấm nút nâng cấp từ vựng Band 7.5+ và nhận kết quả chấm điểm 4 tiêu chí.
-                    </p>
+                <div className="bg-[#FFFFFF] p-5 rounded-2xl border border-[#DCEBFA] space-y-4">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <span className="font-mono-data text-xs font-bold text-[#059669]">
+                        PHÒNG 05 / SOẠN THẢO BÀI LUẬN WRITING TASK 2 & AI CHẤM ĐIỂM
+                      </span>
+                      <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
+                        Khu Vực Học Viết (AI Writing Grader & 100 Mẫu Câu)
+                      </h1>
+                    </div>
+
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setWritingSubTab('ai_grader')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          writingSubTab === 'ai_grader'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        1. Viết Bài & Nộp Chấm AI
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setWritingSubTab('templates_100')}
+                        className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
+                          writingSubTab === 'templates_100'
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#334155]'
+                        }`}
+                      >
+                        2. 100 Mẫu Câu Band 7.5+
+                      </button>
+                    </div>
                   </div>
 
-                  <div className="flex gap-2">
-                    <button
-                      type="button"
-                      onClick={() => setWritingSubTab('ai_grader')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        writingSubTab === 'ai_grader'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      1. Viết Bài & AI Chấm Điểm
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setWritingSubTab('templates_100')}
-                      className={`px-3.5 py-2 rounded-xl font-display text-xs font-extrabold cursor-pointer ${
-                        writingSubTab === 'templates_100'
-                          ? 'bg-[#0284C7] text-[#FFFFFF]'
-                          : 'bg-[#F0F7FF] text-[#334155]'
-                      }`}
-                    >
-                      2. 100 Mẫu Câu Band 7.5+
-                    </button>
+                  {/* 3-Step Writing Guide */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-xs">
+                    <div>
+                      <strong className="text-[#059669]">Bước 1:</strong> Xem đề bài (có dịch Tiếng Việt) và bấm các nút <em>+ Chèn câu mẫu Band 8.0</em>.
+                    </div>
+                    <div>
+                      <strong className="text-[#059669]">Bước 2:</strong> Soạn thảo bài luận vào khung bên trái (hệ thống tự động đếm số từ).
+                    </div>
+                    <div>
+                      <strong className="text-[#0284C7]">Bước 3:</strong> Bấm <strong>&ldquo;Nộp Bài Viết & Chấm Điểm AI&rdquo;</strong> để nhận bảng phân tích 4 tiêu chí!
+                    </div>
                   </div>
                 </div>
 
                 {writingSubTab === 'ai_grader' ? (
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                     <div className="lg:col-span-7 bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
-                      <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs text-[#0F172A]">
-                        <strong>Đề bài Task 2:</strong> Some people believe cities should invest heavily in vertical green architecture, while others argue affordable housing is more urgent. Discuss both views and give your opinion.
+                      <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-1.5 text-xs text-[#0F172A]">
+                        <div>
+                          <strong>Đề bài Task 2 (Tiếng Anh):</strong> Some people believe cities should invest heavily in vertical green architecture, while others argue affordable housing is more urgent. Discuss both views and give your opinion.
+                        </div>
+                        <div className="text-[#334155]">
+                          <strong>Dịch đề bài Tiếng Việt:</strong> Một số người cho rằng các thành phố nên đầu tư mạnh vào kiến trúc xanh thẳng đứng, trong khi những người khác cho rằng nhà ở giá rẻ cấp thiết hơn. Hãy thảo luận cả hai quan điểm và nêu ý kiến của bạn.
+                        </div>
                       </div>
 
                       <div className="flex flex-wrap gap-2">
@@ -3839,7 +4700,19 @@ export default function IeltsConcourseClient({
                           }
                           className="px-3 py-1.5 rounded-lg bg-[#E0F2FE] hover:bg-[#0284C7] text-[#0284C7] hover:text-[#FFFFFF] font-mono-data text-xs font-bold cursor-pointer"
                         >
-                          + Chèn câu mẫu Band 8.0
+                          + Chèn câu Luận điểm 1 (Band 8.0)
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setEssayText(
+                              (t) =>
+                                `${t} In conclusion, balancing affordable housing with green infrastructure is the most viable approach for modern municipalities.`
+                            )
+                          }
+                          className="px-3 py-1.5 rounded-lg bg-[#ECFDF5] hover:bg-[#059669] text-[#059669] hover:text-[#FFFFFF] font-mono-data text-xs font-bold cursor-pointer"
+                        >
+                          + Chèn câu Kết bài mẫu (Band 8.0)
                         </button>
                       </div>
 
@@ -3850,16 +4723,19 @@ export default function IeltsConcourseClient({
                         className="w-full p-4 rounded-xl bg-[#F8FBFF] border border-[#BAE6FD] text-xs sm:text-sm text-[#0F172A]"
                       />
 
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
                         <span className="font-mono-data text-xs text-[#64748B]">
                           Số từ hiện tại: <strong>{essayWordCount} từ</strong>
                         </span>
                         <button
                           type="button"
-                          onClick={() => setWritingGraded(true)}
-                          className="px-5 py-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+                          onClick={() => {
+                            setWritingGraded(true);
+                            setUserXp((x) => x + 120);
+                          }}
+                          className="px-5 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
                         >
-                          Chấm Điểm AI Ngay
+                          Nộp Bài Viết & Chấm Điểm AI Ngay
                         </button>
                       </div>
                     </div>
@@ -3877,7 +4753,9 @@ export default function IeltsConcourseClient({
                       {writingGraded && (
                         <div className="space-y-3 text-xs">
                           <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex justify-between">
-                            <span>1. Trả lời đúng trọng tâm (Task Response)</span>
+                            <span>
+                              1. Trả lời đúng trọng tâm (Task Response)
+                            </span>
                             <strong className="text-[#0284C7]">7.5</strong>
                           </div>
                           <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex justify-between">
@@ -3891,6 +4769,18 @@ export default function IeltsConcourseClient({
                           <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex justify-between">
                             <span>4. Đa dạng ngữ pháp (Grammar Range)</span>
                             <strong className="text-[#0284C7]">7.5</strong>
+                          </div>
+
+                          <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-1.5 text-[#334155]">
+                            <div className="font-bold text-[#0284C7]">
+                              Nhận xét chi tiết bằng Tiếng Việt (+120 XP):
+                            </div>
+                            <p>
+                              • <strong>Điểm mạnh:</strong> Sử dụng chính xác các cụm từ học thuật C1/C2 (<em>unprecedented, viable, mitigate, disparities</em>).
+                            </p>
+                            <p>
+                              • <strong>Gợi ý nâng cấp:</strong> Nên bổ sung thêm 1 ví dụ thực tế ở đoạn thân bài thứ 2 để nâng điểm Task Response lên 8.0.
+                            </p>
                           </div>
                         </div>
                       )}
