@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import type { TopicStat } from '@/types/atlas';
 
 interface Props {
@@ -9,45 +9,12 @@ interface Props {
   onSelectTopic: (topicId: string) => void;
 }
 
-interface StarNode {
-  id: string;
-  label: string;
-  code: string;
-  total: number;
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  radius: number;
-  color: string;
-}
-
-const PALETTE = ['#FACC15', '#EA580C', '#10B981', '#F4F1EA', '#38BDF8'];
-
-export default function WordAtlasConstellation({ topics, activeTopic, onSelectTopic }: Props) {
+export default function WordAtlasConstellation({
+  topics,
+  activeTopic,
+  onSelectTopic
+}: Props) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [hoveredTopic, setHoveredTopic] = useState<StarNode | null>(null);
-  const nodesRef = useRef<StarNode[]>([]);
-
-  useEffect(() => {
-    const list = topics.length > 0 ? topics : [];
-    nodesRef.current = list.map((t, idx) => {
-      const angle = (idx / Math.max(1, list.length)) * Math.PI * 2;
-      const ring = idx % 2 === 0 ? 0.34 : 0.21;
-      return {
-        id: t.id,
-        label: t.vi,
-        code: t.code,
-        total: t.total,
-        x: 0.5 + Math.cos(angle) * ring,
-        y: 0.5 + Math.sin(angle) * ring,
-        vx: (Math.random() - 0.5) * 0.00025,
-        vy: (Math.random() - 0.5) * 0.00025,
-        radius: Math.max(4, Math.min(8, Math.round(t.total / 95))),
-        color: PALETTE[idx % PALETTE.length]
-      };
-    });
-  }, [topics]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -55,125 +22,104 @@ export default function WordAtlasConstellation({ topics, activeTopic, onSelectTo
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let animId = 0;
+    const dpr = window.devicePixelRatio || 1;
+    const width = 280;
+    const height = 168;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.scale(dpr, dpr);
 
-    const render = () => {
-      const rect = canvas.getBoundingClientRect();
-      const dpr = window.devicePixelRatio || 1;
-      if (canvas.width !== Math.floor(rect.width * dpr) || canvas.height !== Math.floor(rect.height * dpr)) {
-        canvas.width = Math.floor(rect.width * dpr);
-        canvas.height = Math.floor(rect.height * dpr);
-      }
-      ctx.save();
-      ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, width, height);
 
-      const w = rect.width;
-      const h = rect.height;
-      ctx.clearRect(0, 0, w, h);
+    // Subtle concentric radar rings on light sky ground
+    const cx = width / 2;
+    const cy = height / 2;
+    ctx.strokeStyle = '#DCEBFA';
+    ctx.lineWidth = 1;
+    [34, 62, 86].forEach((r) => {
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.stroke();
+    });
 
-      const nodes = nodesRef.current;
+    const visibleTopics = topics.slice(0, 12);
+    const nodes = visibleTopics.map((t, idx) => {
+      const angle = (idx / visibleTopics.length) * Math.PI * 2 - Math.PI / 2;
+      const ring = idx % 2 === 0 ? 64 : 38;
+      return {
+        id: t.id,
+        label: t.vi,
+        total: t.total,
+        x: cx + Math.cos(angle) * ring,
+        y: cy + Math.sin(angle) * (ring * 0.78)
+      };
+    });
 
-      // Update gentle orbital drift
-      for (const n of nodes) {
-        n.x += n.vx;
-        n.y += n.vy;
-        if (n.x < 0.12 || n.x > 0.88) n.vx *= -1;
-        if (n.y < 0.14 || n.y > 0.86) n.vy *= -1;
-      }
-
-      // Draw constellation filaments
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i];
-          const b = nodes[j];
-          const dx = (a.x - b.x) * w;
-          const dy = (a.y - b.y) * h;
-          const dist = Math.hypot(dx, dy);
-          if (dist < 115) {
-            const alpha = (1 - dist / 115) * 0.35;
-            ctx.strokeStyle =
-              a.id === activeTopic || b.id === activeTopic
-                ? `rgba(250, 204, 21, ${alpha + 0.25})`
-                : `rgba(244, 241, 234, ${alpha})`;
-            ctx.lineWidth = a.id === activeTopic || b.id === activeTopic ? 1.3 : 0.8;
-            ctx.beginPath();
-            ctx.moveTo(a.x * w, a.y * h);
-            ctx.lineTo(b.x * w, b.y * h);
-            ctx.stroke();
-          }
-        }
-      }
-
-      // Draw nodes
-      for (const n of nodes) {
-        const cx = n.x * w;
-        const cy = n.y * h;
-        const isSelected = n.id === activeTopic;
-
-        if (isSelected) {
-          ctx.beginPath();
-          ctx.arc(cx, cy, n.radius + 6, 0, Math.PI * 2);
-          ctx.strokeStyle = 'rgba(250, 204, 21, 0.55)';
-          ctx.lineWidth = 1.5;
-          ctx.stroke();
-        }
-
+    // Connect constellation lines
+    ctx.strokeStyle = '#BAE6FD';
+    ctx.lineWidth = 1.2;
+    for (let i = 0; i < nodes.length; i++) {
+      const a = nodes[i];
+      const b = nodes[(i + 1) % nodes.length];
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+      if (i % 2 === 0) {
         ctx.beginPath();
-        ctx.arc(cx, cy, isSelected ? n.radius + 2 : n.radius, 0, Math.PI * 2);
-        ctx.fillStyle = isSelected ? '#FACC15' : n.color;
-        ctx.fill();
-      }
-
-      ctx.restore();
-      animId = requestAnimationFrame(render);
-    };
-
-    animId = requestAnimationFrame(render);
-    return () => cancelAnimationFrame(animId);
-  }, [activeTopic]);
-
-  const handlePointerMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const mx = e.clientX - rect.left;
-    const my = e.clientY - rect.top;
-
-    let closest: StarNode | null = null;
-    let minDist = 24;
-    for (const n of nodesRef.current) {
-      const d = Math.hypot(n.x * rect.width - mx, n.y * rect.height - my);
-      if (d < minDist) {
-        minDist = d;
-        closest = n;
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(a.x, a.y);
+        ctx.stroke();
       }
     }
-    setHoveredTopic(closest);
-  };
 
-  const handleClick = () => {
-    if (hoveredTopic) {
-      onSelectTopic(hoveredTopic.id);
-    }
-  };
+    // Center hub
+    ctx.fillStyle = '#0284C7';
+    ctx.beginPath();
+    ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Topic nodes
+    nodes.forEach((n) => {
+      const isSelected = n.id === activeTopic;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, isSelected ? 6.5 : 4.2, 0, Math.PI * 2);
+      ctx.fillStyle = isSelected ? '#0284C7' : '#38BDF8';
+      ctx.fill();
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    });
+  }, [topics, activeTopic]);
 
   return (
-    <div className="relative w-full h-44 select-none">
-      <canvas
-        ref={canvasRef}
-        onMouseMove={handlePointerMove}
-        onMouseLeave={() => setHoveredTopic(null)}
-        onClick={handleClick}
-        className="w-full h-full cursor-pointer block"
-        aria-label="Bản đồ chùm sao 19 chủ đề từ vựng IELTS Word Atlas"
-      />
-      <div className="pointer-events-none absolute bottom-2 left-2 right-2 flex items-center justify-between text-xs font-mono-data text-[#B8B2A6]">
-        <span>
-          {hoveredTopic
-            ? `${hoveredTopic.code} • ${hoveredTopic.label} (${hoveredTopic.total} từ)`
-            : '19 CHÙM SAO CHỦ ĐỀ • 7,298 TỪ'}
-        </span>
-        <span className="text-[#FACC15]">CHẠM CHỌN CHỦ ĐỀ</span>
+    <div className="mt-3 space-y-3">
+      <div className="relative rounded-xl bg-[#F0F7FF] border border-[#DCEBFA] p-2 flex items-center justify-center overflow-hidden">
+        <canvas
+          ref={canvasRef}
+          className="w-[280px] h-[168px] block"
+          aria-label="Bản đồ mạng lưới 19 chủ đề IELTS"
+        />
+      </div>
+
+      <div className="flex flex-wrap gap-1.5">
+        {topics.slice(0, 6).map((t) => {
+          const active = activeTopic === t.id;
+          return (
+            <button
+              key={t.id}
+              type="button"
+              onClick={() => onSelectTopic(t.id)}
+              className={`px-2.5 py-1 rounded-md text-xs font-mono-data font-bold transition-colors cursor-pointer border ${
+                active
+                  ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                  : 'bg-[#F0F7FF] text-[#334155] border-[#DCEBFA] hover:bg-[#E0F2FE] hover:text-[#0F172A]'
+              }`}
+            >
+              {t.vi} ({t.total})
+            </button>
+          );
+        })}
       </div>
     </div>
   );

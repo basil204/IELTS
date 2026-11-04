@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import {
+  BookmarkPlus,
   CheckCircle2,
   Clock,
   FileCheck,
@@ -20,6 +21,7 @@ import { playPronunciation } from '@/lib/fsrs-engine';
 
 interface Props {
   onSelectVocabFromPassage: (word: string) => void;
+  onSaveToNotebook?: (word: string, meaning: string, ipa: string, cefr: string) => void;
   lang?: 'vi' | 'en';
 }
 
@@ -33,13 +35,22 @@ interface ReadingQuestion {
   explanationEn: string;
 }
 
+interface InlineWordDict {
+  word: string;
+  ipa: string;
+  pos: string;
+  cefr: string;
+  meaningVi: string;
+  meaningEn: string;
+}
+
 interface ReadingPassageData {
   id: string;
   title: string;
   bandLabel: string;
   topic: string;
   segments: { id: number; text: string }[];
-  clickableWords: string[];
+  glossary: InlineWordDict[];
   questions: ReadingQuestion[];
 }
 
@@ -67,14 +78,63 @@ const READING_PASSAGES: ReadingPassageData[] = [
         text: ' Empirical field scrutiny confirms that dense multi-layered native vegetation serves as an ecological catalyst for avian and pollinator biodiversity, becoming self-sustaining within thirty-six months.'
       }
     ],
-    clickableWords: [
-      'urbanization',
-      'pragmatic',
-      'mitigate',
-      'resilient',
-      'foster',
-      'catalyst',
-      'biodiversity'
+    glossary: [
+      {
+        word: 'urbanization',
+        ipa: '/ˌɜːbənaɪˈzeɪʃn/',
+        pos: 'n.',
+        cefr: 'B2',
+        meaningVi: 'sự đô thị hóa nhanh chóng',
+        meaningEn: 'the process of making an area more urban'
+      },
+      {
+        word: 'pragmatic',
+        ipa: '/præɡˈmætɪk/',
+        pos: 'adj.',
+        cefr: 'C1',
+        meaningVi: 'thực tế, thực dụng, giải quyết vấn đề hiệu quả',
+        meaningEn: 'dealing with things sensibly and realistically'
+      },
+      {
+        word: 'mitigate',
+        ipa: '/ˈmɪtɪɡeɪt/',
+        pos: 'v.',
+        cefr: 'C1',
+        meaningVi: 'giảm thiểu, làm dịu bớt tác động tiêu cực',
+        meaningEn: 'make less severe, serious, or painful'
+      },
+      {
+        word: 'resilient',
+        ipa: '/rɪˈzɪliənt/',
+        pos: 'adj.',
+        cefr: 'C1',
+        meaningVi: 'có sức chống chịu cao, phục hồi nhanh',
+        meaningEn: 'able to withstand or recover quickly from difficult conditions'
+      },
+      {
+        word: 'foster',
+        ipa: '/ˈfɒstə(r)/',
+        pos: 'v.',
+        cefr: 'C1',
+        meaningVi: 'thúc đẩy, nuôi dưỡng sự phát triển',
+        meaningEn: 'encourage or promote the development of'
+      },
+      {
+        word: 'catalyst',
+        ipa: '/ˈkætəlɪst/',
+        pos: 'n.',
+        cefr: 'C1',
+        meaningVi: 'chất xúc tác, nhân tố thúc đẩy đột phá',
+        meaningEn: 'an agent that provokes or speeds significant change'
+      },
+      {
+        word: 'biodiversity',
+        ipa: '/ˌbaɪəʊdaɪˈvɜːsəti/',
+        pos: 'n.',
+        cefr: 'B2',
+        meaningVi: 'đa dạng sinh học trong hệ sinh thái',
+        meaningEn: 'the variety of plant and animal life in the world'
+      }
     ],
     questions: [
       {
@@ -150,14 +210,63 @@ const READING_PASSAGES: ReadingPassageData[] = [
         text: ' Consequently, educational policymakers advocate a pedagogical paradigm shift that prioritizes epistemic vigilance over rote procedural speed.'
       }
     ],
-    clickableWords: [
-      'ubiquity',
-      'cognitive',
-      'mundane',
-      'erode',
-      'disparity',
-      'scrutinize',
-      'paradigm'
+    glossary: [
+      {
+        word: 'ubiquity',
+        ipa: '/juːˈbɪkwəti/',
+        pos: 'n.',
+        cefr: 'C2',
+        meaningVi: 'sự hiện diện khắp mọi nơi, tính phổ biến toàn diện',
+        meaningEn: 'the fact of appearing everywhere or of being very common'
+      },
+      {
+        word: 'cognitive',
+        ipa: '/ˈkɒɡnətɪv/',
+        pos: 'adj.',
+        cefr: 'C1',
+        meaningVi: 'thuộc về nhận thức và tư duy não bộ',
+        meaningEn: 'relating to cognition and mental processes'
+      },
+      {
+        word: 'mundane',
+        ipa: '/mʌnˈdeɪn/',
+        pos: 'adj.',
+        cefr: 'C1',
+        meaningVi: 'nhàm chán, lặp đi lặp lại thường nhật',
+        meaningEn: 'lacking interest or excitement; dull'
+      },
+      {
+        word: 'erode',
+        ipa: '/ɪˈrəʊd/',
+        pos: 'v.',
+        cefr: 'C1',
+        meaningVi: 'xói mòn, làm suy giảm dần theo thời gian',
+        meaningEn: 'gradually destroy or be gradually destroyed'
+      },
+      {
+        word: 'disparity',
+        ipa: '/dɪˈspærəti/',
+        pos: 'n.',
+        cefr: 'C1',
+        meaningVi: 'sự chênh lệch lớn, sự bất bình đẳng',
+        meaningEn: 'a great difference or inequality'
+      },
+      {
+        word: 'scrutinize',
+        ipa: '/ˈskruːtənaɪz/',
+        pos: 'v.',
+        cefr: 'C2',
+        meaningVi: 'xem xét kỹ lưỡng, kiểm tra tỉ mỉ từng chi tiết',
+        meaningEn: 'examine or inspect closely and thoroughly'
+      },
+      {
+        word: 'paradigm',
+        ipa: '/ˈpærədaɪm/',
+        pos: 'n.',
+        cefr: 'C2',
+        meaningVi: 'mô hình tư duy, hệ quy chiếu chuẩn mực',
+        meaningEn: 'a typical example or pattern of something; a model'
+      }
     ],
     questions: [
       {
@@ -225,21 +334,24 @@ const LISTENING_SECTIONS = [
     questions: [
       {
         id: 1,
-        prompt: '1. Degraded coral reefs fail to attract young fish primarily because they lack acoustic cues and have become ________.',
+        prompt:
+          '1. Degraded coral reefs fail to attract young fish primarily because they lack acoustic cues and have become ________.',
         answer: 'silent',
         questionKeyword: 'lack acoustic cues / no sound',
         transcriptParaphrase: 'eerily silent'
       },
       {
         id: 2,
-        prompt: '2. Playing healthy reef sounds via underwater speakers can ________ the rate of juvenile fish settlement.',
+        prompt:
+          '2. Playing healthy reef sounds via underwater speakers can ________ the rate of juvenile fish settlement.',
         answer: 'double',
         questionKeyword: 'increase twofold',
         transcriptParaphrase: 'double fish settlement rates'
       },
       {
         id: 3,
-        prompt: '3. Acoustic enrichment serves as a sensory ________ that guides marine larvae back to recovering habitats.',
+        prompt:
+          '3. Acoustic enrichment serves as a sensory ________ that guides marine larvae back to recovering habitats.',
         answer: 'beacon',
         questionKeyword: 'guiding signal',
         transcriptParaphrase: 'vital sensory beacon'
@@ -267,14 +379,7 @@ const WRITING_PROMPTS = [
   }
 ];
 
-const LEXICAL_UPGRADE_RULES: {
-  weakPattern: RegExp;
-  weakLabel: string;
-  band75Upgrade: string;
-  cefr: string;
-  explanationVi: string;
-  explanationEn: string;
-}[] = [
+const LEXICAL_UPGRADE_RULES = [
   {
     weakPattern: /\b(nowadays|today)\b/i,
     weakLabel: 'Nowadays / Today (Band 5.5)',
@@ -349,9 +454,12 @@ const SPEAKING_CUE_CARDS = [
 
 export default function SplitScreenExamPreview({
   onSelectVocabFromPassage,
+  onSaveToNotebook,
   lang = 'vi'
 }: Props) {
-  const [activeSkill, setActiveSkill] = useState<'reading' | 'listening' | 'writing' | 'speaking'>('reading');
+  const [activeSkill, setActiveSkill] = useState<
+    'reading' | 'listening' | 'writing' | 'speaking'
+  >('reading');
 
   // Reading state
   const [passageIdx, setPassageIdx] = useState<number>(0);
@@ -359,24 +467,32 @@ export default function SplitScreenExamPreview({
   const [secondsLeft, setSecondsLeft] = useState<number>(1200);
   const [timerRunning, setTimerRunning] = useState<boolean>(true);
   const [highlightActive, setHighlightActive] = useState<boolean>(true);
-  const [highlightedSentences, setHighlightedSentences] = useState<Record<string, boolean>>({
+  const [highlightedSentences, setHighlightedSentences] = useState<
+    Record<string, boolean>
+  >({
     'p1-1': true
   });
+  const [selectedGlossaryWord, setSelectedGlossaryWord] =
+    useState<InlineWordDict | null>(READING_PASSAGES[0].glossary[0]);
   const [answers, setAnswers] = useState<Record<string, string>>({
     'p1-1': 'TRUE'
   });
   const [submitted, setSubmitted] = useState<boolean>(false);
 
   // Listening state
-  const [listeningInputs, setListeningInputs] = useState<Record<number, string>>({});
+  const [listeningInputs, setListeningInputs] = useState<Record<number, string>>(
+    {}
+  );
   const [listeningSubmitted, setListeningSubmitted] = useState<boolean>(false);
   const [listeningPlaying, setListeningPlaying] = useState<boolean>(false);
 
   // Writing state
   const [writingPromptIdx, setWritingPromptIdx] = useState<number>(0);
-  const currentWritingPrompt = WRITING_PROMPTS[writingPromptIdx] || WRITING_PROMPTS[0];
-  const [essayText, setEssayText] = useState<string>(currentWritingPrompt.sampleUpgradeDraft);
-  const [writingEvaluated, setWritingEvaluated] = useState<boolean>(true);
+  const currentWritingPrompt =
+    WRITING_PROMPTS[writingPromptIdx] || WRITING_PROMPTS[0];
+  const [essayText, setEssayText] = useState<string>(
+    currentWritingPrompt.sampleUpgradeDraft
+  );
 
   // Speaking state
   const [speakingSeconds, setSpeakingSeconds] = useState<number>(120);
@@ -387,7 +503,7 @@ export default function SplitScreenExamPreview({
 
   // Lead gen state
   const [leadName, setLeadName] = useState('');
-  const [leadTarget, setLeadTarget] = useState('Band 7.5+');
+  const [leadTarget] = useState('Band 7.5+');
   const [leadContact, setLeadContact] = useState('');
   const [leadSubmitted, setLeadSubmitted] = useState(false);
 
@@ -414,12 +530,19 @@ export default function SplitScreenExamPreview({
   const spkSecs = String(speakingSeconds % 60).padStart(2, '0');
 
   const scoreCount = currentPassage.questions.reduce(
-    (acc, q) => acc + (answers[`${currentPassage.id}-${q.id}`] === q.answer ? 1 : 0),
+    (acc, q) =>
+      acc + (answers[`${currentPassage.id}-${q.id}`] === q.answer ? 1 : 0),
     0
   );
 
   const estimatedReadingBand =
-    scoreCount === 4 ? '8.5' : scoreCount === 3 ? '7.5' : scoreCount === 2 ? '6.5' : '5.5';
+    scoreCount === 4
+      ? '8.5'
+      : scoreCount === 3
+        ? '7.5'
+        : scoreCount === 2
+          ? '6.5'
+          : '5.5';
 
   // Writing AI analysis
   const writingAnalysis = useMemo(() => {
@@ -438,7 +561,11 @@ export default function SplitScreenExamPreview({
 
     const trScore = wordCount >= 60 ? 7.5 : 6.5;
     const ccScore = hasAcademicMarkers ? 8.0 : 7.0;
-    const lrScore = hasAcademicMarkers ? 8.0 : matchedUpgrades.length > 2 ? 6.5 : 7.5;
+    const lrScore = hasAcademicMarkers
+      ? 8.0
+      : matchedUpgrades.length > 2
+        ? 6.5
+        : 7.5;
     const graScore = essayText.includes(',') && essayText.length > 120 ? 7.5 : 6.5;
     const overall = (
       Math.round(((trScore + ccScore + lrScore + graScore) / 4) * 2) / 2
@@ -465,20 +592,19 @@ export default function SplitScreenExamPreview({
     upgraded = upgraded.replace(/\ba lot of\b/gi, 'a proliferation of');
     upgraded = upgraded.replace(/\bI think\b/gi, 'Empirical evidence suggests that');
     setEssayText(upgraded);
-    setWritingEvaluated(true);
   };
 
   return (
-    <section id="exam-room" className="mt-14 space-y-12">
-      {/* Split-Screen Computer-Delivered 4-Skill Exam Room */}
-      <div className="concourse-panel rounded-2xl overflow-hidden border border-[#2E3340]">
+    <section id="exam-room" className="mt-10 space-y-10">
+      {/* Split-Screen Computer-Delivered 4-Skill Exam Room (Sky-Blue & White 4.0) */}
+      <div className="bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#DCEBFA] shadow-sm">
         {/* Exam Top Bar */}
-        <div className="px-6 py-4 bg-[#121419] border-b border-[#2E3340] flex flex-col xl:flex-row xl:items-center xl:justify-between gap-4">
-          <div className="space-y-2">
-            <h2 className="font-display text-lg md:text-xl font-extrabold text-[#F4F1EA]">
+        <div className="px-6 py-4 bg-[#F0F7FF] border-b border-[#DCEBFA] flex flex-col xl:flex-row xl:items-center xl:justify-between gap-4">
+          <div className="space-y-2.5">
+            <h2 className="font-display text-lg md:text-xl font-black text-[#0F172A]">
               {lang === 'vi'
-                ? '06 / PHÒNG THI MÁY TÍNH 4 KỸ NĂNG (IDP / BC COMPUTER-DELIVERED SIMULATION)'
-                : '06 / 4-SKILL COMPUTER-DELIVERED EXAM SIMULATOR (IDP / BC STANDARD)'}
+                ? '06 / PHÒNG THI MÁY TÍNH 4 KỸ NĂNG CHUẨN YOUPASS 4.0 (TRA TỪ TRỰC TIẾP • CHẤM AI)'
+                : '06 / YOUPASS 4.0 COMPUTER-DELIVERED 4-SKILL EXAM ROOM (INLINE DICTIONARY • AI GRADER)'}
             </h2>
 
             {/* 4-Skill Switcher Tabs */}
@@ -486,21 +612,21 @@ export default function SplitScreenExamPreview({
               <button
                 type="button"
                 onClick={() => setActiveSkill('reading')}
-                className={`px-3.5 py-1.5 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer ${
+                className={`px-3.5 py-2 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer ${
                   activeSkill === 'reading'
-                    ? 'bg-[#FACC15] text-[#16181D]'
-                    : 'bg-[#1F2229] text-[#B8B2A6] hover:text-[#F4F1EA] border border-[#363B47]'
+                    ? 'bg-[#0284C7] text-[#FFFFFF]'
+                    : 'bg-[#FFFFFF] text-[#334155] hover:bg-[#E0F2FE] border border-[#DCEBFA]'
                 }`}
               >
-                01 • READING (SPLIT-SCREEN)
+                01 • READING (TRA TỪ 1-CHẠM)
               </button>
               <button
                 type="button"
                 onClick={() => setActiveSkill('listening')}
-                className={`px-3.5 py-1.5 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
+                className={`px-3.5 py-2 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
                   activeSkill === 'listening'
-                    ? 'bg-[#FACC15] text-[#16181D]'
-                    : 'bg-[#1F2229] text-[#B8B2A6] hover:text-[#F4F1EA] border border-[#363B47]'
+                    ? 'bg-[#0284C7] text-[#FFFFFF]'
+                    : 'bg-[#FFFFFF] text-[#334155] hover:bg-[#E0F2FE] border border-[#DCEBFA]'
                 }`}
               >
                 <Headphones className="w-3.5 h-3.5" />
@@ -509,10 +635,10 @@ export default function SplitScreenExamPreview({
               <button
                 type="button"
                 onClick={() => setActiveSkill('writing')}
-                className={`px-3.5 py-1.5 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
+                className={`px-3.5 py-2 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
                   activeSkill === 'writing'
-                    ? 'bg-[#FACC15] text-[#16181D]'
-                    : 'bg-[#1F2229] text-[#B8B2A6] hover:text-[#F4F1EA] border border-[#363B47]'
+                    ? 'bg-[#0284C7] text-[#FFFFFF]'
+                    : 'bg-[#FFFFFF] text-[#334155] hover:bg-[#E0F2FE] border border-[#DCEBFA]'
                 }`}
               >
                 <PenTool className="w-3.5 h-3.5" />
@@ -521,10 +647,10 @@ export default function SplitScreenExamPreview({
               <button
                 type="button"
                 onClick={() => setActiveSkill('speaking')}
-                className={`px-3.5 py-1.5 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
+                className={`px-3.5 py-2 rounded-lg font-display text-xs font-extrabold transition-colors cursor-pointer inline-flex items-center gap-1.5 ${
                   activeSkill === 'speaking'
-                    ? 'bg-[#FACC15] text-[#16181D]'
-                    : 'bg-[#1F2229] text-[#B8B2A6] hover:text-[#F4F1EA] border border-[#363B47]'
+                    ? 'bg-[#0284C7] text-[#FFFFFF]'
+                    : 'bg-[#FFFFFF] text-[#334155] hover:bg-[#E0F2FE] border border-[#DCEBFA]'
                 }`}
               >
                 <Mic className="w-3.5 h-3.5" />
@@ -533,22 +659,23 @@ export default function SplitScreenExamPreview({
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2.5">
             {activeSkill === 'reading' && (
               <>
-                <div className="flex items-center gap-1 bg-[#1F2229] p-1 rounded-lg border border-[#363B47]">
+                <div className="flex items-center gap-1 bg-[#FFFFFF] p-1 rounded-lg border border-[#DCEBFA]">
                   {READING_PASSAGES.map((p, idx) => (
                     <button
                       key={p.id}
                       type="button"
                       onClick={() => {
                         setPassageIdx(idx);
+                        setSelectedGlossaryWord(p.glossary[0]);
                         setSubmitted(false);
                       }}
                       className={`px-2.5 py-1 rounded text-xs font-mono-data font-bold cursor-pointer ${
                         passageIdx === idx
-                          ? 'bg-[#FACC15] text-[#16181D]'
-                          : 'text-[#B8B2A6] hover:text-[#F4F1EA]'
+                          ? 'bg-[#0284C7] text-[#FFFFFF]'
+                          : 'text-[#334155] hover:bg-[#EBF5FF]'
                       }`}
                     >
                       Passage {idx + 1}
@@ -559,17 +686,14 @@ export default function SplitScreenExamPreview({
                 <button
                   type="button"
                   onClick={() => setHighlightActive((v) => !v)}
-                  className={`inline-flex items-center gap-2 px-3 py-1.5 rounded text-xs font-mono-data transition-colors cursor-pointer ${
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono-data transition-colors cursor-pointer border ${
                     highlightActive
-                      ? 'bg-[#FACC15] text-[#16181D] font-bold'
-                      : 'bg-[#252934] text-[#B8B2A6]'
+                      ? 'bg-[#E0F2FE] text-[#0284C7] border-[#0284C7] font-bold'
+                      : 'bg-[#FFFFFF] text-[#64748B] border-[#DCEBFA]'
                   }`}
                 >
                   <Highlighter className="w-3.5 h-3.5" />
-                  <span>
-                    {lang === 'vi' ? 'HIGHLIGHT:' : 'HIGHLIGHT:'}{' '}
-                    {highlightActive ? 'ON' : 'OFF'}
-                  </span>
+                  <span>HIGHLIGHT: {highlightActive ? 'ON' : 'OFF'}</span>
                 </button>
               </>
             )}
@@ -577,7 +701,7 @@ export default function SplitScreenExamPreview({
             <button
               type="button"
               onClick={() => setTimerRunning((r) => !r)}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-[#252934] text-[#FACC15] font-mono-data text-xs cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#FFFFFF] border border-[#DCEBFA] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
             >
               <Clock className="w-3.5 h-3.5" />
               <span>
@@ -589,7 +713,7 @@ export default function SplitScreenExamPreview({
               <button
                 type="button"
                 onClick={() => setSubmitted(true)}
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded bg-[#065F46] hover:bg-[#10B981] hover:text-[#16181D] text-[#F4F1EA] font-display text-xs font-bold transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold transition-colors cursor-pointer"
               >
                 <FileCheck className="w-3.5 h-3.5" />
                 <span>
@@ -600,28 +724,28 @@ export default function SplitScreenExamPreview({
           </div>
         </div>
 
-        {/* SKILL 1: READING SPLIT-SCREEN */}
+        {/* SKILL 1: READING SPLIT-SCREEN WITH YOUPASS INLINE DICTIONARY */}
         {activeSkill === 'reading' && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#2E3340]">
-            {/* Left Pane: Academic Reading Passage */}
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F4F1EA] text-[#16181D] flex flex-col justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#DCEBFA]">
+            {/* Left Pane: Academic Reading Passage + Inline Dictionary Popover */}
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#FFFFFF] text-[#0F172A] flex flex-col justify-between">
               <div>
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-[#16181D]/15">
-                  <h3 className="font-display text-xl font-extrabold text-[#16181D]">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-[#DCEBFA]">
+                  <h3 className="font-display text-xl font-extrabold text-[#0F172A]">
                     {currentPassage.title}
                   </h3>
-                  <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#16181D] text-[#FACC15] font-bold">
+                  <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#E0F2FE] text-[#0284C7] font-bold">
                     {currentPassage.bandLabel}
                   </span>
                 </div>
 
-                <p className="text-xs text-[#4A4740] mb-4">
+                <p className="text-xs text-[#334155] mb-4">
                   {lang === 'vi'
-                    ? 'Mẹo phòng thi: Nhấp vào câu bất kỳ để bôi vàng dẫn chứng (Highlight), hoặc nhấp vào các từ vựng bên dưới để đẩy lên Trạm FSRS 02.'
-                    : 'Exam Tip: Click any sentence to highlight evidence in yellow, or click any academic keyword below to load it into Station 02 FSRS.'}
+                    ? 'Tính năng YouPass 4.0: Nhấp vào câu để bôi xanh dẫn chứng (Highlight), hoặc chạm vào từ vựng bên dưới để Tra từ trực tiếp & Lưu vào Sổ Từ Vựng Cá Nhân.'
+                    : 'YouPass 4.0 Feature: Click any sentence to highlight evidence, or click any keyword below for Instant Dictionary Lookup & Personal Notebook saving.'}
                 </p>
 
-                <div className="space-y-4 text-base leading-relaxed text-[#16181D]">
+                <div className="space-y-4 text-base leading-relaxed text-[#0F172A]">
                   <p>
                     {currentPassage.segments.map((seg) => {
                       const key = `${currentPassage.id}-${seg.id}`;
@@ -639,8 +763,8 @@ export default function SplitScreenExamPreview({
                           }}
                           className={`cursor-pointer transition-colors rounded px-1 ${
                             isHighlighted
-                              ? 'bg-[#FACC15]/65 text-[#16181D]'
-                              : 'hover:bg-[#16181D]/5'
+                              ? 'bg-[#BAE6FD]/60 text-[#0F172A] font-medium'
+                              : 'hover:bg-[#F0F7FF]'
                           }`}
                         >
                           {seg.text}
@@ -651,50 +775,121 @@ export default function SplitScreenExamPreview({
                 </div>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-[#16181D]/15">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-mono-data text-xs font-bold text-[#16181D]">
+              {/* YouPass 4.0 Inline Dictionary Lookup Bar */}
+              <div className="mt-6 pt-5 border-t border-[#DCEBFA] space-y-3">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="font-mono-data text-xs font-bold text-[#0284C7] mr-1">
                     {lang === 'vi'
-                      ? 'TỪ VỰNG HỌC THUẬT TRONG BÀI (CHẠM ĐỂ ĐƯA VÀO TRẠM 02 FSRS):'
-                      : 'ACADEMIC KEYWORDS IN PASSAGE (CLICK TO SEND TO STATION 02 FSRS):'}
+                      ? 'TRA TỪ TRỰC TIẾP TRONG BÀI ĐỌC:'
+                      : 'INLINE PASSAGE DICTIONARY:'}
                   </span>
-                  {currentPassage.clickableWords.map((w) => (
-                    <button
-                      key={w}
-                      type="button"
-                      onClick={() => onSelectVocabFromPassage(w)}
-                      className="px-2.5 py-1 rounded bg-[#16181D] text-[#FACC15] hover:bg-[#065F46] hover:text-[#F4F1EA] font-mono-data text-xs transition-colors cursor-pointer"
-                    >
-                      {w}
-                    </button>
-                  ))}
+                  {currentPassage.glossary.map((g) => {
+                    const active = selectedGlossaryWord?.word === g.word;
+                    return (
+                      <button
+                        key={g.word}
+                        type="button"
+                        onClick={() => setSelectedGlossaryWord(g)}
+                        className={`px-2.5 py-1 rounded-md font-mono-data text-xs font-bold transition-colors cursor-pointer ${
+                          active
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#F0F7FF] text-[#0284C7] hover:bg-[#E0F2FE]'
+                        }`}
+                      >
+                        {g.word}
+                      </button>
+                    );
+                  })}
                 </div>
+
+                {selectedGlossaryWord && (
+                  <div className="p-4 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-display text-lg font-black text-[#0F172A]">
+                          {selectedGlossaryWord.word}
+                        </span>
+                        <span className="font-mono-data text-xs text-[#334155]">
+                          {selectedGlossaryWord.ipa}
+                        </span>
+                        <span className="font-mono-data text-xs px-2 py-0.5 rounded bg-[#0284C7] text-[#FFFFFF] font-bold">
+                          {selectedGlossaryWord.cefr} • {selectedGlossaryWord.pos}
+                        </span>
+                      </div>
+                      <p className="text-xs font-semibold text-[#0F172A]">
+                        {selectedGlossaryWord.meaningVi}
+                      </p>
+                      <p className="text-xs text-[#334155]">
+                        {selectedGlossaryWord.meaningEn}
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          playPronunciation('', selectedGlossaryWord.word, 'en-GB')
+                        }
+                        className="px-2.5 py-1.5 rounded-lg bg-[#FFFFFF] border border-[#DCEBFA] text-[#0284C7] font-mono-data text-xs font-bold inline-flex items-center gap-1 cursor-pointer"
+                      >
+                        <Volume2 className="w-3.5 h-3.5" />
+                        <span>UK</span>
+                      </button>
+                      {onSaveToNotebook && (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            onSaveToNotebook(
+                              selectedGlossaryWord.word,
+                              selectedGlossaryWord.meaningVi,
+                              selectedGlossaryWord.ipa,
+                              selectedGlossaryWord.cefr
+                            )
+                          }
+                          className="px-3 py-1.5 rounded-lg bg-[#FFFFFF] hover:bg-[#E0F2FE] border border-[#0284C7] text-[#0284C7] font-display text-xs font-bold inline-flex items-center gap-1 cursor-pointer"
+                        >
+                          <BookmarkPlus className="w-3.5 h-3.5" />
+                          <span>+ Sổ Từ Vựng</span>
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onSelectVocabFromPassage(selectedGlossaryWord.word)
+                        }
+                        className="px-3 py-1.5 rounded-lg bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-bold cursor-pointer"
+                      >
+                        Học ở Trạm 02
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* Right Pane: Interactive Exam Questions */}
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#16181D] text-[#F4F1EA] flex flex-col justify-between">
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F8FBFF] text-[#0F172A] flex flex-col justify-between">
               <div className="space-y-6">
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#2E3340]">
-                  <h3 className="font-display text-lg font-bold text-[#F4F1EA]">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#DCEBFA]">
+                  <h3 className="font-display text-lg font-extrabold text-[#0F172A]">
                     Questions 1–{currentPassage.questions.length} ({currentPassage.topic})
                   </h3>
                   {submitted && (
-                    <span className="font-mono-data text-xs px-3 py-1 rounded bg-[#FACC15] text-[#16181D] font-bold">
+                    <span className="font-mono-data text-xs px-3 py-1 rounded bg-[#0284C7] text-[#FFFFFF] font-bold">
                       SCORE: {scoreCount}/{currentPassage.questions.length} • EST. BAND{' '}
                       {estimatedReadingBand}
                     </span>
                   )}
                 </div>
 
-                <div className="divide-y divide-[#2E3340]">
+                <div className="divide-y divide-[#DCEBFA]">
                   {currentPassage.questions.map((q) => {
                     const aKey = `${currentPassage.id}-${q.id}`;
                     const chosen = answers[aKey];
                     const isCorrect = chosen === q.answer;
                     return (
                       <div key={q.id} className="py-4 first:pt-0 last:pb-0 space-y-3">
-                        <p className="text-sm font-medium text-[#F4F1EA] leading-snug">
+                        <p className="text-sm font-semibold text-[#0F172A] leading-snug">
                           {q.prompt}
                         </p>
                         <div className="flex flex-wrap gap-2">
@@ -707,10 +902,10 @@ export default function SplitScreenExamPreview({
                                 onClick={() =>
                                   setAnswers((prev) => ({ ...prev, [aKey]: opt }))
                                 }
-                                className={`px-3.5 py-1.5 rounded text-xs font-mono-data font-bold transition-colors border cursor-pointer ${
+                                className={`px-3.5 py-1.5 rounded-lg text-xs font-mono-data font-bold transition-colors border cursor-pointer ${
                                   active
-                                    ? 'bg-[#FACC15] text-[#16181D] border-[#FACC15]'
-                                    : 'bg-[#1F2229] text-[#B8B2A6] border-[#363B47] hover:text-[#F4F1EA]'
+                                    ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                                    : 'bg-[#FFFFFF] text-[#334155] border-[#DCEBFA] hover:bg-[#E0F2FE]'
                                 }`}
                               >
                                 {opt}
@@ -721,25 +916,25 @@ export default function SplitScreenExamPreview({
 
                         {submitted && (
                           <div
-                            className={`text-xs p-3 rounded border ${
+                            className={`text-xs p-3.5 rounded-xl border ${
                               isCorrect
-                                ? 'bg-[#065F46]/25 border-[#10B981]/40 text-[#F4F1EA]'
-                                : 'bg-[#EA580C]/20 border-[#EA580C]/40 text-[#F4F1EA]'
+                                ? 'bg-[#ECFDF5] border-[#A7F3D0] text-[#0F172A]'
+                                : 'bg-[#FFF1F2] border-[#FECDD3] text-[#0F172A]'
                             }`}
                           >
                             <div className="flex items-center gap-1.5 font-bold mb-1">
                               {isCorrect ? (
-                                <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                                <CheckCircle2 className="w-4 h-4 text-[#059669]" />
                               ) : (
-                                <XCircle className="w-4 h-4 text-[#EA580C]" />
+                                <XCircle className="w-4 h-4 text-[#E11D48]" />
                               )}
                               <span>
                                 {lang === 'vi'
-                                  ? `Đáp án đúng: ${q.answer} — Giải thích chi tiết:`
-                                  : `Correct Answer: ${q.answer} — Explanation:`}
+                                  ? `Đáp án đúng: ${q.answer} — Giải thích vị trí thông tin:`
+                                  : `Correct Answer: ${q.answer} — Detailed Explanation:`}
                               </span>
                             </div>
-                            <p className="text-[#B8B2A6]">
+                            <p className="text-[#334155]">
                               {lang === 'vi' ? q.explanationVi : q.explanationEn}
                             </p>
                           </div>
@@ -751,17 +946,17 @@ export default function SplitScreenExamPreview({
               </div>
 
               {/* Bottom Question Palette Bar */}
-              <div className="mt-6 pt-4 border-t border-[#2E3340] flex flex-wrap items-center justify-between gap-3">
+              <div className="mt-6 pt-4 border-t border-[#DCEBFA] flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-1.5">
                   {currentPassage.questions.map((q) => {
                     const answered = !!answers[`${currentPassage.id}-${q.id}`];
                     return (
                       <span
                         key={q.id}
-                        className={`w-7 h-7 rounded flex items-center justify-center font-mono-data text-xs font-bold ${
+                        className={`w-7 h-7 rounded-md flex items-center justify-center font-mono-data text-xs font-bold border ${
                           answered
-                            ? 'bg-[#FACC15] text-[#16181D]'
-                            : 'bg-[#252934] text-[#B8B2A6]'
+                            ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                            : 'bg-[#FFFFFF] text-[#64748B] border-[#DCEBFA]'
                         }`}
                       >
                         {q.id}
@@ -775,7 +970,7 @@ export default function SplitScreenExamPreview({
                     setSubmitted(false);
                     setAnswers({});
                   }}
-                  className="text-xs font-mono-data text-[#B8B2A6] hover:text-[#FACC15] cursor-pointer"
+                  className="text-xs font-mono-data font-bold text-[#0284C7] hover:underline cursor-pointer"
                 >
                   {lang === 'vi' ? 'Làm lại đề này' : 'Reset Passage'}
                 </button>
@@ -784,22 +979,22 @@ export default function SplitScreenExamPreview({
           </div>
         )}
 
-        {/* SKILL 2: LISTENING LAB (AUDIO LECTURE + PARAPHRASE DICTATION) */}
+        {/* SKILL 2: LISTENING LAB */}
         {activeSkill === 'listening' && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#2E3340]">
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F4F1EA] text-[#16181D] space-y-5">
-              <div className="flex items-center justify-between pb-4 border-b border-[#16181D]/15">
-                <h3 className="font-display text-xl font-extrabold text-[#16181D]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#DCEBFA]">
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#FFFFFF] text-[#0F172A] space-y-5">
+              <div className="flex items-center justify-between pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-xl font-extrabold text-[#0F172A]">
                   {LISTENING_SECTIONS[0].title}
                 </h3>
-                <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#16181D] text-[#FACC15] font-bold">
+                <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#E0F2FE] text-[#0284C7] font-bold">
                   PART 4 ACADEMIC AUDIO
                 </span>
               </div>
 
-              <div className="p-5 rounded-xl bg-[#16181D] text-[#F4F1EA] space-y-4">
+              <div className="p-5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-4">
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div className="font-mono-data text-xs text-[#FACC15]">
+                  <div className="font-mono-data text-xs text-[#0284C7] font-bold">
                     AUDIO STREAM • BRITISH ACADEMIC LECTURER
                   </div>
                   <button
@@ -813,57 +1008,49 @@ export default function SplitScreenExamPreview({
                       );
                       setTimeout(() => setListeningPlaying(false), 6000);
                     }}
-                    className="px-4 py-2 rounded-lg bg-[#FACC15] hover:bg-[#EAB308] text-[#16181D] font-display font-extrabold text-xs inline-flex items-center gap-2 cursor-pointer"
+                    className="px-4 py-2 rounded-lg bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display font-extrabold text-xs inline-flex items-center gap-2 cursor-pointer"
                   >
                     <Volume2 className="w-4 h-4" />
                     <span>
                       {listeningPlaying
-                        ? lang === 'vi'
-                          ? 'Đang phát băng nghe...'
-                          : 'Playing Lecture Audio...'
-                        : lang === 'vi'
-                          ? 'Phát Băng Nghe Section 4'
-                          : 'Play Section 4 Lecture Audio'}
+                        ? 'Đang phát băng nghe...'
+                        : 'Phát Băng Nghe Section 4'}
                     </span>
                   </button>
                 </div>
 
-                <div className="pt-3 border-t border-[#2E3340] text-sm text-[#B8B2A6] leading-relaxed">
-                  <span className="font-mono-data text-xs text-[#10B981] font-bold block mb-1">
-                    {listeningSubmitted
-                      ? 'TRANSCRIPT REVEALED (BẢN GHI LỜI THOẠI):'
-                      : 'TRANSCRIPT PREVIEW (NỘP BÀI ĐỂ ĐỐI CHIẾU PARAPHRASE):'}
+                <div className="pt-3 border-t border-[#DCEBFA] text-sm text-[#334155] leading-relaxed">
+                  <span className="font-mono-data text-xs text-[#059669] font-bold block mb-1">
+                    TRANSCRIPT & PARAPHRASE EVIDENCE:
                   </span>
-                  <p className="text-[#F4F1EA]">
+                  <p className="text-[#0F172A]">
                     {LISTENING_SECTIONS[0].audioScript}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#16181D] text-[#F4F1EA] space-y-5">
-              <div className="flex items-center justify-between pb-4 border-b border-[#2E3340]">
-                <h3 className="font-display text-lg font-bold text-[#F4F1EA]">
-                  {lang === 'vi'
-                    ? 'Điền Từ Vào Chỗ Trống (NO MORE THAN ONE WORD)'
-                    : 'Note Completion (NO MORE THAN ONE WORD)'}
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F8FBFF] text-[#0F172A] space-y-5">
+              <div className="flex items-center justify-between pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-lg font-extrabold text-[#0F172A]">
+                  Điền Từ Vào Chỗ Trống (NO MORE THAN ONE WORD)
                 </h3>
                 <button
                   type="button"
                   onClick={() => setListeningSubmitted(true)}
-                  className="px-3.5 py-1.5 rounded bg-[#065F46] hover:bg-[#10B981] hover:text-[#16181D] text-[#F4F1EA] font-display text-xs font-bold cursor-pointer"
+                  className="px-3.5 py-1.5 rounded-lg bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-bold cursor-pointer"
                 >
-                  {lang === 'vi' ? 'Chấm Điểm Listening' : 'Check Answers'}
+                  Chấm Điểm Listening
                 </button>
               </div>
 
-              <div className="divide-y divide-[#2E3340]">
+              <div className="divide-y divide-[#DCEBFA]">
                 {LISTENING_SECTIONS[0].questions.map((q) => {
                   const userVal = (listeningInputs[q.id] || '').trim().toLowerCase();
                   const correct = userVal === q.answer.toLowerCase();
                   return (
                     <div key={q.id} className="py-4 first:pt-0 last:pb-0 space-y-2.5">
-                      <p className="text-sm text-[#F4F1EA]">{q.prompt}</p>
+                      <p className="text-sm font-medium text-[#0F172A]">{q.prompt}</p>
                       <div className="flex flex-wrap items-center gap-3">
                         <input
                           type="text"
@@ -875,23 +1062,29 @@ export default function SplitScreenExamPreview({
                             }))
                           }
                           placeholder="Gõ 1 từ tiếng Anh..."
-                          className="bg-[#1F2229] border border-[#363B47] rounded-lg px-3.5 py-2 text-sm text-[#FACC15] font-mono-data"
+                          className="bg-[#FFFFFF] border border-[#DCEBFA] rounded-lg px-3.5 py-2 text-sm text-[#0284C7] font-mono-data font-bold"
                         />
                         {listeningSubmitted && (
                           <span
                             className={`font-mono-data text-xs px-2.5 py-1 rounded font-bold ${
                               correct
-                                ? 'bg-[#065F46] text-[#F4F1EA]'
-                                : 'bg-[#EA580C] text-[#F4F1EA]'
+                                ? 'bg-[#059669] text-[#FFFFFF]'
+                                : 'bg-[#E11D48] text-[#FFFFFF]'
                             }`}
                           >
                             {correct ? 'CORRECT' : `ANSWER: ${q.answer}`}
                           </span>
                         )}
                       </div>
-                      <div className="text-xs font-mono-data text-[#B8B2A6]">
-                        Paraphrase Map: <span className="text-[#F4F1EA]">{q.questionKeyword}</span>{' '}
-                        → <span className="text-[#10B981]">{q.transcriptParaphrase}</span>
+                      <div className="text-xs font-mono-data text-[#64748B]">
+                        Paraphrase Map:{' '}
+                        <span className="text-[#0F172A] font-bold">
+                          {q.questionKeyword}
+                        </span>{' '}
+                        →{' '}
+                        <span className="text-[#059669] font-bold">
+                          {q.transcriptParaphrase}
+                        </span>
                       </div>
                     </div>
                   );
@@ -901,14 +1094,13 @@ export default function SplitScreenExamPreview({
           </div>
         )}
 
-        {/* SKILL 3: WRITING TASK 2 AI BAND GRADER & LEXICAL UPGRADER */}
+        {/* SKILL 3: WRITING TASK 2 AI BAND GRADER */}
         {activeSkill === 'writing' && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#2E3340]">
-            {/* Left Pane: Essay Editor & Prompt Selector */}
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F4F1EA] text-[#16181D] space-y-5">
-              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#16181D]/15">
-                <h3 className="font-display text-xl font-extrabold text-[#16181D]">
-                  IELTS WRITING TASK 2 WORKBENCH
+          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#DCEBFA]">
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#FFFFFF] text-[#0F172A] space-y-5">
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-xl font-extrabold text-[#0F172A]">
+                  IELTS WRITING TASK 2 AI WORKBENCH
                 </h3>
                 <div className="flex items-center gap-1.5">
                   {WRITING_PROMPTS.map((wp, idx) => (
@@ -921,8 +1113,8 @@ export default function SplitScreenExamPreview({
                       }}
                       className={`px-2.5 py-1 rounded text-xs font-mono-data font-bold cursor-pointer ${
                         writingPromptIdx === idx
-                          ? 'bg-[#16181D] text-[#FACC15]'
-                          : 'bg-[#16181D]/10 text-[#16181D]'
+                          ? 'bg-[#0284C7] text-[#FFFFFF]'
+                          : 'bg-[#F0F7FF] text-[#334155]'
                       }`}
                     >
                       Topic {idx + 1}
@@ -931,21 +1123,19 @@ export default function SplitScreenExamPreview({
                 </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#16181D] text-[#F4F1EA] space-y-1.5">
-                <div className="font-mono-data text-xs text-[#FACC15] font-bold">
+              <div className="p-4 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-1.5">
+                <div className="font-mono-data text-xs text-[#0284C7] font-bold">
                   PROMPT • {currentWritingPrompt.topic.toUpperCase()}
                 </div>
-                <p className="text-sm leading-relaxed">{currentWritingPrompt.prompt}</p>
+                <p className="text-sm text-[#0F172A] leading-relaxed">
+                  {currentWritingPrompt.prompt}
+                </p>
               </div>
 
               <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs font-mono-data text-[#4A4740]">
-                  <span>
-                    {lang === 'vi'
-                      ? 'NHẬP BÀI LUẬN CỦA BẠN HOẶC THỬ NÂNG CẤP TỪ VỰNG BAND 7.5+:'
-                      : 'WRITE YOUR ESSAY OR TEST LIVE C1/C2 LEXICAL UPGRADE:'}
-                  </span>
-                  <span className="font-bold text-[#16181D]">
+                <div className="flex items-center justify-between text-xs font-mono-data text-[#334155]">
+                  <span>NHẬP BÀI LUẬN HOẶC BẤM NÂNG CẤP TỪ VỰNG C1/C2:</span>
+                  <span className="font-bold text-[#0284C7]">
                     {writingAnalysis.wordCount} words
                   </span>
                 </div>
@@ -953,7 +1143,7 @@ export default function SplitScreenExamPreview({
                   rows={6}
                   value={essayText}
                   onChange={(e) => setEssayText(e.target.value)}
-                  className="w-full rounded-xl bg-[#EAE5D9] border border-[#16181D]/20 p-4 text-sm text-[#16181D] leading-relaxed focus:outline-none focus:border-[#16181D]"
+                  className="w-full rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] p-4 text-sm text-[#0F172A] leading-relaxed focus:outline-none focus:border-[#0284C7]"
                 />
               </div>
 
@@ -961,19 +1151,15 @@ export default function SplitScreenExamPreview({
                 <button
                   type="button"
                   onClick={handleApplyAllWritingUpgrades}
-                  className="px-4 py-2.5 rounded-xl bg-[#065F46] hover:bg-[#047857] text-[#F4F1EA] font-display font-extrabold text-xs inline-flex items-center gap-2 cursor-pointer"
+                  className="px-4 py-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display font-extrabold text-xs inline-flex items-center gap-2 cursor-pointer"
                 >
-                  <Sparkles className="w-4 h-4 text-[#FACC15]" />
-                  <span>
-                    {lang === 'vi'
-                      ? 'Nâng Cấp Toàn Bộ Lên Từ Vựng C1/C2 (Band 7.5+)'
-                      : 'Auto-Upgrade Draft to C1/C2 Academic Lexicon (Band 7.5+)'}
-                  </span>
+                  <Sparkles className="w-4 h-4" />
+                  <span>Nâng Cấp 1-Chạm Lên Từ Vựng C1/C2 (Band 7.5+)</span>
                 </button>
                 <button
                   type="button"
                   onClick={() => setEssayText(currentWritingPrompt.sampleUpgradeDraft)}
-                  className="px-3.5 py-2.5 rounded-xl bg-[#16181D]/10 hover:bg-[#16181D]/20 text-[#16181D] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
+                  className="px-3.5 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#E0F2FE] text-[#0F172A] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Reset Draft</span>
@@ -981,151 +1167,123 @@ export default function SplitScreenExamPreview({
               </div>
             </div>
 
-            {/* Right Pane: Instant 4-Criteria Band Rubric & Lexical Suggestions */}
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#16181D] text-[#F4F1EA] space-y-6">
-              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#2E3340]">
-                <h3 className="font-display text-lg font-bold text-[#F4F1EA]">
-                  {lang === 'vi'
-                    ? 'Chấm Điểm 4 Tiêu Chí & Đề Xuất Từ Vựng C1/C2'
-                    : '4-Criteria Band Diagnostic & C1/C2 Lexical Upgrades'}
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F8FBFF] text-[#0F172A] space-y-6">
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-lg font-extrabold text-[#0F172A]">
+                  Chấm Điểm AI 4 Tiêu Chí & Gợi Ý Nâng Cấp Từ Vựng
                 </h3>
-                {writingEvaluated && (
-                  <span className="font-mono-data text-sm px-3 py-1 rounded bg-[#FACC15] text-[#16181D] font-black">
-                    OVERALL BAND: {writingAnalysis.overall}
-                  </span>
-                )}
+                <span className="font-mono-data text-sm px-3 py-1 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-black">
+                  OVERALL BAND: {writingAnalysis.overall}
+                </span>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div className="p-3 rounded-xl bg-[#1F2229] border border-[#2E3340]">
-                  <div className="font-mono-data text-xs text-[#B8B2A6]">Task Response</div>
-                  <div className="font-display text-xl font-black text-[#FACC15] mt-1">
+                <div className="p-3 rounded-xl bg-[#FFFFFF] border border-[#DCEBFA]">
+                  <div className="font-mono-data text-xs text-[#64748B]">Task Response</div>
+                  <div className="font-display text-xl font-black text-[#0284C7] mt-1">
                     {writingAnalysis.trScore}
                   </div>
                 </div>
-                <div className="p-3 rounded-xl bg-[#1F2229] border border-[#2E3340]">
-                  <div className="font-mono-data text-xs text-[#B8B2A6]">Coherence</div>
-                  <div className="font-display text-xl font-black text-[#10B981] mt-1">
+                <div className="p-3 rounded-xl bg-[#FFFFFF] border border-[#DCEBFA]">
+                  <div className="font-mono-data text-xs text-[#64748B]">Coherence</div>
+                  <div className="font-display text-xl font-black text-[#059669] mt-1">
                     {writingAnalysis.ccScore}
                   </div>
                 </div>
-                <div className="p-3 rounded-xl bg-[#1F2229] border border-[#2E3340]">
-                  <div className="font-mono-data text-xs text-[#B8B2A6]">Lexical Resource</div>
-                  <div className="font-display text-xl font-black text-[#FACC15] mt-1">
+                <div className="p-3 rounded-xl bg-[#FFFFFF] border border-[#DCEBFA]">
+                  <div className="font-mono-data text-xs text-[#64748B]">Lexical Resource</div>
+                  <div className="font-display text-xl font-black text-[#0284C7] mt-1">
                     {writingAnalysis.lrScore}
                   </div>
                 </div>
-                <div className="p-3 rounded-xl bg-[#1F2229] border border-[#2E3340]">
-                  <div className="font-mono-data text-xs text-[#B8B2A6]">Grammar Range</div>
-                  <div className="font-display text-xl font-black text-[#F4F1EA] mt-1">
+                <div className="p-3 rounded-xl bg-[#FFFFFF] border border-[#DCEBFA]">
+                  <div className="font-mono-data text-xs text-[#64748B]">Grammar Range</div>
+                  <div className="font-display text-xl font-black text-[#0F172A] mt-1">
                     {writingAnalysis.graScore}
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-3">
-                <div className="font-mono-data text-xs font-bold text-[#FACC15]">
-                  {writingAnalysis.matchedUpgrades.length > 0
-                    ? lang === 'vi'
-                      ? `PHÁT HIỆN ${writingAnalysis.matchedUpgrades.length} CỤM TỪ BAND 5.5–6.0 CẦN NÂNG CẤP:`
-                      : `DETECTED ${writingAnalysis.matchedUpgrades.length} BAND 5.5–6.0 PHRASES TO UPGRADE:`
-                    : lang === 'vi'
-                      ? 'TUYỆT VỜI! BÀI VIẾT ĐÃ SỬ DỤNG TỪ VỰNG HỌC THUẬT C1/C2 CHUẨN BAND 7.5+.'
-                      : 'EXCELLENT! YOUR DRAFT USES C1/C2 ACADEMIC LEXICON AT BAND 7.5+.'}
-                </div>
-
-                <div className="divide-y divide-[#2E3340]">
-                  {LEXICAL_UPGRADE_RULES.slice(0, 4).map((rule, idx) => (
-                    <div key={idx} className="py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs">
-                      <div>
-                        <span className="text-[#EA580C] line-through mr-2 font-mono-data">
-                          {rule.weakLabel}
-                        </span>
-                        <span className="text-[#10B981] font-mono-data font-bold">
-                          → {rule.band75Upgrade} ({rule.cefr})
-                        </span>
-                        <div className="text-[#B8B2A6] mt-0.5">
-                          {lang === 'vi' ? rule.explanationVi : rule.explanationEn}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              <div className="divide-y divide-[#DCEBFA] bg-[#FFFFFF] rounded-xl border border-[#DCEBFA] p-4">
+                {LEXICAL_UPGRADE_RULES.slice(0, 4).map((rule, idx) => (
+                  <div key={idx} className="py-2.5 first:pt-0 last:pb-0 text-xs">
+                    <span className="text-[#E11D48] line-through mr-2 font-mono-data">
+                      {rule.weakLabel}
+                    </span>
+                    <span className="text-[#059669] font-mono-data font-bold">
+                      → {rule.band75Upgrade} ({rule.cefr})
+                    </span>
+                    <div className="text-[#334155] mt-0.5">{rule.explanationVi}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         )}
 
-        {/* SKILL 4: SPEAKING PART 2 & 3 CUE CARD & COLLOCATION EVALUATOR */}
+        {/* SKILL 4: SPEAKING PART 2 & 3 */}
         {activeSkill === 'speaking' && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#2E3340]">
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F4F1EA] text-[#16181D] space-y-5">
-              <div className="flex items-center justify-between pb-4 border-b border-[#16181D]/15">
-                <h3 className="font-display text-xl font-extrabold text-[#16181D]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-[#DCEBFA]">
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#FFFFFF] text-[#0F172A] space-y-5">
+              <div className="flex items-center justify-between pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-xl font-extrabold text-[#0F172A]">
                   {SPEAKING_CUE_CARDS[0].part}
                 </h3>
-                <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#16181D] text-[#FACC15] font-bold">
+                <span className="font-mono-data text-xs px-2.5 py-1 rounded bg-[#E0F2FE] text-[#0284C7] font-bold">
                   2:00 LONG TURN
                 </span>
               </div>
 
-              <div className="p-5 rounded-xl bg-[#16181D] text-[#F4F1EA] space-y-3">
-                <div className="font-display text-base font-extrabold text-[#FACC15]">
+              <div className="p-5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-3">
+                <div className="font-display text-base font-extrabold text-[#0284C7]">
                   {SPEAKING_CUE_CARDS[0].topic}
                 </div>
-                <ul className="space-y-1.5 text-xs text-[#B8B2A6] list-disc pl-5">
+                <ul className="space-y-1.5 text-xs text-[#334155] list-disc pl-5">
                   {SPEAKING_CUE_CARDS[0].bullets.map((b, i) => (
                     <li key={i}>{b}</li>
                   ))}
                 </ul>
               </div>
 
-              <div className="space-y-2">
-                <div className="font-mono-data text-xs font-bold text-[#16181D]">
-                  {lang === 'vi'
-                    ? 'CỤM COLLOCATIONS MỤC TIÊU CẦN ĐƯA VÀO BÀI NÓI (BAND 7.5+):'
-                    : 'TARGET BAND 7.5+ COLLOCATIONS TO INCLUDE IN YOUR RESPONSE:'}
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {SPEAKING_CUE_CARDS[0].targetCollocations.map((col, idx) => {
-                    const used = speakingTranscript
-                      .toLowerCase()
-                      .includes(col.phrase.toLowerCase());
-                    return (
-                      <div
-                        key={idx}
-                        className={`p-3 rounded-lg border text-xs flex items-center justify-between ${
-                          used
-                            ? 'bg-[#065F46] text-[#F4F1EA] border-[#065F46]'
-                            : 'bg-[#EAE5D9] text-[#16181D] border-[#16181D]/15'
-                        }`}
-                      >
-                        <div>
-                          <div className="font-mono-data font-bold">{col.phrase}</div>
-                          <div className="opacity-80">{col.meaningVi}</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {SPEAKING_CUE_CARDS[0].targetCollocations.map((col, idx) => {
+                  const used = speakingTranscript
+                    .toLowerCase()
+                    .includes(col.phrase.toLowerCase());
+                  return (
+                    <div
+                      key={idx}
+                      className={`p-3 rounded-lg border text-xs flex items-center justify-between ${
+                        used
+                          ? 'bg-[#ECFDF5] text-[#0F172A] border-[#059669]'
+                          : 'bg-[#F8FBFF] text-[#334155] border-[#DCEBFA]'
+                      }`}
+                    >
+                      <div>
+                        <div className="font-mono-data font-bold text-[#0F172A]">
+                          {col.phrase}
                         </div>
-                        <span className="font-mono-data font-bold px-2 py-0.5 rounded bg-[#16181D] text-[#FACC15]">
-                          {used ? 'USED ✓' : col.cefr}
-                        </span>
+                        <div>{col.meaningVi}</div>
                       </div>
-                    );
-                  })}
-                </div>
+                      <span className="font-mono-data font-bold px-2 py-0.5 rounded bg-[#0284C7] text-[#FFFFFF]">
+                        {used ? 'USED ✓' : col.cefr}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
-            <div className="lg:col-span-6 p-6 md:p-8 bg-[#16181D] text-[#F4F1EA] space-y-5">
-              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#2E3340]">
-                <h3 className="font-display text-lg font-bold text-[#F4F1EA]">
-                  {lang === 'vi'
-                    ? 'Phòng Luyện Nói & Kiểm Tra Phát Âm Mẫu'
-                    : 'Speaking Practice & Model Pronunciation'}
+            <div className="lg:col-span-6 p-6 md:p-8 bg-[#F8FBFF] text-[#0F172A] space-y-5">
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-[#DCEBFA]">
+                <h3 className="font-display text-lg font-extrabold text-[#0F172A]">
+                  Phòng Luyện Nói & Kiểm Tra Phát Âm Mẫu
                 </h3>
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
                     onClick={() => setSpeakingRunning((r) => !r)}
-                    className="px-3 py-1.5 rounded bg-[#EA580C] text-[#F4F1EA] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
+                    className="px-3 py-1.5 rounded-lg bg-[#D97706] text-[#FFFFFF] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
                   >
                     <Mic className="w-3.5 h-3.5" />
                     <span>
@@ -1137,42 +1295,35 @@ export default function SplitScreenExamPreview({
                     onClick={() =>
                       playPronunciation('', speakingTranscript, 'en-GB')
                     }
-                    className="px-3 py-1.5 rounded bg-[#FACC15] text-[#16181D] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
+                    className="px-3 py-1.5 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer"
                   >
                     <Play className="w-3.5 h-3.5" />
-                    <span>{lang === 'vi' ? 'Nghe Bài Mẫu 8.0' : 'Listen Model 8.0'}</span>
+                    <span>Nghe Bài Mẫu 8.0</span>
                   </button>
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <label className="block font-mono-data text-xs text-[#B8B2A6]">
-                  {lang === 'vi'
-                    ? 'BẢN GHI LỜI NÓI CỦA BẠN (TỰ ĐỘNG ĐỐI CHIẾU COLLOCATIONS):'
-                    : 'YOUR SPOKEN TRANSCRIPT (LIVE COLLOCATION MATCHER):'}
-                </label>
-                <textarea
-                  rows={6}
-                  value={speakingTranscript}
-                  onChange={(e) => setSpeakingTranscript(e.target.value)}
-                  className="w-full rounded-xl bg-[#1F2229] border border-[#363B47] p-4 text-sm text-[#F4F1EA] leading-relaxed"
-                />
-              </div>
+              <textarea
+                rows={6}
+                value={speakingTranscript}
+                onChange={(e) => setSpeakingTranscript(e.target.value)}
+                className="w-full rounded-xl bg-[#FFFFFF] border border-[#DCEBFA] p-4 text-sm text-[#0F172A] leading-relaxed"
+              />
             </div>
           </div>
         )}
       </div>
 
-      {/* Lead Generation Boarding Pass & Legal Footer */}
-      <footer className="concourse-panel rounded-2xl overflow-hidden border border-[#2E3340]">
-        <div className="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-[#2E3340]">
+      {/* Lead Generation & Commercial Footer (Sky-Blue & White 4.0) */}
+      <footer className="bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#DCEBFA] shadow-sm">
+        <div className="p-6 md:p-8 bg-[#F0F7FF] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-[#DCEBFA]">
           <div className="lg:col-span-7 space-y-2">
-            <h2 className="font-display text-2xl font-extrabold text-[#F4F1EA]">
+            <h2 className="font-display text-2xl font-black text-[#0F172A]">
               {lang === 'vi'
-                ? 'NHẬN LỘ TRÌNH ADAPTIVE CÁ NHÂN HÓA & BỘ EBOOK 7,298 TỪ VỰNG WORD-ATLAS'
-                : 'GET YOUR PERSONALIZED ADAPTIVE ROADMAP & 7,298-WORD IELTS EBOOK'}
+                ? 'NHẬN LỘ TRÌNH CÁ NHÂN HÓA YOUPASS 4.0 & BỘ EBOOK 10,972 TỪ VỰNG IELTS'
+                : 'GET YOUR PERSONALIZED YOUPASS 4.0 STUDY PLAN & 10,972-WORD IELTS EBOOK'}
             </h2>
-            <p className="text-sm text-[#B8B2A6] max-w-2xl">
+            <p className="text-sm text-[#334155] max-w-2xl">
               {lang === 'vi'
                 ? 'Hệ thống tự động thiết lập lịch ôn tập FSRS theo Band mục tiêu của bạn và gửi kèm kho PDF 538 từ khóa Reading + 179 nhóm Listening Paraphrase.'
                 : 'Automatically configures your daily FSRS schedule by target Band score and sends the complete 538 Reading & 179 Listening Paraphrase PDF bundle.'}
@@ -1181,16 +1332,8 @@ export default function SplitScreenExamPreview({
 
           <div className="lg:col-span-5">
             {leadSubmitted ? (
-              <div className="p-4 rounded-xl bg-[#065F46]/30 border border-[#10B981] text-[#F4F1EA] text-sm">
-                {lang === 'vi' ? (
-                  <>
-                    Đã ghi nhận thông tin của <strong>{leadName}</strong> ({leadTarget}). Lộ trình FSRS cá nhân hóa đã được kích hoạt và lưu vào hệ thống CRM!
-                  </>
-                ) : (
-                  <>
-                    Registered <strong>{leadName}</strong> ({leadTarget}). Your personalized FSRS schedule is active and saved to our CRM!
-                  </>
-                )}
+              <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#059669] text-[#0F172A] text-sm">
+                Đã ghi nhận thông tin của <strong>{leadName}</strong> ({leadTarget}). Lộ trình FSRS cá nhân hóa đã được kích hoạt!
               </div>
             ) : (
               <form
@@ -1209,7 +1352,7 @@ export default function SplitScreenExamPreview({
                       })
                     });
                   } catch {
-                    // ignore network error
+                    // ignore
                   }
                   setLeadSubmitted(true);
                 }}
@@ -1220,34 +1363,35 @@ export default function SplitScreenExamPreview({
                   required
                   value={leadName}
                   onChange={(e) => setLeadName(e.target.value)}
-                  placeholder={lang === 'vi' ? 'Họ và tên...' : 'Full name...'}
-                  className="bg-[#1F2229] border border-[#363B47] rounded-lg px-3.5 py-2.5 text-sm text-[#F4F1EA] placeholder:text-[#B8B2A6]/70"
+                  placeholder="Họ và tên..."
+                  className="bg-[#FFFFFF] border border-[#DCEBFA] rounded-lg px-3.5 py-2.5 text-sm text-[#0F172A] placeholder:text-[#64748B]"
                 />
                 <input
                   type="text"
                   required
                   value={leadContact}
                   onChange={(e) => setLeadContact(e.target.value)}
-                  placeholder={lang === 'vi' ? 'Email hoặc SĐT Zalo...' : 'Email or phone...'}
-                  className="bg-[#1F2229] border border-[#363B47] rounded-lg px-3.5 py-2.5 text-sm text-[#F4F1EA] placeholder:text-[#B8B2A6]/70"
+                  placeholder="Email hoặc SĐT Zalo..."
+                  className="bg-[#FFFFFF] border border-[#DCEBFA] rounded-lg px-3.5 py-2.5 text-sm text-[#0F172A] placeholder:text-[#64748B]"
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 bg-[#FACC15] hover:bg-[#EAB308] text-[#16181D] font-display font-extrabold text-sm rounded-lg px-4 py-2.5 transition-colors cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display font-extrabold text-sm rounded-lg px-4 py-2.5 transition-colors cursor-pointer"
                 >
                   <Send className="w-4 h-4" />
-                  <span>{lang === 'vi' ? 'Nhận Lộ Trình' : 'Get Roadmap'}</span>
+                  <span>Nhận Lộ Trình</span>
                 </button>
               </form>
             )}
           </div>
         </div>
 
-        <div className="px-6 py-4 bg-[#111318] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#B8B2A6]">
+        <div className="px-6 py-4 bg-[#FFFFFF] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748B]">
           <div>
-            <span>
-              THE IELTS DICTIONARY × WORD ATLAS • International Concourse Bento Grid & FSRS Spaced Repetition.
-            </span>
+            <span className="font-semibold text-[#0F172A]">
+              YOUPASS × WORD ATLAS 4.0
+            </span>{' '}
+            • Nền tảng Luyện thi IELTS & Từ vựng FSRS Thương mại.
           </div>
           <div className="font-mono-data text-xs text-right">
             <span>

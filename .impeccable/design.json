@@ -1,38 +1,38 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T11:39:00+07:00",
-  "title": "Design System: THE IELTS DICTIONARY × WORD ATLAS",
+  "generatedAt": "2026-11-04T12:42:00+07:00",
+  "title": "Design System: YOUPASS × WORD ATLAS 4.0",
   "extensions": {
     "colorMeta": {
-      "signal-yellow": {
+      "sky-cerulean": {
         "role": "primary",
-        "displayName": "International Wayfinding Yellow",
-        "canonical": "#FACC15",
-        "tonalRamp": ["#422006", "#713F12", "#854D0E", "#A16207", "#CA8A04", "#EAB308", "#FACC15", "#FEF08A"]
+        "displayName": "Sky-Cerulean Commercial Primary",
+        "canonical": "#0284C7",
+        "tonalRamp": ["#0C4A6E", "#075985", "#0369A1", "#0284C7", "#0EA5E9", "#38BDF8", "#7DD3FC", "#BAE6FD", "#DCEBFA", "#E0F2FE", "#EBF5FF", "#F0F7FF", "#F8FBFF", "#FFFFFF"]
       },
-      "passport-emerald": {
+      "emerald-mastery": {
         "role": "secondary",
-        "displayName": "British Passport Emerald",
-        "canonical": "#065F46",
-        "tonalRamp": ["#022C22", "#064E3B", "#065F46", "#047857", "#059669", "#10B981", "#34D399", "#A7F3D0"]
+        "displayName": "Emerald Mastery & Verification",
+        "canonical": "#059669",
+        "tonalRamp": ["#064E3B", "#065F46", "#047857", "#059669", "#10B981", "#34D399", "#6EE7B7", "#A7F3D0", "#D1FAE5", "#ECFDF5"]
       },
-      "signal-vermilion": {
+      "amber-timer": {
         "role": "tertiary",
-        "displayName": "Signal Vermilion",
-        "canonical": "#EA580C",
-        "tonalRamp": ["#431407", "#7C2D12", "#9A3412", "#C2410C", "#EA580C", "#F97316", "#FB923C", "#FED7AA"]
+        "displayName": "Amber Exam Timer & POS",
+        "canonical": "#D97706",
+        "tonalRamp": ["#78350F", "#92400E", "#B45309", "#D97706", "#F59E0B", "#FBBF24", "#FDE68A", "#FEF3C7", "#FFFBEB"]
       },
-      "birch-ground": {
-        "role": "neutral",
-        "displayName": "Birch Alabaster Ground",
-        "canonical": "#F4F1EA",
-        "tonalRamp": ["#16181D", "#2E3138", "#4A4740", "#787368", "#B8B2A6", "#DDD7C8", "#EAE5D9", "#F4F1EA"]
+      "rose-alert": {
+        "role": "tertiary",
+        "displayName": "Rose Alert & Again Interval",
+        "canonical": "#E11D48",
+        "tonalRamp": ["#881337", "#9F1239", "#BE123C", "#E11D48", "#F43F5E", "#FDA4AF", "#FECDD3", "#FFE4E6", "#FFF1F2"]
       },
-      "concourse-charcoal": {
+      "ink-navy": {
         "role": "neutral",
-        "displayName": "Concourse Charcoal",
-        "canonical": "#16181D",
-        "tonalRamp": ["#0D0F12", "#16181D", "#1F2229", "#272B35", "#2E3340", "#363B47", "#7B8294", "#CBD0DC"]
+        "displayName": "Academic Navy & Slate Ink",
+        "canonical": "#0F172A",
+        "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F1F5F9"]
       }
     },
     "typographyMeta": {
@@ -59,9 +59,9 @@
     },
     "shadows": [
       {
-        "name": "shadow-concourse",
-        "value": "0 16px 36px -12px rgba(22, 24, 29, 0.16)",
-        "purpose": "Soft architectural elevation for top-level Bento modules on the Birch Alabaster ground."
+        "name": "shadow-sky-concourse",
+        "value": "0 12px 32px -10px rgba(2, 132, 199, 0.08)",
+        "purpose": "Soft Sky-Cerulean architectural elevation for Pure Porcelain White Bento modules."
       }
     ],
     "motion": [
@@ -80,70 +80,70 @@
   },
   "components": [
     {
-      "name": "Primary Passport CTA Button",
+      "name": "Primary Sky-Cerulean CTA Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Primary header and conversion action button in British Passport Emerald.",
-      "html": "<button class=\"ds-btn-primary\">Bắt Đầu Học Ngay</button>",
-      "css": ".ds-btn-primary { background: #065F46; color: #F4F1EA; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 15px; padding: 14px 20px; border-radius: 12px; border: none; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #047857; } .ds-btn-primary:focus-visible { outline: 2px solid #FACC15; outline-offset: 2px; }"
+      "description": "Primary commercial action button in Sky-Cerulean (#0284C7).",
+      "html": "<button class=\"ds-btn-primary\">Lộ Trình Cá Nhân</button>",
+      "css": ".ds-btn-primary { background: #0284C7; color: #FFFFFF; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 15px; padding: 12px 20px; border-radius: 12px; border: none; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #0369A1; } .ds-btn-primary:focus-visible { outline: 2px solid #0284C7; outline-offset: 2px; }"
     },
     {
-      "name": "Wayfinding Action Button",
+      "name": "Secondary Sky Frost Action Button",
       "kind": "button",
-      "refersTo": "button-wayfinding",
-      "description": "High-visibility International Wayfinding Yellow action button for FSRS queueing and form submission.",
-      "html": "<button class=\"ds-btn-wayfinding\">Học ở Trạm 02</button>",
-      "css": ".ds-btn-wayfinding { background: #FACC15; color: #16181D; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; padding: 8px 14px; border-radius: 8px; border: none; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-wayfinding:hover { background: #EAB308; } .ds-btn-wayfinding:focus-visible { outline: 2px solid #16181D; outline-offset: 2px; }"
+      "refersTo": "button-secondary",
+      "description": "Soft Sky Frost action button for queueing words and saving to the Personal Vocabulary Notebook.",
+      "html": "<button class=\"ds-btn-secondary\">+ Lưu Sổ Từ Vựng</button>",
+      "css": ".ds-btn-secondary { background: #F0F7FF; color: #0284C7; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; padding: 8px 14px; border-radius: 8px; border: 1px solid #BAE6FD; cursor: pointer; transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-secondary:hover { background: #E0F2FE; }"
     },
     {
-      "name": "Dark Concourse Search Input",
+      "name": "Sky Studio Search Input",
       "kind": "input",
-      "refersTo": "input-dark",
-      "description": "Search and dictation input field inside dark concourse modules.",
-      "html": "<input class=\"ds-input-dark\" type=\"search\" placeholder=\"Tìm trong 7,298 từ IELTS...\" />",
-      "css": ".ds-input-dark { background: #1F2229; color: #F4F1EA; border: 1px solid #363B47; border-radius: 8px; padding: 8px 14px; font-family: 'Be Vietnam Pro', sans-serif; font-size: 13px; width: 240px; transition: border-color 0.2s; } .ds-input-dark::placeholder { color: rgba(184, 178, 166, 0.7); } .ds-input-dark:focus-visible { outline: 2px solid #FACC15; border-color: #FACC15; }"
+      "refersTo": "input-sky",
+      "description": "Search and dictation input field on Cloud Ice White surface.",
+      "html": "<input class=\"ds-input-sky\" type=\"search\" placeholder=\"Tìm trong 7,298 từ IELTS...\" />",
+      "css": ".ds-input-sky { background: #F8FBFF; color: #0F172A; border: 1px solid #BAE6FD; border-radius: 8px; padding: 8px 14px; font-family: 'Be Vietnam Pro', sans-serif; font-size: 13px; width: 240px; transition: border-color 0.2s; } .ds-input-sky:focus-visible { outline: 2px solid #0284C7; border-color: #0284C7; }"
     },
     {
       "name": "CEFR Level Chip",
       "kind": "chip",
       "description": "Chromatic CEFR badge encoding vocabulary difficulty (A1-C2) and IELTS topic.",
       "html": "<span class=\"ds-chip-cefr\">C1 • Technology</span>",
-      "css": ".ds-chip-cefr { display: inline-block; background: #FACC15; color: #16181D; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 6px; }"
+      "css": ".ds-chip-cefr { display: inline-block; background: #0284C7; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 6px; }"
     },
     {
-      "name": "Concourse Bento Module",
+      "name": "Porcelain Bento Module",
       "kind": "card",
       "refersTo": "card-concourse",
-      "description": "Primary dark charcoal Bento module with single-line numbered gate header and hairline divider.",
+      "description": "Primary Pure Porcelain White Bento module with single-line numbered gate header and #DCEBFA hairline divider.",
       "html": "<section class=\"ds-card-concourse\"><div class=\"ds-card-header\">01 / LỘ TRÌNH ADAPTIVE</div><p class=\"ds-card-body\">Độ nhớ FSRS: 94.2% • 7,298 từ vựng chuẩn hóa.</p></section>",
-      "css": ".ds-card-concourse { background: #16181D; color: #F4F1EA; border: 1px solid #2E3340; border-radius: 16px; padding: 20px; box-shadow: 0 16px 36px -12px rgba(22, 24, 29, 0.16); } .ds-card-header { font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 800; padding-bottom: 12px; border-bottom: 1px solid #2E3340; } .ds-card-body { font-family: 'Be Vietnam Pro', sans-serif; font-size: 13px; color: #B8B2A6; margin-top: 12px; }"
+      "css": ".ds-card-concourse { background: #FFFFFF; color: #0F172A; border: 1px solid #DCEBFA; border-radius: 16px; padding: 20px; box-shadow: 0 12px 32px -10px rgba(2, 132, 199, 0.08); } .ds-card-header { font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 800; padding-bottom: 12px; border-bottom: 1px solid #DCEBFA; } .ds-card-body { font-family: 'Be Vietnam Pro', sans-serif; font-size: 13px; color: #334155; margin-top: 12px; }"
     },
     {
-      "name": "Split-Flap Streak Counter",
+      "name": "Sky Split-Flap Streak Counter",
       "kind": "custom",
-      "description": "Mechanical split-flap counter displaying consecutive daily study streak.",
+      "description": "Sky-Cerulean split-flap counter displaying consecutive daily study streak.",
       "html": "<div class=\"ds-flap-wrap\"><span class=\"ds-flap-digit\">1</span><span class=\"ds-flap-digit\">4</span><span class=\"ds-flap-label\">DAYS STREAK</span></div>",
-      "css": ".ds-flap-wrap { display: inline-flex; align-items: center; gap: 8px; background: #16181D; padding: 8px 12px; border-radius: 12px; border: 1px solid #2E3340; } .ds-flap-digit { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 36px; background: #FACC15; color: #16181D; font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 20px; border-radius: 6px; } .ds-flap-label { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 11px; color: #FACC15; }"
+      "css": ".ds-flap-wrap { display: inline-flex; align-items: center; gap: 8px; background: #F0F7FF; padding: 8px 12px; border-radius: 12px; border: 1px solid #BAE6FD; } .ds-flap-digit { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 36px; background: #0284C7; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 20px; border-radius: 6px; } .ds-flap-label { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 11px; color: #0284C7; }"
     }
   ],
   "narrative": {
-    "northStar": "The International Departure Concourse & Split-Flap Lexicon",
-    "overview": "THE IELTS DICTIONARY × WORD ATLAS treats daily IELTS preparation not as a passive textbook or generic SaaS dashboard, but as an international departure concourse where every study module is a numbered wayfinding gate (01 through 06). High-contrast matte charcoal boards sit atop a warm architectural Birch Alabaster ground, allowing learners to scan their entire study itinerary in five seconds and step directly into active FSRS spaced-repetition review, contextual UK/US audio playback, and computer-delivered exam simulation.\n\nThe system balances architectural authority with cognitive clarity. Rather than scattering decorative gradients or nested card boxes across the screen, it uses bold wayfinding yellow frames to isolate the primary daily learning station (02 / Hôm Nay Học Gì), crisp horizontal hairline dividers to organize dense bilingual English–Vietnamese lexical data, and mechanical split-flap counters to celebrate daily consistency.",
+    "northStar": "Sky-Cerulean & Pure Porcelain 4.0 Academic Studio",
+    "overview": "YOUPASS × WORD ATLAS 4.0 unites the crisp, daylight-first commercial clarity of YouPass 4.0 with the structured bilingual lexical depth of Word-Atlas (7,298 illustrated words) and My-IELTS (3,674 dictation keywords, 538 reading synonyms, 179 listening paraphrases, and 100 writing structures). Every study module is a numbered wayfinding gate (01 through 06) arranged on a luminous Cloud Ice White (#F8FBFF) canvas with Pure Porcelain White (#FFFFFF) cards and Soft Sky-Blue (#F0F7FF / #E0F2FE) focal frames.",
     "keyCharacteristics": [
-      "Asymmetric 12-column Bento Concourse architecture with numbered gate headers (01–06) integrated directly into section titles.",
-      "Warm Birch Alabaster daylight ground (#F4F1EA) paired with high-contrast Split-Flap Charcoal modules (#16181D) and International Wayfinding Yellow (#FACC15) focal frames.",
-      "Tri-voice typography combining Swiss-international signage display (Archivo), native Vietnamese editorial legibility (Be Vietnam Pro), and tabular phonetic/telemetry precision (JetBrains Mono).",
-      "Semantic color coding across all 6 CEFR levels (A1–C2) and 4 FSRS memory rating intervals (Again, Hard, Good, Easy)."
+      "Asymmetric 12-column Bento Studio architecture with numbered gate headers (01–06) integrated directly into section titles.",
+      "Cloud Ice White daylight ground (#F8FBFF) paired with Pure Porcelain White modules (#FFFFFF), Soft Sky-Blue focal headers (#F0F7FF / #E0F2FE), and Sky-Cerulean (#0284C7) primary actions.",
+      "Tri-voice typography combining geometric display signage (Archivo), native Vietnamese editorial legibility (Be Vietnam Pro), and tabular phonetic/telemetry precision (JetBrains Mono).",
+      "Semantic color coding across all 6 CEFR levels (A1–C2), FSRS memory rating intervals (Again, Hard, Good, Easy), and REVEAL: ON / HIDDEN self-testing states."
     ],
     "rules": [
       {
-        "name": "The Wayfinding Focal Rule",
-        "body": "International Wayfinding Yellow (#FACC15) as a full container fill is reserved exclusively for Station 02 / Hôm Nay Học Gì and active filter/tab states so the learner's daily FSRS task never competes with secondary modules.",
+        "name": "The Unified Sky-Porcelain Rule",
+        "body": "Every page (/, /login, /roadmap, /pricing, /admin) uses #F8FBFF Cloud Ice ground and #FFFFFF / #F0F7FF surfaces with #DCEBFA hairlines — never dark charcoal slabs.",
         "section": "colors"
       },
       {
-        "name": "The Warm-Tinted Neutral Rule",
-        "body": "Secondary text on dark charcoal panels always uses warm sand (#B8B2A6) and secondary text on light birch always uses warm umber (#4A4740), never desaturated cool gray.",
+        "name": "The Focal Sky Wash Rule",
+        "body": "Soft Sky Wash (#E0F2FE / #F0F7FF) with #BAE6FD borders is reserved for Station 02 / Hôm Nay Học Gì, active filter headers, and inline passage dictionary cards so the primary learning task stands out immediately.",
         "section": "colors"
       },
       {
@@ -158,15 +158,15 @@
       },
       {
         "name": "The No-Nested-Card Rule",
-        "body": "A Bento module is a single architectural container; sub-sections inside it divide via 1px solid #2E3340 hairlines and flush table rows, never boxed cards inside boxed cards.",
+        "body": "A Bento module is a single architectural container; sub-sections inside it divide via 1px solid #DCEBFA hairlines and flush table rows, never boxed cards inside boxed cards.",
         "section": "elevation"
       }
     ],
     "dos": [
       "Do integrate section numbers (01 /, 02 /, 03 /) directly into the heading text on a single line.",
       "Do use custom SVG flags and consistent stroke icons (lucide-react) for audio, streak, and navigation controls.",
-      "Do keep dark-surface secondary text warm (#B8B2A6) and format all numeric telemetry with tabular-nums.",
-      "Do separate sub-regions inside Bento panels using 1px solid #2E3340 hairlines and flush grid cells."
+      "Do keep all surfaces in the unified #F8FBFF / #FFFFFF / #F0F7FF Sky-Blue & Pure White 4.0 palette and format all numeric telemetry with tabular-nums.",
+      "Do separate sub-regions inside Bento panels using 1px solid #DCEBFA hairlines and flush grid cells."
     ],
     "donts": [
       "Don't place small uppercase kicker or eyebrow labels above headings.",

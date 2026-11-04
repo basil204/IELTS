@@ -42,8 +42,9 @@ Sự kết hợp giữa thiết kế Bento Grid biên tập kiểu tạp chí s�
 
 ## Brand Commitments
 
-- Phong cách chủ đạo: Bento Grid hiện đại kết hợp Scrollytelling theo ngôn ngữ **International Concourse Wayfinding & Split-Flap Bento**, đánh số phân khu rõ ràng (`01`, `02`, `03`, `04`...) giúp người dùng nắm bắt toàn bộ hệ sinh thái trong 5 giây đầu tiên.
-- Ngôn ngữ giao diện: Tiếng Việt kết hợp thuật ngữ học thuật IELTS tiếng Anh chuẩn xác.
+- Phong cách chủ đạo: Giao diện **EdTech 4.0 Xanh Nhạt & Trắng Tinh Khiết (Sky-Cerulean & Pure Porcelain White — YouPass 4.0 × Word Atlas Studio)**: nền trắng xanh băng dịu mắt (`#F8FBFF`), bề mặt mô-đun trắng sứ (`#FFFFFF`) và xanh lam nhạt (`#EBF5FF` / `#E0F2FE`), điểm nhấn thương mại xanh dương sáng (`#0284C7` / `#0EA5E9`) và xanh ngọc lục bảo (`#059669`), mực chữ học thuật xanh đậm (`#0F172A` / `#334155`).
+- Bố cục hiện đại kiểu YouPass.vn 4.0: tích hợp **Sổ Từ Vựng Cá Nhân (Personal Vocabulary Notebook)**, **Tra từ 1-chạm ngay trong bài đọc**, **Trạm học từ vựng đa giác quan FSRS**, **Kho học liệu lớn 10.972 từ vựng**, và **Phòng thi máy tính 4 kỹ năng (Reading, Listening, Writing AI Grader, Speaking Lab)**.
+- Ngôn ngữ giao diện: Song ngữ Tiếng Việt (`VI`) và Tiếng Anh (`EN`) chuyển đổi tức thì, tuyệt đối không chứa ký tự tiếng Trung.
 
 ## Evidence on Hand
 

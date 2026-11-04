@@ -5,12 +5,7 @@ import Link from 'next/link';
 import {
   ArrowLeft,
   Check,
-  CheckCircle2,
-  Crown,
-  Globe,
-  QrCode,
-  ShieldCheck,
-  Sparkles
+  Globe
 } from 'lucide-react';
 import type { PlatformUser } from '@/lib/db';
 
@@ -142,19 +137,19 @@ export default function PricingPage() {
 
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <header className="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-[#16181D]/15">
+      <header className="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-[#DCEBFA]">
         <div className="flex flex-wrap items-center gap-3">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#16181D] text-[#F4F1EA] font-display text-xs font-bold"
+            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#FFFFFF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold hover:bg-[#F0F7FF]"
           >
-            <ArrowLeft className="w-4 h-4 text-[#FACC15]" />
+            <ArrowLeft className="w-4 h-4 text-[#0284C7]" />
             <span>{lang === 'vi' ? 'Về Trang Chủ' : 'Back Home'}</span>
           </Link>
-          <h1 className="font-display text-xl sm:text-2xl font-black text-[#16181D]">
+          <h1 className="font-display text-xl sm:text-2xl font-black text-[#0F172A]">
             {lang === 'vi'
-              ? 'NÂNG CẤP TÀI KHOẢN VIP & KÍCH HOẠT TỰ ĐỘNG QUA VIETQR'
-              : 'VIP MEMBERSHIP & INSTANT VIETQR AUTO-ACTIVATION'}
+              ? 'NÂNG CẤP TÀI KHOẢN PRO / VIP & KÍCH HOẠT TỰ ĐỘNG VIETQR'
+              : 'PRO / VIP MEMBERSHIP & INSTANT VIETQR AUTO-ACTIVATION'}
           </h1>
         </div>
 
@@ -162,14 +157,14 @@ export default function PricingPage() {
           <button
             type="button"
             onClick={() => setLang((l) => (l === 'vi' ? 'en' : 'vi'))}
-            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#16181D] text-[#FACC15] font-mono-data text-xs font-bold cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
           >
             <Globe className="w-3.5 h-3.5" />
             <span>{lang === 'vi' ? 'VI / EN' : 'EN / VI'}</span>
           </button>
           <Link
             href="/roadmap"
-            className="px-3.5 py-2 rounded-lg bg-[#065F46] text-[#F4F1EA] font-display text-xs font-bold"
+            className="px-3.5 py-2 rounded-lg bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-bold"
           >
             {lang === 'vi' ? 'Xem Lộ Trình 12 Tuần' : '12-Week Roadmap'}
           </Link>
@@ -185,22 +180,22 @@ export default function PricingPage() {
               key={plan.id}
               className={`rounded-2xl p-6 flex flex-col justify-between border transition-all ${
                 plan.highlight
-                  ? 'wayfinding-hero-panel border-[#16181D]'
-                  : 'concourse-panel border-[#2E3340]'
+                  ? 'wayfinding-hero-panel border-[#BAE6FD]'
+                  : 'concourse-panel border-[#DCEBFA]'
               }`}
             >
               <div>
                 <div
                   className={`flex items-center justify-between pb-4 border-b ${
-                    plan.highlight ? 'border-[#16181D]/20' : 'border-[#2E3340]'
+                    plan.highlight ? 'border-[#BAE6FD]' : 'border-[#DCEBFA]'
                   }`}
                 >
-                  <h2 className="font-display text-lg font-black">{plan.name}</h2>
+                  <h2 className="font-display text-lg font-black text-[#0F172A]">{plan.name}</h2>
                   <span
                     className={`px-2.5 py-1 rounded font-mono-data text-xs font-bold ${
                       plan.highlight
-                        ? 'bg-[#16181D] text-[#FACC15]'
-                        : 'bg-[#272B35] text-[#FACC15]'
+                        ? 'bg-[#0284C7] text-[#FFFFFF]'
+                        : 'bg-[#F0F7FF] text-[#0284C7] border border-[#BAE6FD]'
                     }`}
                   >
                     {plan.badge}
@@ -208,29 +203,21 @@ export default function PricingPage() {
                 </div>
 
                 <div className="mt-5">
-                  <div className="font-display text-3xl sm:text-4xl font-black tabular-nums">
+                  <div className="font-display text-3xl sm:text-4xl font-black text-[#0F172A] tabular-nums">
                     {plan.priceVnd === 0
                       ? '0đ'
                       : `${plan.priceVnd.toLocaleString('vi-VN')}đ`}
                   </div>
-                  <div
-                    className={`font-mono-data text-xs mt-1 ${
-                      plan.highlight ? 'text-[#16181D]/80' : 'text-[#B8B2A6]'
-                    }`}
-                  >
+                  <div className="font-mono-data text-xs mt-1 text-[#64748B]">
                     {plan.duration}
                   </div>
                 </div>
 
-                <ul className="mt-6 space-y-3 text-sm">
+                <ul className="mt-6 space-y-3 text-sm text-[#334155]">
                   {(lang === 'vi' ? plan.featuresVi : plan.featuresEn).map(
                     (feat, idx) => (
                       <li key={idx} className="flex items-start gap-2.5">
-                        <Check
-                          className={`w-4 h-4 shrink-0 mt-0.5 ${
-                            plan.highlight ? 'text-[#065F46]' : 'text-[#10B981]'
-                          }`}
-                        />
+                        <Check className="w-4 h-4 shrink-0 mt-0.5 text-[#059669]" />
                         <span>{feat}</span>
                       </li>
                     )
@@ -242,7 +229,7 @@ export default function PricingPage() {
                 {plan.priceVnd === 0 ? (
                   <Link
                     href="/roadmap"
-                    className="block w-full py-3 rounded-xl bg-[#272B35] text-[#F4F1EA] font-display text-xs font-extrabold text-center"
+                    className="block w-full py-3 rounded-xl bg-[#F0F7FF] border border-[#DCEBFA] text-[#334155] font-display text-xs font-extrabold text-center hover:bg-[#E0F2FE]"
                   >
                     {lang === 'vi' ? 'Đang Sử Dụng Miễn Phí' : 'Current Free Plan'}
                   </Link>
@@ -251,11 +238,9 @@ export default function PricingPage() {
                     type="button"
                     onClick={() => setSelectedPlan(plan)}
                     className={`w-full py-3.5 rounded-xl font-display text-sm font-extrabold transition-colors cursor-pointer ${
-                      plan.highlight
-                        ? 'bg-[#16181D] text-[#FACC15] hover:bg-[#272B35]'
-                        : isSelected
-                        ? 'bg-[#FACC15] text-[#16181D]'
-                        : 'bg-[#065F46] text-[#F4F1EA] hover:bg-[#10B981] hover:text-[#16181D]'
+                      isSelected
+                        ? 'bg-[#0284C7] text-[#FFFFFF] hover:bg-[#0369A1]'
+                        : 'bg-[#FFFFFF] border border-[#0284C7] text-[#0284C7] hover:bg-[#E0F2FE]'
                     }`}
                   >
                     {lang === 'vi'
@@ -270,15 +255,15 @@ export default function PricingPage() {
       </section>
 
       {/* Instant VietQR Checkout Concourse */}
-      <section className="mt-10 concourse-panel rounded-2xl p-6 sm:p-8 border border-[#2E3340] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <section className="mt-10 concourse-panel rounded-2xl p-6 sm:p-8 border border-[#DCEBFA] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-7 space-y-4">
-          <h2 className="font-display text-xl sm:text-2xl font-extrabold text-[#F4F1EA] border-b border-[#2E3340] pb-3">
+          <h2 className="font-display text-xl sm:text-2xl font-extrabold text-[#0F172A] border-b border-[#DCEBFA] pb-3">
             {lang === 'vi'
               ? `CỔNG THANH TOÁN TỰ ĐỘNG VIETQR (SEPAY / CASSO) — ${selectedPlan.name.toUpperCase()}`
               : `INSTANT VIETQR AUTO-CHECKOUT — ${selectedPlan.name.toUpperCase()}`}
           </h2>
 
-          <p className="text-sm text-[#B8B2A6]">
+          <p className="text-sm text-[#334155]">
             {lang === 'vi'
               ? 'Quét mã VietQR bên cạnh bằng ứng dụng ngân hàng bất kỳ. Hệ thống tự động nhận diện nội dung chuyển khoản và nâng cấp tài khoản lên VIP trong 3 giây.'
               : 'Scan the VietQR code with any banking app. The webhook automatically matches your transfer memo and activates VIP access within 3 seconds.'}
@@ -286,7 +271,7 @@ export default function PricingPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
             <div>
-              <label className="block text-xs font-mono-data text-[#B8B2A6] mb-1">
+              <label className="block text-xs font-mono-data text-[#64748B] mb-1">
                 {lang === 'vi' ? 'HỌ TÊN HỌC VIÊN' : 'STUDENT NAME'}
               </label>
               <input
@@ -294,11 +279,11 @@ export default function PricingPage() {
                 value={buyerName}
                 onChange={(e) => setBuyerName(e.target.value)}
                 placeholder="Nguyễn Văn A..."
-                className="w-full bg-[#1F2229] border border-[#363B47] rounded-lg px-3.5 py-2 text-sm text-[#F4F1EA]"
+                className="w-full bg-[#F8FBFF] border border-[#BAE6FD] rounded-lg px-3.5 py-2 text-sm text-[#0F172A]"
               />
             </div>
             <div>
-              <label className="block text-xs font-mono-data text-[#B8B2A6] mb-1">
+              <label className="block text-xs font-mono-data text-[#64748B] mb-1">
                 {lang === 'vi' ? 'EMAIL KÍCH HOẠT VIP' : 'ACTIVATION EMAIL'}
               </label>
               <input
@@ -306,36 +291,36 @@ export default function PricingPage() {
                 value={buyerEmail}
                 onChange={(e) => setBuyerEmail(e.target.value)}
                 placeholder="email@gmail.com..."
-                className="w-full bg-[#1F2229] border border-[#363B47] rounded-lg px-3.5 py-2 text-sm text-[#F4F1EA]"
+                className="w-full bg-[#F8FBFF] border border-[#BAE6FD] rounded-lg px-3.5 py-2 text-sm text-[#0F172A]"
               />
             </div>
           </div>
 
-          <div className="divide-y divide-[#2E3340] border-t border-b border-[#2E3340] text-xs font-mono-data">
+          <div className="divide-y divide-[#DCEBFA] border-t border-b border-[#DCEBFA] text-xs font-mono-data">
             <div className="py-2.5 flex justify-between">
-              <span className="text-[#B8B2A6]">NGÂN HÀNG THỤ HƯỞNG:</span>
-              <span className="text-[#F4F1EA] font-bold">MB BANK • 0988776655</span>
+              <span className="text-[#64748B]">NGÂN HÀNG THỤ HƯỞNG:</span>
+              <span className="text-[#0F172A] font-bold">MB BANK • 0988776655</span>
             </div>
             <div className="py-2.5 flex justify-between">
-              <span className="text-[#B8B2A6]">SỐ TIỀN CHUYỂN KHOẢN:</span>
-              <span className="text-[#FACC15] font-bold">
+              <span className="text-[#64748B]">SỐ TIỀN CHUYỂN KHOẢN:</span>
+              <span className="text-[#0284C7] font-bold">
                 {selectedPlan.priceVnd.toLocaleString('vi-VN')} VND
               </span>
             </div>
             <div className="py-2.5 flex justify-between">
-              <span className="text-[#B8B2A6]">NỘI DUNG TỰ ĐỘNG KÍCH HOẠT:</span>
-              <span className="text-[#10B981] font-bold">{transferCode}</span>
+              <span className="text-[#64748B]">NỘI DUNG TỰ ĐỘNG KÍCH HOẠT:</span>
+              <span className="text-[#059669] font-bold">{transferCode}</span>
             </div>
           </div>
 
           {orderSuccess ? (
-            <div className="p-4 rounded-xl bg-[#065F46]/30 border border-[#10B981] text-sm text-[#F4F1EA] flex items-center justify-between">
+            <div className="p-4 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-sm text-[#047857] flex items-center justify-between">
               <span>
                 Đã kích hoạt thành công mã đơn <strong>{orderSuccess}</strong>! Tài khoản của bạn đã lên <strong>VIP Unlimited</strong>.
               </span>
               <Link
                 href="/roadmap"
-                className="px-3.5 py-1.5 rounded bg-[#FACC15] text-[#16181D] font-display text-xs font-extrabold shrink-0"
+                className="px-3.5 py-1.5 rounded bg-[#0284C7] text-[#FFFFFF] font-display text-xs font-extrabold shrink-0"
               >
                 Vào Lộ Trình VIP →
               </Link>
@@ -345,7 +330,7 @@ export default function PricingPage() {
               type="button"
               disabled={processing}
               onClick={handleConfirmPayment}
-              className="w-full py-3.5 rounded-xl bg-[#065F46] hover:bg-[#10B981] hover:text-[#16181D] text-[#F4F1EA] font-display text-sm font-extrabold transition-colors cursor-pointer"
+              className="w-full py-3.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-sm font-extrabold transition-colors cursor-pointer"
             >
               {processing
                 ? 'Đang kiểm tra giao dịch...'
@@ -357,13 +342,13 @@ export default function PricingPage() {
         </div>
 
         <div className="lg:col-span-5 flex flex-col items-center justify-center">
-          <div className="bg-[#F4F1EA] p-4 rounded-2xl text-center max-w-xs w-full">
+          <div className="bg-[#F0F7FF] border border-[#BAE6FD] p-4 rounded-2xl text-center max-w-xs w-full">
             <img
               src={vietQrUrl}
               alt="Mã thanh toán VietQR tự động"
               className="w-full h-auto rounded-lg"
             />
-            <div className="mt-2 font-mono-data text-xs font-bold text-[#16181D]">
+            <div className="mt-2 font-mono-data text-xs font-bold text-[#0F172A]">
               {transferCode} • {selectedPlan.priceVnd.toLocaleString('vi-VN')}đ
             </div>
           </div>
