@@ -672,20 +672,25 @@ export default function IeltsConcourseClient({
     };
   };
 
-  const applyLoggedInUser = (user: Omit<PlatformUser, 'passwordHash'>) => {
+  const applyLoggedInUser = (
+    user: Omit<PlatformUser, 'passwordHash'>,
+    targetZone: DashboardZone = 'overview'
+  ) => {
     localStorage.setItem(STORAGE_USER_KEY, JSON.stringify(user));
     setActiveUser(user);
     setProfileNameInput(user.name || '');
     setProfileTargetInput(user.targetBand || 'Band 7.5+');
     setForceLandingPreview(false);
-    setActiveZone('overview');
+    setActiveZone(targetZone);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleOneClickLogin = async (
     email: string,
     name: string,
     isGoogle = false,
-    role: 'admin' | 'vip' | 'student' = 'vip'
+    role: 'admin' | 'vip' | 'student' = 'vip',
+    targetZone: DashboardZone = 'overview'
   ) => {
     setAuthLoading(true);
     setAuthError(null);
@@ -702,12 +707,12 @@ export default function IeltsConcourseClient({
       });
       const data = await res.json();
       if (res.ok && data.user) {
-        applyLoggedInUser(data.user);
+        applyLoggedInUser(data.user, targetZone);
       } else {
-        applyLoggedInUser(buildFallbackUser(email, name, role));
+        applyLoggedInUser(buildFallbackUser(email, name, role), targetZone);
       }
     } catch {
-      applyLoggedInUser(buildFallbackUser(email, name, role));
+      applyLoggedInUser(buildFallbackUser(email, name, role), targetZone);
     } finally {
       setAuthLoading(false);
     }
@@ -830,22 +835,98 @@ export default function IeltsConcourseClient({
   const showLandingPage = !activeUser || forceLandingPreview;
 
   // ============================================================================
-  // 1. MINIMAL, VISUAL LANDING PAGE (BEFORE LOGIN) — EASY FOR EVERYONE
+  // 1. COMPREHENSIVE COMMERCIAL LANDING PAGE (BEFORE LOGIN) — YOUPASS 4.0
   // ============================================================================
   if (showLandingPage) {
+    const previewWords = initialPriorityWords.slice(0, 6);
+    const activePreviewWord =
+      previewWords[currentWordIndex % Math.max(1, previewWords.length)] ||
+      initialPriorityWords[0];
+
+    const enterRoomFromLanding = (zone: DashboardZone) => {
+      if (activeUser) {
+        setForceLandingPreview(false);
+        setActiveZone(zone);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        handleOneClickLogin(
+          'hocvien@theieltsdictionary.vn',
+          'Nguyễn Minh Anh (Học Viên VIP)',
+          false,
+          'vip',
+          zone
+        );
+      }
+    };
+
     return (
       <div className="min-h-screen bg-[#F8FBFF] text-[#0F172A]">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
-          {/* Simple Top Header */}
-          <header className="bg-[#FFFFFF] rounded-2xl px-5 py-3.5 border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-4">
+        <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-12">
+          {/* ================================================================= */}
+          {/* STICKY TOP NAVIGATION HEADER                                      */}
+          {/* ================================================================= */}
+          <header className="sticky top-3 z-40 bg-[#FFFFFF]/95 backdrop-blur-md rounded-2xl px-5 py-3.5 border border-[#DCEBFA] shadow-xs flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-[#0284C7] text-[#FFFFFF] font-display font-black text-sm">
                 YP
               </span>
-              <span className="font-display text-lg font-black text-[#0F172A]">
-                YOUPASS × WORD ATLAS 4.0
-              </span>
+              <div>
+                <div className="font-display text-base sm:text-lg font-black text-[#0F172A] leading-none">
+                  YOUPASS × WORD ATLAS 4.0
+                </div>
+                <div className="font-mono-data text-xs text-[#0284C7] mt-0.5">
+                  HỆ SINH THÁI LUYỆN THI IELTS & 10,972 HỌC LIỆU CHUẨN CAMBRIDGE
+                </div>
+              </div>
             </div>
+
+            <nav
+              aria-label="Điều hướng trang chủ"
+              className="hidden xl:flex items-center gap-2 text-xs font-display font-bold text-[#334155]"
+            >
+              <a
+                href="#landing-preview"
+                className="px-3 py-1.5 rounded-lg hover:bg-[#F0F7FF] hover:text-[#0284C7] transition-colors"
+              >
+                Học Thử Trực Tiếp
+              </a>
+              <a
+                href="#landing-rooms"
+                className="px-3 py-1.5 rounded-lg hover:bg-[#F0F7FF] hover:text-[#0284C7] transition-colors"
+              >
+                6 Phòng Kỹ Năng
+              </a>
+              <a
+                href="#landing-roadmap"
+                className="px-3 py-1.5 rounded-lg hover:bg-[#F0F7FF] hover:text-[#0284C7] transition-colors"
+              >
+                Lộ Trình 4 Chặng
+              </a>
+              <a
+                href="#landing-compare"
+                className="px-3 py-1.5 rounded-lg hover:bg-[#F0F7FF] hover:text-[#0284C7] transition-colors"
+              >
+                Phương Pháp FSRS
+              </a>
+              <a
+                href="#landing-hall"
+                className="px-3 py-1.5 rounded-lg hover:bg-[#F0F7FF] hover:text-[#0284C7] transition-colors"
+              >
+                Bảng Vinh Danh
+              </a>
+              <Link
+                href="/pricing"
+                className="px-3 py-1.5 rounded-lg bg-[#ECFDF5] text-[#059669] border border-[#A7F3D0]"
+              >
+                Gói VIP & Bảng Giá
+              </Link>
+              <Link
+                href="/admin"
+                className="px-3 py-1.5 rounded-lg bg-[#F0F7FF] text-[#0284C7] border border-[#BAE6FD]"
+              >
+                Admin CMS
+              </Link>
+            </nav>
 
             <div className="flex items-center gap-2.5">
               <button
@@ -871,7 +952,7 @@ export default function IeltsConcourseClient({
                   onClick={() =>
                     handleOneClickLogin(
                       'hocvien@theieltsdictionary.vn',
-                      'Nguyễn Minh Anh (VIP)'
+                      'Nguyễn Minh Anh (Học Viên VIP)'
                     )
                   }
                   className="px-4 py-2 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
@@ -882,134 +963,179 @@ export default function IeltsConcourseClient({
             </div>
           </header>
 
-          {/* Hero Section: Visual 6-Feature Grid on Left + 1-Click Login on Right */}
-          <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* ================================================================= */}
+          {/* SECTION 01: HERO BANNER + 1-CLICK LOGIN CARD                      */}
+          {/* ================================================================= */}
+          <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <BlurFade delay={0.05} className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E0F2FE] border border-[#BAE6FD] text-[#0284C7] font-mono-data text-xs font-bold">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>
+                  NỀN TẢNG EDTECH IELTS 4.0 • TỪ VỰNG WORD-ATLAS + CORPUS MY-IELTS
+                </span>
+              </div>
+
               <h1 className="font-display text-3xl sm:text-4xl font-black text-[#0F172A] leading-tight">
-                Nền Tảng Tự Học IELTS Toàn Diện: Từ Vựng • Nghe • Nói • Đọc • Viết
+                Hệ Sinh Thái Tự Học IELTS Toàn Diện: Từ Vựng • Nghe • Nói • Đọc • Viết Cá Nhân Hóa
               </h1>
 
-              <p className="text-sm sm:text-base text-[#334155]">
-                Giao diện trực quan, chia khu vực rõ ràng cho từng kỹ năng. Đăng nhập 1 chạm để vào Dashboard cá nhân và bắt đầu học ngay.
+              <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+                Kết hợp kho dữ liệu <strong>7,298 từ vựng minh họa Word-Atlas</strong> (chuẩn CEFR A1–C2, âm thanh UK/US), <strong>22 chuyên đề Nghe Corpus</strong>, <strong>538 từ khóa Reading học thuật</strong>, <strong>179 cặp Paraphrase</strong> và <strong>phòng chấm AI Speaking & Writing</strong>. Mỗi kỹ năng được tách thành khu vực riêng biệt, chia nhỏ 12 từ/bài giúp người mới bắt đầu hay học viên mục tiêu 8.0+ đều dễ dàng làm chủ mỗi ngày.
               </p>
 
-              {/* 6 Visual Room Preview Tiles (Minimal text, clear icons) */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#E0F2FE] text-[#0284C7]">
+              {/* 6 Interactive Skill Room Cards (Click to enter that room immediately!) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('vocab')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#0284C7] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#E0F2FE] text-[#0284C7] shrink-0">
                     <BookOpen className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Học Từ Vựng
+                      1. Khu Vực Từ Vựng
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      7,298 từ có ảnh & âm thanh
+                      7,298 từ có ảnh, IPA UK/US & 4 chế độ luyện nhớ FSRS
                     </div>
                   </div>
-                </div>
+                </button>
 
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#ECFDF5] text-[#059669]">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('listening')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#059669] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#ECFDF5] text-[#059669] shrink-0">
                     <Headphones className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Học Nghe
+                      2. Khu Vực Học Nghe
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      Nghe băng thi & gõ từ
+                      22 chuyên đề chép chính tả & 179 cặp từ Paraphrase
                     </div>
                   </div>
-                </div>
+                </button>
 
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#FFFBEB] text-[#D97706]">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('speaking')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#D97706] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#FFFBEB] text-[#D97706] shrink-0">
                     <Mic className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Học Nói
+                      3. Khu Vực Học Nói
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      Thu âm & chấm phát âm
+                      Thu âm trực tiếp Part 1-2-3 & chấm phát âm tự động
                     </div>
                   </div>
-                </div>
+                </button>
 
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#E0F2FE] text-[#0284C7]">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('reading')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#0284C7] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#E0F2FE] text-[#0284C7] shrink-0">
                     <FileText className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Học Đọc
+                      4. Khu Vực Học Đọc
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      Bấm vào từ xem nghĩa ngay
+                      Bấm vào từ bất kỳ tra nghĩa ngay + 538 từ khóa Reading
                     </div>
                   </div>
-                </div>
+                </button>
 
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#ECFDF5] text-[#059669]">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('writing')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#059669] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#ECFDF5] text-[#059669] shrink-0">
                     <PenTool className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Học Viết
+                      5. Khu Vực Học Viết
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      AI chấm điểm & sửa lỗi
+                      AI chấm điểm 4 tiêu chí Task 2 & 100 cấu trúc Band 7.5+
                     </div>
                   </div>
-                </div>
+                </button>
 
-                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-[#FFFBEB] text-[#D97706]">
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('profile')}
+                  className="text-left bg-[#FFFFFF] hover:bg-[#F0F7FF] p-4 rounded-2xl border border-[#DCEBFA] hover:border-[#D97706] transition-all flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2.5 rounded-xl bg-[#FFFBEB] text-[#D97706] shrink-0">
                     <User className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                      Hồ Sơ Cá Nhân
+                      6. Hồ Sơ & Sổ Từ
                     </div>
                     <div className="text-xs text-[#64748B] mt-0.5">
-                      Theo dõi Band & Sổ từ vựng
+                      Theo dõi Band điểm, chuỗi ngày học Streak & Sổ từ vựng
                     </div>
                   </div>
-                </div>
+                </button>
               </div>
 
               {/* 4 NumberTicker Metrics */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div className="bg-[#FFFFFF] p-3.5 rounded-2xl border border-[#DCEBFA] text-center">
-                  <div className="font-display text-xl font-black text-[#0284C7]">
+                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] text-center">
+                  <div className="font-display text-2xl font-black text-[#0284C7]">
                     <NumberTicker value={10972} />
                   </div>
-                  <div className="text-xs text-[#64748B]">Từ Vựng IELTS</div>
-                </div>
-                <div className="bg-[#FFFFFF] p-3.5 rounded-2xl border border-[#DCEBFA] text-center">
-                  <div className="font-display text-xl font-black text-[#059669]">
-                    <NumberTicker value={4} suffix=" Kỹ Năng" />
+                  <div className="text-xs font-bold text-[#334155] mt-0.5">
+                    Tổng Học Liệu Chuẩn
                   </div>
-                  <div className="text-xs text-[#64748B]">Nghe Nói Đọc Viết</div>
+                  <div className="text-xs text-[#64748B]">Word-Atlas + My-IELTS</div>
                 </div>
-                <div className="bg-[#FFFFFF] p-3.5 rounded-2xl border border-[#DCEBFA] text-center">
-                  <div className="font-display text-xl font-black text-[#0F172A]">
-                    <NumberTicker value={12} suffix=" Tuần" />
+                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] text-center">
+                  <div className="font-display text-2xl font-black text-[#059669]">
+                    <NumberTicker value={7298} />
                   </div>
-                  <div className="text-xs text-[#64748B]">Lộ Trình Rõ Ràng</div>
+                  <div className="text-xs font-bold text-[#334155] mt-0.5">
+                    Từ Vựng Minh Họa
+                  </div>
+                  <div className="text-xs text-[#64748B]">Có Ảnh & Audio UK/US</div>
                 </div>
-                <div className="bg-[#FFFFFF] p-3.5 rounded-2xl border border-[#DCEBFA] text-center">
-                  <div className="font-display text-xl font-black text-[#D97706]">
+                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] text-center">
+                  <div className="font-display text-2xl font-black text-[#0F172A]">
+                    <NumberTicker value={22} suffix=" Chủ Đề" />
+                  </div>
+                  <div className="text-xs font-bold text-[#334155] mt-0.5">
+                    Nghe Chép Chính Tả
+                  </div>
+                  <div className="text-xs text-[#64748B]">3,674 Từ Vựng Corpus</div>
+                </div>
+                <div className="bg-[#FFFFFF] p-4 rounded-2xl border border-[#DCEBFA] text-center">
+                  <div className="font-display text-2xl font-black text-[#D97706]">
                     <NumberTicker value={94.2} decimals={1} suffix="%" />
                   </div>
-                  <div className="text-xs text-[#64748B]">Tỉ Lệ Nhớ Từ</div>
+                  <div className="text-xs font-bold text-[#334155] mt-0.5">
+                    Tỉ Lệ Nhớ Dài Hạn
+                  </div>
+                  <div className="text-xs text-[#64748B]">Thuật Toán FSRS-4.5</div>
                 </div>
               </div>
             </BlurFade>
 
-            {/* Right 5 Columns: Simple 1-Click Login Box */}
+            {/* Right 5 Columns: 1-Click Login & Credential Box */}
             <BlurFade delay={0.12} className="lg:col-span-5">
               <div className="relative bg-[#FFFFFF] rounded-2xl p-6 sm:p-7 border border-[#BAE6FD] shadow-sm space-y-4 overflow-hidden">
                 <BorderBeam duration={7} />
@@ -1019,7 +1145,7 @@ export default function IeltsConcourseClient({
                     Đăng Nhập Vào Dashboard Học Tập
                   </h2>
                   <p className="text-xs text-[#64748B] mt-1">
-                    Chọn đăng nhập nhanh 1 chạm bên dưới để vào thẳng phòng học:
+                    Chọn đăng nhập nhanh 1 chạm bên dưới để vào thẳng 7 khu vực học tập:
                   </p>
                 </div>
 
@@ -1160,12 +1286,903 @@ export default function IeltsConcourseClient({
                     disabled={authLoading}
                     className="w-full py-3 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold transition-colors cursor-pointer"
                   >
-                    {authLoading ? 'Đang mở Dashboard...' : 'Đăng Nhập Bằng Email & Mật Khẩu'}
+                    {authLoading
+                      ? 'Đang mở Dashboard...'
+                      : 'Đăng Nhập Bằng Email & Mật Khẩu'}
                   </button>
                 </form>
               </div>
             </BlurFade>
           </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 02: MAGIC UI INFINITE MARQUEE (VOCAB & HALL OF FAME)       */}
+          {/* ================================================================= */}
+          <section className="bg-[#FFFFFF] rounded-2xl p-4 border border-[#DCEBFA] space-y-2">
+            <div className="flex items-center justify-between px-2">
+              <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                LIVE STREAM • TỪ VỰNG HỌC THUẬT C1/C2 & BẢNG VÀNG HỌC VIÊN YOUPASS 4.0
+              </span>
+              <span className="font-mono-data text-xs text-[#059669] font-bold">
+                Cập nhật thời gian thực
+              </span>
+            </div>
+            <Marquee>
+              {initialPriorityWords.slice(0, 10).map((item) => (
+                <div
+                  key={`marquee-w-${item.id}`}
+                  className="px-4 py-2 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] flex items-center gap-2.5"
+                >
+                  <span
+                    className={`px-1.5 py-0.5 rounded font-mono-data text-xs font-bold ${
+                      CEFR_BADGE_STYLE[item.cefr] || CEFR_BADGE_STYLE.B2
+                    }`}
+                  >
+                    {item.cefr}
+                  </span>
+                  <span className="font-display text-xs font-extrabold text-[#0F172A]">
+                    {item.w}
+                  </span>
+                  <span className="font-mono-data text-xs text-[#0284C7]">
+                    {item.uk || item.us}
+                  </span>
+                  <span className="text-xs text-[#334155]">
+                    {item.vi || item.en}
+                  </span>
+                </div>
+              ))}
+            </Marquee>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 03: TRẢI NGHIỆM HỌC THỬ NGAY TRÊN TRANG CHỦ               */}
+          {/* ================================================================= */}
+          <section
+            id="landing-preview"
+            className="bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#DCEBFA] space-y-6"
+          >
+            <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#DCEBFA]">
+              <div>
+                <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                  01 / HỌC THỬ TRỰC TIẾP TRƯỚC KHI ĐĂNG NHẬP
+                </span>
+                <h2 className="font-display text-2xl font-black text-[#0F172A] mt-1">
+                  Trải Nghiệm Flashcard Đa Phương Tiện & Bản Đồ Ngữ Nghĩa Word-Atlas
+                </h2>
+              </div>
+              <button
+                type="button"
+                onClick={() => enterRoomFromLanding('vocab')}
+                className="px-4 py-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold cursor-pointer"
+              >
+                Mở Toàn Bộ 7,298 Từ Trong Phòng Học →
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              {/* Left 6 Cols: Interactive Trial Flashcard */}
+              <div className="lg:col-span-6 bg-[#F8FBFF] rounded-2xl p-5 border border-[#BAE6FD] space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="font-display text-xs font-extrabold text-[#0284C7]">
+                    CHỌN TỪ VỰNG ĐỂ NGHE PHÁT ÂM UK/US & XEM HÌNH MINH HỌA:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {previewWords.map((w, idx) => (
+                      <button
+                        key={w.id}
+                        type="button"
+                        onClick={() => setCurrentWordIndex(idx)}
+                        className={`px-2.5 py-1 rounded-lg font-mono-data text-xs font-bold cursor-pointer ${
+                          activePreviewWord?.id === w.id
+                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                            : 'bg-[#FFFFFF] border border-[#DCEBFA] text-[#334155]'
+                        }`}
+                      >
+                        {w.w}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {activePreviewWord && (
+                  <div className="bg-[#FFFFFF] rounded-2xl p-5 border border-[#DCEBFA] space-y-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+                      <div className="sm:col-span-5">
+                        <img
+                          src={activePreviewWord.imgUrl}
+                          alt={activePreviewWord.w}
+                          className="w-full h-36 object-cover rounded-xl border border-[#DCEBFA]"
+                        />
+                      </div>
+                      <div className="sm:col-span-7 space-y-2.5">
+                        <div className="flex items-center gap-2">
+                          <span
+                            className={`px-2 py-0.5 rounded font-mono-data text-xs font-bold ${
+                              CEFR_BADGE_STYLE[activePreviewWord.cefr] ||
+                              CEFR_BADGE_STYLE.B2
+                            }`}
+                          >
+                            CEFR {activePreviewWord.cefr}
+                          </span>
+                          <span className="px-2 py-0.5 rounded bg-[#F0F7FF] text-[#0284C7] font-mono-data text-xs font-bold">
+                            {activePreviewWord.pos || 'n./v.'}
+                          </span>
+                        </div>
+
+                        <div className="font-display text-2xl font-black text-[#0F172A]">
+                          {activePreviewWord.w}
+                        </div>
+
+                        <div className="flex flex-wrap gap-2">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              playPronunciation(
+                                activePreviewWord.audioUkUrl,
+                                activePreviewWord.w,
+                                'en-GB'
+                              )
+                            }
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F0F7FF] hover:bg-[#E0F2FE] border border-[#BAE6FD] text-[#0284C7] font-mono-data text-xs font-bold cursor-pointer"
+                          >
+                            <FlagUkSvg />
+                            <span>UK {activePreviewWord.uk || '/.../'}</span>
+                            <Volume2 className="w-3.5 h-3.5" />
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={() =>
+                              playPronunciation(
+                                activePreviewWord.audioUsUrl,
+                                activePreviewWord.w,
+                                'en-US'
+                              )
+                            }
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#ECFDF5] hover:bg-[#D1FAE5] border border-[#A7F3D0] text-[#059669] font-mono-data text-xs font-bold cursor-pointer"
+                          >
+                            <FlagUsSvg />
+                            <span>US {activePreviewWord.us || '/.../'}</span>
+                            <Volume2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+
+                        <div className="text-sm font-bold text-[#0F172A]">
+                          Nghĩa: {activePreviewWord.vi || activePreviewWord.en}
+                        </div>
+                      </div>
+                    </div>
+
+                    {activePreviewWord.ex?.[0] && (
+                      <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] space-y-1">
+                        <div className="text-xs font-semibold text-[#0F172A]">
+                          Ví dụ: &ldquo;{activePreviewWord.ex[0].en}&rdquo;
+                        </div>
+                        {activePreviewWord.ex[0].vi && (
+                          <div className="text-xs text-[#334155]">
+                            Dịch: {activePreviewWord.ex[0].vi}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Right 6 Cols: Interactive Semantic Constellation */}
+              <div className="lg:col-span-6 bg-[#F8FBFF] rounded-2xl p-5 border border-[#BAE6FD] space-y-3">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="font-display text-sm font-extrabold text-[#0F172A]">
+                      Bản Đồ 18 Chủ Đề Từ Vựng Học Thuật (Word-Atlas Graph)
+                    </div>
+                    <div className="text-xs text-[#64748B]">
+                      Bấm vào chủ đề bất kỳ để xem số lượng từ vựng và phân bổ theo Band điểm
+                    </div>
+                  </div>
+                  <span className="px-2.5 py-1 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold">
+                    Interactive Graph
+                  </span>
+                </div>
+
+                <WordAtlasConstellation
+                  topics={topics}
+                  activeTopic={selectedTopic}
+                  onSelectTopic={(tId) => setSelectedTopic(tId)}
+                />
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-2">
+                  {topics.slice(0, 6).map((tp) => (
+                    <button
+                      key={tp.id}
+                      type="button"
+                      onClick={() => setSelectedTopic(tp.id)}
+                      className={`p-2.5 rounded-xl border text-left transition-colors cursor-pointer ${
+                        selectedTopic === tp.id
+                          ? 'bg-[#0284C7] text-[#FFFFFF] border-[#0284C7]'
+                          : 'bg-[#FFFFFF] text-[#0F172A] border-[#DCEBFA] hover:bg-[#F0F7FF]'
+                      }`}
+                    >
+                      <div className="font-display text-xs font-extrabold truncate">
+                        {tp.vi}
+                      </div>
+                      <div
+                        className={`font-mono-data text-xs ${
+                          selectedTopic === tp.id
+                            ? 'text-[#E0F2FE]'
+                            : 'text-[#0284C7]'
+                        }`}
+                      >
+                        {tp.total} từ vựng
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 04: CHI TIẾT 6 PHÒNG HỌC CHUYÊN BIỆT TRONG DASHBOARD       */}
+          {/* ================================================================= */}
+          <section id="landing-rooms" className="space-y-6">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                  02 / KIẾN TRÚC PHÒNG HỌC TÁCH BIỆT RÕ RÀNG
+                </span>
+                <h2 className="font-display text-2xl sm:text-3xl font-black text-[#0F172A] mt-1">
+                  6 Khu Vực Chuyên Sâu Sau Khi Đăng Nhập Vào Hệ Thống
+                </h2>
+              </div>
+              <p className="text-xs sm:text-sm text-[#334155] max-w-xl">
+                Không nhồi nhét tất cả vào một màn hình. Khi vào Dashboard, thanh menu bên trái giúp bạn chuyển đổi tức thì giữa 6 phòng chức năng chuyên biệt:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {/* Room 1 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#E0F2FE] text-[#0284C7]">
+                      <BookOpen className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#F0F7FF] border border-[#BAE6FD] font-mono-data text-xs font-bold text-[#0284C7]">
+                      7,298 Từ • 18 Chủ Đề
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    1. Phòng Học Từ Vựng (Word-Atlas)
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Chia nhỏ thành từng bài học <strong>12 từ vựng</strong> để tránh quá tải. Tích hợp đầy đủ tranh minh họa trực quan, phiên âm IPA Anh-Anh / Anh-Mỹ và 4 chế độ luyện phản xạ:
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Chế độ 1:</strong> Xem ảnh, nghe phát âm & phân tích câu ví dụ</li>
+                    <li>• <strong>Chế độ 2:</strong> Trắc nghiệm 4 đáp án kiểm tra tốc độ nhận diện</li>
+                    <li>• <strong>Chế độ 3:</strong> Điền từ vào chỗ trống trong ngữ cảnh (Cloze Test)</li>
+                    <li>• <strong>Chế độ 4:</strong> Nghe âm thanh & gõ lại chính tả (Spelling)</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('vocab')}
+                  className="w-full py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0284C7] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Học Từ Vựng →
+                </button>
+              </div>
+
+              {/* Room 2 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#ECFDF5] text-[#059669]">
+                      <Headphones className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#ECFDF5] border border-[#A7F3D0] font-mono-data text-xs font-bold text-[#059669]">
+                      22 Chuyên Đề • 179 Paraphrase
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    2. Phòng Học Nghe (Listening Lab)
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Bao gồm toàn bộ <strong>3,674 từ vựng cốt lõi</strong> thuộc 22 chuyên đề IELTS Listening thực chiến (Renting, Library, Medical, Academic Research...) kèm trình phát âm thanh đa tốc độ:
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Luyện Dictation:</strong> Nghe băng và gõ lại từng từ để bắt âm cuối</li>
+                    <li>• <strong>Điều chỉnh tốc độ:</strong> 0.8x (nghe chậm) • 1.0x (chuẩn) • 1.2x (nâng cao)</li>
+                    <li>• <strong>179 Nhóm Paraphrase:</strong> Nắm trọn quy luật biến đổi từ khóa trong bài nghe</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('listening')}
+                  className="w-full py-2.5 rounded-xl bg-[#ECFDF5] hover:bg-[#059669] text-[#059669] hover:text-[#FFFFFF] border border-[#A7F3D0] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Học Nghe →
+                </button>
+              </div>
+
+              {/* Room 3 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#FFFBEB] text-[#D97706]">
+                      <Mic className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#FFFBEB] border border-[#FDE68A] font-mono-data text-xs font-bold text-[#D97706]">
+                      Part 1 • Part 2 • Part 3
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    3. Phòng Học Nói (Speaking Studio)
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Mô phỏng phòng thi IELTS Speaking trực tiếp với bộ đề Forecast mới nhất, đồng hồ bấm giờ chuẩn và công nghệ thu âm Web Audio ngay trên trình duyệt:
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Cue Card & Gợi ý C1/C2:</strong> Cung cấp collocations ăn điểm cho từng đề</li>
+                    <li>• <strong>Ghi âm & Nghe lại:</strong> Thu âm bài nói thật và phát lại để tự sửa lỗi</li>
+                    <li>• <strong>Chấm điểm AI:</strong> Đánh giá độ trôi chảy (Fluency), Từ vựng & Phát âm</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('speaking')}
+                  className="w-full py-2.5 rounded-xl bg-[#FFFBEB] hover:bg-[#D97706] text-[#B45309] hover:text-[#FFFFFF] border border-[#FDE68A] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Học Nói →
+                </button>
+              </div>
+
+              {/* Room 4 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#E0F2FE] text-[#0284C7]">
+                      <FileText className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#F0F7FF] border border-[#BAE6FD] font-mono-data text-xs font-bold text-[#0284C7]">
+                      Tra Từ 1-Chạm • 538 Từ Khóa
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    4. Phòng Học Đọc (Reading Room)
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Giao diện đọc bài học thuật thông minh kết hợp kho <strong>538 từ khóa Reading trọng tâm</strong> được phân loại theo tần suất xuất hiện trong đề thi thật (100% • 60% • 30%):
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Click-to-Lookup:</strong> Bấm vào bất kỳ từ nào trong bài đọc để xem nghĩa & nghe âm</li>
+                    <li>• <strong>Lưu Sổ Từ 1-Chạm:</strong> Thêm từ khó trong bài đọc vào sổ ôn tập cá nhân</li>
+                    <li>• <strong>Luyện True/False/Not Given:</strong> Giải thích chi tiết vị trí dẫn chứng</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('reading')}
+                  className="w-full py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#0284C7] text-[#0284C7] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Học Đọc →
+                </button>
+              </div>
+
+              {/* Room 5 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#ECFDF5] text-[#059669]">
+                      <PenTool className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#ECFDF5] border border-[#A7F3D0] font-mono-data text-xs font-bold text-[#059669]">
+                      AI Task 2 • 100 Cấu Trúc
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    5. Phòng Học Viết (AI Writing Grader)
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Trình soạn thảo IELTS Writing Task 2 tích hợp bộ đếm từ tự động, nhận diện từ vựng C1/C2 theo thời gian thực và <strong>100 cấu trúc ngữ pháp ăn điểm</strong>:
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Chấm 4 tiêu chí chuẩn IDP/BC:</strong> Task Response, Coherence, Lexical, Grammar</li>
+                    <li>• <strong>Chèn mẫu câu 1-chạm:</strong> 100 cấu trúc câu phức & đảo ngữ Band 7.5+</li>
+                    <li>• <strong>Gợi ý nâng cấp từ:</strong> Thay thế từ B1 thông thường bằng từ học thuật C1</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('writing')}
+                  className="w-full py-2.5 rounded-xl bg-[#ECFDF5] hover:bg-[#059669] text-[#059669] hover:text-[#FFFFFF] border border-[#A7F3D0] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Học Viết →
+                </button>
+              </div>
+
+              {/* Room 6 */}
+              <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="p-3 rounded-xl bg-[#FFFBEB] text-[#D97706]">
+                      <User className="w-6 h-6" />
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-[#FFFBEB] border border-[#FDE68A] font-mono-data text-xs font-bold text-[#D97706]">
+                      Hồ Sơ • FSRS-4.5 • Sổ Từ
+                    </span>
+                  </div>
+                  <h3 className="font-display text-lg font-black text-[#0F172A]">
+                    6. Hồ Sơ Cá Nhân & Sổ Từ Vựng
+                  </h3>
+                  <p className="text-xs text-[#334155] leading-relaxed">
+                    Quản lý toàn bộ thông tin cá nhân, mục tiêu Band điểm, chuỗi ngày học liên tiếp (Streak) và thuật toán lặp lại ngắt quãng <strong>FSRS-4.5</strong>:
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• <strong>Lịch ôn tập tự động:</strong> Tính toán chính xác thời điểm não bộ sắp quên từ</li>
+                    <li>• <strong>Sổ từ vựng riêng:</strong> Lưu trữ mọi từ khó bạn đánh dấu khi học Đọc & Từ vựng</li>
+                    <li>• <strong>Thống kê 4 kỹ năng:</strong> Biểu đồ tiến độ hoàn thành từng chặng học</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('profile')}
+                  className="w-full py-2.5 rounded-xl bg-[#FFFBEB] hover:bg-[#D97706] text-[#B45309] hover:text-[#FFFFFF] border border-[#FDE68A] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                >
+                  Vào Khu Vực Hồ Sơ Cá Nhân →
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 05: LỘ TRÌNH 4 CHẶNG 12 TUẦN (BAND 4.0 -> 8.0+)           */}
+          {/* ================================================================= */}
+          <section
+            id="landing-roadmap"
+            className="bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#DCEBFA] space-y-6"
+          >
+            <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#DCEBFA]">
+              <div>
+                <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                  03 / LỘ TRÌNH HỌC TẬP TỪNG BƯỚC (ADAPTIVE ROADMAP)
+                </span>
+                <h2 className="font-display text-2xl font-black text-[#0F172A] mt-1">
+                  Lộ Trình 4 Chặng Cá Nhân Hóa Từ Mất Gốc (4.0) Lên Mastery (8.0+)
+                </h2>
+              </div>
+              <Link
+                href="/roadmap"
+                className="px-4 py-2.5 rounded-xl bg-[#F0F7FF] hover:bg-[#E0F2FE] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-extrabold"
+              >
+                Xem Chi Tiết Giáo Án 12 Tuần →
+              </Link>
+            </div>
+
+            <AnimatedRoadmapBeam
+              stages={PROGRESSIVE_STAGES.map((s) => ({
+                code: s.code,
+                band: s.band,
+                title: s.titleVi,
+                sub: s.subVi,
+                wordCount: s.wordCount
+              }))}
+              activeStageIndex={selectedStageIdx}
+              onSelectStage={(idx) => setSelectedStageIdx(idx)}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {PROGRESSIVE_STAGES.map((stg, idx) => (
+                <div
+                  key={stg.code}
+                  className="bg-[#F8FBFF] rounded-2xl p-5 border border-[#DCEBFA] flex flex-col justify-between space-y-4"
+                >
+                  <div className="space-y-2.5">
+                    <div className="flex items-center justify-between">
+                      <span className="px-2.5 py-1 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                        {stg.code}
+                      </span>
+                      <span className="font-mono-data text-xs font-extrabold text-[#059669]">
+                        {stg.band}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-base font-black text-[#0F172A]">
+                      {stg.titleVi}
+                    </h3>
+                    <p className="text-xs text-[#334155] leading-relaxed">
+                      {stg.subVi}
+                    </p>
+                    <div className="pt-2 border-t border-[#DCEBFA] space-y-1 text-xs text-[#64748B]">
+                      <div>
+                        • <strong>Cấp độ CEFR:</strong> {stg.cefrLevels.join(', ')}
+                      </div>
+                      <div>
+                        • <strong>Khối lượng:</strong> {stg.wordCount.toLocaleString()} từ vựng
+                      </div>
+                      <div>
+                        • <strong>Thời lượng:</strong> 3 tuần ({Math.ceil(stg.wordCount / 12)} bài học nhỏ)
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedStageIdx(idx);
+                      setActiveLessonId(`stage-${idx}-lesson-0`);
+                      enterRoomFromLanding('vocab');
+                    }}
+                    className="w-full py-2 rounded-xl bg-[#FFFFFF] hover:bg-[#0284C7] text-[#0284C7] hover:text-[#FFFFFF] border border-[#BAE6FD] font-display text-xs font-extrabold transition-colors cursor-pointer"
+                  >
+                    Bắt Đầu Học {stg.code} →
+                  </button>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 06: BẢNG SO SÁNH PHƯƠNG PHÁP HỌC 4.0 VS TRUYỀN THỐNG      */}
+          {/* ================================================================= */}
+          <section
+            id="landing-compare"
+            className="bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#DCEBFA] space-y-6"
+          >
+            <div className="pb-4 border-b border-[#DCEBFA]">
+              <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                04 / TẠI SAO HỌC VIÊN CHỌN YOUPASS × WORD ATLAS 4.0?
+              </span>
+              <h2 className="font-display text-2xl font-black text-[#0F172A] mt-1">
+                So Sánh Phương Pháp Học Thích Ứng 4.0 Với Cách Học Truyền Thống
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-[#FFF1F2]/60 rounded-2xl p-6 border border-[#FECDD3] space-y-3">
+                <div className="font-display text-base font-black text-[#E11D48]">
+                  Cách Học IELTS Truyền Thống (Dễ Quên & Quá Tải)
+                </div>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-[#334155]">
+                  <li>
+                    • <strong>Học vẹt danh sách dài:</strong> Cố nhồi nhét hàng trăm từ rời rạc trên giấy hoặc file PDF khiến não bộ quên tới 80% chỉ sau 7 ngày.
+                  </li>
+                  <li>
+                    • <strong>Thiếu ngữ cảnh & âm thanh:</strong> Chỉ học nghĩa tiếng Việt, không nghe phát âm chuẩn UK/US nên khi vào phòng thi Listening không nhận diện được từ.
+                  </li>
+                  <li>
+                    • <strong>Tài liệu phân mảnh:</strong> Từ vựng một nơi, bài nghe một nẻo, không kết nối trực tiếp với bài đọc Reading và cấu trúc câu Writing.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#ECFDF5]/60 rounded-2xl p-6 border border-[#A7F3D0] space-y-3">
+                <div className="font-display text-base font-black text-[#059669]">
+                  Hệ Sinh Thái YouPass × Word Atlas 4.0 (Nhớ Lâu 94.2%)
+                </div>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-[#334155]">
+                  <li>
+                    • <strong>Chia nhỏ 12 từ/bài + Thuật toán FSRS-4.5:</strong> Tự động nhắc ôn đúng thời điểm điểm rơi trí nhớ (Quên / Khó / Nhớ / Thuộc lòng).
+                  </li>
+                  <li>
+                    • <strong>Đa giác quan (Ảnh + Audio UK/US + Ví dụ song ngữ):</strong> Kết hợp nhìn tranh minh họa, nghe phát âm bản xứ và gõ chính tả trực tiếp.
+                  </li>
+                  <li>
+                    • <strong>Đồng bộ 6 phòng học trong 1 tài khoản:</strong> Từ vựng vừa học xuất hiện ngay trong bài Đọc, bài Nghe Corpus và gợi ý cho phòng Viết & Nói.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 07: BẢNG VINH DANH HỌC VIÊN & ĐUA TOP SĂN VIP             */}
+          {/* ================================================================= */}
+          <section
+            id="landing-hall"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch"
+          >
+            {/* Left 7 Cols: Hall of Fame */}
+            <div className="lg:col-span-7 bg-[#FFFFFF] rounded-2xl p-6 sm:p-7 border border-[#DCEBFA] space-y-5">
+              <div className="pb-3 border-b border-[#DCEBFA]">
+                <span className="font-mono-data text-xs font-bold text-[#0284C7]">
+                  05 / HALL OF FAME • BẢNG VÀNG HỌC VIÊN ĐIỂM CAO
+                </span>
+                <h2 className="font-display text-xl sm:text-2xl font-black text-[#0F172A] mt-1">
+                  Học Viên Đạt IELTS 7.5 – 8.5 Nhờ Lộ Trình Word-Atlas
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-2xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="font-display text-sm font-black text-[#0F172A]">
+                      Nguyễn Minh Anh
+                    </div>
+                    <span className="px-2.5 py-0.5 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                      8.0 Overall
+                    </span>
+                  </div>
+                  <div className="font-mono-data text-xs text-[#059669] font-bold">
+                    Listening 8.5 • Reading 8.5 • Writing 7.5 • Speaking 7.5
+                  </div>
+                  <p className="text-xs text-[#334155]">
+                    &ldquo;Phòng học Từ vựng chia sẵn 12 từ/bài kèm ảnh minh họa và 179 cặp Paraphrase giúp mình tăng từ 6.5 lên 8.5 Reading & Listening chỉ sau 10 tuần.&rdquo;
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="font-display text-sm font-black text-[#0F172A]">
+                      Trần Quốc Bảo
+                    </div>
+                    <span className="px-2.5 py-0.5 rounded-lg bg-[#059669] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                      7.5 Overall
+                    </span>
+                  </div>
+                  <div className="font-mono-data text-xs text-[#0284C7] font-bold">
+                    Listening 8.0 • Reading 8.0 • Writing 7.0 • Speaking 7.0
+                  </div>
+                  <p className="text-xs text-[#334155]">
+                    &ldquo;Giao diện chia từng phòng học rất rõ ràng, không bị rối mắt. Thích nhất là tính năng bấm vào từ bất kỳ trong bài Reading để xem nghĩa và lưu sổ từ.&rdquo;
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="font-display text-sm font-black text-[#0F172A]">
+                      Lê Hoàng Khánh Linh
+                    </div>
+                    <span className="px-2.5 py-0.5 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                      8.0 Overall
+                    </span>
+                  </div>
+                  <div className="font-mono-data text-xs text-[#059669] font-bold">
+                    Listening 8.5 • Reading 9.0 • Writing 7.0 • Speaking 7.5
+                  </div>
+                  <p className="text-xs text-[#334155]">
+                    &ldquo;Bộ 538 từ khóa Reading phân loại theo xác suất 100%-60%-30% cực kỳ sát đề thi máy tính IDP. Lịch ôn tập FSRS giúp mình nhớ từ rất chắc.&rdquo;
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="font-display text-sm font-black text-[#0F172A]">
+                      Phạm Gia Huy
+                    </div>
+                    <span className="px-2.5 py-0.5 rounded-lg bg-[#D97706] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                      7.5 Overall
+                    </span>
+                  </div>
+                  <div className="font-mono-data text-xs text-[#0284C7] font-bold">
+                    Listening 8.0 • Reading 7.5 • Writing 7.5 • Speaking 7.0
+                  </div>
+                  <p className="text-xs text-[#334155]">
+                    &ldquo;100 cấu trúc câu Writing và bộ chấm AI 4 tiêu chí giúp mình sửa triệt để lỗi câu đơn, nâng điểm Writing từ 6.0 lên 7.5.&rdquo;
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right 5 Cols: Gamification Leaderboard (Đua Top Săn VIP) */}
+            <div className="lg:col-span-5 bg-[#FFFFFF] rounded-2xl p-6 sm:p-7 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+              <div className="space-y-3">
+                <div className="pb-3 border-b border-[#DCEBFA] flex items-center justify-between">
+                  <div>
+                    <span className="font-mono-data text-xs font-bold text-[#D97706]">
+                      GAMIFICATION • ĐUA TOP TUẦN
+                    </span>
+                    <h3 className="font-display text-lg font-black text-[#0F172A] mt-0.5">
+                      Bảng Xếp Hạng Chuyên Cần Săn Gói VIP
+                    </h3>
+                  </div>
+                  <Award className="w-6 h-6 text-[#D97706]" />
+                </div>
+
+                <div className="divide-y divide-[#DCEBFA] border border-[#DCEBFA] rounded-xl overflow-hidden bg-[#F8FBFF]">
+                  {[
+                    {
+                      rank: 'TOP 1',
+                      name: 'Nguyễn Minh Anh',
+                      streak: '65 ngày',
+                      xp: '5,840 XP',
+                      badge: 'bg-[#FFFBEB] text-[#D97706] border border-[#FDE68A]'
+                    },
+                    {
+                      rank: 'TOP 2',
+                      name: 'Trần Quốc Bảo',
+                      streak: '48 ngày',
+                      xp: '4,920 XP',
+                      badge: 'bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD]'
+                    },
+                    {
+                      rank: 'TOP 3',
+                      name: 'Lê Hoàng Khánh Linh',
+                      streak: '42 ngày',
+                      xp: '4,310 XP',
+                      badge: 'bg-[#ECFDF5] text-[#059669] border border-[#A7F3D0]'
+                    },
+                    {
+                      rank: 'TOP 4',
+                      name: 'Phạm Gia Huy',
+                      streak: '31 ngày',
+                      xp: '3,650 XP',
+                      badge: 'bg-[#FFFFFF] text-[#334155] border border-[#DCEBFA]'
+                    }
+                  ].map((row) => (
+                    <div
+                      key={row.rank}
+                      className="p-3.5 flex items-center justify-between gap-2 text-xs"
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <span
+                          className={`px-2 py-0.5 rounded font-mono-data font-bold ${row.badge}`}
+                        >
+                          {row.rank}
+                        </span>
+                        <div>
+                          <div className="font-display font-extrabold text-[#0F172A]">
+                            {row.name}
+                          </div>
+                          <div className="text-[#64748B]">
+                            Chuỗi học: {row.streak}
+                          </div>
+                        </div>
+                      </div>
+                      <span className="font-mono-data font-black text-[#0284C7]">
+                        {row.xp}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs text-[#334155]">
+                Top 3 học viên có điểm chuyên cần XP cao nhất mỗi tuần được tặng tự động <strong>Gói VIP Unlimited 1 Tháng</strong>.
+              </div>
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* SECTION 08: BẢNG GIÁ GÓI HỌC TẬP & CÂU HỎI THƯỜNG GẶP (FAQ)      */}
+          {/* ================================================================= */}
+          <section
+            id="landing-pricing"
+            className="bg-[#FFFFFF] rounded-2xl p-6 sm:p-8 border border-[#DCEBFA] space-y-6"
+          >
+            <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#DCEBFA]">
+              <div>
+                <span className="font-mono-data text-xs font-bold text-[#059669]">
+                  06 / GÓI ĐẦU TƯ HỌC TẬP & CÂU HỎI THƯỜNG GẶP
+                </span>
+                <h2 className="font-display text-2xl font-black text-[#0F172A] mt-1">
+                  Lựa Chọn Gói Học Phù Hợp Với Mục Tiêu Band Điểm Của Bạn
+                </h2>
+              </div>
+              <Link
+                href="/pricing"
+                className="px-4 py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold"
+              >
+                Mở Trang Thanh Toán VietQR →
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="bg-[#F8FBFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-col justify-between space-y-4">
+                <div className="space-y-2.5">
+                  <span className="px-2.5 py-1 rounded-lg bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs font-bold">
+                    GÓI FREE STARTER
+                  </span>
+                  <div className="font-display text-2xl font-black text-[#0F172A]">
+                    0đ <span className="text-xs font-normal text-[#64748B]">/ trọn đời</span>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• Mở khóa Chặng 1 & Chặng 2 (Band 4.0 → 6.0)</li>
+                    <li>• Học thử Flashcard & phát âm chuẩn UK/US</li>
+                    <li>• Lưu tối đa 100 từ vào Sổ từ vựng cá nhân</li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => enterRoomFromLanding('overview')}
+                  className="w-full py-2.5 rounded-xl bg-[#FFFFFF] hover:bg-[#E0F2FE] text-[#0284C7] border border-[#BAE6FD] font-display text-xs font-extrabold cursor-pointer"
+                >
+                  Học Miễn Phí Ngay →
+                </button>
+              </div>
+
+              <div className="bg-[#F0F7FF] rounded-2xl p-6 border-2 border-[#0284C7] flex flex-col justify-between space-y-4">
+                <div className="space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-1 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                      GÓI PRO 6 THÁNG
+                    </span>
+                    <span className="font-mono-data text-xs font-bold text-[#059669]">
+                      Phổ biến nhất
+                    </span>
+                  </div>
+                  <div className="font-display text-2xl font-black text-[#0F172A]">
+                    490.000đ <span className="text-xs font-normal text-[#64748B]">/ 6 tháng</span>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• Mở toàn bộ 7,298 từ vựng Word-Atlas (A1–C2)</li>
+                    <li>• Trọn bộ 22 chuyên đề Nghe & 538 từ khóa Đọc</li>
+                    <li>• Lịch ôn tập thông minh FSRS-4.5 không giới hạn</li>
+                  </ul>
+                </div>
+                <Link
+                  href="/pricing"
+                  className="block w-full py-2.5 rounded-xl bg-[#0284C7] hover:bg-[#0369A1] text-[#FFFFFF] font-display text-xs font-extrabold text-center"
+                >
+                  Đăng Ký Gói PRO →
+                </Link>
+              </div>
+
+              <div className="bg-[#ECFDF5]/60 rounded-2xl p-6 border border-[#A7F3D0] flex flex-col justify-between space-y-4">
+                <div className="space-y-2.5">
+                  <span className="px-2.5 py-1 rounded-lg bg-[#059669] text-[#FFFFFF] font-mono-data text-xs font-bold">
+                    VIP UNLIMITED 12 THÁNG
+                  </span>
+                  <div className="font-display text-2xl font-black text-[#0F172A]">
+                    890.000đ <span className="text-xs font-normal text-[#64748B]">/ 12 tháng</span>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-[#334155]">
+                    <li>• Toàn quyền 6 phòng kỹ năng + AI Speaking & Writing</li>
+                    <li>• Chấm bài Writing Task 2 & Speaking không giới hạn</li>
+                    <li>• Tặng kèm bộ Ebook Chiến Thuật Band 8.0+ độc quyền</li>
+                  </ul>
+                </div>
+                <Link
+                  href="/pricing"
+                  className="block w-full py-2.5 rounded-xl bg-[#059669] hover:bg-[#047857] text-[#FFFFFF] font-display text-xs font-extrabold text-center"
+                >
+                  Kích Hoạt VIP Unlimited →
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* ================================================================= */}
+          {/* FOOTER COMPLIANCE & SUPPORT                                       */}
+          {/* ================================================================= */}
+          <footer className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] flex flex-wrap items-center justify-between gap-4 text-xs text-[#64748B]">
+            <div>
+              <div className="font-display font-black text-[#0F172A]">
+                HỆ SINH THÁI GIÁO DỤC YOUPASS × THE IELTS DICTIONARY 4.0
+              </div>
+              <div className="mt-1">
+                Kho học liệu chuẩn hóa 10,972 mục • Chính sách bảo mật • Điều khoản dịch vụ • Chính sách hoàn tiền 100% trong 7 ngày
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Link
+                href="/login"
+                className="text-[#0284C7] font-bold hover:underline"
+              >
+                Trang Đăng Nhập
+              </Link>
+              <span>•</span>
+              <Link
+                href="/roadmap"
+                className="text-[#0284C7] font-bold hover:underline"
+              >
+                Lộ Trình 12 Tuần
+              </Link>
+              <span>•</span>
+              <Link
+                href="/pricing"
+                className="text-[#0284C7] font-bold hover:underline"
+              >
+                Bảng Giá VIP
+              </Link>
+              <span>•</span>
+              <Link
+                href="/admin"
+                className="text-[#0284C7] font-bold hover:underline"
+              >
+                Quản Trị Admin
+              </Link>
+            </div>
+          </footer>
         </div>
       </div>
     );
