@@ -1,0 +1,2109 @@
+[
+  {
+    "index": 1,
+    "word": "reserve",
+    "type": "v.",
+    "enDefinition": "Arrange to keep something for a particular person or purpose.",
+    "viMeaning": "Đặt trước, dự trữ, bảo tồn",
+    "replace": [
+      "book"
+    ]
+  },
+  {
+    "index": 2,
+    "word": "in advance",
+    "type": "",
+    "enDefinition": "Before a planned event or a particular time.",
+    "viMeaning": null,
+    "replace": [
+      "ahead",
+      "before"
+    ]
+  },
+  {
+    "index": 3,
+    "word": "have to",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: must, should, need, require, necessary, be supposed to, demand, order",
+    "viMeaning": null,
+    "replace": [
+      "must",
+      "should",
+      "need",
+      "require",
+      "necessary",
+      "be supposed to",
+      "demand",
+      "order"
+    ]
+  },
+  {
+    "index": 4,
+    "word": "adjust",
+    "type": "v.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: change, alter, modify, shift, revert",
+    "viMeaning": "Điều chỉnh, thích nghi",
+    "replace": [
+      "change",
+      "alter",
+      "modify",
+      "shift",
+      "revert"
+    ]
+  },
+  {
+    "index": 5,
+    "word": "and",
+    "type": "conj.",
+    "enDefinition": "Connects words or statements that belong together.",
+    "viMeaning": "Liên từ kết hợp song song",
+    "replace": [
+      "and also",
+      "as well as",
+      "with",
+      "in addition"
+    ]
+  },
+  {
+    "index": 6,
+    "word": "but",
+    "type": "conj.",
+    "enDefinition": "Used to connect contrasting ideas or correct an earlier statement.",
+    "viMeaning": null,
+    "replace": [
+      "however",
+      "yet",
+      "instead"
+    ]
+  },
+  {
+    "index": 7,
+    "word": "because",
+    "type": "conj.",
+    "enDefinition": "Introduces the reason why something happens or is true.",
+    "viMeaning": null,
+    "replace": [
+      "why",
+      "as a result",
+      "therefore",
+      "cause"
+    ]
+  },
+  {
+    "index": 8,
+    "word": "diversity",
+    "type": "n.",
+    "enDefinition": "The presence of many different types of people or things.",
+    "viMeaning": "Sự đa dạng, phong phú",
+    "replace": [
+      "a variety of",
+      "a number of",
+      "a range of",
+      "various",
+      "different"
+    ]
+  },
+  {
+    "index": 9,
+    "word": "fee",
+    "type": "n.",
+    "enDefinition": "Money charged for a service, course, or professional advice.",
+    "viMeaning": null,
+    "replace": [
+      "money",
+      "cost",
+      "price",
+      "expense",
+      "budget",
+      "fund",
+      "financial",
+      "economic"
+    ]
+  },
+  {
+    "index": 10,
+    "word": "establish",
+    "type": "v.",
+    "enDefinition": "to start an organisation, system, or lasting arrangement",
+    "viMeaning": "Thành lập, thiết lập, xác lập",
+    "replace": [
+      "build",
+      "create",
+      "construct",
+      "set up",
+      "install"
+    ]
+  },
+  {
+    "index": 11,
+    "word": "transfer",
+    "type": "v.",
+    "enDefinition": "To move someone or something from one place to another.",
+    "viMeaning": null,
+    "replace": [
+      "move",
+      "relocate"
+    ]
+  },
+  {
+    "index": 12,
+    "word": "habitat",
+    "type": "n.",
+    "enDefinition": "the natural environment where an animal or plant lives",
+    "viMeaning": null,
+    "replace": [
+      "live",
+      "territory"
+    ]
+  },
+  {
+    "index": 13,
+    "word": "international",
+    "type": "adj.",
+    "enDefinition": "Involving two or more countries.",
+    "viMeaning": null,
+    "replace": [
+      "countries",
+      "continents",
+      "global"
+    ]
+  },
+  {
+    "index": 14,
+    "word": "export",
+    "type": "v.",
+    "enDefinition": "to send goods to another country for sale",
+    "viMeaning": null,
+    "replace": [
+      "abroad",
+      "overseas"
+    ]
+  },
+  {
+    "index": 15,
+    "word": "vegetation",
+    "type": "n.",
+    "enDefinition": "plants growing together in a particular area",
+    "viMeaning": null,
+    "replace": [
+      "plant",
+      "tree",
+      "forest",
+      "botanic"
+    ]
+  },
+  {
+    "index": 16,
+    "word": "animal",
+    "type": "n.",
+    "enDefinition": "a living creature that feeds on plants or other creatures",
+    "viMeaning": null,
+    "replace": [
+      "mammal",
+      "wildlife",
+      "creature",
+      "species"
+    ]
+  },
+  {
+    "index": 17,
+    "word": "feature",
+    "type": "n.",
+    "enDefinition": "a noticeable or important part of something",
+    "viMeaning": null,
+    "replace": [
+      "characteristic",
+      "trait",
+      "property"
+    ]
+  },
+  {
+    "index": 18,
+    "word": "emigrate",
+    "type": "v.",
+    "enDefinition": "To leave your country to live permanently in another",
+    "viMeaning": null,
+    "replace": [
+      "move",
+      "go away"
+    ]
+  },
+  {
+    "index": 19,
+    "word": "food",
+    "type": "n.",
+    "enDefinition": "Things people or animals eat to live and grow.",
+    "viMeaning": null,
+    "replace": [
+      "feed on",
+      "eat"
+    ]
+  },
+  {
+    "index": 20,
+    "word": "allergic",
+    "type": "adj.",
+    "enDefinition": "Having an allergy to a particular substance",
+    "viMeaning": null,
+    "replace": [
+      "can't eat"
+    ]
+  },
+  {
+    "index": 21,
+    "word": "fitness",
+    "type": "n.",
+    "enDefinition": "The condition of being physically healthy and strong.",
+    "viMeaning": null,
+    "replace": [
+      "health",
+      "medical",
+      "sickness",
+      "illness",
+      "gym"
+    ]
+  },
+  {
+    "index": 22,
+    "word": "tradition",
+    "type": "n.",
+    "enDefinition": "A belief or custom passed down through generations.",
+    "viMeaning": null,
+    "replace": [
+      "custom",
+      "convention",
+      "local culture",
+      "lifestyle"
+    ]
+  },
+  {
+    "index": 23,
+    "word": "entertainment",
+    "type": "n.",
+    "enDefinition": "Performances or activities that people enjoy watching or doing.",
+    "viMeaning": null,
+    "replace": [
+      "recreation",
+      "leisure"
+    ]
+  },
+  {
+    "index": 24,
+    "word": "press",
+    "type": "n.",
+    "enDefinition": "Push firmly against something.",
+    "viMeaning": null,
+    "replace": [
+      "media",
+      "TV",
+      "newspaper",
+      "radio"
+    ]
+  },
+  {
+    "index": 25,
+    "word": "online",
+    "type": "n.",
+    "enDefinition": "Available through the internet or connected to a computer network.",
+    "viMeaning": null,
+    "replace": [
+      "Internet",
+      "website"
+    ]
+  },
+  {
+    "index": 26,
+    "word": "publicity",
+    "type": "n.",
+    "enDefinition": "Attention given to someone or something by the media.",
+    "viMeaning": null,
+    "replace": [
+      "website",
+      "media",
+      "news",
+      "marketing"
+    ]
+  },
+  {
+    "index": 27,
+    "word": "picture",
+    "type": "n.",
+    "enDefinition": "an image made by drawing, painting, or taking a photograph",
+    "viMeaning": null,
+    "replace": [
+      "photo",
+      "photograph",
+      "camera",
+      "image"
+    ]
+  },
+  {
+    "index": 28,
+    "word": "jewellery",
+    "type": "n.",
+    "enDefinition": "Decorative objects worn on the body, such as rings and necklaces.",
+    "viMeaning": null,
+    "replace": [
+      "rings",
+      "bracelets",
+      "necklaces",
+      "precious stones",
+      "gem",
+      "diamond",
+      "luxurious"
+    ]
+  },
+  {
+    "index": 29,
+    "word": "artwork",
+    "type": "n.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: painting, drawing, craft",
+    "viMeaning": null,
+    "replace": [
+      "painting",
+      "drawing",
+      "craft"
+    ]
+  },
+  {
+    "index": 30,
+    "word": "statue",
+    "type": "n.",
+    "enDefinition": "A sculpture representing a person or animal.",
+    "viMeaning": null,
+    "replace": [
+      "sculpture",
+      "carving"
+    ]
+  },
+  {
+    "index": 31,
+    "word": "movie",
+    "type": "n.",
+    "enDefinition": "a recorded story or sequence of moving images for watching",
+    "viMeaning": null,
+    "replace": [
+      "film",
+      "documentary",
+      "cinema"
+    ]
+  },
+  {
+    "index": 32,
+    "word": "geology",
+    "type": "n.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: cliff, fossil, rock, landscape",
+    "viMeaning": null,
+    "replace": [
+      "cliff",
+      "fossil",
+      "rock",
+      "landscape"
+    ]
+  },
+  {
+    "index": 33,
+    "word": "countryside",
+    "type": "adj.",
+    "enDefinition": "land outside towns and cities, including fields, woods, and farms",
+    "viMeaning": null,
+    "replace": [
+      "rural area"
+    ]
+  },
+  {
+    "index": 34,
+    "word": "urban",
+    "type": "adj.",
+    "enDefinition": "Relating to cities or towns rather than the countryside.",
+    "viMeaning": null,
+    "replace": [
+      "city",
+      "metropolitan"
+    ]
+  },
+  {
+    "index": 35,
+    "word": "coastline",
+    "type": "n.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: shore, seaside",
+    "viMeaning": null,
+    "replace": [
+      "shore",
+      "seaside"
+    ]
+  },
+  {
+    "index": 36,
+    "word": "environment",
+    "type": "n.",
+    "enDefinition": "The natural world, including land, water, air, and living things.",
+    "viMeaning": null,
+    "replace": [
+      "neighbourhood",
+      "surrounding"
+    ]
+  },
+  {
+    "index": 37,
+    "word": "noisy",
+    "type": "adj.",
+    "enDefinition": "making a lot of loud or unpleasant sounds",
+    "viMeaning": null,
+    "replace": [
+      "disturbing",
+      "not quiet"
+    ]
+  },
+  {
+    "index": 38,
+    "word": "capacity",
+    "type": "n.",
+    "enDefinition": "the maximum amount something can hold or accommodate",
+    "viMeaning": null,
+    "replace": [
+      "volume",
+      "room",
+      "space",
+      "size"
+    ]
+  },
+  {
+    "index": 39,
+    "word": "outdoor",
+    "type": "adj.",
+    "enDefinition": "happening, used, or located outside a building",
+    "viMeaning": null,
+    "replace": [
+      "gardens",
+      "park",
+      "open air"
+    ]
+  },
+  {
+    "index": 40,
+    "word": "accommodation",
+    "type": "n.",
+    "enDefinition": "a place where someone can live or stay",
+    "viMeaning": null,
+    "replace": [
+      "living",
+      "dwelling",
+      "dorm"
+    ]
+  },
+  {
+    "index": 41,
+    "word": "place",
+    "type": "n.",
+    "enDefinition": "A particular area, position, or location.",
+    "viMeaning": null,
+    "replace": [
+      "where",
+      "spot",
+      "location",
+      "area"
+    ]
+  },
+  {
+    "index": 42,
+    "word": "near",
+    "type": "adj.",
+    "enDefinition": "close to a place, time, or state",
+    "viMeaning": null,
+    "replace": [
+      "close",
+      "not far from",
+      "nearby"
+    ]
+  },
+  {
+    "index": 43,
+    "word": "remote",
+    "type": "adj.",
+    "enDefinition": "Far away from towns, cities, or other people.",
+    "viMeaning": null,
+    "replace": [
+      "isolated",
+      "distant"
+    ]
+  },
+  {
+    "index": 44,
+    "word": "advantage",
+    "type": "n.",
+    "enDefinition": "Something that makes success more likely than for others.",
+    "viMeaning": null,
+    "replace": [
+      "benefit",
+      "positive",
+      "good thing",
+      "strength"
+    ]
+  },
+  {
+    "index": 45,
+    "word": "disadvantage",
+    "type": "n.",
+    "enDefinition": "something that makes success harder or reduces something's value",
+    "viMeaning": null,
+    "replace": [
+      "drawback",
+      "shortcoming",
+      "negative",
+      "problem"
+    ]
+  },
+  {
+    "index": 46,
+    "word": "education",
+    "type": "n.",
+    "enDefinition": "The process of learning or teaching knowledge and skills.",
+    "viMeaning": null,
+    "replace": [
+      "schools",
+      "colleges",
+      "institution"
+    ]
+  },
+  {
+    "index": 47,
+    "word": "ordinary people",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: people, inhabitants, the public, men and women",
+    "viMeaning": null,
+    "replace": [
+      "people",
+      "inhabitants",
+      "the public",
+      "men and women"
+    ]
+  },
+  {
+    "index": 48,
+    "word": "student",
+    "type": "n.",
+    "enDefinition": "a person who studies at a school, college, or university",
+    "viMeaning": null,
+    "replace": [
+      "pupil",
+      "undergraduate",
+      "postgraduate"
+    ]
+  },
+  {
+    "index": 49,
+    "word": "purpose",
+    "type": "n.",
+    "enDefinition": "the reason for doing something or what something is intended for",
+    "viMeaning": null,
+    "replace": [
+      "aim",
+      "goal",
+      "target",
+      "key areas"
+    ]
+  },
+  {
+    "index": 50,
+    "word": "learn",
+    "type": "v.",
+    "enDefinition": "To gain knowledge or a skill through study or experience.",
+    "viMeaning": null,
+    "replace": [
+      "acquire",
+      "get",
+      "obtain"
+    ]
+  },
+  {
+    "index": 51,
+    "word": "structure",
+    "type": "n.",
+    "enDefinition": "The way parts are arranged and connected within a whole.",
+    "viMeaning": "Cấu trúc, kết cấu",
+    "replace": [
+      "outline",
+      "framework"
+    ]
+  },
+  {
+    "index": 52,
+    "word": "reference materials",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: books, journals, magazines",
+    "viMeaning": null,
+    "replace": [
+      "books",
+      "journals",
+      "magazines"
+    ]
+  },
+  {
+    "index": 53,
+    "word": "extensive",
+    "type": "adj.",
+    "enDefinition": "covering many subjects or involving a large amount",
+    "viMeaning": null,
+    "replace": [
+      "comprehensive",
+      "a lot of",
+      "many"
+    ]
+  },
+  {
+    "index": 54,
+    "word": "expertise",
+    "type": "n.",
+    "enDefinition": "Specialist knowledge or skills gained through training and experience.",
+    "viMeaning": null,
+    "replace": [
+      "ability",
+      "skill"
+    ]
+  },
+  {
+    "index": 55,
+    "word": "group",
+    "type": "n.",
+    "enDefinition": "People or things together or connected by a shared feature.",
+    "viMeaning": null,
+    "replace": [
+      "team"
+    ]
+  },
+  {
+    "index": 56,
+    "word": "associate",
+    "type": "v.",
+    "enDefinition": "to connect people or things in your mind",
+    "viMeaning": null,
+    "replace": [
+      "relate to",
+      "connect",
+      "link"
+    ]
+  },
+  {
+    "index": 57,
+    "word": "approach",
+    "type": "n.",
+    "enDefinition": "A way of dealing with a task or problem.",
+    "viMeaning": "Phương pháp, cách tiếp cận; tiến gần",
+    "replace": [
+      "way",
+      "how",
+      "method"
+    ]
+  },
+  {
+    "index": 58,
+    "word": "motivate",
+    "type": "v.",
+    "enDefinition": "to make someone eager to do something",
+    "viMeaning": null,
+    "replace": [
+      "encourage",
+      "stimulate",
+      "keep active",
+      "boost",
+      "help"
+    ]
+  },
+  {
+    "index": 59,
+    "word": "improve",
+    "type": "v.",
+    "enDefinition": "To become better or make something better.",
+    "viMeaning": null,
+    "replace": [
+      "develop",
+      "promote"
+    ]
+  },
+  {
+    "index": 60,
+    "word": "overlook",
+    "type": "v.",
+    "enDefinition": "To fail to notice or consider something.",
+    "viMeaning": null,
+    "replace": [
+      "underestimate",
+      "neglect"
+    ]
+  },
+  {
+    "index": 61,
+    "word": "omit",
+    "type": "v.",
+    "enDefinition": "to leave something out, deliberately or accidentally",
+    "viMeaning": null,
+    "replace": [
+      "leave out",
+      "cancel"
+    ]
+  },
+  {
+    "index": 62,
+    "word": "find",
+    "type": "v.",
+    "enDefinition": "To discover something or locate what you were looking for.",
+    "viMeaning": null,
+    "replace": [
+      "discover",
+      "detect",
+      "spot",
+      "see",
+      "sight"
+    ]
+  },
+  {
+    "index": 63,
+    "word": "opportunity",
+    "type": "n.",
+    "enDefinition": "A situation that makes it possible to do something.",
+    "viMeaning": null,
+    "replace": [
+      "chance",
+      "odds",
+      "hope"
+    ]
+  },
+  {
+    "index": 64,
+    "word": "difficult",
+    "type": "adj.",
+    "enDefinition": "Needing considerable effort or skill to do or understand.",
+    "viMeaning": null,
+    "replace": [
+      "problem",
+      "hard",
+      "not easy",
+      "not simple"
+    ]
+  },
+  {
+    "index": 65,
+    "word": "prevent",
+    "type": "v.",
+    "enDefinition": "To stop something happening or someone doing something.",
+    "viMeaning": "Ngăn chặn, phòng ngừa",
+    "replace": [
+      "avoid",
+      "stop",
+      "escape",
+      "forbid",
+      "out of bounds"
+    ]
+  },
+  {
+    "index": 66,
+    "word": "misunderstand",
+    "type": "v.",
+    "enDefinition": "to understand someone's words, actions, or intentions incorrectly",
+    "viMeaning": null,
+    "replace": [
+      "wrong idea",
+      "confuse",
+      "puzzle",
+      "perplex"
+    ]
+  },
+  {
+    "index": 67,
+    "word": "try hard",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: make, efforts, hard working",
+    "viMeaning": null,
+    "replace": [
+      "make",
+      "efforts",
+      "hard working"
+    ]
+  },
+  {
+    "index": 68,
+    "word": "feedback",
+    "type": "n.",
+    "enDefinition": "comments about performance or work that help someone improve",
+    "viMeaning": null,
+    "replace": [
+      "response",
+      "reaction",
+      "reply"
+    ]
+  },
+  {
+    "index": 69,
+    "word": "affect",
+    "type": "v.",
+    "enDefinition": "to cause a change in someone or something",
+    "viMeaning": null,
+    "replace": [
+      "impact",
+      "influence",
+      "effect"
+    ]
+  },
+  {
+    "index": 70,
+    "word": "analysis",
+    "type": "n.",
+    "enDefinition": "Careful examination of something to understand its parts or meaning",
+    "viMeaning": null,
+    "replace": [
+      "perspective",
+      "understand",
+      "perceive",
+      "know"
+    ]
+  },
+  {
+    "index": 71,
+    "word": "result",
+    "type": "n.",
+    "enDefinition": "something that happens because of an action or event",
+    "viMeaning": null,
+    "replace": [
+      "outcome",
+      "consequence",
+      "conclusion"
+    ]
+  },
+  {
+    "index": 72,
+    "word": "handle",
+    "type": "v.",
+    "enDefinition": "To deal with a situation, task, or person.",
+    "viMeaning": null,
+    "replace": [
+      "dealwith",
+      "cope with",
+      "figure out",
+      "work out",
+      "take care of"
+    ]
+  },
+  {
+    "index": 73,
+    "word": "support",
+    "type": "n.",
+    "enDefinition": "to help, encourage, provide for, or agree with someone",
+    "viMeaning": null,
+    "replace": [
+      "help",
+      "assistance",
+      "aid",
+      "tip"
+    ]
+  },
+  {
+    "index": 74,
+    "word": "ideal",
+    "type": "adj.",
+    "enDefinition": "perfect or the best possible for a particular purpose",
+    "viMeaning": null,
+    "replace": [
+      "perfect"
+    ]
+  },
+  {
+    "index": 75,
+    "word": "rigorous",
+    "type": "adj.",
+    "enDefinition": "extremely careful and thorough",
+    "viMeaning": null,
+    "replace": [
+      "strict",
+      "demanding"
+    ]
+  },
+  {
+    "index": 76,
+    "word": "restrict",
+    "type": "v.",
+    "enDefinition": "to limit what someone can do or how much is allowed",
+    "viMeaning": "Hạn chế, giới hạn",
+    "replace": [
+      "limit",
+      "not permit"
+    ]
+  },
+  {
+    "index": 77,
+    "word": "similar",
+    "type": "adj.",
+    "enDefinition": "Almost the same, but not exactly alike.",
+    "viMeaning": null,
+    "replace": [
+      "like",
+      "compare"
+    ]
+  },
+  {
+    "index": 78,
+    "word": "particular",
+    "type": "adj.",
+    "enDefinition": "used to refer to one specific person, thing, or situation",
+    "viMeaning": null,
+    "replace": [
+      "special",
+      "in particular",
+      "especially"
+    ]
+  },
+  {
+    "index": 79,
+    "word": "copy",
+    "type": "v.",
+    "enDefinition": "A reproduction, or one example of a book or document",
+    "viMeaning": null,
+    "replace": [
+      "repeat",
+      "reproduce"
+    ]
+  },
+  {
+    "index": 80,
+    "word": "statistics",
+    "type": "n.",
+    "enDefinition": "numerical facts collected and organised to describe something",
+    "viMeaning": null,
+    "replace": [
+      "data",
+      "figure"
+    ]
+  },
+  {
+    "index": 81,
+    "word": "maximum",
+    "type": "n.",
+    "enDefinition": "being the greatest amount or level possible or allowed",
+    "viMeaning": null,
+    "replace": [
+      "up to",
+      "at most"
+    ]
+  },
+  {
+    "index": 82,
+    "word": "minimum",
+    "type": "n.",
+    "enDefinition": "The smallest amount or level possible or allowed.",
+    "viMeaning": null,
+    "replace": [
+      "at least"
+    ]
+  },
+  {
+    "index": 83,
+    "word": "initial",
+    "type": "adj.",
+    "enDefinition": "Happening or existing at the beginning",
+    "viMeaning": "Ban đầu, khởi đầu",
+    "replace": [
+      "at first",
+      "start",
+      "begin",
+      "early on",
+      "premiere"
+    ]
+  },
+  {
+    "index": 84,
+    "word": "limited",
+    "type": "adj.",
+    "enDefinition": "Small in amount or restricted in range",
+    "viMeaning": null,
+    "replace": [
+      "just a few",
+      "a little",
+      "small",
+      "a small number of",
+      "not many",
+      "miniature"
+    ]
+  },
+  {
+    "index": 85,
+    "word": "shorten",
+    "type": "v.",
+    "enDefinition": "To make or become shorter in length or duration.",
+    "viMeaning": null,
+    "replace": [
+      "cut down"
+    ]
+  },
+  {
+    "index": 86,
+    "word": "decrease",
+    "type": "v.",
+    "enDefinition": "To become smaller or make something smaller in amount.",
+    "viMeaning": null,
+    "replace": [
+      "lower",
+      "reduce",
+      "fewer",
+      "drop",
+      "fall",
+      "decrease"
+    ]
+  },
+  {
+    "index": 87,
+    "word": "lack",
+    "type": "n./v.",
+    "enDefinition": "The absence of something or not having enough of it",
+    "viMeaning": null,
+    "replace": [
+      "shortage",
+      "insufficient",
+      "fewer",
+      "not enough"
+    ]
+  },
+  {
+    "index": 88,
+    "word": "large",
+    "type": "adj.",
+    "enDefinition": "greater than usual in size, amount, or number",
+    "viMeaning": null,
+    "replace": [
+      "big",
+      "huge"
+    ]
+  },
+  {
+    "index": 89,
+    "word": "amount of",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: lots of, large quantities of, loads of",
+    "viMeaning": null,
+    "replace": [
+      "lots of",
+      "large quantities of",
+      "loads of"
+    ]
+  },
+  {
+    "index": 90,
+    "word": "majority",
+    "type": "n.",
+    "enDefinition": "the larger part of a group, exceeding half its members",
+    "viMeaning": null,
+    "replace": [
+      "most"
+    ]
+  },
+  {
+    "index": 91,
+    "word": "double",
+    "type": "v.",
+    "enDefinition": "twice the usual amount, size, or quantity",
+    "viMeaning": null,
+    "replace": [
+      "twice"
+    ]
+  },
+  {
+    "index": 92,
+    "word": "more than",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: over, beyond, exceed, above",
+    "viMeaning": null,
+    "replace": [
+      "over",
+      "beyond",
+      "exceed",
+      "above"
+    ]
+  },
+  {
+    "index": 93,
+    "word": "at present",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: already, existing, currently, nowadays",
+    "viMeaning": null,
+    "replace": [
+      "already",
+      "existing",
+      "currently",
+      "nowadays"
+    ]
+  },
+  {
+    "index": 94,
+    "word": "update",
+    "type": "v.",
+    "enDefinition": "to make something current or give someone the latest information",
+    "viMeaning": null,
+    "replace": [
+      "upgrade",
+      "up to date",
+      "more current",
+      "modern"
+    ]
+  },
+  {
+    "index": 95,
+    "word": "newest",
+    "type": "adj.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: latest",
+    "viMeaning": null,
+    "replace": [
+      "latest"
+    ]
+  },
+  {
+    "index": 96,
+    "word": "soon",
+    "type": "adv.",
+    "enDefinition": "After a short time from now or another stated time.",
+    "viMeaning": null,
+    "replace": [
+      "later",
+      "in the future"
+    ]
+  },
+  {
+    "index": 97,
+    "word": "out of date",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: old fashioned",
+    "viMeaning": null,
+    "replace": [
+      "old fashioned"
+    ]
+  },
+  {
+    "index": 98,
+    "word": "ancient",
+    "type": "adj.",
+    "enDefinition": "belonging to a period thousands of years in the past",
+    "viMeaning": null,
+    "replace": [
+      "medieval",
+      "in the past",
+      "once",
+      "historical",
+      "old",
+      "ancient",
+      "former"
+    ]
+  },
+  {
+    "index": 99,
+    "word": "temporary",
+    "type": "adj.",
+    "enDefinition": "Lasting for only a limited period of time.",
+    "viMeaning": null,
+    "replace": [
+      "a short time"
+    ]
+  },
+  {
+    "index": 100,
+    "word": "deadline",
+    "type": "n.",
+    "enDefinition": "The latest time by which something must be completed",
+    "viMeaning": null,
+    "replace": [
+      "time pressure",
+      "on time"
+    ]
+  },
+  {
+    "index": 101,
+    "word": "permanent",
+    "type": "adj.",
+    "enDefinition": "Lasting indefinitely rather than for a limited time.",
+    "viMeaning": null,
+    "replace": [
+      "long-lasting"
+    ]
+  },
+  {
+    "index": 102,
+    "word": "more often",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: frequent",
+    "viMeaning": null,
+    "replace": [
+      "frequent"
+    ]
+  },
+  {
+    "index": 103,
+    "word": "annual",
+    "type": "adj.",
+    "enDefinition": "Happening once a year or relating to a whole year",
+    "viMeaning": null,
+    "replace": [
+      "every year"
+    ]
+  },
+  {
+    "index": 104,
+    "word": "every month",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: monthly, four weeks",
+    "viMeaning": null,
+    "replace": [
+      "monthly",
+      "four weeks"
+    ]
+  },
+  {
+    "index": 105,
+    "word": "every day",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: daily",
+    "viMeaning": null,
+    "replace": [
+      "daily"
+    ]
+  },
+  {
+    "index": 106,
+    "word": "classify",
+    "type": "v.",
+    "enDefinition": "To arrange things in groups according to shared characteristics.",
+    "viMeaning": null,
+    "replace": [
+      "category",
+      "sort",
+      "type",
+      "kind"
+    ]
+  },
+  {
+    "index": 107,
+    "word": "entrance",
+    "type": "n.",
+    "enDefinition": "An opening or place through which people enter.",
+    "viMeaning": null,
+    "replace": [
+      "access",
+      "main gate",
+      "door"
+    ]
+  },
+  {
+    "index": 108,
+    "word": "behind",
+    "type": "prep.",
+    "enDefinition": "at or towards the back of someone or something",
+    "viMeaning": null,
+    "replace": [
+      "back",
+      "rear"
+    ]
+  },
+  {
+    "index": 109,
+    "word": "below",
+    "type": "prep.",
+    "enDefinition": "At a lower position, level, or amount than something.",
+    "viMeaning": null,
+    "replace": [
+      "under"
+    ]
+  },
+  {
+    "index": 110,
+    "word": "beside",
+    "type": "prep.",
+    "enDefinition": "At the side of someone or something.",
+    "viMeaning": null,
+    "replace": [
+      "next to",
+      "near",
+      "border"
+    ]
+  },
+  {
+    "index": 111,
+    "word": "available",
+    "type": "adj.",
+    "enDefinition": "Ready or possible to get, buy, or use.",
+    "viMeaning": null,
+    "replace": [
+      "have",
+      "accessible",
+      "not close",
+      "open"
+    ]
+  },
+  {
+    "index": 112,
+    "word": "boring",
+    "type": "adj.",
+    "enDefinition": "Not interesting or exciting.",
+    "viMeaning": null,
+    "replace": [
+      "not interesting",
+      "boredom"
+    ]
+  },
+  {
+    "index": 113,
+    "word": "trend",
+    "type": "n.",
+    "enDefinition": "a general direction of change or development",
+    "viMeaning": null,
+    "replace": [
+      "possibility",
+      "likely",
+      "tendency"
+    ]
+  },
+  {
+    "index": 114,
+    "word": "risky",
+    "type": "adj.",
+    "enDefinition": "involving a chance of harm, failure, or loss",
+    "viMeaning": null,
+    "replace": [
+      "dangerous",
+      "not safe",
+      "hazard"
+    ]
+  },
+  {
+    "index": 115,
+    "word": "poisonous",
+    "type": "adj.",
+    "enDefinition": "Containing a substance that can cause illness or death.",
+    "viMeaning": null,
+    "replace": [
+      "toxic",
+      "dangerous"
+    ]
+  },
+  {
+    "index": 116,
+    "word": "warning",
+    "type": "n.",
+    "enDefinition": "Something said or done to alert someone to danger or problems.",
+    "viMeaning": null,
+    "replace": [
+      "alarm",
+      "alert"
+    ]
+  },
+  {
+    "index": 117,
+    "word": "care",
+    "type": "v.",
+    "enDefinition": "Support and attention given to someone who needs help",
+    "viMeaning": null,
+    "replace": [
+      "caution"
+    ]
+  },
+  {
+    "index": 118,
+    "word": "steal",
+    "type": "v.",
+    "enDefinition": "to take something without permission and keep or use it",
+    "viMeaning": null,
+    "replace": [
+      "theft"
+    ]
+  },
+  {
+    "index": 119,
+    "word": "protect",
+    "type": "v.",
+    "enDefinition": "To keep someone or something safe from harm or damage",
+    "viMeaning": null,
+    "replace": [
+      "safeguard",
+      "shelter",
+      "preserve"
+    ]
+  },
+  {
+    "index": 120,
+    "word": "injury",
+    "type": "n.",
+    "enDefinition": "Physical harm to someone's body, often caused by an accident",
+    "viMeaning": null,
+    "replace": [
+      "harm",
+      "hurt",
+      "damage",
+      "dangerous",
+      "frighten"
+    ]
+  },
+  {
+    "index": 121,
+    "word": "military",
+    "type": "adj.",
+    "enDefinition": "relating to armed forces or their activities",
+    "viMeaning": null,
+    "replace": [
+      "battle",
+      "weapon",
+      "not peaceful"
+    ]
+  },
+  {
+    "index": 122,
+    "word": "tactics",
+    "type": "n.",
+    "enDefinition": "Specific methods used to achieve a goal or gain an advantage.",
+    "viMeaning": null,
+    "replace": [
+      "strategy",
+      "method"
+    ]
+  },
+  {
+    "index": 123,
+    "word": "rely on",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: depend on, count on",
+    "viMeaning": "Dựa vào, phụ thuộc vào",
+    "replace": [
+      "depend on",
+      "count on"
+    ]
+  },
+  {
+    "index": 124,
+    "word": "travel",
+    "type": "n.",
+    "enDefinition": "To go from one place to another.",
+    "viMeaning": null,
+    "replace": [
+      "tourism",
+      "trip",
+      "passenger",
+      "flight"
+    ]
+  },
+  {
+    "index": 125,
+    "word": "space travel",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: aircraft, rocket, satellite",
+    "viMeaning": null,
+    "replace": [
+      "aircraft",
+      "rocket",
+      "satellite"
+    ]
+  },
+  {
+    "index": 126,
+    "word": "transport",
+    "type": "n.",
+    "enDefinition": "Vehicles or systems used to move people and goods.",
+    "viMeaning": null,
+    "replace": [
+      "vehicle",
+      "bus",
+      "train",
+      "boat",
+      "ship",
+      "ferry",
+      "subway"
+    ]
+  },
+  {
+    "index": 127,
+    "word": "specific",
+    "type": "adj.",
+    "enDefinition": "relating to one particular thing rather than things in general",
+    "viMeaning": "Cụ thể, đặc thù",
+    "replace": [
+      "detail",
+      "particular",
+      "example"
+    ]
+  },
+  {
+    "index": 128,
+    "word": "request",
+    "type": "v.",
+    "enDefinition": "an act of asking politely or formally for something",
+    "viMeaning": null,
+    "replace": [
+      "ask for",
+      "inquiry"
+    ]
+  },
+  {
+    "index": 129,
+    "word": "clear",
+    "type": "adj.",
+    "enDefinition": "Easy to understand, see, or hear",
+    "viMeaning": null,
+    "replace": [
+      "definitive"
+    ]
+  },
+  {
+    "index": 130,
+    "word": "freeze",
+    "type": "v.",
+    "enDefinition": "To become ice or make something extremely cold and solid.",
+    "viMeaning": null,
+    "replace": [
+      "froze",
+      "ice",
+      "chill",
+      "cold"
+    ]
+  },
+  {
+    "index": 131,
+    "word": "organization",
+    "type": "n.",
+    "enDefinition": "A group of people working together for a shared purpose.",
+    "viMeaning": null,
+    "replace": [
+      "business",
+      "company",
+      "corporation structure"
+    ]
+  },
+  {
+    "index": 132,
+    "word": "organize",
+    "type": "v.",
+    "enDefinition": "To plan and arrange an event or activity",
+    "viMeaning": null,
+    "replace": [
+      "arrange",
+      "plan"
+    ]
+  },
+  {
+    "index": 133,
+    "word": "produce",
+    "type": "v.",
+    "enDefinition": "To make, grow, or create something.",
+    "viMeaning": null,
+    "replace": [
+      "generate",
+      "make"
+    ]
+  },
+  {
+    "index": 134,
+    "word": "administer",
+    "type": "v.",
+    "enDefinition": "to manage an organization or put a system into operation",
+    "viMeaning": null,
+    "replace": [
+      "manage"
+    ]
+  },
+  {
+    "index": 135,
+    "word": "occupation",
+    "type": "n.",
+    "enDefinition": "the type of work someone does to earn money",
+    "viMeaning": null,
+    "replace": [
+      "profession",
+      "job"
+    ]
+  },
+  {
+    "index": 136,
+    "word": "all ages",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: young and old",
+    "viMeaning": null,
+    "replace": [
+      "young and old"
+    ]
+  },
+  {
+    "index": 137,
+    "word": "youth",
+    "type": "n.",
+    "enDefinition": "the period of life when someone is young",
+    "viMeaning": null,
+    "replace": [
+      "young",
+      "boy",
+      "child",
+      "teenager"
+    ]
+  },
+  {
+    "index": 138,
+    "word": "mate",
+    "type": "n.",
+    "enDefinition": "A friend or someone you share an activity with",
+    "viMeaning": null,
+    "replace": [
+      "friend",
+      "peer"
+    ]
+  },
+  {
+    "index": 139,
+    "word": "staff",
+    "type": "n.",
+    "enDefinition": "The people employed by an organisation.",
+    "viMeaning": null,
+    "replace": [
+      "recruit",
+      "worker",
+      "employee"
+    ]
+  },
+  {
+    "index": 140,
+    "word": "sale",
+    "type": "v.",
+    "enDefinition": "the act of exchanging something for money",
+    "viMeaning": null,
+    "replace": [
+      "retail"
+    ]
+  },
+  {
+    "index": 141,
+    "word": "cheap",
+    "type": "adj.",
+    "enDefinition": "costing little money or less than usual",
+    "viMeaning": null,
+    "replace": [
+      "low price"
+    ]
+  },
+  {
+    "index": 142,
+    "word": "discount",
+    "type": "n.",
+    "enDefinition": "a reduction in the usual price",
+    "viMeaning": null,
+    "replace": [
+      "10% off",
+      "on sale"
+    ]
+  },
+  {
+    "index": 143,
+    "word": "round",
+    "type": "n.",
+    "enDefinition": "shaped like a circle or ball",
+    "viMeaning": null,
+    "replace": [
+      "curve",
+      "circle"
+    ]
+  },
+  {
+    "index": 144,
+    "word": "order",
+    "type": "n.",
+    "enDefinition": "the arrangement of things or a controlled, peaceful situation",
+    "viMeaning": null,
+    "replace": [
+      "sequence"
+    ]
+  },
+  {
+    "index": 145,
+    "word": "renovate",
+    "type": "v.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: fix, repair",
+    "viMeaning": null,
+    "replace": [
+      "fix",
+      "repair"
+    ]
+  },
+  {
+    "index": 146,
+    "word": "alone",
+    "type": "adj.",
+    "enDefinition": "without anyone else present",
+    "viMeaning": null,
+    "replace": [
+      "single",
+      "by themselves"
+    ]
+  },
+  {
+    "index": 147,
+    "word": "hospitality",
+    "type": "n.",
+    "enDefinition": "Friendly and generous treatment of guests or visitors.",
+    "viMeaning": null,
+    "replace": [
+      "treatment",
+      "prepare refreshment"
+    ]
+  },
+  {
+    "index": 148,
+    "word": "shape like",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: look like, seem",
+    "viMeaning": null,
+    "replace": [
+      "look like",
+      "seem"
+    ]
+  },
+  {
+    "index": 149,
+    "word": "depress",
+    "type": "v.",
+    "enDefinition": "To make someone feel unhappy and without hope.",
+    "viMeaning": null,
+    "replace": [
+      "disappoint",
+      "dispirit",
+      "frustrate",
+      "discourage"
+    ]
+  },
+  {
+    "index": 150,
+    "word": "well-known",
+    "type": "adj.",
+    "enDefinition": "known or recognised by many people",
+    "viMeaning": null,
+    "replace": [
+      "famous",
+      "fame"
+    ]
+  },
+  {
+    "index": 151,
+    "word": "specialize in",
+    "type": "",
+    "enDefinition": "Core IELTS Listening keyword replaced by: focus, emphasis, concentrate",
+    "viMeaning": null,
+    "replace": [
+      "focus",
+      "emphasis",
+      "concentrate"
+    ]
+  },
+  {
+    "index": 152,
+    "word": "part",
+    "type": "n.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: component, proportion, percent, section, element, ingredient",
+    "viMeaning": null,
+    "replace": [
+      "component",
+      "proportion",
+      "percent",
+      "section",
+      "element",
+      "ingredient"
+    ]
+  },
+  {
+    "index": 153,
+    "word": "typical",
+    "type": "adj.",
+    "enDefinition": "having the usual features of a particular group or situation",
+    "viMeaning": null,
+    "replace": [
+      "representative",
+      "common",
+      "average"
+    ]
+  },
+  {
+    "index": 154,
+    "word": "uncommon",
+    "type": "adj.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: special, unique, unusual, rare",
+    "viMeaning": null,
+    "replace": [
+      "special",
+      "unique",
+      "unusual",
+      "rare"
+    ]
+  },
+  {
+    "index": 155,
+    "word": "accurately",
+    "type": "adv.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: precisely",
+    "viMeaning": null,
+    "replace": [
+      "precisely"
+    ]
+  },
+  {
+    "index": 156,
+    "word": "expand",
+    "type": "v.",
+    "enDefinition": "to become larger or make something larger",
+    "viMeaning": "Mở rộng, phát triển",
+    "replace": [
+      "add",
+      "enlarge",
+      "increase spaces"
+    ]
+  },
+  {
+    "index": 157,
+    "word": "climb",
+    "type": "v.",
+    "enDefinition": "to move upwards using your feet and often your hands",
+    "viMeaning": null,
+    "replace": [
+      "go up",
+      "increase"
+    ]
+  },
+  {
+    "index": 158,
+    "word": "enhance",
+    "type": "v.",
+    "enDefinition": "Improve the quality, value, or appeal of something",
+    "viMeaning": "Nâng cao, cải thiện, tăng cường",
+    "replace": [
+      "improve",
+      "increase"
+    ]
+  },
+  {
+    "index": 159,
+    "word": "power",
+    "type": "n.",
+    "enDefinition": "The ability or authority to control people, events, or decisions.",
+    "viMeaning": null,
+    "replace": [
+      "force",
+      "energy"
+    ]
+  },
+  {
+    "index": 160,
+    "word": "fuel",
+    "type": "n.",
+    "enDefinition": "material burned or used to produce heat or power",
+    "viMeaning": null,
+    "replace": [
+      "coal",
+      "firewood",
+      "petrol",
+      "gas"
+    ]
+  },
+  {
+    "index": 161,
+    "word": "refurbish",
+    "type": "v.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: redecorate",
+    "viMeaning": null,
+    "replace": [
+      "redecorate"
+    ]
+  },
+  {
+    "index": 162,
+    "word": "preference",
+    "type": "n.",
+    "enDefinition": "a greater liking for one thing than for another",
+    "viMeaning": null,
+    "replace": [
+      "like",
+      "priority"
+    ]
+  },
+  {
+    "index": 163,
+    "word": "trust",
+    "type": "v.",
+    "enDefinition": "Belief that someone or something is honest, reliable, or safe.",
+    "viMeaning": null,
+    "replace": [
+      "less suspicious",
+      "believe"
+    ]
+  },
+  {
+    "index": 164,
+    "word": "computer",
+    "type": "n.",
+    "enDefinition": "An electronic machine that stores and processes information using programs.",
+    "viMeaning": null,
+    "replace": [
+      "laptop"
+    ]
+  },
+  {
+    "index": 165,
+    "word": "handy",
+    "type": "adj.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: convenient",
+    "viMeaning": null,
+    "replace": [
+      "convenient"
+    ]
+  },
+  {
+    "index": 166,
+    "word": "demonstrate",
+    "type": "v.",
+    "enDefinition": "To show clearly that something is true or exists.",
+    "viMeaning": "Chứng minh, thể hiện rõ",
+    "replace": [
+      "display",
+      "show",
+      "exhibition"
+    ]
+  },
+  {
+    "index": 167,
+    "word": "important",
+    "type": "adj.",
+    "enDefinition": "Having great value or a significant effect.",
+    "viMeaning": null,
+    "replace": [
+      "significant",
+      "major",
+      "main",
+      "primary"
+    ]
+  },
+  {
+    "index": 168,
+    "word": "straightforward",
+    "type": "adj.",
+    "enDefinition": "easy to understand or do, without complications",
+    "viMeaning": null,
+    "replace": [
+      "direct",
+      "first-hand",
+      "simple"
+    ]
+  },
+  {
+    "index": 169,
+    "word": "disused",
+    "type": "adj.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: empty, abandoned",
+    "viMeaning": null,
+    "replace": [
+      "empty",
+      "abandoned"
+    ]
+  },
+  {
+    "index": 170,
+    "word": "donate",
+    "type": "v.",
+    "enDefinition": "To give money, goods, or blood to help others",
+    "viMeaning": null,
+    "replace": [
+      "charity",
+      "give"
+    ]
+  },
+  {
+    "index": 171,
+    "word": "work",
+    "type": "n.",
+    "enDefinition": "Core IELTS Listening keyword replaced by: item",
+    "viMeaning": null,
+    "replace": [
+      "item"
+    ]
+  },
+  {
+    "index": 172,
+    "word": "turn",
+    "type": "v.",
+    "enDefinition": "Move around a centre or change direction.",
+    "viMeaning": null,
+    "replace": [
+      "switch"
+    ]
+  },
+  {
+    "index": 173,
+    "word": "information",
+    "type": "n.",
+    "enDefinition": "Facts or details about someone or something",
+    "viMeaning": null,
+    "replace": [
+      "details",
+      "data",
+      "graph",
+      "chart"
+    ]
+  },
+  {
+    "index": 174,
+    "word": "visualize",
+    "type": "v.",
+    "enDefinition": "To form a clear picture of something in your mind.",
+    "viMeaning": null,
+    "replace": [
+      "imagine"
+    ]
+  },
+  {
+    "index": 175,
+    "word": "repetition",
+    "type": "n.",
+    "enDefinition": "Doing or saying something again, often several times",
+    "viMeaning": null,
+    "replace": [
+      "over and over"
+    ]
+  },
+  {
+    "index": 176,
+    "word": "poor",
+    "type": "adj.",
+    "enDefinition": "Having very little money or few possessions",
+    "viMeaning": null,
+    "replace": [
+      "weak"
+    ]
+  },
+  {
+    "index": 177,
+    "word": "durable",
+    "type": "adj.",
+    "enDefinition": "Able to last a long time without breaking or wearing out.",
+    "viMeaning": null,
+    "replace": [
+      "stronger",
+      "longer"
+    ]
+  },
+  {
+    "index": 178,
+    "word": "pollutant",
+    "type": "n.",
+    "enDefinition": "A substance that makes air, water, or soil dirty or harmful.",
+    "viMeaning": null,
+    "replace": [
+      "contaminant"
+    ]
+  },
+  {
+    "index": 179,
+    "word": "continue",
+    "type": "v.",
+    "enDefinition": "To keep doing something or keep happening.",
+    "viMeaning": null,
+    "replace": [
+      "ahead",
+      "go on",
+      "keep doing"
+    ]
+  }
+]

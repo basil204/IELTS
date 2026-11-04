@@ -1,0 +1,572 @@
+[
+  {
+    "id": "environment",
+    "vi": "Môi trường & Khí hậu",
+    "en": "Environment & Climate",
+    "code": "ENV-01",
+    "cefrFocus": "B2–C2",
+    "total": 145,
+    "byCefr": {
+      "A1": 2,
+      "A2": 12,
+      "B1": 22,
+      "B2": 57,
+      "C1": 49,
+      "C2": 3
+    },
+    "sampleWords": [
+      "air",
+      "weather",
+      "plastic",
+      "protect",
+      "energy",
+      "waste",
+      "rubbish",
+      "destroy",
+      "ocean",
+      "garbage",
+      "noise",
+      "oil"
+    ]
+  },
+  {
+    "id": "education",
+    "vi": "Giáo dục & Học thuật",
+    "en": "Education & Academia",
+    "code": "EDU-02",
+    "cefrFocus": "A2–C1",
+    "total": 378,
+    "byCefr": {
+      "A1": 49,
+      "A2": 50,
+      "B1": 86,
+      "B2": 110,
+      "C1": 72,
+      "C2": 11
+    },
+    "sampleWords": [
+      "library",
+      "writing",
+      "English",
+      "student",
+      "reading",
+      "answer",
+      "practise",
+      "correct",
+      "French",
+      "grammar",
+      "maths",
+      "word"
+    ]
+  },
+  {
+    "id": "technology",
+    "vi": "Công nghệ & Đổi mới",
+    "en": "Technology & Innovation",
+    "code": "TEC-03",
+    "cefrFocus": "B1–C2",
+    "total": 206,
+    "byCefr": {
+      "A1": 9,
+      "A2": 36,
+      "B1": 30,
+      "B2": 65,
+      "C1": 62,
+      "C2": 4
+    },
+    "sampleWords": [
+      "camera",
+      "website",
+      "telephone",
+      "internet",
+      "message",
+      "machine",
+      "email",
+      "computer",
+      "phone",
+      "typing",
+      "recorder",
+      "user"
+    ]
+  },
+  {
+    "id": "science",
+    "vi": "Khoa học & Nghiên cứu",
+    "en": "Science & Research",
+    "code": "SCI-04",
+    "cefrFocus": "B2–C2",
+    "total": 325,
+    "byCefr": {
+      "A1": 3,
+      "A2": 15,
+      "B1": 35,
+      "B2": 121,
+      "C1": 129,
+      "C2": 22
+    },
+    "sampleWords": [
+      "zero",
+      "science",
+      "metre",
+      "model",
+      "discover",
+      "centimetre",
+      "biology",
+      "electricity",
+      "lab",
+      "physics",
+      "moon",
+      "metal"
+    ]
+  },
+  {
+    "id": "society",
+    "vi": "Xã hội & Cộng đồng",
+    "en": "Society & Community",
+    "code": "SOC-05",
+    "cefrFocus": "B1–C1",
+    "total": 824,
+    "byCefr": {
+      "A1": 47,
+      "A2": 79,
+      "B1": 153,
+      "B2": 260,
+      "C1": 247,
+      "C2": 38
+    },
+    "sampleWords": [
+      "born",
+      "Japanese",
+      "child",
+      "kind",
+      "policeman",
+      "poor",
+      "girl",
+      "husband",
+      "friendly",
+      "children",
+      "Christmas",
+      "wife"
+    ]
+  },
+  {
+    "id": "economy",
+    "vi": "Kinh tế & Thương mại",
+    "en": "Economy & Commerce",
+    "code": "ECO-06",
+    "cefrFocus": "B1–C2",
+    "total": 266,
+    "byCefr": {
+      "A1": 11,
+      "A2": 16,
+      "B1": 61,
+      "B2": 87,
+      "C1": 76,
+      "C2": 15
+    },
+    "sampleWords": [
+      "price",
+      "market",
+      "dollar",
+      "spend",
+      "rich",
+      "bank",
+      "money",
+      "cent",
+      "sell",
+      "expensive",
+      "cheap",
+      "gold"
+    ]
+  },
+  {
+    "id": "government",
+    "vi": "Chính phủ & Pháp luật",
+    "en": "Government & Law",
+    "code": "GOV-07",
+    "cefrFocus": "B2–C2",
+    "total": 205,
+    "byCefr": {
+      "A1": 1,
+      "A2": 7,
+      "B1": 22,
+      "B2": 59,
+      "C1": 94,
+      "C2": 22
+    },
+    "sampleWords": [
+      "country",
+      "army",
+      "rule",
+      "government",
+      "president",
+      "queen",
+      "king",
+      "law",
+      "political",
+      "court",
+      "ban",
+      "politics"
+    ]
+  },
+  {
+    "id": "health",
+    "vi": "Y tế & Sức khỏe",
+    "en": "Health & Medicine",
+    "code": "HEA-08",
+    "cefrFocus": "A2–C1",
+    "total": 381,
+    "byCefr": {
+      "A1": 24,
+      "A2": 50,
+      "B1": 88,
+      "B2": 125,
+      "C1": 74,
+      "C2": 20
+    },
+    "sampleWords": [
+      "body",
+      "nose",
+      "doctor",
+      "gym",
+      "hospital",
+      "sugar",
+      "thirsty",
+      "food",
+      "tired",
+      "tooth",
+      "relax",
+      "walking"
+    ]
+  },
+  {
+    "id": "work",
+    "vi": "Nghề nghiệp & Việc làm",
+    "en": "Work & Careers",
+    "code": "WRK-09",
+    "cefrFocus": "A2–C1",
+    "total": 414,
+    "byCefr": {
+      "A1": 11,
+      "A2": 48,
+      "B1": 71,
+      "B2": 149,
+      "C1": 123,
+      "C2": 12
+    },
+    "sampleWords": [
+      "worker",
+      "waitress",
+      "job",
+      "farm",
+      "farmer",
+      "business",
+      "company",
+      "meeting",
+      "waiter",
+      "team",
+      "office",
+      "succeed"
+    ]
+  },
+  {
+    "id": "media",
+    "vi": "Truyền thông & Báo chí",
+    "en": "Media & Press",
+    "code": "MED-10",
+    "cefrFocus": "B1–C1",
+    "total": 100,
+    "byCefr": {
+      "A1": 7,
+      "A2": 9,
+      "B1": 32,
+      "B2": 34,
+      "C1": 16,
+      "C2": 2
+    },
+    "sampleWords": [
+      "newspaper",
+      "magazine",
+      "news",
+      "television",
+      "information",
+      "radio",
+      "video",
+      "blog",
+      "text",
+      "reporter",
+      "article",
+      "recording"
+    ]
+  },
+  {
+    "id": "city",
+    "vi": "Đô thị & Hạ tầng",
+    "en": "City & Infrastructure",
+    "code": "CTY-11",
+    "cefrFocus": "A2–B2",
+    "total": 149,
+    "byCefr": {
+      "A1": 13,
+      "A2": 33,
+      "B1": 26,
+      "B2": 48,
+      "C1": 27,
+      "C2": 2
+    },
+    "sampleWords": [
+      "town",
+      "London",
+      "centre",
+      "city",
+      "village",
+      "house",
+      "area",
+      "build",
+      "building",
+      "flat",
+      "park",
+      "street"
+    ]
+  },
+  {
+    "id": "nature",
+    "vi": "Tự nhiên & Sinh thái",
+    "en": "Nature & Ecology",
+    "code": "NAT-12",
+    "cefrFocus": "A2–C1",
+    "total": 443,
+    "byCefr": {
+      "A1": 40,
+      "A2": 51,
+      "B1": 98,
+      "B2": 136,
+      "C1": 100,
+      "C2": 18
+    },
+    "sampleWords": [
+      "river",
+      "horse",
+      "elephant",
+      "rainy",
+      "winter",
+      "sun",
+      "spring",
+      "pig",
+      "animal",
+      "tiger",
+      "star",
+      "sky"
+    ]
+  },
+  {
+    "id": "history",
+    "vi": "Lịch sử & Di sản",
+    "en": "History & Heritage",
+    "code": "HIS-13",
+    "cefrFocus": "B1–C2",
+    "total": 123,
+    "byCefr": {
+      "A1": 1,
+      "A2": 6,
+      "B1": 15,
+      "B2": 41,
+      "C1": 47,
+      "C2": 13
+    },
+    "sampleWords": [
+      "history",
+      "war",
+      "palace",
+      "castle",
+      "century",
+      "Egyptian",
+      "ancient",
+      "temple",
+      "pirate",
+      "windmill",
+      "cathedral",
+      "treasure"
+    ]
+  },
+  {
+    "id": "arts",
+    "vi": "Nghệ thuật & Văn hóa",
+    "en": "Arts & Culture",
+    "code": "ART-14",
+    "cefrFocus": "B1–C1",
+    "total": 228,
+    "byCefr": {
+      "A1": 23,
+      "A2": 27,
+      "B1": 52,
+      "B2": 64,
+      "C1": 51,
+      "C2": 11
+    },
+    "sampleWords": [
+      "paint",
+      "picture",
+      "guitar",
+      "band",
+      "painting",
+      "music",
+      "actor",
+      "art",
+      "museum",
+      "artist",
+      "piano",
+      "photograph"
+    ]
+  },
+  {
+    "id": "thinking",
+    "vi": "Tư duy & Nhận thức",
+    "en": "Thinking & Cognition",
+    "code": "THK-15",
+    "cefrFocus": "B2–C2",
+    "total": 516,
+    "byCefr": {
+      "A1": 22,
+      "A2": 44,
+      "B1": 78,
+      "B2": 195,
+      "C1": 153,
+      "C2": 24
+    },
+    "sampleWords": [
+      "remember",
+      "why",
+      "question",
+      "fact",
+      "TRUE",
+      "interesting",
+      "idea",
+      "reason",
+      "understand",
+      "choose",
+      "believe",
+      "if"
+    ]
+  },
+  {
+    "id": "emotion",
+    "vi": "Cảm xúc & Tâm lý",
+    "en": "Emotion & Psychology",
+    "code": "EMO-16",
+    "cefrFocus": "B1–C1",
+    "total": 364,
+    "byCefr": {
+      "A1": 18,
+      "A2": 27,
+      "B1": 87,
+      "B2": 120,
+      "C1": 90,
+      "C2": 22
+    },
+    "sampleWords": [
+      "lucky",
+      "angry",
+      "smile",
+      "exciting",
+      "afraid",
+      "boring",
+      "wonderful",
+      "love",
+      "cry",
+      "feeling",
+      "funny",
+      "hate"
+    ]
+  },
+  {
+    "id": "travel",
+    "vi": "Du lịch & Dịch chuyển",
+    "en": "Travel & Mobility",
+    "code": "TRV-17",
+    "cefrFocus": "A1–B2",
+    "total": 300,
+    "byCefr": {
+      "A1": 53,
+      "A2": 70,
+      "B1": 75,
+      "B2": 67,
+      "C1": 30,
+      "C2": 5
+    },
+    "sampleWords": [
+      "Australian",
+      "hotel",
+      "arrive",
+      "postcard",
+      "holiday",
+      "France",
+      "aeroplane",
+      "Rome",
+      "east",
+      "Africa",
+      "boat",
+      "station"
+    ]
+  },
+  {
+    "id": "sport",
+    "vi": "Thể thao & Giải trí",
+    "en": "Sport & Leisure",
+    "code": "SPT-18",
+    "cefrFocus": "A1–B2",
+    "total": 103,
+    "byCefr": {
+      "A1": 12,
+      "A2": 37,
+      "B1": 29,
+      "B2": 17,
+      "C1": 6,
+      "C2": 2
+    },
+    "sampleWords": [
+      "football",
+      "basketball",
+      "player",
+      "sport",
+      "ball",
+      "tennis",
+      "swim",
+      "swimming",
+      "win",
+      "climb",
+      "game",
+      "match"
+    ]
+  },
+  {
+    "id": "daily",
+    "vi": "Đời sống Hàng ngày",
+    "en": "Daily Life",
+    "code": "DLY-19",
+    "cefrFocus": "A1–B1",
+    "total": 1828,
+    "byCefr": {
+      "A1": 439,
+      "A2": 422,
+      "B1": 405,
+      "B2": 372,
+      "C1": 162,
+      "C2": 28
+    },
+    "sampleWords": [
+      "Thursday",
+      "bedroom",
+      "clothes",
+      "strong",
+      "month",
+      "let",
+      "use",
+      "minute",
+      "even",
+      "o'clock",
+      "cut",
+      "wake"
+    ]
+  }
+]

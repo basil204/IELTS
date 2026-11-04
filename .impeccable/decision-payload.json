@@ -1,0 +1,253 @@
+{
+  "title": "Chọn Thế Giới Thị Giác (Visual World) cho TID × Word-Atlas",
+  "question": "Hệ thống đã tung xúc xắc chọn Concourse Wayfinding Bento (THE ROLL) và đối chiếu với IMPECCABLE’S PICK (Annotated Lexicon Bento). Bạn có thể chọn hướng yêu thích, xem các phương án đối thủ hoặc tung lại xúc xắc (Re-roll).",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Concourse Wayfinding & Split-Flap Bento",
+      "kicker": "THE ROLL",
+      "lineage": "Bảng chỉ dẫn nhà ga quốc tế Swiss Wayfinding & thẻ lật cơ học Split-Flap",
+      "thesis": "Biến trang chủ IELTS thành sảnh khởi hành quốc tế với các ô Bento đánh số 01–04 như cổng Gate và bộ đếm từ vựng FSRS lật thẻ cơ học.",
+      "palette": [
+        "#F4F1EA",
+        "#16181D",
+        "#FACC15",
+        "#065F46",
+        "#EA580C"
+      ],
+      "materials": [
+        "split-flap charcoal",
+        "wayfinding yellow plaques",
+        "stamped passport paper"
+      ],
+      "viewport": "Bố cục Bento Grid 4 cổng (01 Lộ trình Band, 02 Hôm nay học gì FSRS, 03 Word-Atlas 7.298 từ, 04 Đua Top VIP) với thẻ từ vựng See & Hear tương tác trực tiếp ngay màn hình đầu.",
+      "risk": "Cần giữ độ ấm của giấy học thuật để không bị khô cứng như bảng thông báo sân bay thuần túy.",
+      "raised": [
+        {
+          "from": "challenger-six-pack",
+          "raise": "Mỗi ô Bento 01–04 đều hiển thị chỉ số telemetry trực tiếp (tỷ lệ nhớ FSRS %, số từ đến hạn hôm nay, tiến độ Band) đọc lướt được trong một ánh nhìn."
+        },
+        {
+          "from": "challenger-kit-crest",
+          "raise": "Số thứ tự 01, 02, 03, 04 cỡ lớn đầy kiêu hãnh ở góc từng khối Bento và huy hiệu hạng đấu VIP sắc nét."
+        },
+        {
+          "from": "challenger-gravity-garden",
+          "raise": "Mã hóa màu sắc nhất quán cho 6 cấp độ CEFR (A1–C2) và 4 trạng thái trí nhớ FSRS xuyên suốt mọi thẻ từ."
+        },
+        {
+          "from": "challenger-ascii",
+          "raise": "Lưới Bento tuân thủ kỷ luật cột-hàng toán học nghiêm ngặt, ưu tiên mật độ thông tin thực chất thay vì trang trí rườm rà."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "The Annotated Lexicon & Editorial Bento Digest",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Tạp chí số theieltsdictionary.com kết hợp Từ điển học thuật Oxford & Bản đồ sao Word-Atlas",
+      "thesis": "Tạp chí học thuật Bento Grid đánh số 01–04 kết hợp thẻ từ điển minh họa đa giác quan (See & Hear, Cloze, FSRS) và cửa sổ thiên hà 19 chủ đề từ vựng.",
+      "palette": [
+        "#F6F3EC",
+        "#14213D",
+        "#D9381E",
+        "#0F766E",
+        "#E9E2D0"
+      ],
+      "materials": [
+        "archival dictionary paper",
+        "vermilion editorial ink",
+        "deep navy cloth"
+      ],
+      "viewport": "Bento Grid biên tập sắc sảo: khối chính mở sẵn phiên '02. Hôm nay học gì (FSRS + See & Hear)' bên cạnh '01. Lộ trình Adaptive', '03. Bản đồ 19 chủ đề Word-Atlas' và '04. Bảng vàng Đua Top VIP'.",
+      "risk": "Đây là hướng thiết kế gần gũi và an toàn nhất cho dòng sản phẩm EdTech biên tập kiểu TID.",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "challenger-emigre",
+      "kind": "challenger",
+      "catalogId": "emigre-bitmap-specimen",
+      "label": "Emigre Typographic Specimen Bento",
+      "verdict": "competitive",
+      "lineage": "Ấn phẩm Emigre type specimen & báo khổ lớn tương phản cao",
+      "thesis": "Tôn vinh từng từ vựng IELTS như một tác phẩm chữ nghệ thuật cỡ lớn đặt cạnh lưới cột giải nghĩa song ngữ Anh-Việt sắc lẹm.",
+      "palette": [
+        "#FAF8F5",
+        "#111111",
+        "#FF3B1D",
+        "#D6D1C7"
+      ],
+      "materials": [
+        "newsprint white",
+        "halftone dot texture",
+        "specimen rules"
+      ],
+      "viewport": "Từ vựng trọng tâm của ngày phóng đại ở tỷ lệ poster, bao quanh bởi các ô Bento chỉ số FSRS, bài tập điền từ Cloze và bảng xếp hạng.",
+      "case": "Thắng về cá tính thị giác của một từ điển hiện đại, nhưng hơi kén người dùng phổ thông hơn hướng Editorial Bento.",
+      "risk": "Font bitmap/specimen nếu lạm dụng ở cỡ nhỏ sẽ làm mỏi mắt khi đọc câu ví dụ dài.",
+      "html": ".impeccable/mocks/decision/challenger-emigre.html",
+      "hero": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen.webp"
+    },
+    {
+      "id": "challenger-nocturne",
+      "kind": "challenger",
+      "catalogId": "light-shadow-caustics-rain-night-cityscape",
+      "label": "Blue-Hour Nocturne Study Atlas",
+      "verdict": "competitive",
+      "lineage": "Thành phố giờ xanh chạng vạng & ánh đèn bàn học đêm",
+      "thesis": "Không gian luyện thi ban đêm đầy cảm hứng, nơi 19 chủ đề từ vựng Word-Atlas phát sáng như các cụm tòa nhà và tuyến tàu điện nối liền chuỗi Streak.",
+      "palette": [
+        "#0B132B",
+        "#1C2541",
+        "#F59E0B",
+        "#38BDF8",
+        "#E2E8F0"
+      ],
+      "materials": [
+        "cobalt night glass",
+        "amber transit glow",
+        "silver dawn edge"
+      ],
+      "viewport": "Bento Grid nền xanh đêm sâu thẳm với bản đồ cụm sao từ vựng rực sáng màu hổ phách và thẻ học FSRS phát sáng dịu mắt.",
+      "case": "Rất hợp tâm lý cày IELTS ban đêm và tôn bật bản đồ 3D Word-Atlas, nhưng kém thân thiện hơn nền sáng khi đọc tài liệu dài ban ngày.",
+      "risk": "Dễ trượt sang giao diện dark-mode công nghệ nếu thiếu chất liệu ánh sáng ấm áp.",
+      "html": ".impeccable/mocks/decision/challenger-nocturne.html",
+      "hero": "https://impeccable.style/worlds/cards/light-shadow-caustics-rain-night-cityscape-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/light-shadow-caustics-rain-night-cityscape.webp"
+    },
+    {
+      "id": "challenger-six-pack",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-night-flight-six-pack",
+      "label": "Night-Flight Instrument Six-Pack",
+      "verdict": "declined",
+      "lineage": "Bảng đồng hồ buồng lái máy bay 6 mặt số phát quang",
+      "thesis": "Quản lý tiến độ luyện thi và độ nhớ FSRS như 6 đồng hồ điều hướng trong buồng lái.",
+      "palette": [
+        "#0F1216",
+        "#1E242B",
+        "#4ADE80",
+        "#F59E0B",
+        "#F8FAFC"
+      ],
+      "materials": [
+        "matte instrument panel",
+        "radium-green dial markings"
+      ],
+      "viewport": "6 mặt đồng hồ tròn hiển thị Band mục tiêu, độ nhớ FSRS, số từ đã thuộc và chuỗi ngày học.",
+      "case": "Quá thiên về buồng lái kỹ thuật, không phù hợp để hiển thị câu ví dụ IELTS dài và thẻ từ vựng minh họa.",
+      "risk": "Khó đọc văn bản học thuật và giải nghĩa từ vựng.",
+      "kept": "Hệ thống chỉ số telemetry đối chiếu nhanh trong một ánh nhìn cho từng ô Bento.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack.webp"
+    },
+    {
+      "id": "challenger-kit-crest",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-football-kit-crest",
+      "label": "Club Crest & League Numbering",
+      "verdict": "declined",
+      "lineage": "Áo đấu câu lạc bộ với huy hiệu thêu vàng và số lưng đổ bóng",
+      "thesis": "Biến bảng xếp hạng Đua Top săn VIP và các mốc Band điểm thành giải đấu có huy hiệu và số áo riêng.",
+      "palette": [
+        "#991B1B",
+        "#FEF08A",
+        "#1E3A8A",
+        "#F8FAFC"
+      ],
+      "materials": [
+        "embroidered gold crest",
+        "drop-shadow numerals"
+      ],
+      "viewport": "Màn hình vinh danh học viên và số thứ tự phân khu cỡ lớn kiểu số áo đấu.",
+      "case": "Tốt cho riêng phần Đua Top nhưng lệch tông với trải nghiệm tra cứu từ điển và luyện đề học thuật.",
+      "risk": "Làm giảm độ tin cậy học thuật của nền tảng luyện thi IELTS.",
+      "kept": "Nghệ thuật đánh số thứ tự cỡ lớn (01–04) và hệ thống huy hiệu vinh danh sắc sảo cho bảng xếp hạng.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-football-kit-crest-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-football-kit-crest.webp"
+    },
+    {
+      "id": "challenger-gravity-garden",
+      "kind": "challenger",
+      "catalogId": "dream-surreal-impossible-worlds-gravity-rain-garden",
+      "label": "Gravity-Rain Garden",
+      "verdict": "declined",
+      "lineage": "Khu vườn siêu thực nơi hạt mưa rơi theo trọng lực màu sắc đám mây",
+      "thesis": "Các từ vựng IELTS bay về từng cụm chủ đề theo lực hút màu sắc.",
+      "palette": [
+        "#2D3A3A",
+        "#3B82F6",
+        "#EF4444",
+        "#E5E7EB"
+      ],
+      "materials": [
+        "dusk garden ground",
+        "directional rain trails"
+      ],
+      "viewport": "Không gian khu vườn với các dòng chữ uốn cong theo đám mây chủ đề.",
+      "case": "Chữ uốn cong làm giảm tốc độ đọc hiểu và ghi nhớ từ vựng học thuật.",
+      "risk": "Gây rối mắt khi ôn tập hàng trăm thẻ từ mỗi ngày.",
+      "kept": "Quy tắc mã hóa màu sắc nhất quán cho từng cấp độ CEFR và trạng thái trí nhớ.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-gravity-rain-garden-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-gravity-rain-garden.webp"
+    },
+    {
+      "id": "challenger-ascii",
+      "kind": "challenger",
+      "catalogId": "medium-native-ascii-live-scene-render",
+      "label": "Monospace ASCII Matrix",
+      "verdict": "declined",
+      "lineage": "Đồ họa ký tự máy chữ trên lưới monospace cố định",
+      "thesis": "Toàn bộ từ điển và bản đồ từ vựng được dựng bằng mật độ ký tự văn bản.",
+      "palette": [
+        "#090D0A",
+        "#22C55E",
+        "#F59E0B"
+      ],
+      "materials": [
+        "phosphor green ink",
+        "monospace character grid"
+      ],
+      "viewport": "Lưới ký tự ASCII tái hiện bản đồ từ vựng và thẻ luyện gõ chính tả.",
+      "case": "Làm mất đi giá trị cốt lõi của 7.298 bức ảnh minh họa trực quan trong Word-Atlas.",
+      "risk": "Xa lạ với đối tượng học sinh, sinh viên luyện thi tiếng Anh.",
+      "kept": "Tính kỷ luật tuyệt đối của hệ thống lưới cột và mật độ dữ liệu trung thực.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Clean EdTech Bento Standard",
+    "thesis": "Giao diện EdTech Bento hiện đại tiêu chuẩn trên nền trắng tinh gọn với điểm nhấn xanh dương.",
+    "palette": [
+      "#FFFFFF",
+      "#0F172A",
+      "#2563EB",
+      "#F1F5F9"
+    ],
+    "materials": [
+      "clean white cards",
+      "soft border shadows"
+    ],
+    "viewport": "Lưới Bento trắng sáng quen thuộc với thanh điều hướng trên cùng và các thẻ bo góc tiêu chuẩn.",
+    "risk": "An toàn nhưng dễ lẫn với các trang web học trực tuyến phổ thông khác.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

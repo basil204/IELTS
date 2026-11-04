@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --bg-birch: #F4F1EA;
+  --bg-birch-deep: #EAE5D9;
+  --surface-charcoal: #16181D;
+  --surface-slate: #1F2229;
+  --surface-elevated: #272B35;
+  --border-grid: rgba(22, 24, 29, 0.12);
+  --border-dark-hairline: #2E3340;
+  --ink-primary: #16181D;
+  --ink-secondary: #4A4740;
+  --ink-on-dark: #F4F1EA;
+  --ink-muted-on-dark: #B8B2A6;
+  --signal-yellow: #FACC15;
+  --signal-yellow-hover: #EAB308;
+  --passport-emerald: #065F46;
+  --passport-emerald-bright: #10B981;
+  --signal-vermilion: #EA580C;
+  --shadow-concourse: 0 16px 36px -12px rgba(22, 24, 29, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-birch);
+  color: var(--ink-primary);
+  scroll-behavior: smooth;
+  text-underline-offset: 0.22em;
+  caret-color: var(--signal-vermilion);
+}
+
+body {
+  background-color: var(--bg-birch);
+  color: var(--ink-primary);
+  font-family: var(--font-body), sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--signal-yellow);
+  color: var(--surface-charcoal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--signal-yellow);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-birch-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-charcoal);
+  border: 2px solid var(--bg-birch-deep);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--passport-emerald);
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.font-mono-data {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.concourse-panel {
+  background-color: var(--surface-charcoal);
+  color: var(--ink-on-dark);
+  box-shadow: var(--shadow-concourse);
+}
+
+.wayfinding-hero-panel {
+  background-color: var(--signal-yellow);
+  color: var(--surface-charcoal);
+  box-shadow: var(--shadow-concourse);
+}
+
+@keyframes splitFlapPulse {
+  0%, 100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(400px) rotateX(-14deg);
+  }
+}
+
+.split-flap-digit {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232730;
+  color: var(--signal-yellow);
+  border: 1px solid #363B47;
+  border-radius: 6px;
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+.split-flap-digit::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: rgba(15, 17, 21, 0.75);
+  pointer-events: none;
+}

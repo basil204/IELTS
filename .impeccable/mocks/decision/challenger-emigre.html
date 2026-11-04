@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1440px; height: 900px; background: #FAF8F5; color: #111111; font-family: 'Courier New', monospace; padding: 28px 40px; overflow: hidden; }
+  header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #111111; padding-bottom: 16px; margin-bottom: 24px; }
+  .brand { font-size: 28px; font-weight: 900; letter-spacing: -1px; }
+  .nav { display: flex; gap: 24px; font-size: 15px; font-weight: 700; }
+  .cta { background: #FF3B1D; color: #FAF8F5; padding: 10px 20px; font-size: 16px; font-weight: 800; border: 2px solid #111111; }
+  .bento { display: grid; grid-template-columns: 320px 1fr 340px; grid-template-rows: 340px 340px; gap: 20px; }
+  .card { border: 3px solid #111111; background: #FAF8F5; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+  .card.hero { grid-row: span 2; background: #111111; color: #FAF8F5; }
+  .num { font-size: 44px; font-weight: 900; color: #FF3B1D; line-height: 1; }
+  .specimen-1 { font-size: 68px; font-weight: 900; letter-spacing: 2px; line-height: 1; color: #FAF8F5; }
+  .specimen-2 { font-size: 42px; font-weight: 800; color: #FF3B1D; }
+  .specimen-3 { font-size: 26px; font-weight: 700; color: #D6D1C7; }
+  .fsrs-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px; }
+  .btn { border: 2px solid #FAF8F5; padding: 12px; text-align: center; font-size: 14px; font-weight: 700; }
+  .btn.accent { background: #FF3B1D; border-color: #FF3B1D; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">THE IELTS DICTIONARY × WORD ATLAS</div>
+    <div class="nav"><span>01 LỘ TRÌNH</span><span>02 HÔM NAY FSRS</span><span>03 WORD ATLAS</span><span>04 ĐUA TOP VIP</span></div>
+    <div class="cta">BẮT ĐẦU HỌC</div>
+  </header>
+  <div class="bento">
+    <div class="card">
+      <div class="num">01 / ROUTE</div>
+      <div style="font-size:28px;font-weight:900;">BAND 5.0 → 7.5</div>
+      <p style="font-size:15px;">Lộ trình thích ứng cá nhân hóa theo 19 chủ đề IELTS và cấp độ CEFR A1–C2.</p>
+    </div>
+    <div class="card hero">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="num">02 / TODAY FSRS</span>
+        <span style="background:#FF3B1D;padding:6px 12px;font-weight:800;">CEFR C2 • SPECIMEN</span>
+      </div>
+      <div>
+        <div class="specimen-1">EPHEMERAL</div>
+        <div class="specimen-2">ephemeral /ɪˈfem.ər.əl/</div>
+        <div class="specimen-3">phù du, chóng tàn, ngắn ngủi</div>
+      </div>
+      <p style="font-size:16px;line-height:1.5;border-top:2px solid #333;padding-top:14px;">Fame in the world of rock and pop is largely __________ (kéo dài ngắn ngủi).</p>
+      <div class="fsrs-row">
+        <div class="btn">AGAIN 10m</div>
+        <div class="btn">HARD 1d</div>
+        <div class="btn accent">GOOD 4d</div>
+        <div class="btn">EASY 12d</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">03 / ATLAS</div>
+      <div style="font-size:32px;font-weight:900;">7,298 WORDS</div>
+      <p style="font-size:15px;">19 chủ đề IELTS học thuật với 14,596 câu ví dụ và 22,905 file âm thanh UK/US.</p>
+    </div>
+    <div class="card">
+      <div class="num">03B / RECALL</div>
+      <div style="font-size:24px;font-weight:800;">CLOZE & DICTATION</div>
+      <p style="font-size:15px;">Nghe âm thanh ElevenLabs UK/US và gõ lại chính tả chuẩn phòng thi Listening.</p>
+    </div>
+    <div class="card" style="background:#FF3B1D;color:#FAF8F5;">
+      <div class="num" style="color:#111111;">04 / VIP TOP</div>
+      <div style="font-size:28px;font-weight:900;">LEADERBOARD</div>
+      <p style="font-size:15px;">Đua Top chuyên cần tuần/tháng nhận gói tài khoản VIP tự động.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1440px; height: 900px; background: #FFFFFF; color: #0F172A; font-family: system-ui, sans-serif; padding: 28px 40px; overflow: hidden; }
+  header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E2E8F0; padding-bottom: 16px; margin-bottom: 24px; }
+  .brand { font-size: 26px; font-weight: 800; color: #0F172A; }
+  .nav { display: flex; gap: 24px; font-size: 15px; color: #475569; }
+  .cta { background: #2563EB; color: #FFFFFF; padding: 10px 22px; border-radius: 10px; font-size: 16px; font-weight: 700; }
+  .bento { display: grid; grid-template-columns: 330px 1fr 330px; grid-template-rows: 340px 340px; gap: 20px; }
+  .card { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+  .card.hero { grid-row: span 2; background: #EFF6FF; border-color: #BFDBFE; }
+  .num { font-size: 24px; font-weight: 800; color: #2563EB; }
+  .word { font-size: 52px; font-weight: 800; color: #0F172A; }
+  .fsrs-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .btn { background: #FFFFFF; border: 1px solid #CBD5E1; padding: 12px; border-radius: 8px; text-align: center; font-size: 14px; font-weight: 600; }
+  .btn.blue { background: #2563EB; color: #FFFFFF; border-color: #2563EB; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">The IELTS Dictionary × Word Atlas</div>
+    <div class="nav"><span>01 Lộ trình</span><span>02 Hôm nay học gì</span><span>03 Word Atlas</span><span>04 Đua Top</span></div>
+    <div class="cta">Học Thử Miễn Phí</div>
+  </header>
+  <div class="bento">
+    <div class="card">
+      <div class="num">01. Lộ Trình Học</div>
+      <div style="font-size:30px;font-weight:800;">Band 5.0 → 7.5</div>
+      <p style="font-size:15px;color:#475569;">Cá nhân hóa bài học mỗi ngày theo trình độ đầu vào.</p>
+    </div>
+    <div class="card hero">
+      <div class="num">02. Hôm Nay Học Gì (FSRS)</div>
+      <div>
+        <div class="word">ubiquitous</div>
+        <div style="font-size:22px;color:#2563EB;margin-top:6px;">/juːˈbɪk.wɪ.təs/ • có mặt ở khắp nơi</div>
+      </div>
+      <p style="font-size:16px;color:#334155;">Smartphones have become ubiquitous in modern daily life.</p>
+      <div class="fsrs-row">
+        <div class="btn">Again 10m</div>
+        <div class="btn">Hard 1d</div>
+        <div class="btn blue">Good 4d</div>
+        <div class="btn">Easy 11d</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">03. Kho Từ Vựng</div>
+      <div style="font-size:30px;font-weight:800;">7,298 Từ IELTS</div>
+      <p style="font-size:15px;color:#475569;">19 chủ đề kèm hình ảnh minh họa và âm thanh UK/US.</p>
+    </div>
+    <div class="card">
+      <div class="num">03B. Luyện Tập</div>
+      <div style="font-size:24px;font-weight:800;">See & Hear • Recall</div>
+      <p style="font-size:15px;color:#475569;">Điền từ vào câu khuyết và chép chính tả Listening.</p>
+    </div>
+    <div class="card">
+      <div class="num">04. Đua Top Săn VIP</div>
+      <div style="font-size:26px;font-weight:800;">Bảng Xếp Hạng Tuần</div>
+      <p style="font-size:15px;color:#475569;">Tích điểm XP nhận tài khoản Premium miễn phí.</p>
+    </div>
+  </div>
+</body>
+</html>

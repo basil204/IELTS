@@ -1,0 +1,3964 @@
+[
+  {
+    "tier": 1,
+    "titleVi": "Nhóm 1: Từ khóa Trọng tâm Cấp độ 1 (90% Xác suất ra thi)",
+    "probability": "90%",
+    "badge": "CRITICAL 90%",
+    "count": 20,
+    "words": [
+      {
+        "no": 1,
+        "word": "resemble",
+        "pos": "v.",
+        "enDefinition": "To look like or be similar to someone or something",
+        "viMeaning": "Giống với, tương tự với",
+        "synonyms": [
+          "like",
+          "look",
+          "be similar to"
+        ]
+      },
+      {
+        "no": 2,
+        "word": "recognize",
+        "pos": "v.",
+        "enDefinition": "Identify someone or something known or seen before.",
+        "viMeaning": "Nhận ra, công nhận, thừa nhận",
+        "synonyms": [
+          "perceive",
+          "acknowledge",
+          "realize",
+          "appreciate",
+          "admit",
+          "identify",
+          "comprehend",
+          "understand",
+          "know"
+        ]
+      },
+      {
+        "no": 3,
+        "word": "adjust",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: change, modify, shift, alter",
+        "viMeaning": "Điều chỉnh, thích nghi",
+        "synonyms": [
+          "change",
+          "modify",
+          "shift",
+          "alter"
+        ]
+      },
+      {
+        "no": 4,
+        "word": "approach",
+        "pos": "n.",
+        "enDefinition": "A way of dealing with a task or problem.",
+        "viMeaning": "Phương pháp, cách tiếp cận; tiến gần",
+        "synonyms": [
+          "method",
+          "way"
+        ]
+      },
+      {
+        "no": 5,
+        "word": "fundamental",
+        "pos": "adj.",
+        "enDefinition": "Forming the essential basis of something.",
+        "viMeaning": "Cơ bản, nền tảng, cốt lõi",
+        "synonyms": [
+          "rudimentary",
+          "preliminary",
+          "basic"
+        ]
+      },
+      {
+        "no": 6,
+        "word": "rely on",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: depend on",
+        "viMeaning": "Dựa vào, phụ thuộc vào",
+        "synonyms": [
+          "depend on"
+        ]
+      },
+      {
+        "no": 7,
+        "word": "domestic",
+        "pos": "adj.",
+        "enDefinition": "relating to activities within a particular country",
+        "viMeaning": "Trong nước, nội địa; thuộc gia đình",
+        "synonyms": [
+          "home",
+          "local",
+          "national"
+        ]
+      },
+      {
+        "no": 8,
+        "word": "measure",
+        "pos": "v.",
+        "enDefinition": "Find the size, amount, or degree of something.",
+        "viMeaning": "Biện pháp, tiêu chuẩn đo lường",
+        "synonyms": [
+          "calculate",
+          "assess",
+          "evaluate"
+        ]
+      },
+      {
+        "no": 9,
+        "word": "trait",
+        "pos": "n.",
+        "enDefinition": "A particular quality in someone's character or an organism's nature.",
+        "viMeaning": "Đặc điểm, nét tính cách, phẩm chất",
+        "synonyms": [
+          "characteristic",
+          "feature",
+          "property"
+        ]
+      },
+      {
+        "no": 10,
+        "word": "coin",
+        "pos": "v.",
+        "enDefinition": "a small, flat piece of metal used as money",
+        "viMeaning": "Đặt ra (thuật ngữ mới); đồng xu",
+        "synonyms": [
+          "first used",
+          "invent"
+        ]
+      },
+      {
+        "no": 11,
+        "word": "artificial",
+        "pos": "adj.",
+        "enDefinition": "Made by people rather than occurring naturally",
+        "viMeaning": "Nhân tạo, không tự nhiên",
+        "synonyms": [
+          "synthetic",
+          "man-made"
+        ]
+      },
+      {
+        "no": 12,
+        "word": "prompt",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: initiate, immediately",
+        "viMeaning": "Thúc đẩy, gợi mở; nhanh chóng",
+        "synonyms": [
+          "initiate",
+          "immediately"
+        ]
+      },
+      {
+        "no": 13,
+        "word": "exchange",
+        "pos": "v.",
+        "enDefinition": "to give something and receive something else in return",
+        "viMeaning": "Trao đổi, giao lưu",
+        "synonyms": [
+          "share",
+          "swap",
+          "trade"
+        ]
+      },
+      {
+        "no": 14,
+        "word": "underlie",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: based on, ground, root",
+        "viMeaning": "Làm nền tảng cho, nằm dưới",
+        "synonyms": [
+          "based on",
+          "ground",
+          "root"
+        ]
+      },
+      {
+        "no": 15,
+        "word": "ignore",
+        "pos": "v.",
+        "enDefinition": "Pay no attention to someone or something",
+        "viMeaning": "Phớt lờ, bỏ qua",
+        "synonyms": [
+          "neglect",
+          "overlook",
+          "underestimate"
+        ]
+      },
+      {
+        "no": 16,
+        "word": "fertiliser",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: chemical, toxic, unnatural",
+        "viMeaning": "Phân bón nông nghiệp",
+        "synonyms": [
+          "chemical",
+          "toxic",
+          "unnatural"
+        ]
+      },
+      {
+        "no": 17,
+        "word": "that*",
+        "pos": "pron.",
+        "enDefinition": "Academic exam term synonymous with: this, it, they, those, these, such",
+        "viMeaning": null,
+        "synonyms": [
+          "this",
+          "it",
+          "they",
+          "those",
+          "these",
+          "such"
+        ]
+      },
+      {
+        "no": 18,
+        "word": "and*",
+        "pos": "conj.",
+        "enDefinition": "Academic exam term synonymous with: or, as well as, both…and, not only…but also…, other than, in addition, besides, on the one hand…on the other hand…, neither…nor…",
+        "viMeaning": null,
+        "synonyms": [
+          "or",
+          "as well as",
+          "both…and",
+          "not only…but also…",
+          "other than",
+          "in addition",
+          "besides",
+          "on the one hand…on the other hand…",
+          "neither…nor…"
+        ]
+      },
+      {
+        "no": 19,
+        "word": "rather than*",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: but, yet, however, whereas, nonetheless, nevertheless, although, notwithstanding, though, instead",
+        "viMeaning": null,
+        "synonyms": [
+          "but",
+          "yet",
+          "however",
+          "whereas",
+          "nonetheless",
+          "nevertheless",
+          "although",
+          "notwithstanding",
+          "though",
+          "instead"
+        ]
+      },
+      {
+        "no": 20,
+        "word": "thanks to*",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: stem from, derive, owing to, due to, according to, because of, on account of, as a result of, leading to, because, since, for, in that, as, therefore, hence",
+        "viMeaning": null,
+        "synonyms": [
+          "stem from",
+          "derive",
+          "owing to",
+          "due to",
+          "according to",
+          "because of",
+          "on account of",
+          "as a result of",
+          "leading to",
+          "because",
+          "since",
+          "for",
+          "in that",
+          "as",
+          "therefore",
+          "hence"
+        ]
+      }
+    ]
+  },
+  {
+    "tier": 2,
+    "titleVi": "Nhóm 2: Từ khóa Trọng tâm Cấp độ 2 (60% Xác suất ra thi)",
+    "probability": "60%",
+    "badge": "HIGH 60%",
+    "count": 100,
+    "words": [
+      {
+        "no": 21,
+        "word": "diversity",
+        "pos": "n.",
+        "enDefinition": "The presence of many different types of people or things.",
+        "viMeaning": "Sự đa dạng, phong phú",
+        "synonyms": [
+          "variety",
+          "difference"
+        ]
+      },
+      {
+        "no": 22,
+        "word": "detect",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: find, look for, seek, search",
+        "viMeaning": "Phát hiện, dò tìm",
+        "synonyms": [
+          "find",
+          "look for",
+          "seek",
+          "search"
+        ]
+      },
+      {
+        "no": 23,
+        "word": "isolate",
+        "pos": "v.",
+        "enDefinition": "Separate someone or something from others.",
+        "viMeaning": "Cô lập, cách ly, tách biệt",
+        "synonyms": [
+          "inaccessible"
+        ]
+      },
+      {
+        "no": 24,
+        "word": "avoid",
+        "pos": "v.",
+        "enDefinition": "to prevent something from happening or refrain from doing something",
+        "viMeaning": "Tránh xa, ngăn ngừa",
+        "synonyms": [
+          "escape",
+          "evitable"
+        ]
+      },
+      {
+        "no": 25,
+        "word": "budget",
+        "pos": "n.",
+        "enDefinition": "A plan for spending money, or the amount available.",
+        "viMeaning": "Ngân sách, kinh phí",
+        "synonyms": [
+          "fund",
+          "financial"
+        ]
+      },
+      {
+        "no": 26,
+        "word": "adapt to",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: fit, suit",
+        "viMeaning": null,
+        "synonyms": [
+          "fit",
+          "suit"
+        ]
+      },
+      {
+        "no": 27,
+        "word": "alternative",
+        "pos": "adj., n.",
+        "enDefinition": "something you can choose instead of something else",
+        "viMeaning": "Giải pháp thay thế; lựa chọn khác",
+        "synonyms": [
+          "substitute"
+        ]
+      },
+      {
+        "no": 28,
+        "word": "compensate",
+        "pos": "n.",
+        "enDefinition": "To give someone money or something else for loss or harm.",
+        "viMeaning": "Đền bù, bù đắp",
+        "synonyms": [
+          "make up",
+          "offset"
+        ]
+      },
+      {
+        "no": 29,
+        "word": "component",
+        "pos": "n.",
+        "enDefinition": "One of the parts that together form a whole.",
+        "viMeaning": "Thành phần, cấu phần",
+        "synonyms": [
+          "proportion"
+        ]
+      },
+      {
+        "no": 30,
+        "word": "military",
+        "pos": "adj.",
+        "enDefinition": "relating to armed forces or their activities",
+        "viMeaning": null,
+        "synonyms": [
+          "weapon",
+          "army"
+        ]
+      },
+      {
+        "no": 31,
+        "word": "criteria",
+        "pos": "n.",
+        "enDefinition": "Standards used to judge something or make a decision.",
+        "viMeaning": null,
+        "synonyms": [
+          "standard"
+        ]
+      },
+      {
+        "no": 32,
+        "word": "curriculum",
+        "pos": "n.",
+        "enDefinition": "the subjects and content included in a programme of study",
+        "viMeaning": null,
+        "synonyms": [
+          "syllabus",
+          "course of study"
+        ]
+      },
+      {
+        "no": 33,
+        "word": "feasible",
+        "pos": "adj.",
+        "enDefinition": "possible and practical to achieve with available resources",
+        "viMeaning": null,
+        "synonyms": [
+          "realistic",
+          "viable"
+        ]
+      },
+      {
+        "no": 34,
+        "word": "constrain",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: stop, control",
+        "viMeaning": null,
+        "synonyms": [
+          "stop",
+          "control"
+        ]
+      },
+      {
+        "no": 35,
+        "word": "deficiency",
+        "pos": "n.",
+        "enDefinition": "A lack of enough of something necessary.",
+        "viMeaning": null,
+        "synonyms": [
+          "shortage",
+          "defect",
+          "weakness"
+        ]
+      },
+      {
+        "no": 36,
+        "word": "supplement",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: provision",
+        "viMeaning": "Bổ sung, phần phụ thêm",
+        "synonyms": [
+          "provision"
+        ]
+      },
+      {
+        "no": 37,
+        "word": "distinguish",
+        "pos": "v.",
+        "enDefinition": "to recognize the difference between people or things",
+        "viMeaning": null,
+        "synonyms": [
+          "separate",
+          "differentiate"
+        ]
+      },
+      {
+        "no": 38,
+        "word": "analyze",
+        "pos": "v.",
+        "enDefinition": "Examine something carefully to understand its parts or meaning.",
+        "viMeaning": null,
+        "synonyms": [
+          "examine",
+          "diagnose"
+        ]
+      },
+      {
+        "no": 39,
+        "word": "emphasize",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: focus on, stress",
+        "viMeaning": "Nhấn mạnh, làm nổi bật",
+        "synonyms": [
+          "focus on",
+          "stress"
+        ]
+      },
+      {
+        "no": 40,
+        "word": "enormous",
+        "pos": "adj.",
+        "enDefinition": "extremely large in size, amount, or degree",
+        "viMeaning": null,
+        "synonyms": [
+          "massive",
+          "large"
+        ]
+      },
+      {
+        "no": 41,
+        "word": "imitate",
+        "pos": "v.",
+        "enDefinition": "To copy someone's actions, speech, or way of doing something",
+        "viMeaning": null,
+        "synonyms": [
+          "mimic",
+          "copy"
+        ]
+      },
+      {
+        "no": 42,
+        "word": "impair",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: damage, diminish, decrease",
+        "viMeaning": null,
+        "synonyms": [
+          "damage",
+          "diminish",
+          "decrease"
+        ]
+      },
+      {
+        "no": 43,
+        "word": "hinder",
+        "pos": "v.",
+        "enDefinition": "To make progress or an activity more difficult.",
+        "viMeaning": null,
+        "synonyms": [
+          "impede",
+          "prevent",
+          "deter",
+          "obstacle"
+        ]
+      },
+      {
+        "no": 44,
+        "word": "legitimate",
+        "pos": "adj.",
+        "enDefinition": "Allowed by law or accepted rules.",
+        "viMeaning": null,
+        "synonyms": [
+          "legal"
+        ]
+      },
+      {
+        "no": 45,
+        "word": "limitation",
+        "pos": "n.",
+        "enDefinition": "a weakness that prevents someone or something from being fully effective",
+        "viMeaning": null,
+        "synonyms": [
+          "restriction"
+        ]
+      },
+      {
+        "no": 46,
+        "word": "convention",
+        "pos": "n.",
+        "enDefinition": "An accepted way of behaving or doing something.",
+        "viMeaning": null,
+        "synonyms": [
+          "method; tradition"
+        ]
+      },
+      {
+        "no": 47,
+        "word": "demanding",
+        "pos": "adj.",
+        "enDefinition": "Requiring considerable effort, skill, time, or attention.",
+        "viMeaning": null,
+        "synonyms": [
+          "troublesome"
+        ]
+      },
+      {
+        "no": 48,
+        "word": "determine",
+        "pos": "v.",
+        "enDefinition": "To discover or establish something through examination.",
+        "viMeaning": null,
+        "synonyms": [
+          "decide"
+        ]
+      },
+      {
+        "no": 49,
+        "word": "accelerate",
+        "pos": "v.",
+        "enDefinition": "to move faster or make something happen more quickly",
+        "viMeaning": null,
+        "synonyms": [
+          "speed up"
+        ]
+      },
+      {
+        "no": 50,
+        "word": "ancient",
+        "pos": "adj.",
+        "enDefinition": "belonging to a period thousands of years in the past",
+        "viMeaning": null,
+        "synonyms": [
+          "aged",
+          "old"
+        ]
+      },
+      {
+        "no": 51,
+        "word": "beneficial",
+        "pos": "adj.",
+        "enDefinition": "Having a helpful or positive effect.",
+        "viMeaning": null,
+        "synonyms": [
+          "helpful",
+          "advantageous",
+          "wholesome"
+        ]
+      },
+      {
+        "no": 52,
+        "word": "chronic",
+        "pos": "adj.",
+        "enDefinition": "Continuing for a long time, especially a medical condition",
+        "viMeaning": null,
+        "synonyms": [
+          "lasting"
+        ]
+      },
+      {
+        "no": 53,
+        "word": "conscious",
+        "pos": "adj.",
+        "enDefinition": "aware of something or noticing that it exists",
+        "viMeaning": null,
+        "synonyms": [
+          "aware",
+          "knowing"
+        ]
+      },
+      {
+        "no": 54,
+        "word": "minimize",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: reduce, lessen",
+        "viMeaning": "Tối thiểu hóa",
+        "synonyms": [
+          "reduce",
+          "lessen"
+        ]
+      },
+      {
+        "no": 55,
+        "word": "immunity",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: resistance",
+        "viMeaning": null,
+        "synonyms": [
+          "resistance"
+        ]
+      },
+      {
+        "no": 56,
+        "word": "Imperative",
+        "pos": "adj.",
+        "enDefinition": "Extremely important and needing to be done.",
+        "viMeaning": null,
+        "synonyms": [
+          "compelling",
+          "necessary",
+          "urgent"
+        ]
+      },
+      {
+        "no": 57,
+        "word": "secrete",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: discharge, exude",
+        "viMeaning": null,
+        "synonyms": [
+          "discharge",
+          "exude"
+        ]
+      },
+      {
+        "no": 58,
+        "word": "exaggerate",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: overstate",
+        "viMeaning": null,
+        "synonyms": [
+          "overstate"
+        ]
+      },
+      {
+        "no": 59,
+        "word": "transmit",
+        "pos": "v.",
+        "enDefinition": "to send signals, information, or energy between places",
+        "viMeaning": "Truyền tải (tín hiệu, bệnh, tri thức)",
+        "synonyms": [
+          "pass",
+          "send",
+          "transfer"
+        ]
+      },
+      {
+        "no": 60,
+        "word": "extinct",
+        "pos": "adj.",
+        "enDefinition": "having no living members left",
+        "viMeaning": null,
+        "synonyms": [
+          "die out",
+          "lost"
+        ]
+      },
+      {
+        "no": 61,
+        "word": "exclusive",
+        "pos": "adj.",
+        "enDefinition": "Available only to a particular person or group.",
+        "viMeaning": null,
+        "synonyms": [
+          "only"
+        ]
+      },
+      {
+        "no": 62,
+        "word": "guarantee",
+        "pos": "v.",
+        "enDefinition": "to promise something firmly or make an outcome certain",
+        "viMeaning": "Bảo đảm, cam kết",
+        "synonyms": [
+          "assure"
+        ]
+      },
+      {
+        "no": 63,
+        "word": "inherit",
+        "pos": "v.",
+        "enDefinition": "Receive money or property from someone who has died",
+        "viMeaning": null,
+        "synonyms": [
+          "receive"
+        ]
+      },
+      {
+        "no": 64,
+        "word": "witness",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: view, see",
+        "viMeaning": null,
+        "synonyms": [
+          "view",
+          "see"
+        ]
+      },
+      {
+        "no": 65,
+        "word": "magnetic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: attractive",
+        "viMeaning": null,
+        "synonyms": [
+          "attractive"
+        ]
+      },
+      {
+        "no": 66,
+        "word": "loss",
+        "pos": "n.",
+        "enDefinition": "The fact of no longer having someone or something.",
+        "viMeaning": null,
+        "synonyms": [
+          "waste",
+          "gone"
+        ]
+      },
+      {
+        "no": 67,
+        "word": "option",
+        "pos": "n.",
+        "enDefinition": "Something you can choose from a range of possibilities.",
+        "viMeaning": null,
+        "synonyms": [
+          "choice"
+        ]
+      },
+      {
+        "no": 68,
+        "word": "prefer to",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: rather",
+        "viMeaning": null,
+        "synonyms": [
+          "rather"
+        ]
+      },
+      {
+        "no": 69,
+        "word": "priority",
+        "pos": "n.",
+        "enDefinition": "something considered more important than other things",
+        "viMeaning": "Sự ưu tiên hàng đầu",
+        "synonyms": [
+          "preference",
+          "preferential"
+        ]
+      },
+      {
+        "no": 70,
+        "word": "primary",
+        "pos": "adj.",
+        "enDefinition": "more important than anything else",
+        "viMeaning": "Chính yếu, hàng đầu, sơ cấp",
+        "synonyms": [
+          "principle",
+          "main"
+        ]
+      },
+      {
+        "no": 71,
+        "word": "principle",
+        "pos": "n.",
+        "enDefinition": "A belief or rule that guides decisions and behaviour.",
+        "viMeaning": null,
+        "synonyms": [
+          "rule"
+        ]
+      },
+      {
+        "no": 72,
+        "word": "potential",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: possibility",
+        "viMeaning": "Tiềm năng, khả năng tiềm ẩn",
+        "synonyms": [
+          "possibility"
+        ]
+      },
+      {
+        "no": 73,
+        "word": "quantity",
+        "pos": "n.",
+        "enDefinition": "the amount or number of something",
+        "viMeaning": null,
+        "synonyms": [
+          "number"
+        ]
+      },
+      {
+        "no": 74,
+        "word": "settle",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: fix, figure out",
+        "viMeaning": null,
+        "synonyms": [
+          "fix",
+          "figure out"
+        ]
+      },
+      {
+        "no": 75,
+        "word": "sophisticate",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: complicate",
+        "viMeaning": null,
+        "synonyms": [
+          "complicate"
+        ]
+      },
+      {
+        "no": 76,
+        "word": "specific",
+        "pos": "adj.",
+        "enDefinition": "relating to one particular thing rather than things in general",
+        "viMeaning": "Cụ thể, đặc thù",
+        "synonyms": [
+          "detailed",
+          "particular"
+        ]
+      },
+      {
+        "no": 77,
+        "word": "survive",
+        "pos": "v.",
+        "enDefinition": "stay alive despite danger, illness, or hardship",
+        "viMeaning": "Sống sót, tồn tại qua biến cố",
+        "synonyms": [
+          "remain"
+        ]
+      },
+      {
+        "no": 78,
+        "word": "swift",
+        "pos": "adj.",
+        "enDefinition": "Moving quickly or happening after very little delay.",
+        "viMeaning": null,
+        "synonyms": [
+          "quick",
+          "rapid"
+        ]
+      },
+      {
+        "no": 79,
+        "word": "unexpectedly",
+        "pos": "adv.",
+        "enDefinition": "Academic exam term synonymous with: surprising",
+        "viMeaning": null,
+        "synonyms": [
+          "surprising"
+        ]
+      },
+      {
+        "no": 80,
+        "word": "surrounding",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: setting, environment",
+        "viMeaning": null,
+        "synonyms": [
+          "setting",
+          "environment"
+        ]
+      },
+      {
+        "no": 81,
+        "word": "attempt",
+        "pos": "n.",
+        "enDefinition": "An effort to do something, especially something difficult.",
+        "viMeaning": null,
+        "synonyms": [
+          "try",
+          "test"
+        ]
+      },
+      {
+        "no": 82,
+        "word": "expertise",
+        "pos": "n.",
+        "enDefinition": "Specialist knowledge or skills gained through training and experience.",
+        "viMeaning": null,
+        "synonyms": [
+          "knowledge",
+          "skill"
+        ]
+      },
+      {
+        "no": 83,
+        "word": "faculty",
+        "pos": "n.",
+        "enDefinition": "A university division covering a particular group of subjects.",
+        "viMeaning": null,
+        "synonyms": [
+          "ability"
+        ]
+      },
+      {
+        "no": 84,
+        "word": "donate",
+        "pos": "v.",
+        "enDefinition": "To give money, goods, or blood to help others",
+        "viMeaning": null,
+        "synonyms": [
+          "contribute"
+        ]
+      },
+      {
+        "no": 85,
+        "word": "dynamics",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: energy, force, move",
+        "viMeaning": null,
+        "synonyms": [
+          "energy",
+          "force",
+          "move"
+        ]
+      },
+      {
+        "no": 86,
+        "word": "incentive",
+        "pos": "n.",
+        "enDefinition": "something that encourages someone to act or work harder",
+        "viMeaning": "Động lực khuyến khích, ưu đãi",
+        "synonyms": [
+          "motive",
+          "stimulus"
+        ]
+      },
+      {
+        "no": 87,
+        "word": "mortality",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: death",
+        "viMeaning": null,
+        "synonyms": [
+          "death"
+        ]
+      },
+      {
+        "no": 88,
+        "word": "peripheral",
+        "pos": "adj.",
+        "enDefinition": "Not central to the main issue or activity.",
+        "viMeaning": null,
+        "synonyms": [
+          "unimportant",
+          "minor"
+        ]
+      },
+      {
+        "no": 89,
+        "word": "vicinity",
+        "pos": "n.",
+        "enDefinition": "The area near a particular place.",
+        "viMeaning": null,
+        "synonyms": [
+          "neighbourhood",
+          "nearby"
+        ]
+      },
+      {
+        "no": 90,
+        "word": "threaten",
+        "pos": "v.",
+        "enDefinition": "Say you will cause harm or trouble unless demands are met",
+        "viMeaning": null,
+        "synonyms": [
+          "endanger",
+          "jeopardize",
+          "risk",
+          "hazard"
+        ]
+      },
+      {
+        "no": 91,
+        "word": "practice",
+        "pos": "n.",
+        "enDefinition": "Repeated activity done to improve a skill.",
+        "viMeaning": null,
+        "synonyms": [
+          "method",
+          "exercise"
+        ]
+      },
+      {
+        "no": 92,
+        "word": "bacteria",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: virus, germ, microbe",
+        "viMeaning": null,
+        "synonyms": [
+          "virus",
+          "germ",
+          "microbe"
+        ]
+      },
+      {
+        "no": 93,
+        "word": "be subject to",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: face",
+        "viMeaning": null,
+        "synonyms": [
+          "face"
+        ]
+      },
+      {
+        "no": 94,
+        "word": "be liable to",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: potential",
+        "viMeaning": null,
+        "synonyms": [
+          "potential"
+        ]
+      },
+      {
+        "no": 95,
+        "word": "innate",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: built-in, inborn",
+        "viMeaning": null,
+        "synonyms": [
+          "built-in",
+          "inborn"
+        ]
+      },
+      {
+        "no": 96,
+        "word": "pattern",
+        "pos": "n.",
+        "enDefinition": "A regular or repeated way something happens or is done.",
+        "viMeaning": null,
+        "synonyms": [
+          "formation"
+        ]
+      },
+      {
+        "no": 97,
+        "word": "therapy",
+        "pos": "n.",
+        "enDefinition": "Treatment intended to improve physical or mental health.",
+        "viMeaning": null,
+        "synonyms": [
+          "treatment"
+        ]
+      },
+      {
+        "no": 98,
+        "word": "original",
+        "pos": "adj.",
+        "enDefinition": "existing at the beginning, before any changes",
+        "viMeaning": null,
+        "synonyms": [
+          "initial",
+          "first"
+        ]
+      },
+      {
+        "no": 99,
+        "word": "confidential",
+        "pos": "adj.",
+        "enDefinition": "Intended to remain private and not be shared without permission.",
+        "viMeaning": null,
+        "synonyms": [
+          "undisclosed",
+          "secret",
+          "hidden"
+        ]
+      },
+      {
+        "no": 100,
+        "word": "cognitive",
+        "pos": "adj.",
+        "enDefinition": "Related to mental processes such as learning, remembering, and understanding.",
+        "viMeaning": "Thuộc về nhận thức và quá trình tư duy của não bộ",
+        "synonyms": [
+          "mental"
+        ]
+      },
+      {
+        "no": 101,
+        "word": "comply with",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: obey",
+        "viMeaning": null,
+        "synonyms": [
+          "obey"
+        ]
+      },
+      {
+        "no": 102,
+        "word": "consult",
+        "pos": "v",
+        "enDefinition": "Academic exam term synonymous with: ask for advice",
+        "viMeaning": null,
+        "synonyms": [
+          "ask for advice"
+        ]
+      },
+      {
+        "no": 103,
+        "word": "superior",
+        "pos": "adj.",
+        "enDefinition": "Better in quality or performance than another",
+        "viMeaning": null,
+        "synonyms": [
+          "higher",
+          "upper"
+        ]
+      },
+      {
+        "no": 104,
+        "word": "co-operation",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: support, work together",
+        "viMeaning": null,
+        "synonyms": [
+          "support",
+          "work together"
+        ]
+      },
+      {
+        "no": 105,
+        "word": "co-ordinate",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: organize, harmonize",
+        "viMeaning": null,
+        "synonyms": [
+          "organize",
+          "harmonize"
+        ]
+      },
+      {
+        "no": 106,
+        "word": "differ",
+        "pos": "v.",
+        "enDefinition": "To be unlike something else in one or more ways.",
+        "viMeaning": null,
+        "synonyms": [
+          "vary"
+        ]
+      },
+      {
+        "no": 107,
+        "word": "cue",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: hint, clue",
+        "viMeaning": null,
+        "synonyms": [
+          "hint",
+          "clue"
+        ]
+      },
+      {
+        "no": 108,
+        "word": "signal",
+        "pos": "n.",
+        "enDefinition": "A sound, movement, or light that communicates a message.",
+        "viMeaning": null,
+        "synonyms": [
+          "symbol",
+          "mark",
+          "sign"
+        ]
+      },
+      {
+        "no": 109,
+        "word": "abandon",
+        "pos": "v.",
+        "enDefinition": "To leave someone or something without intending to return.",
+        "viMeaning": "Từ bỏ, bỏ rơi; ngừng thực hiện giữa chừng",
+        "synonyms": [
+          "quit",
+          "give up",
+          "forsake",
+          "derelict"
+        ]
+      },
+      {
+        "no": 110,
+        "word": "halt",
+        "pos": "n.",
+        "enDefinition": "to stop moving or happening, or make something stop",
+        "viMeaning": null,
+        "synonyms": [
+          "stop",
+          "quit"
+        ]
+      },
+      {
+        "no": 111,
+        "word": "fragile",
+        "pos": "adj.",
+        "enDefinition": "Easily broken or damaged",
+        "viMeaning": null,
+        "synonyms": [
+          "vulnerable"
+        ]
+      },
+      {
+        "no": 112,
+        "word": "retain",
+        "pos": "v.",
+        "enDefinition": "keep or continue to have something",
+        "viMeaning": "Giữ lại, duy trì trí nhớ",
+        "synonyms": [
+          "maintain"
+        ]
+      },
+      {
+        "no": 113,
+        "word": "vanish",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: disappear",
+        "viMeaning": null,
+        "synonyms": [
+          "disappear"
+        ]
+      },
+      {
+        "no": 114,
+        "word": "delivery",
+        "pos": "n.",
+        "enDefinition": "the act of taking goods or messages to someone",
+        "viMeaning": null,
+        "synonyms": [
+          "dispatch"
+        ]
+      },
+      {
+        "no": 115,
+        "word": "erode",
+        "pos": "v.",
+        "enDefinition": "To gradually wear away soil or rock through natural forces.",
+        "viMeaning": null,
+        "synonyms": [
+          "wear away",
+          "corrode",
+          "degrade"
+        ]
+      },
+      {
+        "no": 116,
+        "word": "induce",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: cause, lead to",
+        "viMeaning": "Gây ra, kích thích",
+        "synonyms": [
+          "cause",
+          "lead to"
+        ]
+      },
+      {
+        "no": 117,
+        "word": "stable",
+        "pos": "adj.",
+        "enDefinition": "unlikely to change suddenly, fall, or become worse",
+        "viMeaning": null,
+        "synonyms": [
+          "constant",
+          "unchanged"
+        ]
+      },
+      {
+        "no": 118,
+        "word": "integrate",
+        "pos": "v.",
+        "enDefinition": "To combine separate parts so they work together effectively.",
+        "viMeaning": "Hội nhập, tích hợp",
+        "synonyms": [
+          "combine",
+          "incorporate"
+        ]
+      },
+      {
+        "no": 119,
+        "word": "equal",
+        "pos": "adj.",
+        "enDefinition": "The same in amount, value, status, or opportunity.",
+        "viMeaning": null,
+        "synonyms": [
+          "equivalent",
+          "matching",
+          "capable"
+        ]
+      },
+      {
+        "no": 120,
+        "word": "grant",
+        "pos": "v.",
+        "enDefinition": "money given by an organisation for a particular purpose",
+        "viMeaning": null,
+        "synonyms": [
+          "award",
+          "provide",
+          "approve funding"
+        ]
+      }
+    ]
+  },
+  {
+    "tier": 3,
+    "titleVi": "Nhóm 3: Kho Từ khóa Từng Xuất hiện trong Đề thi Reading thật",
+    "probability": "30%+",
+    "badge": "EXAM TESTED",
+    "count": 256,
+    "words": [
+      {
+        "no": 121,
+        "word": "accumulate",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: gather",
+        "viMeaning": null,
+        "synonyms": [
+          "gather"
+        ]
+      },
+      {
+        "no": 122,
+        "word": "addictive",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: habit",
+        "viMeaning": null,
+        "synonyms": [
+          "habit"
+        ]
+      },
+      {
+        "no": 123,
+        "word": "adversity",
+        "pos": "n.",
+        "enDefinition": "A difficult or unfortunate situation that causes hardship.",
+        "viMeaning": null,
+        "synonyms": [
+          "trouble"
+        ]
+      },
+      {
+        "no": 124,
+        "word": "aggression",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: attack",
+        "viMeaning": null,
+        "synonyms": [
+          "attack"
+        ]
+      },
+      {
+        "no": 125,
+        "word": "agreeable",
+        "pos": "adj.",
+        "enDefinition": "pleasant and enjoyable",
+        "viMeaning": null,
+        "synonyms": [
+          "pleasant"
+        ]
+      },
+      {
+        "no": 126,
+        "word": "aid",
+        "pos": "n.",
+        "enDefinition": "Help provided through money, supplies, services, or practical support.",
+        "viMeaning": null,
+        "synonyms": [
+          "help"
+        ]
+      },
+      {
+        "no": 127,
+        "word": "allergic",
+        "pos": "adj.",
+        "enDefinition": "Having an allergy to a particular substance",
+        "viMeaning": null,
+        "synonyms": [
+          "irritate"
+        ]
+      },
+      {
+        "no": 128,
+        "word": "altitude",
+        "pos": "n.",
+        "enDefinition": "Height above sea level or above the ground.",
+        "viMeaning": "Độ cao so với mực nước biển",
+        "synonyms": [
+          "height"
+        ]
+      },
+      {
+        "no": 129,
+        "word": "application",
+        "pos": "n.",
+        "enDefinition": "a formal request for a job, place, or permission",
+        "viMeaning": null,
+        "synonyms": [
+          "utilization"
+        ]
+      },
+      {
+        "no": 130,
+        "word": "approve",
+        "pos": "v.",
+        "enDefinition": "To officially accept or allow something.",
+        "viMeaning": null,
+        "synonyms": [
+          "agree"
+        ]
+      },
+      {
+        "no": 131,
+        "word": "array",
+        "pos": "n.",
+        "enDefinition": "a large collection of different things",
+        "viMeaning": null,
+        "synonyms": [
+          "order"
+        ]
+      },
+      {
+        "no": 132,
+        "word": "assign",
+        "pos": "v.",
+        "enDefinition": "To give someone a task, role, or resource",
+        "viMeaning": null,
+        "synonyms": [
+          "allocate"
+        ]
+      },
+      {
+        "no": 133,
+        "word": "association",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: union",
+        "viMeaning": null,
+        "synonyms": [
+          "union"
+        ]
+      },
+      {
+        "no": 134,
+        "word": "attitude",
+        "pos": "n.",
+        "enDefinition": "how you think or feel about someone or something",
+        "viMeaning": null,
+        "synonyms": [
+          "opinion"
+        ]
+      },
+      {
+        "no": 135,
+        "word": "authority",
+        "pos": "n.",
+        "enDefinition": "the power or right to make decisions and enforce rules",
+        "viMeaning": null,
+        "synonyms": [
+          "government"
+        ]
+      },
+      {
+        "no": 136,
+        "word": "be consistent with",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: compatible",
+        "viMeaning": null,
+        "synonyms": [
+          "compatible"
+        ]
+      },
+      {
+        "no": 137,
+        "word": "bear",
+        "pos": "v.",
+        "enDefinition": "to tolerate something unpleasant or carry a heavy responsibility",
+        "viMeaning": null,
+        "synonyms": [
+          "tolerate"
+        ]
+      },
+      {
+        "no": 138,
+        "word": "blight",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: damage, ruin, wither",
+        "viMeaning": null,
+        "synonyms": [
+          "damage",
+          "ruin",
+          "wither"
+        ]
+      },
+      {
+        "no": 139,
+        "word": "boundary",
+        "pos": "n.",
+        "enDefinition": "A line marking where one area ends and another begins",
+        "viMeaning": null,
+        "synonyms": [
+          "barrier"
+        ]
+      },
+      {
+        "no": 140,
+        "word": "bungle",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: mishandle",
+        "viMeaning": null,
+        "synonyms": [
+          "mishandle"
+        ]
+      },
+      {
+        "no": 141,
+        "word": "burden",
+        "pos": "n.",
+        "enDefinition": "a heavy load, difficult duty, or source of worry",
+        "viMeaning": null,
+        "synonyms": [
+          "load"
+        ]
+      },
+      {
+        "no": 142,
+        "word": "calamity",
+        "pos": "n.",
+        "enDefinition": "An event causing severe damage, suffering, or distress.",
+        "viMeaning": "Tai ương, biến cố nghiêm trọng",
+        "synonyms": [
+          "disaster"
+        ]
+      },
+      {
+        "no": 143,
+        "word": "capacity",
+        "pos": "n.",
+        "enDefinition": "the maximum amount something can hold or accommodate",
+        "viMeaning": null,
+        "synonyms": [
+          "volume"
+        ]
+      },
+      {
+        "no": 144,
+        "word": "catastrophic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: disastrous",
+        "viMeaning": null,
+        "synonyms": [
+          "disastrous"
+        ]
+      },
+      {
+        "no": 145,
+        "word": "cater",
+        "pos": "v.",
+        "enDefinition": "to provide what a particular person or group needs",
+        "viMeaning": null,
+        "synonyms": [
+          "serve"
+        ]
+      },
+      {
+        "no": 146,
+        "word": "certify",
+        "pos": "v.",
+        "enDefinition": "to confirm officially that something is true or meets standards",
+        "viMeaning": null,
+        "synonyms": [
+          "verify"
+        ]
+      },
+      {
+        "no": 147,
+        "word": "civic",
+        "pos": "adj.",
+        "enDefinition": "relating to a town or city and its administration",
+        "viMeaning": null,
+        "synonyms": [
+          "municipal",
+          "civil"
+        ]
+      },
+      {
+        "no": 148,
+        "word": "comment",
+        "pos": "n., v.",
+        "enDefinition": "something said or written to express an opinion or observation",
+        "viMeaning": null,
+        "synonyms": [
+          "remark"
+        ]
+      },
+      {
+        "no": 149,
+        "word": "commitment",
+        "pos": "n.",
+        "enDefinition": "A strong willingness to give time and effort to something.",
+        "viMeaning": null,
+        "synonyms": [
+          "engagement"
+        ]
+      },
+      {
+        "no": 150,
+        "word": "communal",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: public",
+        "viMeaning": null,
+        "synonyms": [
+          "public"
+        ]
+      },
+      {
+        "no": 151,
+        "word": "commute",
+        "pos": "v.",
+        "enDefinition": "To travel regularly between home and work.",
+        "viMeaning": null,
+        "synonyms": [
+          "travel"
+        ]
+      },
+      {
+        "no": 152,
+        "word": "compare",
+        "pos": "v.",
+        "enDefinition": "To examine things to find similarities and differences.",
+        "viMeaning": null,
+        "synonyms": [
+          "contrast"
+        ]
+      },
+      {
+        "no": 153,
+        "word": "conceal",
+        "pos": "v.",
+        "enDefinition": "To keep something from being seen",
+        "viMeaning": null,
+        "synonyms": [
+          "hide"
+        ]
+      },
+      {
+        "no": 154,
+        "word": "concentrate",
+        "pos": "v.",
+        "enDefinition": "To give all your attention to a particular task.",
+        "viMeaning": "Tập trung, cô đặc",
+        "synonyms": [
+          "focus"
+        ]
+      },
+      {
+        "no": 155,
+        "word": "concur",
+        "pos": "v.",
+        "enDefinition": "to agree with someone or share the same opinion",
+        "viMeaning": null,
+        "synonyms": [
+          "agree"
+        ]
+      },
+      {
+        "no": 156,
+        "word": "confer",
+        "pos": "v.",
+        "enDefinition": "Discuss something with others before making a decision.",
+        "viMeaning": null,
+        "synonyms": [
+          "grant"
+        ]
+      },
+      {
+        "no": 157,
+        "word": "conflict",
+        "pos": "n.",
+        "enDefinition": "A serious disagreement or struggle between people or groups.",
+        "viMeaning": null,
+        "synonyms": [
+          "unharmonious"
+        ]
+      },
+      {
+        "no": 158,
+        "word": "confuse",
+        "pos": "v.",
+        "enDefinition": "To make someone unable to understand or think clearly.",
+        "viMeaning": null,
+        "synonyms": [
+          "puzzle"
+        ]
+      },
+      {
+        "no": 159,
+        "word": "conservative",
+        "pos": "adj.",
+        "enDefinition": "preferring traditional ideas and avoiding major changes",
+        "viMeaning": null,
+        "synonyms": [
+          "traditional"
+        ]
+      },
+      {
+        "no": 160,
+        "word": "considerable",
+        "pos": "adj.",
+        "enDefinition": "Large in amount, size, or degree.",
+        "viMeaning": null,
+        "synonyms": [
+          "significant"
+        ]
+      },
+      {
+        "no": 161,
+        "word": "contingent",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: uncertain",
+        "viMeaning": null,
+        "synonyms": [
+          "uncertain"
+        ]
+      },
+      {
+        "no": 162,
+        "word": "controversial",
+        "pos": "adj.",
+        "enDefinition": "causing strong disagreement or public debate",
+        "viMeaning": null,
+        "synonyms": [
+          "disputable"
+        ]
+      },
+      {
+        "no": 163,
+        "word": "correlation",
+        "pos": "n.",
+        "enDefinition": "A relationship in which changes in things are linked",
+        "viMeaning": null,
+        "synonyms": [
+          "link"
+        ]
+      },
+      {
+        "no": 164,
+        "word": "courtship",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: mate",
+        "viMeaning": null,
+        "synonyms": [
+          "mate"
+        ]
+      },
+      {
+        "no": 165,
+        "word": "crash",
+        "pos": "n.",
+        "enDefinition": "an accident in which a vehicle hits something or falls",
+        "viMeaning": null,
+        "synonyms": [
+          "collapse"
+        ]
+      },
+      {
+        "no": 166,
+        "word": "credibility",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: reliance",
+        "viMeaning": null,
+        "synonyms": [
+          "reliance"
+        ]
+      },
+      {
+        "no": 167,
+        "word": "criminal",
+        "pos": "n.",
+        "enDefinition": "relating to crime or the legal treatment of crime",
+        "viMeaning": null,
+        "synonyms": [
+          "offender",
+          "delinquent"
+        ]
+      },
+      {
+        "no": 168,
+        "word": "crisis",
+        "pos": "n.",
+        "enDefinition": "a serious situation requiring urgent decisions or action",
+        "viMeaning": null,
+        "synonyms": [
+          "risk"
+        ]
+      },
+      {
+        "no": 169,
+        "word": "criticism",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: critique, disapproval",
+        "viMeaning": null,
+        "synonyms": [
+          "critique",
+          "disapproval"
+        ]
+      },
+      {
+        "no": 170,
+        "word": "curb",
+        "pos": "v.",
+        "enDefinition": "to limit or control something unwanted",
+        "viMeaning": null,
+        "synonyms": [
+          "restrict"
+        ]
+      },
+      {
+        "no": 171,
+        "word": "damp",
+        "pos": "adj.",
+        "enDefinition": "Slightly wet, often in an unpleasant way.",
+        "viMeaning": null,
+        "synonyms": [
+          "wet"
+        ]
+      },
+      {
+        "no": 172,
+        "word": "dazzle",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: flash",
+        "viMeaning": null,
+        "synonyms": [
+          "flash"
+        ]
+      },
+      {
+        "no": 173,
+        "word": "deadline",
+        "pos": "n.",
+        "enDefinition": "The latest time by which something must be completed",
+        "viMeaning": null,
+        "synonyms": [
+          "limit"
+        ]
+      },
+      {
+        "no": 174,
+        "word": "delay",
+        "pos": "n.",
+        "enDefinition": "To make something happen later than expected or planned.",
+        "viMeaning": null,
+        "synonyms": [
+          "postpone"
+        ]
+      },
+      {
+        "no": 175,
+        "word": "democratic",
+        "pos": "adj.",
+        "enDefinition": "Based on government by people or their elected representatives.",
+        "viMeaning": null,
+        "synonyms": [
+          "participatory"
+        ]
+      },
+      {
+        "no": 176,
+        "word": "demographic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: population statistic",
+        "viMeaning": null,
+        "synonyms": [
+          "population statistic"
+        ]
+      },
+      {
+        "no": 177,
+        "word": "dental",
+        "pos": "adj.",
+        "enDefinition": "Relating to teeth or their care and treatment",
+        "viMeaning": null,
+        "synonyms": [
+          "teeth"
+        ]
+      },
+      {
+        "no": 178,
+        "word": "depression",
+        "pos": "n.",
+        "enDefinition": "a condition involving persistent sadness and loss of interest",
+        "viMeaning": null,
+        "synonyms": [
+          "frustration"
+        ]
+      },
+      {
+        "no": 179,
+        "word": "designate",
+        "pos": "v.",
+        "enDefinition": "To officially choose someone or something for a particular purpose.",
+        "viMeaning": null,
+        "synonyms": [
+          "appoint",
+          "assign",
+          "mark"
+        ]
+      },
+      {
+        "no": 180,
+        "word": "detain",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: hold",
+        "viMeaning": null,
+        "synonyms": [
+          "hold"
+        ]
+      },
+      {
+        "no": 181,
+        "word": "devastate",
+        "pos": "v.",
+        "enDefinition": "To cause very severe damage to a place or thing",
+        "viMeaning": null,
+        "synonyms": [
+          "wreck"
+        ]
+      },
+      {
+        "no": 182,
+        "word": "disclose",
+        "pos": "v.",
+        "enDefinition": "to make previously private or unknown information available",
+        "viMeaning": null,
+        "synonyms": [
+          "expose"
+        ]
+      },
+      {
+        "no": 183,
+        "word": "disparate",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: different",
+        "viMeaning": null,
+        "synonyms": [
+          "different"
+        ]
+      },
+      {
+        "no": 184,
+        "word": "display",
+        "pos": "n.",
+        "enDefinition": "Put something where people can see it",
+        "viMeaning": null,
+        "synonyms": [
+          "show"
+        ]
+      },
+      {
+        "no": 185,
+        "word": "disrupt",
+        "pos": "v.",
+        "enDefinition": "Prevent an activity or system from continuing normally.",
+        "viMeaning": null,
+        "synonyms": [
+          "destroy"
+        ]
+      },
+      {
+        "no": 186,
+        "word": "distract",
+        "pos": "v.",
+        "enDefinition": "To draw someone's attention away from what they are doing",
+        "viMeaning": null,
+        "synonyms": [
+          "divert"
+        ]
+      },
+      {
+        "no": 187,
+        "word": "distribute",
+        "pos": "v.",
+        "enDefinition": "to give or deliver something to several people or places",
+        "viMeaning": "Phân phối, phân bổ",
+        "synonyms": [
+          "spread"
+        ]
+      },
+      {
+        "no": 188,
+        "word": "documentation",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: record",
+        "viMeaning": null,
+        "synonyms": [
+          "record"
+        ]
+      },
+      {
+        "no": 189,
+        "word": "domain",
+        "pos": "n.",
+        "enDefinition": "a particular area of knowledge, activity, or responsibility",
+        "viMeaning": null,
+        "synonyms": [
+          "field"
+        ]
+      },
+      {
+        "no": 190,
+        "word": "dominant",
+        "pos": "adj.",
+        "enDefinition": "More powerful, influential, or noticeable than others.",
+        "viMeaning": "Chiếm ưu thế, thống trị",
+        "synonyms": [
+          "overbearing"
+        ]
+      },
+      {
+        "no": 191,
+        "word": "dramatic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: striking",
+        "viMeaning": null,
+        "synonyms": [
+          "striking"
+        ]
+      },
+      {
+        "no": 192,
+        "word": "drought",
+        "pos": "n.",
+        "enDefinition": "A long period with little or no rain.",
+        "viMeaning": null,
+        "synonyms": [
+          "dry"
+        ]
+      },
+      {
+        "no": 193,
+        "word": "durable",
+        "pos": "adj.",
+        "enDefinition": "Able to last a long time without breaking or wearing out.",
+        "viMeaning": null,
+        "synonyms": [
+          "lasting"
+        ]
+      },
+      {
+        "no": 194,
+        "word": "eco-friendly",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: environmentally-friendly",
+        "viMeaning": null,
+        "synonyms": [
+          "environmentally-friendly"
+        ]
+      },
+      {
+        "no": 195,
+        "word": "elaborate",
+        "pos": "v.",
+        "enDefinition": "Containing many carefully arranged details or parts.",
+        "viMeaning": null,
+        "synonyms": [
+          "illustrate"
+        ]
+      },
+      {
+        "no": 196,
+        "word": "elderly",
+        "pos": "adj.",
+        "enDefinition": "old, especially when describing people",
+        "viMeaning": null,
+        "synonyms": [
+          "aged"
+        ]
+      },
+      {
+        "no": 197,
+        "word": "eliminate",
+        "pos": "v.",
+        "enDefinition": "To remove or get rid of something completely.",
+        "viMeaning": "Loại bỏ, xóa sổ",
+        "synonyms": [
+          "dispose"
+        ]
+      },
+      {
+        "no": 198,
+        "word": "elusive",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: hard",
+        "viMeaning": null,
+        "synonyms": [
+          "hard"
+        ]
+      },
+      {
+        "no": 199,
+        "word": "encyclopaedia",
+        "pos": "n.",
+        "enDefinition": "A reference work containing information about many subjects or one field",
+        "viMeaning": null,
+        "synonyms": [
+          "entire range of knowledge"
+        ]
+      },
+      {
+        "no": 200,
+        "word": "entrepreneur",
+        "pos": "n.",
+        "enDefinition": "someone who starts a business and takes financial risks",
+        "viMeaning": null,
+        "synonyms": [
+          "boss"
+        ]
+      },
+      {
+        "no": 201,
+        "word": "equator",
+        "pos": "n.",
+        "enDefinition": "An imaginary line around Earth's middle, equally distant from both poles.",
+        "viMeaning": null,
+        "synonyms": [
+          "geography"
+        ]
+      },
+      {
+        "no": 202,
+        "word": "erratically",
+        "pos": "adv.",
+        "enDefinition": "Academic exam term synonymous with: unpredictably",
+        "viMeaning": null,
+        "synonyms": [
+          "unpredictably"
+        ]
+      },
+      {
+        "no": 203,
+        "word": "established",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: built",
+        "viMeaning": null,
+        "synonyms": [
+          "built"
+        ]
+      },
+      {
+        "no": 204,
+        "word": "estate",
+        "pos": "n.",
+        "enDefinition": "A large area of owned land, often with a large house.",
+        "viMeaning": null,
+        "synonyms": [
+          "property"
+        ]
+      },
+      {
+        "no": 205,
+        "word": "ethical",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: moral",
+        "viMeaning": null,
+        "synonyms": [
+          "moral"
+        ]
+      },
+      {
+        "no": 206,
+        "word": "eventually",
+        "pos": "adv.",
+        "enDefinition": "in the end, especially after a long time or difficulty",
+        "viMeaning": null,
+        "synonyms": [
+          "finally"
+        ]
+      },
+      {
+        "no": 207,
+        "word": "evidence",
+        "pos": "n.",
+        "enDefinition": "Facts or signs that help establish whether something is true.",
+        "viMeaning": null,
+        "synonyms": [
+          "proof"
+        ]
+      },
+      {
+        "no": 208,
+        "word": "evolve",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: develop",
+        "viMeaning": "Tiến hóa, phát triển dần",
+        "synonyms": [
+          "develop"
+        ]
+      },
+      {
+        "no": 209,
+        "word": "exhausted",
+        "pos": "adj.",
+        "enDefinition": "extremely tired and lacking energy",
+        "viMeaning": null,
+        "synonyms": [
+          "fatigue"
+        ]
+      },
+      {
+        "no": 210,
+        "word": "experiment",
+        "pos": "n.",
+        "enDefinition": "a test designed to discover something or check an idea",
+        "viMeaning": null,
+        "synonyms": [
+          "test"
+        ]
+      },
+      {
+        "no": 211,
+        "word": "exceptional",
+        "pos": "adj.",
+        "enDefinition": "far better than usual",
+        "viMeaning": null,
+        "synonyms": [
+          "extreme",
+          "utmost"
+        ]
+      },
+      {
+        "no": 212,
+        "word": "explicit",
+        "pos": "adj.",
+        "enDefinition": "expressed clearly and directly, leaving no doubt about the meaning",
+        "viMeaning": null,
+        "synonyms": [
+          "clear"
+        ]
+      },
+      {
+        "no": 213,
+        "word": "exploit",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: use",
+        "viMeaning": "Khai thác, tận dụng",
+        "synonyms": [
+          "use"
+        ]
+      },
+      {
+        "no": 214,
+        "word": "extend",
+        "pos": "v.",
+        "enDefinition": "To make something longer, larger, or wider in scope",
+        "viMeaning": null,
+        "synonyms": [
+          "expand"
+        ]
+      },
+      {
+        "no": 215,
+        "word": "extract",
+        "pos": "n., v.",
+        "enDefinition": "to remove or obtain something from a larger source",
+        "viMeaning": "Chiết xuất, khai thác",
+        "synonyms": [
+          "quotation"
+        ]
+      },
+      {
+        "no": 216,
+        "word": "famine",
+        "pos": "n.",
+        "enDefinition": "a severe shortage of food affecting many people",
+        "viMeaning": null,
+        "synonyms": [
+          "hunger"
+        ]
+      },
+      {
+        "no": 217,
+        "word": "finite",
+        "pos": "adj.",
+        "enDefinition": "Having a limit in size, amount, or duration",
+        "viMeaning": null,
+        "synonyms": [
+          "limited"
+        ]
+      },
+      {
+        "no": 218,
+        "word": "fitness",
+        "pos": "n.",
+        "enDefinition": "The condition of being physically healthy and strong.",
+        "viMeaning": null,
+        "synonyms": [
+          "physical condition",
+          "health"
+        ]
+      },
+      {
+        "no": 219,
+        "word": "foe",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: enemy",
+        "viMeaning": null,
+        "synonyms": [
+          "enemy"
+        ]
+      },
+      {
+        "no": 220,
+        "word": "format",
+        "pos": "n.",
+        "enDefinition": "the way information or an event is arranged or presented",
+        "viMeaning": null,
+        "synonyms": [
+          "structure"
+        ]
+      },
+      {
+        "no": 221,
+        "word": "fragment",
+        "pos": "n.",
+        "enDefinition": "A small piece broken off or separated from something larger.",
+        "viMeaning": null,
+        "synonyms": [
+          "piece"
+        ]
+      },
+      {
+        "no": 222,
+        "word": "freeze",
+        "pos": "n.",
+        "enDefinition": "To become ice or make something extremely cold and solid.",
+        "viMeaning": null,
+        "synonyms": [
+          "chill"
+        ]
+      },
+      {
+        "no": 223,
+        "word": "fulfill",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: execute",
+        "viMeaning": null,
+        "synonyms": [
+          "execute"
+        ]
+      },
+      {
+        "no": 224,
+        "word": "gene",
+        "pos": "n.",
+        "enDefinition": "A unit of inherited information that influences an organism's characteristics",
+        "viMeaning": null,
+        "synonyms": [
+          "factor"
+        ]
+      },
+      {
+        "no": 225,
+        "word": "gifted",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: talented",
+        "viMeaning": null,
+        "synonyms": [
+          "talented"
+        ]
+      },
+      {
+        "no": 226,
+        "word": "graphic",
+        "pos": "adj.",
+        "enDefinition": "Relating to pictures, drawings, or visual design.",
+        "viMeaning": null,
+        "synonyms": [
+          "picture"
+        ]
+      },
+      {
+        "no": 227,
+        "word": "habitat",
+        "pos": "n.",
+        "enDefinition": "the natural environment where an animal or plant lives",
+        "viMeaning": null,
+        "synonyms": [
+          "residence"
+        ]
+      },
+      {
+        "no": 228,
+        "word": "harbor",
+        "pos": "v., n.",
+        "enDefinition": "Academic exam term synonymous with: hold",
+        "viMeaning": null,
+        "synonyms": [
+          "hold"
+        ]
+      },
+      {
+        "no": 229,
+        "word": "hardship",
+        "pos": "n.",
+        "enDefinition": "severe difficulty or suffering, especially from lacking basic necessities",
+        "viMeaning": null,
+        "synonyms": [
+          "difficult"
+        ]
+      },
+      {
+        "no": 230,
+        "word": "harsh",
+        "pos": "adj.",
+        "enDefinition": "unkind or excessively severe in judging or treating others",
+        "viMeaning": null,
+        "synonyms": [
+          "rough"
+        ]
+      },
+      {
+        "no": 231,
+        "word": "hypothesis",
+        "pos": "n.",
+        "enDefinition": "A proposed explanation that can be tested through research",
+        "viMeaning": "Giả thuyết khoa học",
+        "synonyms": [
+          "assumption"
+        ]
+      },
+      {
+        "no": 232,
+        "word": "impact",
+        "pos": "n.",
+        "enDefinition": "a strong effect on someone or something",
+        "viMeaning": "Tác động, ảnh hưởng mạnh",
+        "synonyms": [
+          "influence"
+        ]
+      },
+      {
+        "no": 233,
+        "word": "impressive",
+        "pos": "adj.",
+        "enDefinition": "Causing admiration because of exceptional quality, size, or skill.",
+        "viMeaning": null,
+        "synonyms": [
+          "touching"
+        ]
+      },
+      {
+        "no": 234,
+        "word": "in accordance with",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: conform",
+        "viMeaning": null,
+        "synonyms": [
+          "conform"
+        ]
+      },
+      {
+        "no": 235,
+        "word": "inaccurate",
+        "pos": "adj.",
+        "enDefinition": "not completely correct or exact",
+        "viMeaning": null,
+        "synonyms": [
+          "incorrect"
+        ]
+      },
+      {
+        "no": 236,
+        "word": "inactive",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: passive",
+        "viMeaning": null,
+        "synonyms": [
+          "passive"
+        ]
+      },
+      {
+        "no": 237,
+        "word": "inappropriate",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: hard",
+        "viMeaning": null,
+        "synonyms": [
+          "hard"
+        ]
+      },
+      {
+        "no": 238,
+        "word": "indulge",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: spoil",
+        "viMeaning": null,
+        "synonyms": [
+          "spoil"
+        ]
+      },
+      {
+        "no": 239,
+        "word": "infest",
+        "pos": "v.",
+        "enDefinition": "To live in a place in large, harmful or unwanted groups.",
+        "viMeaning": null,
+        "synonyms": [
+          "plague"
+        ]
+      },
+      {
+        "no": 240,
+        "word": "installment",
+        "pos": "n.",
+        "enDefinition": "One of several payments made over time for something.",
+        "viMeaning": null,
+        "synonyms": [
+          "regular/periodic payment"
+        ]
+      },
+      {
+        "no": 241,
+        "word": "intelligence",
+        "pos": "n.",
+        "enDefinition": "The ability to learn, understand, and solve problems.",
+        "viMeaning": null,
+        "synonyms": [
+          "mind"
+        ]
+      },
+      {
+        "no": 242,
+        "word": "intense",
+        "pos": "adj.",
+        "enDefinition": "very strong or extreme in degree",
+        "viMeaning": "Mãnh liệt, khốc liệt, cường độ cao",
+        "synonyms": [
+          "strong"
+        ]
+      },
+      {
+        "no": 243,
+        "word": "interaction",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: social activities",
+        "viMeaning": null,
+        "synonyms": [
+          "social activities"
+        ]
+      },
+      {
+        "no": 244,
+        "word": "interference",
+        "pos": "n.",
+        "enDefinition": "unwanted involvement in someone else's affairs or decisions",
+        "viMeaning": null,
+        "synonyms": [
+          "interposition",
+          "disruption"
+        ]
+      },
+      {
+        "no": 245,
+        "word": "interior",
+        "pos": "n., adj.",
+        "enDefinition": "Academic exam term synonymous with: inner",
+        "viMeaning": null,
+        "synonyms": [
+          "inner"
+        ]
+      },
+      {
+        "no": 246,
+        "word": "interrupt",
+        "pos": "v.",
+        "enDefinition": "to stop someone speaking or working by doing something",
+        "viMeaning": null,
+        "synonyms": [
+          "stop"
+        ]
+      },
+      {
+        "no": 247,
+        "word": "introverted",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: reserved, inward-looking",
+        "viMeaning": null,
+        "synonyms": [
+          "reserved",
+          "inward-looking"
+        ]
+      },
+      {
+        "no": 248,
+        "word": "involve",
+        "pos": "v.",
+        "enDefinition": "to include something as a necessary part",
+        "viMeaning": "Liên quan đến, bao hàm",
+        "synonyms": [
+          "associate"
+        ]
+      },
+      {
+        "no": 249,
+        "word": "keen",
+        "pos": "adj.",
+        "enDefinition": "very interested in something or eager to do it",
+        "viMeaning": null,
+        "synonyms": [
+          "eager",
+          "enthusiastic"
+        ]
+      },
+      {
+        "no": 250,
+        "word": "label",
+        "pos": "v.",
+        "enDefinition": "a small attached piece giving information about something",
+        "viMeaning": null,
+        "synonyms": [
+          "display"
+        ]
+      },
+      {
+        "no": 251,
+        "word": "lack",
+        "pos": "v.",
+        "enDefinition": "The absence of something or not having enough of it",
+        "viMeaning": null,
+        "synonyms": [
+          "shortage"
+        ]
+      },
+      {
+        "no": 252,
+        "word": "landscape",
+        "pos": "n.",
+        "enDefinition": "The visible features of an area of land.",
+        "viMeaning": null,
+        "synonyms": [
+          "scene"
+        ]
+      },
+      {
+        "no": 253,
+        "word": "likelihood",
+        "pos": "n.",
+        "enDefinition": "the chance that something will happen",
+        "viMeaning": null,
+        "synonyms": [
+          "chance"
+        ]
+      },
+      {
+        "no": 254,
+        "word": "limb",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: arm or leg",
+        "viMeaning": null,
+        "synonyms": [
+          "arm or leg"
+        ]
+      },
+      {
+        "no": 255,
+        "word": "linguistic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: language",
+        "viMeaning": null,
+        "synonyms": [
+          "language"
+        ]
+      },
+      {
+        "no": 256,
+        "word": "log",
+        "pos": "v., n.",
+        "enDefinition": "a thick piece of wood cut from a tree",
+        "viMeaning": null,
+        "synonyms": [
+          "record",
+          "logging"
+        ]
+      },
+      {
+        "no": 257,
+        "word": "look-in",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: opportunity, chance",
+        "viMeaning": null,
+        "synonyms": [
+          "opportunity",
+          "chance"
+        ]
+      },
+      {
+        "no": 258,
+        "word": "lopsided",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: uneven",
+        "viMeaning": null,
+        "synonyms": [
+          "uneven"
+        ]
+      },
+      {
+        "no": 259,
+        "word": "mainly",
+        "pos": "adv.",
+        "enDefinition": "mostly, or more than anything else",
+        "viMeaning": null,
+        "synonyms": [
+          "primarily"
+        ]
+      },
+      {
+        "no": 260,
+        "word": "malfunction",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: breakdown",
+        "viMeaning": null,
+        "synonyms": [
+          "breakdown"
+        ]
+      },
+      {
+        "no": 261,
+        "word": "mammal",
+        "pos": "n.",
+        "enDefinition": "A warm-blooded animal whose females produce milk for their young.",
+        "viMeaning": null,
+        "synonyms": [
+          "creature"
+        ]
+      },
+      {
+        "no": 262,
+        "word": "manage to do",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: success",
+        "viMeaning": null,
+        "synonyms": [
+          "success"
+        ]
+      },
+      {
+        "no": 263,
+        "word": "manifest",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: obvious",
+        "viMeaning": null,
+        "synonyms": [
+          "obvious"
+        ]
+      },
+      {
+        "no": 264,
+        "word": "manufacture",
+        "pos": "n.",
+        "enDefinition": "to produce goods, usually in large quantities using machinery",
+        "viMeaning": null,
+        "synonyms": [
+          "produce"
+        ]
+      },
+      {
+        "no": 265,
+        "word": "marine",
+        "pos": "adj.",
+        "enDefinition": "Relating to the sea or organisms living in it",
+        "viMeaning": null,
+        "synonyms": [
+          "sea"
+        ]
+      },
+      {
+        "no": 266,
+        "word": "mate",
+        "pos": "n.",
+        "enDefinition": "A friend or someone you share an activity with",
+        "viMeaning": null,
+        "synonyms": [
+          "partner",
+          "spouse"
+        ]
+      },
+      {
+        "no": 267,
+        "word": "mechanism",
+        "pos": "n.",
+        "enDefinition": "a process or system through which something works or happens",
+        "viMeaning": null,
+        "synonyms": [
+          "method"
+        ]
+      },
+      {
+        "no": 268,
+        "word": "mental",
+        "pos": "adj.",
+        "enDefinition": "Relating to the mind and emotional wellbeing.",
+        "viMeaning": null,
+        "synonyms": [
+          "psychological",
+          "cognitive"
+        ]
+      },
+      {
+        "no": 269,
+        "word": "mercury",
+        "pos": "n.",
+        "enDefinition": "A poisonous, silver-coloured metal that is liquid at room temperature.",
+        "viMeaning": null,
+        "synonyms": [
+          "liquid metal"
+        ]
+      },
+      {
+        "no": 270,
+        "word": "meteorological",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: weather",
+        "viMeaning": null,
+        "synonyms": [
+          "weather"
+        ]
+      },
+      {
+        "no": 271,
+        "word": "migrate",
+        "pos": "v.",
+        "enDefinition": "to move to another region, seasonally or to live there",
+        "viMeaning": null,
+        "synonyms": [
+          "move"
+        ]
+      },
+      {
+        "no": 272,
+        "word": "moisture",
+        "pos": "n.",
+        "enDefinition": "Small amounts of water in the air or a material",
+        "viMeaning": null,
+        "synonyms": [
+          "humidity"
+        ]
+      },
+      {
+        "no": 273,
+        "word": "monitor",
+        "pos": "v.",
+        "enDefinition": "To regularly check something for changes, progress, or problems.",
+        "viMeaning": "Giám sát, theo dõi",
+        "synonyms": [
+          "surveillance"
+        ]
+      },
+      {
+        "no": 274,
+        "word": "motif",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: theme",
+        "viMeaning": null,
+        "synonyms": [
+          "theme"
+        ]
+      },
+      {
+        "no": 275,
+        "word": "mould",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: form",
+        "viMeaning": null,
+        "synonyms": [
+          "form"
+        ]
+      },
+      {
+        "no": 276,
+        "word": "native",
+        "pos": "adj.",
+        "enDefinition": "connected with the place or language of someone's early life",
+        "viMeaning": null,
+        "synonyms": [
+          "original"
+        ]
+      },
+      {
+        "no": 277,
+        "word": "nocturnal",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: night",
+        "viMeaning": null,
+        "synonyms": [
+          "night"
+        ]
+      },
+      {
+        "no": 278,
+        "word": "norm",
+        "pos": "n.",
+        "enDefinition": "a usual situation or accepted standard",
+        "viMeaning": null,
+        "synonyms": [
+          "regulation"
+        ]
+      },
+      {
+        "no": 279,
+        "word": "notoriety",
+        "pos": "n.",
+        "enDefinition": "the state of being widely known for something bad",
+        "viMeaning": null,
+        "synonyms": [
+          "famous"
+        ]
+      },
+      {
+        "no": 280,
+        "word": "objective",
+        "pos": "n., adj.",
+        "enDefinition": "Something you aim to achieve.",
+        "viMeaning": null,
+        "synonyms": [
+          "goal"
+        ]
+      },
+      {
+        "no": 281,
+        "word": "obligation",
+        "pos": "n.",
+        "enDefinition": "Something you must do for legal or moral reasons",
+        "viMeaning": null,
+        "synonyms": [
+          "responsibility"
+        ]
+      },
+      {
+        "no": 282,
+        "word": "obscure",
+        "pos": "v.",
+        "enDefinition": "Not known by many people",
+        "viMeaning": null,
+        "synonyms": [
+          "blur",
+          "cloud",
+          "obscure"
+        ]
+      },
+      {
+        "no": 283,
+        "word": "obtain",
+        "pos": "v.",
+        "enDefinition": "To get something, especially through effort or a formal process.",
+        "viMeaning": "Đạt được, thu được",
+        "synonyms": [
+          "get"
+        ]
+      },
+      {
+        "no": 284,
+        "word": "odd",
+        "pos": "adj.",
+        "enDefinition": "Strange or different from what is expected.",
+        "viMeaning": null,
+        "synonyms": [
+          "strange"
+        ]
+      },
+      {
+        "no": 285,
+        "word": "odour",
+        "pos": "n.",
+        "enDefinition": "A noticeable smell, especially an unpleasant one.",
+        "viMeaning": null,
+        "synonyms": [
+          "smell"
+        ]
+      },
+      {
+        "no": 286,
+        "word": "offensive",
+        "pos": "adj.",
+        "enDefinition": "Causing people to feel insulted, upset, or disgusted.",
+        "viMeaning": null,
+        "synonyms": [
+          "hostile"
+        ]
+      },
+      {
+        "no": 287,
+        "word": "official",
+        "pos": "n., adj.",
+        "enDefinition": "approved or issued by a government or organisation",
+        "viMeaning": null,
+        "synonyms": [
+          "authority"
+        ]
+      },
+      {
+        "no": 288,
+        "word": "optimum",
+        "pos": "n., adj.",
+        "enDefinition": "best suited to achieving a particular result",
+        "viMeaning": null,
+        "synonyms": [
+          "best"
+        ]
+      },
+      {
+        "no": 289,
+        "word": "ordinary",
+        "pos": "adj.",
+        "enDefinition": "Normal or usual, without special or unusual features.",
+        "viMeaning": null,
+        "synonyms": [
+          "common"
+        ]
+      },
+      {
+        "no": 290,
+        "word": "organ",
+        "pos": "n.",
+        "enDefinition": "A body part that performs a particular function.",
+        "viMeaning": null,
+        "synonyms": [
+          "a part of a body"
+        ]
+      },
+      {
+        "no": 291,
+        "word": "out of the question",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: impossible, not an option",
+        "viMeaning": null,
+        "synonyms": [
+          "impossible",
+          "not an option"
+        ]
+      },
+      {
+        "no": 292,
+        "word": "overcome",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: defeat",
+        "viMeaning": "Vượt qua (khó khăn, rào cản)",
+        "synonyms": [
+          "defeat"
+        ]
+      },
+      {
+        "no": 293,
+        "word": "overtake",
+        "pos": "v.",
+        "enDefinition": "To catch up with and move ahead of someone.",
+        "viMeaning": null,
+        "synonyms": [
+          "surpass"
+        ]
+      },
+      {
+        "no": 294,
+        "word": "paralyse",
+        "pos": "v.",
+        "enDefinition": "to cause someone to lose the ability to move",
+        "viMeaning": null,
+        "synonyms": [
+          "disable",
+          "incapacitate"
+        ]
+      },
+      {
+        "no": 295,
+        "word": "paramount",
+        "pos": "adj.",
+        "enDefinition": "more important than anything else",
+        "viMeaning": null,
+        "synonyms": [
+          "principal"
+        ]
+      },
+      {
+        "no": 296,
+        "word": "participate",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: join",
+        "viMeaning": "Tham gia vào",
+        "synonyms": [
+          "join"
+        ]
+      },
+      {
+        "no": 297,
+        "word": "patient",
+        "pos": "adj., n.",
+        "enDefinition": "Someone receiving medical care.",
+        "viMeaning": null,
+        "synonyms": [
+          "tolerant",
+          "calm",
+          "ill person"
+        ]
+      },
+      {
+        "no": 298,
+        "word": "peak",
+        "pos": "n., v.",
+        "enDefinition": "A mountain's top or the highest level of something.",
+        "viMeaning": null,
+        "synonyms": [
+          "top"
+        ]
+      },
+      {
+        "no": 299,
+        "word": "permit",
+        "pos": "n., v.",
+        "enDefinition": "to officially allow someone to do something",
+        "viMeaning": null,
+        "synonyms": [
+          "allow"
+        ]
+      },
+      {
+        "no": 300,
+        "word": "persuade",
+        "pos": "v.",
+        "enDefinition": "To get someone to do something by giving reasons",
+        "viMeaning": null,
+        "synonyms": [
+          "influence"
+        ]
+      },
+      {
+        "no": 301,
+        "word": "pessimistic",
+        "pos": "adj.",
+        "enDefinition": "Expecting bad results or focusing on possible problems.",
+        "viMeaning": null,
+        "synonyms": [
+          "negative"
+        ]
+      },
+      {
+        "no": 302,
+        "word": "phase",
+        "pos": "n.",
+        "enDefinition": "A distinct period in a process of change or development.",
+        "viMeaning": null,
+        "synonyms": [
+          "process"
+        ]
+      },
+      {
+        "no": 303,
+        "word": "physical",
+        "pos": "adj.",
+        "enDefinition": "Relating to the body rather than the mind.",
+        "viMeaning": null,
+        "synonyms": [
+          "body"
+        ]
+      },
+      {
+        "no": 304,
+        "word": "plagiarise",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: copy",
+        "viMeaning": null,
+        "synonyms": [
+          "copy"
+        ]
+      },
+      {
+        "no": 305,
+        "word": "plenty of",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: many",
+        "viMeaning": null,
+        "synonyms": [
+          "many"
+        ]
+      },
+      {
+        "no": 306,
+        "word": "plot",
+        "pos": "v.",
+        "enDefinition": "the connected events that make up a story",
+        "viMeaning": null,
+        "synonyms": [
+          "plan"
+        ]
+      },
+      {
+        "no": 307,
+        "word": "pose",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: cause",
+        "viMeaning": null,
+        "synonyms": [
+          "cause"
+        ]
+      },
+      {
+        "no": 308,
+        "word": "portable",
+        "pos": "adj.",
+        "enDefinition": "Easy to carry or move from place to place",
+        "viMeaning": null,
+        "synonyms": [
+          "conveyable"
+        ]
+      },
+      {
+        "no": 309,
+        "word": "poverty",
+        "pos": "n.",
+        "enDefinition": "The condition of lacking money for basic needs.",
+        "viMeaning": null,
+        "synonyms": [
+          "poor"
+        ]
+      },
+      {
+        "no": 310,
+        "word": "praise",
+        "pos": "n.",
+        "enDefinition": "To express approval or admiration for someone or something.",
+        "viMeaning": null,
+        "synonyms": [
+          "commend"
+        ]
+      },
+      {
+        "no": 311,
+        "word": "predict",
+        "pos": "v.",
+        "enDefinition": "To say what will happen, often using evidence.",
+        "viMeaning": "Dự đoán, tiên đoán",
+        "synonyms": [
+          "expect"
+        ]
+      },
+      {
+        "no": 312,
+        "word": "pressing",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: urgent",
+        "viMeaning": null,
+        "synonyms": [
+          "urgent"
+        ]
+      },
+      {
+        "no": 313,
+        "word": "private",
+        "pos": "adj.",
+        "enDefinition": "For a particular person or group, not for everyone.",
+        "viMeaning": null,
+        "synonyms": [
+          "personal"
+        ]
+      },
+      {
+        "no": 314,
+        "word": "prohibit",
+        "pos": "v.",
+        "enDefinition": "To officially forbid an action through rules or laws.",
+        "viMeaning": null,
+        "synonyms": [
+          "forbid",
+          "ban"
+        ]
+      },
+      {
+        "no": 315,
+        "word": "prolong",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: extend",
+        "viMeaning": null,
+        "synonyms": [
+          "extend"
+        ]
+      },
+      {
+        "no": 316,
+        "word": "promote",
+        "pos": "v.",
+        "enDefinition": "to encourage something to develop or become more widely accepted",
+        "viMeaning": "Thúc đẩy, quảng bá, thăng chức",
+        "synonyms": [
+          "improve"
+        ]
+      },
+      {
+        "no": 317,
+        "word": "prosper",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: success",
+        "viMeaning": null,
+        "synonyms": [
+          "success"
+        ]
+      },
+      {
+        "no": 318,
+        "word": "purify",
+        "pos": "v.",
+        "enDefinition": "Academic exam term synonymous with: clean",
+        "viMeaning": null,
+        "synonyms": [
+          "clean"
+        ]
+      },
+      {
+        "no": 319,
+        "word": "qualify",
+        "pos": "v.",
+        "enDefinition": "To meet requirements, or make someone suitable for something.",
+        "viMeaning": null,
+        "synonyms": [
+          "fulfill"
+        ]
+      },
+      {
+        "no": 320,
+        "word": "radical",
+        "pos": "adj.",
+        "enDefinition": "Involving major changes to the basic nature of something.",
+        "viMeaning": null,
+        "synonyms": [
+          "utmost"
+        ]
+      },
+      {
+        "no": 321,
+        "word": "range",
+        "pos": "n.",
+        "enDefinition": "The extent or variety of things within certain limits.",
+        "viMeaning": null,
+        "synonyms": [
+          "scope"
+        ]
+      },
+      {
+        "no": 322,
+        "word": "rare",
+        "pos": "adj.",
+        "enDefinition": "not common or not happening often",
+        "viMeaning": null,
+        "synonyms": [
+          "unusual"
+        ]
+      },
+      {
+        "no": 323,
+        "word": "rate",
+        "pos": "n., v.",
+        "enDefinition": "How often something happens or how quickly something changes.",
+        "viMeaning": null,
+        "synonyms": [
+          "rank",
+          "measure"
+        ]
+      },
+      {
+        "no": 324,
+        "word": "react",
+        "pos": "v.",
+        "enDefinition": "Behave or feel in response to something that happens.",
+        "viMeaning": null,
+        "synonyms": [
+          "respond"
+        ]
+      },
+      {
+        "no": 325,
+        "word": "recreation",
+        "pos": "n.",
+        "enDefinition": "Activities done for enjoyment and relaxation when not working.",
+        "viMeaning": null,
+        "synonyms": [
+          "entertainment"
+        ]
+      },
+      {
+        "no": 326,
+        "word": "reduction",
+        "pos": "n.",
+        "enDefinition": "a decrease in the amount, size, or level of something",
+        "viMeaning": null,
+        "synonyms": [
+          "decrease"
+        ]
+      },
+      {
+        "no": 327,
+        "word": "refer to",
+        "pos": "v./n.",
+        "enDefinition": "Academic exam term synonymous with: talk about",
+        "viMeaning": null,
+        "synonyms": [
+          "talk about"
+        ]
+      },
+      {
+        "no": 328,
+        "word": "rehearsal",
+        "pos": "n.",
+        "enDefinition": "A practice session before a performance or important event.",
+        "viMeaning": null,
+        "synonyms": [
+          "preparation"
+        ]
+      },
+      {
+        "no": 329,
+        "word": "reject",
+        "pos": "v.",
+        "enDefinition": "To refuse to accept, approve, or believe something.",
+        "viMeaning": "Bác bỏ, từ chối",
+        "synonyms": [
+          "exclude"
+        ]
+      },
+      {
+        "no": 330,
+        "word": "relevant",
+        "pos": "adj.",
+        "enDefinition": "closely connected with the subject or situation being considered",
+        "viMeaning": null,
+        "synonyms": [
+          "relative"
+        ]
+      },
+      {
+        "no": 331,
+        "word": "religious",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: sacred",
+        "viMeaning": null,
+        "synonyms": [
+          "sacred"
+        ]
+      },
+      {
+        "no": 332,
+        "word": "reluctant",
+        "pos": "adj.",
+        "enDefinition": "Unwilling or hesitant to do something.",
+        "viMeaning": "Miễn cưỡng, ngần ngại",
+        "synonyms": [
+          "unwilling"
+        ]
+      },
+      {
+        "no": 333,
+        "word": "reproduce",
+        "pos": "v.",
+        "enDefinition": "To make a copy or create the same result again.",
+        "viMeaning": null,
+        "synonyms": [
+          "breed"
+        ]
+      },
+      {
+        "no": 334,
+        "word": "responsible",
+        "pos": "adj.",
+        "enDefinition": "having a duty to manage or look after something",
+        "viMeaning": null,
+        "synonyms": [
+          "liable"
+        ]
+      },
+      {
+        "no": 335,
+        "word": "revision",
+        "pos": "n.",
+        "enDefinition": "Studying material again to prepare for an examination",
+        "viMeaning": null,
+        "synonyms": [
+          "editing"
+        ]
+      },
+      {
+        "no": 336,
+        "word": "revive",
+        "pos": "v.",
+        "enDefinition": "to become active or popular again, or make something so",
+        "viMeaning": null,
+        "synonyms": [
+          "renaissance"
+        ]
+      },
+      {
+        "no": 337,
+        "word": "ruin",
+        "pos": "v.",
+        "enDefinition": "to damage something so badly that it loses its value",
+        "viMeaning": null,
+        "synonyms": [
+          "destroy"
+        ]
+      },
+      {
+        "no": 338,
+        "word": "scenic",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: beautiful",
+        "viMeaning": null,
+        "synonyms": [
+          "beautiful"
+        ]
+      },
+      {
+        "no": 339,
+        "word": "shade",
+        "pos": "n.",
+        "enDefinition": "an area protected from direct sunlight",
+        "viMeaning": null,
+        "synonyms": [
+          "shelter"
+        ]
+      },
+      {
+        "no": 340,
+        "word": "skepticism",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: doubt",
+        "viMeaning": null,
+        "synonyms": [
+          "doubt"
+        ]
+      },
+      {
+        "no": 341,
+        "word": "soar",
+        "pos": "v.",
+        "enDefinition": "to increase quickly to a very high level",
+        "viMeaning": null,
+        "synonyms": [
+          "increase"
+        ]
+      },
+      {
+        "no": 342,
+        "word": "solely",
+        "pos": "adv.",
+        "enDefinition": "Only, with nothing or nobody else involved.",
+        "viMeaning": null,
+        "synonyms": [
+          "alone"
+        ]
+      },
+      {
+        "no": 343,
+        "word": "solicitor",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: lawyer",
+        "viMeaning": null,
+        "synonyms": [
+          "lawyer"
+        ]
+      },
+      {
+        "no": 344,
+        "word": "steer",
+        "pos": "v.",
+        "enDefinition": "To control the direction in which a vehicle moves.",
+        "viMeaning": null,
+        "synonyms": [
+          "manage"
+        ]
+      },
+      {
+        "no": 345,
+        "word": "stimulate",
+        "pos": "v.",
+        "enDefinition": "to encourage something to develop or become more active",
+        "viMeaning": "Kích thích, khuấy động",
+        "synonyms": [
+          "motivate"
+        ]
+      },
+      {
+        "no": 346,
+        "word": "stride",
+        "pos": "n.",
+        "enDefinition": "Walk with long, confident steps.",
+        "viMeaning": null,
+        "synonyms": [
+          "progress"
+        ]
+      },
+      {
+        "no": 347,
+        "word": "succumb",
+        "pos": "vi.",
+        "enDefinition": "Academic exam term synonymous with: yield",
+        "viMeaning": null,
+        "synonyms": [
+          "yield"
+        ]
+      },
+      {
+        "no": 348,
+        "word": "subdivide",
+        "pos": "v.",
+        "enDefinition": "to divide something into smaller parts or groups",
+        "viMeaning": null,
+        "synonyms": [
+          "break down"
+        ]
+      },
+      {
+        "no": 349,
+        "word": "subtle",
+        "pos": "adj.",
+        "enDefinition": "Small or delicate enough to be difficult to notice",
+        "viMeaning": null,
+        "synonyms": [
+          "delicate"
+        ]
+      },
+      {
+        "no": 350,
+        "word": "substance",
+        "pos": "n.",
+        "enDefinition": "A particular type of material with specific physical properties.",
+        "viMeaning": null,
+        "synonyms": [
+          "matter"
+        ]
+      },
+      {
+        "no": 351,
+        "word": "sufficiency",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: enough",
+        "viMeaning": null,
+        "synonyms": [
+          "enough"
+        ]
+      },
+      {
+        "no": 352,
+        "word": "supersede",
+        "pos": "v.",
+        "enDefinition": "To replace something older or no longer useful.",
+        "viMeaning": null,
+        "synonyms": [
+          "replace"
+        ]
+      },
+      {
+        "no": 353,
+        "word": "suppress",
+        "pos": "v.",
+        "enDefinition": "To prevent a feeling or physical reaction from being expressed.",
+        "viMeaning": "Đàn áp, kìm nén",
+        "synonyms": [
+          "hold"
+        ]
+      },
+      {
+        "no": 354,
+        "word": "supremacy",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: priority",
+        "viMeaning": null,
+        "synonyms": [
+          "priority"
+        ]
+      },
+      {
+        "no": 355,
+        "word": "suspicious",
+        "pos": "adj.",
+        "enDefinition": "Making you think something is wrong, dishonest, or illegal.",
+        "viMeaning": null,
+        "synonyms": [
+          "odd"
+        ]
+      },
+      {
+        "no": 356,
+        "word": "sustainable",
+        "pos": "adj.",
+        "enDefinition": "Using resources without exhausting them or causing lasting environmental damage.",
+        "viMeaning": "Bền vững, không gây hại cho môi trường và duy trì được lâu dài",
+        "synonyms": [
+          "long-term"
+        ]
+      },
+      {
+        "no": 357,
+        "word": "symptom",
+        "pos": "n.",
+        "enDefinition": "a physical or mental change that suggests an illness",
+        "viMeaning": null,
+        "synonyms": [
+          "sign"
+        ]
+      },
+      {
+        "no": 358,
+        "word": "tension",
+        "pos": "n.",
+        "enDefinition": "Strained relations between people or groups that may cause conflict",
+        "viMeaning": null,
+        "synonyms": [
+          "upset"
+        ]
+      },
+      {
+        "no": 359,
+        "word": "term",
+        "pos": "n.",
+        "enDefinition": "A word or expression with a particular meaning.",
+        "viMeaning": null,
+        "synonyms": [
+          "word"
+        ]
+      },
+      {
+        "no": 360,
+        "word": "throughout",
+        "pos": "adv.",
+        "enDefinition": "In every part of a place or during an entire period.",
+        "viMeaning": null,
+        "synonyms": [
+          "anywhere"
+        ]
+      },
+      {
+        "no": 361,
+        "word": "toll",
+        "pos": "n., v.",
+        "enDefinition": "money paid to use a road or bridge",
+        "viMeaning": null,
+        "synonyms": [
+          "charge"
+        ]
+      },
+      {
+        "no": 362,
+        "word": "trace",
+        "pos": "n.",
+        "enDefinition": "find something's origin or location by following evidence",
+        "viMeaning": null,
+        "synonyms": [
+          "track"
+        ]
+      },
+      {
+        "no": 363,
+        "word": "transcend",
+        "pos": "v.",
+        "enDefinition": "To go beyond ordinary limits, differences, or expectations.",
+        "viMeaning": null,
+        "synonyms": [
+          "excel"
+        ]
+      },
+      {
+        "no": 364,
+        "word": "transit",
+        "pos": "n., v.",
+        "enDefinition": "the movement of people or goods between places",
+        "viMeaning": null,
+        "synonyms": [
+          "send"
+        ]
+      },
+      {
+        "no": 365,
+        "word": "tremendous",
+        "pos": "adj.",
+        "enDefinition": "Very great in amount, strength, or degree.",
+        "viMeaning": null,
+        "synonyms": [
+          "vast"
+        ]
+      },
+      {
+        "no": 366,
+        "word": "trigger",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: begin",
+        "viMeaning": "Kích hoạt, châm ngòi",
+        "synonyms": [
+          "begin"
+        ]
+      },
+      {
+        "no": 367,
+        "word": "tropical",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: hot",
+        "viMeaning": null,
+        "synonyms": [
+          "hot"
+        ]
+      },
+      {
+        "no": 368,
+        "word": "unbiased",
+        "pos": "adj.",
+        "enDefinition": "Academic exam term synonymous with: fair",
+        "viMeaning": null,
+        "synonyms": [
+          "fair"
+        ]
+      },
+      {
+        "no": 369,
+        "word": "uniform",
+        "pos": "adj.",
+        "enDefinition": "Special clothing worn by members of a particular group.",
+        "viMeaning": null,
+        "synonyms": [
+          "consistent"
+        ]
+      },
+      {
+        "no": 370,
+        "word": "valuable",
+        "pos": "adj.",
+        "enDefinition": "Very useful or important for a particular purpose.",
+        "viMeaning": null,
+        "synonyms": [
+          "benefit"
+        ]
+      },
+      {
+        "no": 371,
+        "word": "versatile",
+        "pos": "adj.",
+        "enDefinition": "Able to do many things or serve many different purposes.",
+        "viMeaning": null,
+        "synonyms": [
+          "all-around"
+        ]
+      },
+      {
+        "no": 372,
+        "word": "view",
+        "pos": "v.",
+        "enDefinition": "An opinion or belief about something.",
+        "viMeaning": null,
+        "synonyms": [
+          "overlook"
+        ]
+      },
+      {
+        "no": 373,
+        "word": "violent",
+        "pos": "adj.",
+        "enDefinition": "Using physical force to hurt people or damage things.",
+        "viMeaning": null,
+        "synonyms": [
+          "fierce"
+        ]
+      },
+      {
+        "no": 374,
+        "word": "visible",
+        "pos": "adj.",
+        "enDefinition": "Able to be seen.",
+        "viMeaning": null,
+        "synonyms": [
+          "see"
+        ]
+      },
+      {
+        "no": 375,
+        "word": "visual",
+        "pos": "adj.",
+        "enDefinition": "Relating to sight or things that can be seen.",
+        "viMeaning": null,
+        "synonyms": [
+          "image"
+        ]
+      },
+      {
+        "no": 376,
+        "word": "well-being",
+        "pos": "n.",
+        "enDefinition": "Academic exam term synonymous with: health, happiness, welfare",
+        "viMeaning": null,
+        "synonyms": [
+          "health",
+          "happiness",
+          "welfare"
+        ]
+      }
+    ]
+  }
+]

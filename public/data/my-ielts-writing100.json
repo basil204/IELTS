@@ -1,0 +1,702 @@
+[
+  {
+    "no": 1,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Regular exercise can increase one's self-confidence",
+    "advancedBand75": "Frequently exercising can increase one's confidence"
+  },
+  {
+    "no": 2,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The quality of teaching can make huge difference to students' academic performance",
+    "advancedBand75": "Academic achievement is heavily dependent on the quality of teaching"
+  },
+  {
+    "no": 3,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Parents and teachers should make an effort to limit children’s screen time",
+    "advancedBand75": "Parents and teachers should make efforts to reduce the screen time of children"
+  },
+  {
+    "no": 4,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The economic slowdown has led to a climbing unemployment rate.",
+    "advancedBand75": "The economic slowdown has led to an increase in the unemployment rate"
+  },
+  {
+    "no": 5,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "A country's economic development relies on a supply of young workers",
+    "advancedBand75": "Economic development requires young laborers"
+  },
+  {
+    "no": 6,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "People with a heavy workload do not have adequate time to rest",
+    "advancedBand75": "People with heavy workloads often don't have time to rest"
+  },
+  {
+    "no": 7,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "A large number of students in China have to do self-study at night",
+    "advancedBand75": "Many students in China have to attend evening self-study sessions"
+  },
+  {
+    "no": 8,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The development of cities has posed a threat to heritage sites",
+    "advancedBand75": "Cultural heritage sites are threatened by urban development"
+  },
+  {
+    "no": 9,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "We should not ignore face-to-face communication",
+    "advancedBand75": "We cannot ignore face-to-face communication"
+  },
+  {
+    "no": 10,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Some public services have problems in breaking even",
+    "advancedBand75": "Some public services are challenging to achieve a balance between revenue and expenses/Some public services find it challenging to break even"
+  },
+  {
+    "no": 11,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "We have to consider the social and economic context",
+    "advancedBand75": "We need to consider the social and economic environment"
+  },
+  {
+    "no": 12,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Intensive farming can pose a threat to bio-diversity",
+    "advancedBand75": "Intensive cultivation poses a threat to biodiversity"
+  },
+  {
+    "no": 13,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Equal access to education can help tackle educational underachievement",
+    "advancedBand75": "Equal access to education can help tackle the issue of students' academic underachievement"
+  },
+  {
+    "no": 14,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Exposure to different cultures can encourage creativity",
+    "advancedBand75": "Exposure to different cultures can promote innovation"
+  },
+  {
+    "no": 15,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The government should give priority to welfare services especially healthcare",
+    "advancedBand75": "The government should prioritize welfare services, especially healthcare"
+  },
+  {
+    "no": 16,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Education may hold the key to one's job prospects",
+    "advancedBand75": "Education might shape one's career prospects"
+  },
+  {
+    "no": 17,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The use of fossil fuels can cause damage to the environment",
+    "advancedBand75": "Using fossil fuels can cause environmental damage"
+  },
+  {
+    "no": 18,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Building apartment blocks helps (to) solve overcrowding in cities",
+    "advancedBand75": "Constructing residential buildings helps (to) alleviate urban congestion"
+  },
+  {
+    "no": 19,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "People from disadvantaged backgrounds can improve their social status by working hard.",
+    "advancedBand75": "The impoverished can improve their social status through/via hard work"
+  },
+  {
+    "no": 20,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "Because of globalization, people need to work with those from diverse backgrounds",
+    "advancedBand75": "Due to globalization, people need to work with individuals from diverse backgrounds around the world"
+  },
+  {
+    "no": 21,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "We need to take action to solve some thorny problems",
+    "advancedBand75": "We need to take measures to address some challenging issues"
+  },
+  {
+    "no": 22,
+    "category": "01. Cấu trúc Chủ - Vị - Tân nền tảng (S + V + O)",
+    "categoryEn": "01. Core Subject + Verb + Object (SVO)",
+    "standardBand65": "The media attracts public attention by sensationalizing victims' suffering",
+    "advancedBand75": "The media attracts viewers by exaggerating the pain of victims"
+  },
+  {
+    "no": 23,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Genetic engineering allows people to nurture crop varieties",
+    "advancedBand75": "Genetic engineering allows people to cultivate new varieties of crops"
+  },
+  {
+    "no": 24,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Companies should provide working mothers with maternity leave and other forms of support",
+    "advancedBand75": "The company should provide maternity leave and other assistance for female employees with children"
+  },
+  {
+    "no": 25,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "An unhealthy lifestyle may put people at risk of illness",
+    "advancedBand75": "The unhealthy lifestyle puts people at risk of illness"
+  },
+  {
+    "no": 26,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Government grants could encourage more students to take postgraduate courses",
+    "advancedBand75": "Scholarships can encourage more students to pursue graduate-level/postgraduate studies"
+  },
+  {
+    "no": 27,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Community service provides offenders with opportunities to acquire transferable skills",
+    "advancedBand75": "The community redevelopment provides opportunities for criminals to acquire vocational skills"
+  },
+  {
+    "no": 28,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Legislation should make drink driving a criminal offense/offence",
+    "advancedBand75": "Laws should classify drunk driving as a criminal offense/offence"
+  },
+  {
+    "no": 29,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "Rural areas provide people with opportunities to escape pressure and noises of modern life",
+    "advancedBand75": "Rural areas provide people with opportunities to escape pressure and noise of modern life"
+  },
+  {
+    "no": 30,
+    "category": "02. Chủ ngữ + Ngoại động từ + Tân ngữ + Bổ ngữ (S + V + O + C)",
+    "categoryEn": "02. Subject + Verb + Object + Complement (SVOC)",
+    "standardBand65": "The ageing population has prompted countries to raise statutory retirement age",
+    "advancedBand75": "The aging population is prompting the country to raise statutory retirement age"
+  },
+  {
+    "no": 31,
+    "category": "03. Chủ ngữ + Động từ + Tân ngữ gián tiếp + Tân ngữ trực tiếp",
+    "categoryEn": "03. Subject + Verb + Indirect Object + Direct Object",
+    "standardBand65": "Governments should offer some cities funds to preserve historic buildings",
+    "advancedBand75": "The government should provide funds to some cities to preserve historic buildings"
+  },
+  {
+    "no": 32,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Teachers should be permitted to use force to remove the disruptive children from the classroom",
+    "advancedBand75": "The troublesome children should be allowed to remove from the classroom by the teachers"
+  },
+  {
+    "no": 33,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Unemployment in rural areas can be addressed partially by the rural-to-urban shift",
+    "advancedBand75": "The issue of unemployment in rural areas can be addressed to some extent through rural-to-urban shift"
+  },
+  {
+    "no": 34,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "High-rise buildings are sometimes regarded as eyesores of the city",
+    "advancedBand75": "High-rise buildings are sometimes considered as eyesores that impact the cityscape"
+  },
+  {
+    "no": 35,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "The investment in space technology should be supported by the government",
+    "advancedBand75": "Space technology investments should be supported by the government"
+  },
+  {
+    "no": 36,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Historic relics should be preserved for their historic significance",
+    "advancedBand75": "Historical artifacts are preserved due to their historical significance"
+  },
+  {
+    "no": 37,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Sports or other school activities can be designed to give children a sense of accomplishment and to promote their well-being",
+    "advancedBand75": "A sense of achievement and an enhanced sense of happiness should be experienced by children through the arrangement of school activities"
+  },
+  {
+    "no": 38,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Some employees are encouraged to break the mould",
+    "advancedBand75": "Some employees are encouraged to break conventions"
+  },
+  {
+    "no": 39,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Commuting time has been prolonged because of traffic congestion",
+    "advancedBand75": "Due to traffic congestion, the commuting time has been extended"
+  },
+  {
+    "no": 40,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Computer skills can be applied in their studies as well as their working lives",
+    "advancedBand75": "Computer skills can be applied to learning and work"
+  },
+  {
+    "no": 41,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Most of environmental degradation is attributed to human activities.",
+    "advancedBand75": "Most environmental damage can be attributed to human activities."
+  },
+  {
+    "no": 42,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Many children are exposed to violent content every day",
+    "advancedBand75": "，：Many children are exposed to violent content on a daily basis"
+  },
+  {
+    "no": 43,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "The family environment is widely thought/believed to be the most important influence on children's development",
+    "advancedBand75": "The family environment is considered the most crucial influencing factor in child's upbringing"
+  },
+  {
+    "no": 44,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "With an increasing number of young people participating in volunteer work, community cohesion will be enhanced",
+    "advancedBand75": "As more and more young people engage in volunteer work, the cohesion of the community will be strengthened"
+  },
+  {
+    "no": 45,
+    "category": "04. Cấu trúc Câu Bị Động Học Thuật (Academic Passive Voice)",
+    "categoryEn": "04. Academic Passive Voice Constructions",
+    "standardBand65": "Immigrants are sometimes recognized as a threat to social cohesion",
+    "advancedBand75": "Immigration is sometimes considered as a thread to social cohesion"
+  },
+  {
+    "no": 46,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Young people without tertiary education qualifications normally end up working in low-skilled jobs",
+    "advancedBand75": "Young people without higher education are limited to jobs with low skill requirements"
+  },
+  {
+    "no": 47,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Some people disapprove of genetically modified food",
+    "advancedBand75": "Some people do not support genetically modified (GM) foods ->"
+  },
+  {
+    "no": 48,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Tourist spots endeavor to cater for tourists' needs and tastes",
+    "advancedBand75": "Tourist attractions strive to meet the needs and tastes of visitors"
+  },
+  {
+    "no": 49,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "In a highly competitive society, working adults usually focus on career advancement",
+    "advancedBand75": "In a competitive society, working adults often focus on career development"
+  },
+  {
+    "no": 50,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Perception of beauty differs from culture to culture",
+    "advancedBand75": "Aesthetic perspectives vary with cultural differences"
+  },
+  {
+    "no": 51,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Because of low-cost carries, the aviation industry has developed at an astounding pace over the past decades",
+    "advancedBand75": "Due to the decrease in costs, the aviation industry has developed rapidly in recent decades"
+  },
+  {
+    "no": 52,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Animal experiments sometimes fail to detect the undesirable side effects of drugs",
+    "advancedBand75": "，：At times. The use of animal experiments does not reveal the adverse effects of medications"
+  },
+  {
+    "no": 53,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "Some animals have died out because of illegal hunting",
+    "advancedBand75": "Illegal hunting results in the extinction of certain animals"
+  },
+  {
+    "no": 54,
+    "category": "05. Chủ ngữ + Nội động từ (Subject + Intransitive Verb)",
+    "categoryEn": "05. Subject + Intransitive Verb (SV)",
+    "standardBand65": "The impact of computers on communication skills varies across ages",
+    "advancedBand75": "The impact of computers on human communication skills varies with age"
+  },
+  {
+    "no": 55,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Many girls are not willing to seek employment in a male-dominated world",
+    "advancedBand75": "Many girls are unwilling to seek employment in male-dominated industries"
+  },
+  {
+    "no": 56,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The main function of schools is to impart knowledge to the next generation",
+    "advancedBand75": "The primary function of schools is to impart knowledge to the next generation"
+  },
+  {
+    "no": 57,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The arts are not among core subject areas at school",
+    "advancedBand75": "Art is not considered/regarded as a core subject in schools"
+  },
+  {
+    "no": 58,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Because of the uncertainty about he economic outlook, many companies are unlikely to recruit new employees",
+    "advancedBand75": "Due to the unclear economic outlook, many companies are less likely to hire new employees"
+  },
+  {
+    "no": 59,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Air freight is likely to create enormous greenhouse gases",
+    "advancedBand75": "Air transport may generate a significant amount of greenhouse gases"
+  },
+  {
+    "no": 60,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Some children are likely to have behavioral/behavioural problems",
+    "advancedBand75": "The child is likely to have behavioral issues"
+  },
+  {
+    "no": 61,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The rapid population expansion is the main reason for the huge accumulation of waste",
+    "advancedBand75": "The substantial expansion of population is a cause of the significant increase in waste production"
+  },
+  {
+    "no": 62,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Imposing stiff punishment is an effective method to reduce crime",
+    "advancedBand75": "Harsh punishment is an effective means of reducing crime rates"
+  },
+  {
+    "no": 63,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Our environment is still in a dire state",
+    "advancedBand75": "Our environment is still quite poor"
+  },
+  {
+    "no": 64,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Undergraduates feel under increasing pressure to study hard, because of the soaring unemployment rate",
+    "advancedBand75": "Due to the soaring unemployment rate, college students strive to study under pressure"
+  },
+  {
+    "no": 65,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Racial discrimination remains a serious problem",
+    "advancedBand75": "Racial discrimination remains very severe"
+  },
+  {
+    "no": 66,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Learning the times table by rote is not the best way to improve numeracy",
+    "advancedBand75": "Rote memorization of the multiplication table is not the effective way to enhance arithmetic skills"
+  },
+  {
+    "no": 67,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The top priority for deprived countries is to satisfy citizens' basic needs",
+    "advancedBand75": "The primary task of impoverished nations is to meet the basic survival needs of their people"
+  },
+  {
+    "no": 68,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The health effect of GE food remains unclear/yet to be known",
+    "advancedBand75": "The impact of genetically modified food on health remains uncertain"
+  },
+  {
+    "no": 69,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Online shopping has become a normal part of people's everyday life.",
+    "advancedBand75": "Online shopping has become a commonplace aspect of many people's daily lives"
+  },
+  {
+    "no": 70,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "In the consumer society, bare necessities are not able to satisfy people's needs",
+    "advancedBand75": "In consumer society, people are no longer satisfied with just the bare necessities of life"
+  },
+  {
+    "no": 71,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "People's unhealthy lifestyle is the result of their tendency to rely heavily on technology",
+    "advancedBand75": "Unhealthy lifestyles among people are a result of their tendency to rely on technology"
+  },
+  {
+    "no": 72,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "Poverty is the reason of the crime wave in many communities",
+    "advancedBand75": "Poverty is a contributing factor of the increase in community crime"
+  },
+  {
+    "no": 73,
+    "category": "Cấu trúc Học thuật IELTS",
+    "categoryEn": "Academic IELTS Sentence Pattern",
+    "standardBand65": "The invention of electric vehicles is a part of our effort to sustain the environment",
+    "advancedBand75": "The invention of electric cars is part of our efforts to preserve the environment"
+  },
+  {
+    "no": 74,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "It is very common for Chinese people to exchange lavish gifts",
+    "advancedBand75": "It is a Chinese custom to give lavish gifts"
+  },
+  {
+    "no": 75,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "We will find it difficult to preserve biodiversity in the coming decades",
+    "advancedBand75": "In the coming decades, it will be challenging to preserve plant biodiversity"
+  },
+  {
+    "no": 76,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "With age, people find it difficult to maintain contact with family and friends",
+    "advancedBand75": "As people grow older, it becomes difficult to stay in touch with family and friends"
+  },
+  {
+    "no": 77,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "Free university education makes it possible for students from less well-off backgrounds to have equal access to tertiary education",
+    "advancedBand75": "Free university education provides equal opportunities for students from disadvantaged backgrounds to attend college"
+  },
+  {
+    "no": 78,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "Many people consider it necessary to follow fashion",
+    "advancedBand75": "Many people feel it necessary to keep up trends"
+  },
+  {
+    "no": 79,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "Budget cuts make it difficult for many young people to receive a college education",
+    "advancedBand75": "Budget cuts make it difficult for many young people to afford a college education"
+  },
+  {
+    "no": 80,
+    "category": "10. Cấu trúc Chủ ngữ / Tân ngữ giả với It (Preparatory It)",
+    "categoryEn": "10. Preparatory It as Formal Subject or Object",
+    "standardBand65": "Sometimes, it is difficult to evaluate the environmental cost of human activities",
+    "advancedBand75": "Sometimes, it is difficult to assess the environmental costs of human behavior"
+  },
+  {
+    "no": 81,
+    "category": "11. Cấu trúc Tồn tại học thuật (Existential There Clauses)",
+    "categoryEn": "11. Existential There Constructions",
+    "standardBand65": "There are some economically deprived communities in large cities",
+    "advancedBand75": "There are some impoverished communities in big cities"
+  },
+  {
+    "no": 82,
+    "category": "11. Cấu trúc Tồn tại học thuật (Existential There Clauses)",
+    "categoryEn": "11. Existential There Constructions",
+    "standardBand65": "There is no clear link between grouping students by ability and their levels of attainments",
+    "advancedBand75": "There is no clear correlation between ability-based grouping and students' grades"
+  },
+  {
+    "no": 83,
+    "category": "12. Câu Ghép Học Thuật (Compound Sentences)",
+    "categoryEn": "12. Academic Compound Sentences",
+    "standardBand65": "Using multimedia tools can improve students's concentration and keep them interested",
+    "advancedBand75": "Using multimedia can enhance students' attention and keep them interested in the course"
+  },
+  {
+    "no": 84,
+    "category": "12. Câu Ghép Học Thuật (Compound Sentences)",
+    "categoryEn": "12. Academic Compound Sentences",
+    "standardBand65": "The achievement of celebrities can motivate young people to study hard and show perseverance",
+    "advancedBand75": "The achievements of celebrities inspire young people to study hard and persevere"
+  },
+  {
+    "no": 85,
+    "category": "12. Câu Ghép Học Thuật (Compound Sentences)",
+    "categoryEn": "12. Academic Compound Sentences",
+    "standardBand65": "Opening new branches in developing countries can reduce the cost of production and generate huge profits",
+    "advancedBand75": "Opening new branches in developing countries can reduce production costs and generate significant profits"
+  },
+  {
+    "no": 86,
+    "category": "12. Câu Ghép Học Thuật (Compound Sentences)",
+    "categoryEn": "12. Academic Compound Sentences",
+    "standardBand65": "Small lifestyle changes can make a huge difference and reduce the environmental impact of our daily activities",
+    "advancedBand75": "Slight changes in lifestyle can make a huge difference and reduce the impact of our daily activities on the environment"
+  },
+  {
+    "no": 87,
+    "category": "13. Mệnh đề Trạng ngữ Nguyên nhân - Nhượng bộ (Adverbial Clauses)",
+    "categoryEn": "13. Adverbial Clauses of Reason, Concession & Condition",
+    "standardBand65": "It is difficult for students to improve practical skills if school do not provide work placements",
+    "advancedBand75": "Without internship opportunities, it is difficult for students to enhance their job skills"
+  },
+  {
+    "no": 88,
+    "category": "13. Mệnh đề Trạng ngữ Nguyên nhân - Nhượng bộ (Adverbial Clauses)",
+    "categoryEn": "13. Adverbial Clauses of Reason, Concession & Condition",
+    "standardBand65": "University students cannot make a decent living even though they have gained qualifications",
+    "advancedBand75": "Even with a diploma, college students may not be able to earn a lot of money"
+  },
+  {
+    "no": 89,
+    "category": "13. Mệnh đề Trạng ngữ Nguyên nhân - Nhượng bộ (Adverbial Clauses)",
+    "categoryEn": "13. Adverbial Clauses of Reason, Concession & Condition",
+    "standardBand65": "Running an organization in today's world can be a daunting task because competition is stiff and technology is developing rapidly",
+    "advancedBand75": "Running a company is a daunting task in today's world, due to fierce competition and rapid technological advancement"
+  },
+  {
+    "no": 90,
+    "category": "14. Mệnh đề Danh ngữ trong Lập luận (Noun Clauses)",
+    "categoryEn": "14. Noun Clauses in Academic Argumentation",
+    "standardBand65": "The fact is that some jobs have been made redundant because of mechanization",
+    "advancedBand75": "The fact is that some jobs have been eliminated due to mechanization"
+  },
+  {
+    "no": 91,
+    "category": "14. Mệnh đề Danh ngữ trong Lập luận (Noun Clauses)",
+    "categoryEn": "14. Noun Clauses in Academic Argumentation",
+    "standardBand65": "It is true that many people today have chosen to go green and reduce cut down on the use of energy",
+    "advancedBand75": "It is true that many people are now choosing to be environmentally friendly and reduce their energy consumption"
+  },
+  {
+    "no": 92,
+    "category": "14. Mệnh đề Danh ngữ trong Lập luận (Noun Clauses)",
+    "categoryEn": "14. Noun Clauses in Academic Argumentation",
+    "standardBand65": "A prison sentence can be damaging to young people due to the fact that the criminal record can cast a long shadow on their career",
+    "advancedBand75": "A criminal conviction can have a harmful impact on a young person's life, as it can leave a criminal record that can follow then throughout their career"
+  },
+  {
+    "no": 93,
+    "category": "14. Mệnh đề Danh ngữ trong Lập luận (Noun Clauses)",
+    "categoryEn": "14. Noun Clauses in Academic Argumentation",
+    "standardBand65": "I believe that there is a direct link between fast food advertisements and rising levels of obesity",
+    "advancedBand75": "I believe that there is a direct relationship between fast food advertising and obesity"
+  },
+  {
+    "no": 94,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "Money can be used for clean-up operation which can help create a pleasant environment",
+    "advancedBand75": "Directing government funding towards pollution cleanup efforts can create a more livable environment"
+  },
+  {
+    "no": 95,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "It is necessary to put/impose restrictions on those advertisements which encourage people to buy more than they need",
+    "advancedBand75": "Some advertisements, which encourage consumers to buy things they don't need, should be subject to stricter regulation"
+  },
+  {
+    "no": 96,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "Afforestation can help to improve air quality, which can reduce the risk of suffering health problems such as respiratory diseases",
+    "advancedBand75": "Afforestation helps improve air quality, thereby reducing the risk of certain diseases, such as respiratory illnesses"
+  },
+  {
+    "no": 97,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "Authorities should censor those news reports which give an exaggerated account of some social problems",
+    "advancedBand75": "The government should control the news that exaggerates social issues"
+  },
+  {
+    "no": 98,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "It is the reason why clerical workers today suffer health problems",
+    "advancedBand75": "This is why clerical workers often experience health issues nowadays"
+  },
+  {
+    "no": 99,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "Many employees are willing to work for companies where they can obtain promotional opportunities",
+    "advancedBand75": "Many employees are willing to work in companies where they can get opportunities for promotion"
+  },
+  {
+    "no": 100,
+    "category": "15. Mệnh đề Quan hệ Học thuật (Relative Clauses)",
+    "categoryEn": "15. Defining & Non-defining Relative Clauses",
+    "standardBand65": "Many young people have chosen to study in English-speaking countries, where they can study at some world famous universities",
+    "advancedBand75": "Many young people choose to study in English-speaking countries where they can attend world-renowned universities"
+  }
+]

@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "name": "Quản Trị Viên Hệ Thống (Admin)",
+      "email": "admin@theieltsdictionary.vn",
+      "passwordHash": "Admin@123",
+      "provider": "credentials",
+      "role": "admin",
+      "plan": "VIP Unlimited",
+      "targetBand": "8.0",
+      "currentBand": "7.5",
+      "xp": 5840,
+      "streak": 65,
+      "completedModules": ["mod-101", "mod-102", "mod-201", "mod-301"],
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-vip-02",
+      "name": "Nguyễn Minh Anh",
+      "email": "minhanh@theieltsdictionary.vn",
+      "passwordHash": "Vip@123",
+      "provider": "google",
+      "role": "vip",
+      "plan": "VIP Unlimited",
+      "targetBand": "7.5",
+      "currentBand": "6.5",
+      "xp": 2490,
+      "streak": 42,
+      "completedModules": ["mod-101", "mod-102", "mod-201"],
+      "createdAt": "2026-09-15T10:30:00.000Z"
+    },
+    {
+      "id": "usr-stu-03",
+      "name": "Trần Hoàng Nam",
+      "email": "hocvien@theieltsdictionary.vn",
+      "passwordHash": "Student@123",
+      "provider": "credentials",
+      "role": "student",
+      "plan": "Free",
+      "targetBand": "6.5",
+      "currentBand": "5.0",
+      "xp": 1420,
+      "streak": 14,
+      "completedModules": ["mod-101"],
+      "createdAt": "2026-10-10T14:20:00.000Z"
+    }
+  ],
+  "roadmaps": [
+    {
+      "id": "stage-01",
+      "code": "GATE 01",
+      "bandRange": "Band 4.0 → 5.0",
+      "titleVi": "Chặng 1: Nền Tảng Ngữ Âm, Ngữ Pháp Cốt Lõi & 1,500 Từ Vựng CEFR A2–B1",
+      "titleEn": "Stage 1: Core Phonetics, Foundation Grammar & 1,500 CEFR A2–B1 Words",
+      "durationWeeks": 3,
+      "access": "Free",
+      "modules": [
+        {
+          "id": "mod-101",
+          "day": "Tuần 1 • Ngày 1–7",
+          "titleVi": "Làm chủ bảng phiên âm IPA UK/US & 300 từ vựng Đời sống / Giáo dục (Word-Atlas)",
+          "titleEn": "Master UK/US IPA Phonetics & 300 Daily/Education Words (Word-Atlas)",
+          "skill": "Vocabulary & Pronunciation",
+          "targetWords": 300,
+          "durationMins": 45
+        },
+        {
+          "id": "mod-102",
+          "day": "Tuần 2 • Ngày 8–14",
+          "titleVi": "7 Cấu trúc Chủ-Vị-Tân nền tảng (Writing 100) & Nghe chép chính tả Chuyên đề 01–05",
+          "titleEn": "7 Core SVO Sentence Patterns (Writing 100) & Listening Dictation Chapters 01–05",
+          "skill": "Writing & Listening",
+          "targetWords": 450,
+          "durationMins": 60
+        },
+        {
+          "id": "mod-103",
+          "day": "Tuần 3 • Ngày 15–21",
+          "titleVi": "Kỹ thuật Skimming/Scanning & 100 Từ khóa Reading Cấp độ Cơ bản",
+          "titleEn": "Skimming/Scanning Techniques & 100 Foundation Reading Keywords",
+          "skill": "Reading",
+          "targetWords": 400,
+          "durationMins": 60
+        }
+      ]
+    },
+    {
+      "id": "stage-02",
+      "code": "GATE 02",
+      "bandRange": "Band 5.0 → 6.0",
+      "titleVi": "Chặng 2: Tăng Tốc Từ Vựng Học Thuật B2 & Phản Xạ Paraphrase Nghe - Đọc",
+      "titleEn": "Stage 2: B2 Academic Vocabulary Acceleration & Listening-Reading Paraphrase Reflex",
+      "durationWeeks": 3,
+      "access": "Free",
+      "modules": [
+        {
+          "id": "mod-201",
+          "day": "Tuần 4 • Ngày 22–28",
+          "titleVi": "179 Nhóm Paraphrase Listening Cốt Lõi & Chuyên đề Từ vựng 06–12 (Công nghệ, Y tế)",
+          "titleEn": "179 Core Listening Paraphrase Groups & Vocab Chapters 06–12 (Tech, Health)",
+          "skill": "Listening & Vocabulary",
+          "targetWords": 600,
+          "durationMins": 60
+        },
+        {
+          "id": "mod-202",
+          "day": "Tuần 5 • Ngày 29–35",
+          "titleVi": "Chiến thuật giải quyết True/False/Not Given & Nhóm 2 Từ khóa Reading (60% xác suất)",
+          "titleEn": "True/False/Not Given Mastery & Tier 2 Reading Exam Words (60% probability)",
+          "skill": "Reading",
+          "targetWords": 550,
+          "durationMins": 75
+        },
+        {
+          "id": "mod-203",
+          "day": "Tuần 6 • Ngày 36–42",
+          "titleVi": "Mệnh đề Quan hệ & Mệnh đề Phân từ nâng cao trong IELTS Writing Task 2",
+          "titleEn": "Relative Clauses & Participle Constructions in IELTS Writing Task 2",
+          "skill": "Writing",
+          "targetWords": 400,
+          "durationMins": 60
+        }
+      ]
+    },
+    {
+      "id": "stage-03",
+      "code": "GATE 03",
+      "bandRange": "Band 6.0 → 7.0",
+      "titleVi": "Chặng 3: Chinh Phục Từ Vựng Học Thuật C1 & Luyện Đề Phòng Thi Máy Tính",
+      "titleEn": "Stage 3: C1 Academic Lexicon & Computer-Delivered Mock Exam Intensive",
+      "durationWeeks": 3,
+      "access": "VIP",
+      "modules": [
+        {
+          "id": "mod-301",
+          "day": "Tuần 7 • Ngày 43–49",
+          "titleVi": "Nhóm 1 Từ khóa Reading Trọng tâm (90% ra thi) & 1,200 Từ vựng C1 Môi trường / Kinh tế",
+          "titleEn": "Tier 1 Critical Reading Words (90% exam rate) & 1,200 C1 Environment / Economy Words",
+          "skill": "Reading & FSRS C1",
+          "targetWords": 1200,
+          "durationMins": 90
+        },
+        {
+          "id": "mod-302",
+          "day": "Tuần 8 • Ngày 50–56",
+          "titleVi": "Chuyên đề Từ vựng 13–22 & Luyện nghe chép chính tả tốc độ 1.25x",
+          "titleEn": "Vocab Chapters 13–22 & 1.25x Speed Listening Dictation Drills",
+          "skill": "Listening",
+          "targetWords": 900,
+          "durationMins": 75
+        }
+      ]
+    },
+    {
+      "id": "stage-04",
+      "code": "GATE 04",
+      "bandRange": "Band 7.0 → 8.0+",
+      "titleVi": "Chặng 4: Đỉnh Cao Học Thuật C2, Collocations Chuyên Sâu & Thi Thử Toàn Diện",
+      "titleEn": "Stage 4: C2 Mastery, Advanced Academic Collocations & Full Mock Tests",
+      "durationWeeks": 3,
+      "access": "VIP",
+      "modules": [
+        {
+          "id": "mod-401",
+          "day": "Tuần 10–12 • Ngày 64–84",
+          "titleVi": "Làm chủ 1,500 Từ vựng C2 Word-Atlas, 100 Câu Writing Band 7.5+ & Giải đề Full Test",
+          "titleEn": "Master 1,500 C2 Word-Atlas Entries, 100 Band 7.5+ Sentences & Full Mock Exams",
+          "skill": "All 4 Skills + FSRS C2",
+          "targetWords": 1500,
+          "durationMins": 120
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2026-8801",
+      "userId": "usr-vip-02",
+      "userName": "Nguyễn Minh Anh",
+      "userEmail": "minhanh@theieltsdictionary.vn",
+      "planName": "VIP Unlimited (12 Tháng)",
+      "amountVnd": 1490000,
+      "paymentMethod": "VietQR SePay Auto",
+      "transferCode": "TIDVIP 8801",
+      "status": "completed",
+      "createdAt": "2026-10-20T09:15:00.000Z"
+    },
+    {
+      "id": "ORD-2026-8802",
+      "userId": "usr-stu-03",
+      "userName": "Lê Quốc Bảo",
+      "userEmail": "quocbao.ielts@gmail.com",
+      "planName": "Pro Scholar (6 Tháng)",
+      "amountVnd": 790000,
+      "paymentMethod": "VietQR Casso",
+      "transferCode": "TIDPRO 8802",
+      "status": "completed",
+      "createdAt": "2026-11-01T16:40:00.000Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": "LEAD-01",
+      "name": "Phạm Thu Hà",
+      "contact": "0912345678",
+      "targetBand": "Band 7.0+",
+      "note": "Cần lộ trình 3 tháng từ 5.5 lên 7.0",
+      "status": "contacted",
+      "createdAt": "2026-11-02T11:00:00.000Z"
+    },
+    {
+      "id": "LEAD-02",
+      "name": "Đặng Gia Huy",
+      "contact": "giahuy.uet@gmail.com",
+      "targetBand": "Band 6.5+",
+      "note": "Đăng ký nhận Ebook 7,298 từ Word-Atlas",
+      "status": "new",
+      "createdAt": "2026-11-03T19:20:00.000Z"
+    }
+  ],
+  "settings": {
+    "siteName": "THE IELTS DICTIONARY × WORD ATLAS",
+    "defaultLang": "vi",
+    "googleOAuthEnabled": true,
+    "googleClientId": "configured-via-env-or-demo-oauth",
+    "vietQrBankId": "MB",
+    "vietQrAccountNo": "0988776655",
+    "vietQrAccountName": "THE IELTS DICTIONARY EDTECH",
+    "r2CdnBaseUrl": "https://raw.githubusercontent.com/designfuchen/word-atlas/main/public/atlas",
+    "proPriceVnd": 790000,
+    "vipPriceVnd": 1490000
+  }
+}

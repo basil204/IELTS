@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1440px; height: 900px; background: #0B132B; color: #E2E8F0; font-family: system-ui, sans-serif; padding: 28px 40px; overflow: hidden; }
+  header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1C2541; padding-bottom: 16px; margin-bottom: 24px; }
+  .brand { font-size: 26px; font-weight: 800; color: #F8FAFC; }
+  .nav { display: flex; gap: 24px; font-size: 15px; color: #94A3B8; }
+  .cta { background: #F59E0B; color: #0B132B; padding: 10px 22px; border-radius: 10px; font-size: 16px; font-weight: 800; }
+  .bento { display: grid; grid-template-columns: 330px 1fr 330px; grid-template-rows: 340px 340px; gap: 20px; }
+  .card { background: #1C2541; border: 1px solid #334155; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+  .card.hero { grid-row: span 2; background: linear-gradient(160deg, #1C2541 0%, #0F172A 100%); border-color: #F59E0B; }
+  .num { font-size: 28px; font-weight: 800; color: #F59E0B; }
+  .word { font-size: 56px; font-weight: 900; color: #F8FAFC; }
+  .fsrs-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .btn { background: #0B132B; border: 1px solid #38BDF8; padding: 12px; border-radius: 10px; text-align: center; font-size: 14px; font-weight: 700; color: #38BDF8; }
+  .btn.amber { background: #F59E0B; color: #0B132B; border-color: #F59E0B; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">THE IELTS DICTIONARY × WORD ATLAS</div>
+    <div class="nav"><span>01 Lộ Trình</span><span>02 Hôm Nay Học Gì</span><span>03 Word Atlas 3D</span><span>04 Đua Top VIP</span></div>
+    <div class="cta">Vào Ca Học Tối Nay • 14🔥</div>
+  </header>
+  <div class="bento">
+    <div class="card">
+      <div class="num">01 • LỘ TRÌNH ADAPTIVE</div>
+      <div style="font-size:32px;font-weight:800;color:#38BDF8;">Band 5.5 → 7.5</div>
+      <p style="font-size:15px;color:#94A3B8;">Tự động phân bổ từ vựng C1–C2 và bài đọc theo khung giờ học ban đêm.</p>
+    </div>
+    <div class="card hero">
+      <div style="display:flex;justify-content:space-between;">
+        <span class="num">02 • HÔM NAY HỌC GÌ (24 TỪ ĐẾN HẠN)</span>
+        <span style="color:#38BDF8;font-weight:700;">FSRS RETENTION 94%</span>
+      </div>
+      <div>
+        <div class="word">resilient</div>
+        <div style="font-size:24px;color:#F59E0B;margin-top:6px;">/rɪˈzɪl.i.ənt/ • kiên cường, phục hồi nhanh</div>
+      </div>
+      <p style="font-size:16px;color:#CBD5E1;">Local communities proved remarkably __________ in the aftermath of the climate crisis.</p>
+      <div class="fsrs-row">
+        <div class="btn">Again 10m</div>
+        <div class="btn">Hard 1d</div>
+        <div class="btn amber">Good 4d</div>
+        <div class="btn">Easy 11d</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="num">03 • WORD ATLAS 3D</div>
+      <div style="font-size:30px;font-weight:800;color:#F8FAFC;">19 Chùm Sao Chủ Đề</div>
+      <p style="font-size:15px;color:#94A3B8;">7,298 từ vựng kết nối như mạng lưới ánh sáng thành phố về đêm.</p>
+    </div>
+    <div class="card">
+      <div class="num">03B • SEE & HEAR</div>
+      <div style="font-size:24px;font-weight:800;">22,905 Audio UK/US</div>
+      <p style="font-size:15px;color:#94A3B8;">Luyện nghe chép chính tả Dictation và điền từ Illustrated Cloze.</p>
+    </div>
+    <div class="card">
+      <div class="num">04 • ĐUA TOP SĂN VIP</div>
+      <div style="font-size:28px;font-weight:800;color:#F59E0B;">Top 1: Minh Anh • 2,450 XP</div>
+      <p style="font-size:15px;color:#94A3B8;">Trao thưởng tài khoản VIP tự động cuối mỗi tuần.</p>
+    </div>
+  </div>
+</body>
+</html>
