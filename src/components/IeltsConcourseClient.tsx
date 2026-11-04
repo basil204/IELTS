@@ -449,6 +449,8 @@ export default function IeltsConcourseClient({
   const [selectedTopic, setSelectedTopic] = useState<string>('all');
   const [selectedCefr, setSelectedCefr] = useState<CefrLevel | 'ALL'>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [explorerPage, setExplorerPage] = useState<number>(1);
+  const [explorerLimit, setExplorerLimit] = useState<number>(120);
   const [apiWords, setApiWords] =
     useState<WordAtlasEntry[]>(initialPriorityWords);
   const [totalMatches, setTotalMatches] = useState<number>(7298);
@@ -463,13 +465,16 @@ export default function IeltsConcourseClient({
   const [chapterDictationMap, setChapterDictationMap] = useState<
     Record<string, string>
   >({});
+  const [chapterBatchIdx, setChapterBatchIdx] = useState<number | 'ALL'>('ALL');
+  const [chapterSearchQuery, setChapterSearchQuery] = useState<string>('');
   const [revealMeanings, setRevealMeanings] = useState<boolean>(true);
-  const [revealEnglishWords, setRevealEnglishWords] = useState<boolean>(false);
+  const [revealEnglishWords, setRevealEnglishWords] = useState<boolean>(true);
   const [dictationSubmitted, setDictationSubmitted] = useState<boolean>(false);
   const [listeningAnswers, setListeningAnswers] = useState<
     Record<number, string>
   >({});
   const [listeningSubmitted, setListeningSubmitted] = useState(false);
+  const [listening179Search, setListening179Search] = useState<string>('');
 
   // Speaking Zone State
   const [selectedSpeakingIdx, setSelectedSpeakingIdx] = useState<number>(0);
@@ -481,6 +486,10 @@ export default function IeltsConcourseClient({
   const [readingSubTab, setReadingSubTab] = useState<'passage' | 'keywords_538'>(
     'passage'
   );
+  const [selectedReadingTier, setSelectedReadingTier] = useState<
+    'ALL' | number
+  >('ALL');
+  const [readingKeywordSearch, setReadingKeywordSearch] = useState<string>('');
   const [selectedInlineWord, setSelectedInlineWord] =
     useState<string>('ubiquitous');
   const [readingAnswers, setReadingAnswers] = useState<Record<number, string>>(
@@ -494,6 +503,8 @@ export default function IeltsConcourseClient({
   const [writingSubTab, setWritingSubTab] = useState<
     'ai_grader' | 'templates_100'
   >('ai_grader');
+  const [writingTemplateSearch, setWritingTemplateSearch] =
+    useState<string>('');
   const [essayText, setEssayText] = useState<string>(
     'In recent decades, rapid urban expansion has created unprecedented environmental challenges. Governments must adopt viable public transit policies to mitigate carbon emissions and reduce social disparities.'
   );
@@ -610,7 +621,8 @@ export default function IeltsConcourseClient({
         if (selectedTopic !== 'all') params.set('topic', selectedTopic);
         if (selectedCefr !== 'ALL') params.set('cefr', selectedCefr);
         if (searchQuery.trim()) params.set('q', searchQuery.trim());
-        params.set('limit', '12');
+        params.set('page', String(explorerPage));
+        params.set('limit', String(explorerLimit));
         const res = await fetch(`/api/atlas?${params.toString()}`, {
           signal: controller.signal
         });
@@ -622,12 +634,20 @@ export default function IeltsConcourseClient({
       } catch {
         // ignore
       }
-    }, 180);
+    }, 150);
     return () => {
       clearTimeout(timer);
       controller.abort();
     };
-  }, [activeZone, vocabSubTab, selectedTopic, selectedCefr, searchQuery]);
+  }, [
+    activeZone,
+    vocabSubTab,
+    selectedTopic,
+    selectedCefr,
+    searchQuery,
+    explorerPage,
+    explorerLimit
+  ]);
 
   const toggleSaveToNotebook = useCallback((wordStr: string) => {
     const clean = wordStr.trim();
@@ -3301,7 +3321,7 @@ export default function IeltsConcourseClient({
                             KIỂM TRA & NỘP BÀI TỪ VỰNG ({currentLesson?.titleVi})
                           </span>
                           <h3 className="font-display text-base font-black text-[#0F172A] mt-0.5">
-                            Làm Bài Tập Tổng Kết 6 Từ Trọng Tâm Để Hoàn Thành Bài Học
+                            Làm Bài Tập Tổng Kết Đầy Đủ {activeLessonWords.length} Từ Trong Bài Học Này
                           </h3>
                         </div>
                         {completedLessons.includes(currentLesson?.id || '') && (
@@ -3312,7 +3332,7 @@ export default function IeltsConcourseClient({
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                        {activeLessonWords.slice(0, 6).map((qWord, qIdx) => {
+                        {activeLessonWords.map((qWord, qIdx) => {
                           const qKey = `${currentLesson?.id}-q-${qWord.id}`;
                           const userTyped = vocabQuizAnswers[qKey] || '';
                           const isCorrect =
@@ -3325,7 +3345,8 @@ export default function IeltsConcourseClient({
                             >
                               <div className="flex items-center justify-between gap-2">
                                 <span className="text-xs font-bold text-[#0F172A]">
-                                  Câu {qIdx + 1}: {qWord.vi || qWord.en}
+                                  Từ {qIdx + 1}/{activeLessonWords.length}:{' '}
+                                  {qWord.vi || qWord.en}
                                 </span>
                                 <span className="font-mono-data text-xs text-[#0284C7]">
                                   Gợi ý: {qWord.w[0]}... ({qWord.w.length} ký tự)
@@ -3381,20 +3402,18 @@ export default function IeltsConcourseClient({
                             <div className="font-display text-sm font-black text-[#047857]">
                               Đã Nộp Bài Thành Công! Kết quả:{' '}
                               {
-                                activeLessonWords
-                                  .slice(0, 6)
-                                  .filter(
-                                    (qw) =>
-                                      (
-                                        vocabQuizAnswers[
-                                          `${currentLesson?.id}-q-${qw.id}`
-                                        ] || ''
-                                      )
-                                        .trim()
-                                        .toLowerCase() === qw.w.toLowerCase()
-                                  ).length
+                                activeLessonWords.filter(
+                                  (qw) =>
+                                    (
+                                      vocabQuizAnswers[
+                                        `${currentLesson?.id}-q-${qw.id}`
+                                      ] || ''
+                                    )
+                                      .trim()
+                                      .toLowerCase() === qw.w.toLowerCase()
+                                ).length
                               }{' '}
-                              / 6 câu đúng • +100 XP
+                              / {activeLessonWords.length} câu đúng • +100 XP
                             </div>
                             <div className="text-xs text-[#059669] mt-0.5">
                               Bài học <strong>{currentLesson?.titleVi}</strong>{' '}
@@ -3426,7 +3445,7 @@ export default function IeltsConcourseClient({
                             const autoFilled: Record<string, string> = {
                               ...vocabQuizAnswers
                             };
-                            activeLessonWords.slice(0, 6).forEach((qw) => {
+                            activeLessonWords.forEach((qw) => {
                               autoFilled[`${currentLesson?.id}-q-${qw.id}`] =
                                 qw.w;
                             });
@@ -3434,7 +3453,7 @@ export default function IeltsConcourseClient({
                           }}
                           className="px-4 py-2.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
                         >
-                          Điền Nhanh Đáp Án Để Kiểm Thử
+                          Điền Nhanh Đáp Án Đủ {activeLessonWords.length} Từ
                         </button>
 
                         <button
@@ -3469,16 +3488,95 @@ export default function IeltsConcourseClient({
                     </div>
                   </div>
                 ) : (
-                  /* Tra Từ Điển 7,298 Từ */
+                  /* Tra Từ Điển Đầy Đủ 7,298 Từ Theo 18 Chủ Đề & CEFR */
                   <div className="bg-[#FFFFFF] rounded-2xl p-6 border border-[#DCEBFA] space-y-5">
+                    <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#DCEBFA]">
+                      <div>
+                        <div className="font-display text-base font-black text-[#0F172A]">
+                          Kho Từ Điển Đầy Đủ 7,298 Từ Vựng IELTS (18 Chủ Đề Học Thuật)
+                        </div>
+                        <div className="text-xs text-[#059669] font-bold mt-0.5">
+                          Tìm thấy <strong>{totalMatches.toLocaleString()} từ</strong> phù hợp • Đang hiển thị{' '}
+                          <strong>{apiWords.length} từ</strong> trên trang {explorerPage}
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-bold text-[#64748B]">
+                          Số từ / trang:
+                        </span>
+                        {[60, 120, 300, 1000].map((lim) => (
+                          <button
+                            key={lim}
+                            type="button"
+                            onClick={() => {
+                              setExplorerLimit(lim);
+                              setExplorerPage(1);
+                            }}
+                            className={`px-2.5 py-1 rounded-lg font-mono-data text-xs font-bold cursor-pointer ${
+                              explorerLimit === lim
+                                ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                : 'bg-[#F8FBFF] border border-[#DCEBFA] text-[#334155]'
+                            }`}
+                          >
+                            {lim === 1000 ? 'Tất cả chủ đề' : `${lim} từ`}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* 18 Topic Selector Pills with Exact Word Counts */}
+                    <div className="space-y-2">
+                      <div className="text-xs font-display font-bold text-[#0284C7]">
+                        CHỌN CHỦ ĐỀ TỪ VỰNG (XEM ĐẦY ĐỦ SỐ TỪ TRONG TỪNG CHỦ ĐỀ):
+                      </div>
+                      <div className="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto p-1">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setSelectedTopic('all');
+                            setExplorerPage(1);
+                          }}
+                          className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                            selectedTopic === 'all'
+                              ? 'bg-[#0284C7] text-[#FFFFFF]'
+                              : 'bg-[#F8FBFF] border border-[#DCEBFA] text-[#0F172A]'
+                          }`}
+                        >
+                          Tất cả 18 chủ đề (7,298 từ)
+                        </button>
+                        {topics.map((tp) => (
+                          <button
+                            key={tp.id}
+                            type="button"
+                            onClick={() => {
+                              setSelectedTopic(tp.id);
+                              setExplorerLimit(1000);
+                              setExplorerPage(1);
+                            }}
+                            className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                              selectedTopic === tp.id
+                                ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                : 'bg-[#F8FBFF] border border-[#DCEBFA] text-[#0F172A] hover:bg-[#F0F7FF]'
+                            }`}
+                          >
+                            {tp.vi} ({tp.total} từ)
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
                     <div className="flex flex-wrap items-center justify-between gap-3">
                       <div className="relative flex-1 min-w-[220px]">
                         <Search className="w-4 h-4 text-[#64748B] absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                           type="search"
                           value={searchQuery}
-                          onChange={(e) => setSearchQuery(e.target.value)}
-                          placeholder="Nhập từ tiếng Anh hoặc nghĩa tiếng Việt cần tìm..."
+                          onChange={(e) => {
+                            setSearchQuery(e.target.value);
+                            setExplorerPage(1);
+                          }}
+                          placeholder="Nhập từ tiếng Anh hoặc nghĩa tiếng Việt cần tìm trong 7,298 từ..."
                           className="w-full bg-[#F8FBFF] border border-[#BAE6FD] rounded-xl pl-9 pr-3 py-2.5 text-xs"
                         />
                       </div>
@@ -3489,7 +3587,10 @@ export default function IeltsConcourseClient({
                             <button
                               key={lv}
                               type="button"
-                              onClick={() => setSelectedCefr(lv)}
+                              onClick={() => {
+                                setSelectedCefr(lv);
+                                setExplorerPage(1);
+                              }}
                               className={`px-2.5 py-1.5 rounded-lg font-mono-data text-xs font-bold cursor-pointer ${
                                 selectedCefr === lv
                                   ? 'bg-[#0284C7] text-[#FFFFFF]'
@@ -3503,15 +3604,16 @@ export default function IeltsConcourseClient({
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {apiWords.slice(0, 9).map((item) => (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 max-h-[680px] overflow-y-auto pr-1">
+                      {apiWords.map((item, idx) => (
                         <div
-                          key={item.id}
+                          key={`${item.id}-${idx}`}
                           className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] flex flex-col justify-between gap-3"
                         >
                           <div>
                             <div className="flex items-center justify-between">
                               <span className="font-display text-base font-extrabold text-[#0F172A]">
+                                {(explorerPage - 1) * explorerLimit + idx + 1}.{' '}
                                 {item.w}
                               </span>
                               <span
@@ -3523,7 +3625,7 @@ export default function IeltsConcourseClient({
                               </span>
                             </div>
                             <p className="text-xs font-bold text-[#0284C7] mt-1">
-                              {item.vi || item.en}
+                              Nghĩa: {item.vi || item.en}
                             </p>
                           </div>
                           <div className="flex items-center justify-between pt-2 border-t border-[#DCEBFA]">
@@ -3536,9 +3638,10 @@ export default function IeltsConcourseClient({
                                   'en-GB'
                                 )
                               }
-                              className="text-xs font-bold text-[#0284C7] cursor-pointer"
+                              className="text-xs font-bold text-[#0284C7] inline-flex items-center gap-1 cursor-pointer"
                             >
-                              Nghe phát âm
+                              <Volume2 className="w-3.5 h-3.5" />
+                              <span>Nghe ({item.uk || 'UK'})</span>
                             </button>
                             <button
                               type="button"
@@ -3550,6 +3653,38 @@ export default function IeltsConcourseClient({
                           </div>
                         </div>
                       ))}
+                    </div>
+
+                    {/* Pagination Bar for 7,298 Words */}
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#DCEBFA]">
+                      <span className="text-xs text-[#64748B]">
+                        Trang {explorerPage} /{' '}
+                        {Math.max(1, Math.ceil(totalMatches / explorerLimit))} •
+                        Tổng cộng {totalMatches.toLocaleString()} từ vựng
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          disabled={explorerPage <= 1}
+                          onClick={() =>
+                            setExplorerPage((p) => Math.max(1, p - 1))
+                          }
+                          className="px-3.5 py-1.5 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-xs font-bold text-[#0284C7] disabled:opacity-40 cursor-pointer"
+                        >
+                          ← Trang Trước
+                        </button>
+                        <button
+                          type="button"
+                          disabled={
+                            explorerPage >=
+                            Math.ceil(totalMatches / explorerLimit)
+                          }
+                          onClick={() => setExplorerPage((p) => p + 1)}
+                          className="px-3.5 py-1.5 rounded-xl bg-[#0284C7] text-[#FFFFFF] text-xs font-bold disabled:opacity-40 cursor-pointer"
+                        >
+                          Trang Tiếp Theo →
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -3565,7 +3700,7 @@ export default function IeltsConcourseClient({
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div>
                       <span className="font-mono-data text-xs font-bold text-[#059669]">
-                        PHÒNG 02 / LUYỆN NGHE BĂNG THI & CHÉP CHÍNH TẢ 22 CHỦ ĐỀ
+                        PHÒNG 02 / LUYỆN NGHE BĂNG THI & CHÉP CHÍNH TẢ 22 CHỦ ĐỀ (3,674 TỪ)
                       </span>
                       <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
                         Khu Vực Học Nghe (IELTS Listening Studio)
@@ -3593,7 +3728,7 @@ export default function IeltsConcourseClient({
                             : 'bg-[#F0F7FF] text-[#334155]'
                         }`}
                       >
-                        2. Nghe Chép Từ (22 Chủ Đề)
+                        2. Nghe Chép Từ (22 Chủ Đề • 3,674 Từ)
                       </button>
                       <button
                         type="button"
@@ -3612,7 +3747,7 @@ export default function IeltsConcourseClient({
                   {/* 3-Step Listening Guide */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-xs">
                     <div>
-                      <strong className="text-[#059669]">Bước 1:</strong> Chọn chế độ <em>Nghe Hội Thoại (5 câu)</em> hoặc <em>Nghe Chép Từ (22 chủ đề)</em>.
+                      <strong className="text-[#059669]">Bước 1:</strong> Chọn chế độ <em>Nghe Hội Thoại (5 câu)</em> hoặc <em>Nghe Chép Từ (22 chủ đề - đầy đủ 100% số từ)</em>.
                     </div>
                     <div>
                       <strong className="text-[#059669]">Bước 2:</strong> Bấm biểu tượng Loa màu xanh để nghe giọng đọc chuẩn Anh-Anh và điền/chọn đáp án.
@@ -3768,9 +3903,9 @@ export default function IeltsConcourseClient({
 
                 {listeningSubTab === 'dictation_22' && (
                   <div className="bg-[#FFFFFF] rounded-2xl border border-[#DCEBFA] overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-                    <div className="lg:col-span-4 p-4 bg-[#F8FBFF] border-r border-[#DCEBFA] max-h-[620px] overflow-y-auto space-y-1">
+                    <div className="lg:col-span-4 p-4 bg-[#F8FBFF] border-r border-[#DCEBFA] max-h-[720px] overflow-y-auto space-y-1">
                       <div className="px-2 pb-2 text-xs font-display font-extrabold text-[#0284C7]">
-                        CHỌN 1 TRONG 22 CHỦ ĐỀ NGHE:
+                        CHỌN 1 TRONG 22 CHỦ ĐỀ NGHE (TỔNG 3,674 TỪ):
                       </div>
                       {chapters.map((ch) => (
                         <button
@@ -3778,6 +3913,8 @@ export default function IeltsConcourseClient({
                           type="button"
                           onClick={() => {
                             setSelectedChapterKey(ch.key);
+                            setChapterBatchIdx('ALL');
+                            setChapterSearchQuery('');
                             setDictationSubmitted(false);
                           }}
                           className={`w-full text-left px-3 py-2.5 rounded-xl text-xs font-bold flex justify-between cursor-pointer ${
@@ -3794,13 +3931,40 @@ export default function IeltsConcourseClient({
                       ))}
                     </div>
 
-                    <div className="lg:col-span-8 p-5 space-y-4 max-h-[620px] overflow-y-auto">
+                    <div className="lg:col-span-8 p-5 space-y-4 max-h-[720px] overflow-y-auto">
                       {(() => {
-                        const chapterSlice = (
-                          activeChapter?.words || []
-                        ).slice(0, 15);
-                        const correctCount = chapterSlice.filter((item, i) => {
-                          const k = `${activeChapter?.key}-${item.word}-${i}`;
+                        const allChapterWords = activeChapter?.words || [];
+                        const batchSize = 50;
+                        const totalBatches = Math.ceil(
+                          allChapterWords.length / batchSize
+                        );
+                        const qFilter = chapterSearchQuery.trim().toLowerCase();
+
+                        const indexedWords = allChapterWords.map((w, idx) => ({
+                          ...w,
+                          globalIndex: idx
+                        }));
+
+                        const batchFiltered =
+                          chapterBatchIdx === 'ALL'
+                            ? indexedWords
+                            : indexedWords.slice(
+                                chapterBatchIdx * batchSize,
+                                (chapterBatchIdx + 1) * batchSize
+                              );
+
+                        const chapterSlice = qFilter
+                          ? batchFiltered.filter(
+                              (it) =>
+                                it.word.toLowerCase().includes(qFilter) ||
+                                (it.viMeaning || '')
+                                  .toLowerCase()
+                                  .includes(qFilter)
+                            )
+                          : batchFiltered;
+
+                        const correctCount = chapterSlice.filter((item) => {
+                          const k = `${activeChapter?.key}-${item.word}-${item.globalIndex}`;
                           return (
                             (chapterDictationMap[k] || '')
                               .trim()
@@ -3812,12 +3976,14 @@ export default function IeltsConcourseClient({
                           <>
                             <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#DCEBFA]">
                               <div>
-                                <div className="font-display text-sm font-extrabold text-[#0F172A]">
-                                  {activeChapter?.titleVi} — Bấm loa nghe và gõ lại từ tiếng Anh
+                                <div className="font-display text-sm sm:text-base font-extrabold text-[#0F172A]">
+                                  {activeChapter?.code}. {activeChapter?.titleVi} — Đầy Đủ{' '}
+                                  {allChapterWords.length} Từ Vựng
                                 </div>
                                 <div className="text-xs text-[#059669] font-bold mt-0.5">
-                                  Tiến độ: Đã gõ đúng {correctCount} /{' '}
-                                  {chapterSlice.length} từ trong bài này
+                                  Đang hiển thị: <strong>{chapterSlice.length}</strong> /{' '}
+                                  {allChapterWords.length} từ • Đã gõ đúng:{' '}
+                                  <strong>{correctCount}</strong> / {chapterSlice.length} từ
                                 </div>
                               </div>
 
@@ -3845,9 +4011,60 @@ export default function IeltsConcourseClient({
                               </div>
                             </div>
 
+                            {/* Batch Selector (Show ALL 241 words or split by 50-word chunks) + Quick Search */}
+                            <div className="flex flex-wrap items-center justify-between gap-2 bg-[#F8FBFF] p-3 rounded-xl border border-[#DCEBFA]">
+                              <div className="flex flex-wrap items-center gap-1.5">
+                                <button
+                                  type="button"
+                                  onClick={() => setChapterBatchIdx('ALL')}
+                                  className={`px-3 py-1.5 rounded-lg font-mono-data text-xs font-bold cursor-pointer ${
+                                    chapterBatchIdx === 'ALL'
+                                      ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                      : 'bg-[#FFFFFF] border border-[#DCEBFA] text-[#0F172A]'
+                                  }`}
+                                >
+                                  Tất cả ({allChapterWords.length} từ)
+                                </button>
+                                {Array.from(
+                                  { length: totalBatches },
+                                  (_, bIdx) => {
+                                    const startNo = bIdx * batchSize + 1;
+                                    const endNo = Math.min(
+                                      allChapterWords.length,
+                                      (bIdx + 1) * batchSize
+                                    );
+                                    return (
+                                      <button
+                                        key={bIdx}
+                                        type="button"
+                                        onClick={() => setChapterBatchIdx(bIdx)}
+                                        className={`px-2.5 py-1.5 rounded-lg font-mono-data text-xs font-bold cursor-pointer ${
+                                          chapterBatchIdx === bIdx
+                                            ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                            : 'bg-[#FFFFFF] border border-[#DCEBFA] text-[#334155]'
+                                        }`}
+                                      >
+                                        Từ {startNo}–{endNo}
+                                      </button>
+                                    );
+                                  }
+                                )}
+                              </div>
+
+                              <input
+                                type="search"
+                                value={chapterSearchQuery}
+                                onChange={(e) =>
+                                  setChapterSearchQuery(e.target.value)
+                                }
+                                placeholder={`Tìm trong ${allChapterWords.length} từ...`}
+                                className="px-3 py-1.5 rounded-lg bg-[#FFFFFF] border border-[#BAE6FD] text-xs w-48"
+                              />
+                            </div>
+
                             <div className="space-y-2.5">
-                              {chapterSlice.map((item, i) => {
-                                const k = `${activeChapter?.key}-${item.word}-${i}`;
+                              {chapterSlice.map((item) => {
+                                const k = `${activeChapter?.key}-${item.word}-${item.globalIndex}`;
                                 const val = chapterDictationMap[k] || '';
                                 const ok =
                                   val.trim().toLowerCase() ===
@@ -3879,7 +4096,8 @@ export default function IeltsConcourseClient({
                                       <div className="min-w-0">
                                         <div className="flex items-center gap-2">
                                           <span className="font-mono-data text-xs font-bold text-[#0284C7]">
-                                            Câu {i + 1}:
+                                            Từ {item.globalIndex + 1}/
+                                            {allChapterWords.length}:
                                           </span>
                                           <span className="font-display text-sm font-extrabold text-[#0F172A]">
                                             {showWord
@@ -3889,7 +4107,7 @@ export default function IeltsConcourseClient({
                                         </div>
                                         <div className="text-xs text-[#334155] mt-0.5">
                                           {revealMeanings
-                                            ? `Nghĩa Tiếng Việt: ${item.viMeaning}`
+                                            ? item.viMeaning
                                             : '[Đã ẩn nghĩa Tiếng Việt]'}
                                         </div>
                                         {dictationSubmitted && !ok && (
@@ -3910,7 +4128,7 @@ export default function IeltsConcourseClient({
                                             [k]: e.target.value
                                           }))
                                         }
-                                        placeholder="Gõ từ nghe được..."
+                                        placeholder="Gõ lại từ..."
                                         className={`px-3 py-2 rounded-xl border text-xs font-mono-data w-40 ${
                                           ok
                                             ? 'bg-[#ECFDF5] border-[#059669] text-[#059669] font-bold'
@@ -3937,7 +4155,7 @@ export default function IeltsConcourseClient({
                                     +80 XP
                                   </div>
                                   <div className="text-xs text-[#059669] mt-0.5">
-                                    Toàn bộ đáp án Tiếng Anh và nghĩa Tiếng Việt đã được hiển thị để bạn đối chiếu.
+                                    Toàn bộ đáp án Tiếng Anh và nghĩa Tiếng Việt của {chapterSlice.length} từ đã được hiển thị để bạn đối chiếu.
                                   </div>
                                 </div>
                               </div>
@@ -3951,16 +4169,16 @@ export default function IeltsConcourseClient({
                                     const filled: Record<string, string> = {
                                       ...chapterDictationMap
                                     };
-                                    chapterSlice.forEach((item, i) => {
+                                    chapterSlice.forEach((item) => {
                                       filled[
-                                        `${activeChapter?.key}-${item.word}-${i}`
+                                        `${activeChapter?.key}-${item.word}-${item.globalIndex}`
                                       ] = item.word;
                                     });
                                     setChapterDictationMap(filled);
                                   }}
                                   className="px-3.5 py-2 rounded-xl bg-[#F0F7FF] border border-[#BAE6FD] text-[#0284C7] font-display text-xs font-bold cursor-pointer"
                                 >
-                                  Điền Nhanh Đáp Án Mẫu
+                                  Điền Nhanh Đáp Án Mẫu ({chapterSlice.length} Từ)
                                 </button>
                                 <button
                                   type="button"
@@ -3993,41 +4211,92 @@ export default function IeltsConcourseClient({
                 )}
 
                 {listeningSubTab === 'paraphrase_179' && (
-                  <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {listening179.slice(0, 12).map((item) => (
-                      <div
-                        key={item.index}
-                        className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-display text-base font-extrabold text-[#0F172A]">
-                            {item.word}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() =>
-                              playPronunciation('', item.word, 'en-GB')
-                            }
-                            className="p-1.5 rounded-lg bg-[#E0F2FE] text-[#0284C7] cursor-pointer"
-                          >
-                            <Volume2 className="w-3.5 h-3.5" />
-                          </button>
+                  <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
+                    <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#DCEBFA]">
+                      <div>
+                        <div className="font-display text-base font-black text-[#0F172A]">
+                          Đầy Đủ 179 Nhóm Từ Đồng Nghĩa Bẫy IELTS Listening (Paraphrase Corpus)
                         </div>
-                        <p className="text-xs font-bold text-[#0284C7]">
-                          Nghĩa Tiếng Việt: {item.viMeaning}
-                        </p>
-                        <div className="flex flex-wrap gap-1.5 pt-1">
-                          {item.replace.map((eq, i) => (
-                            <span
-                              key={i}
-                              className="px-2 py-0.5 rounded bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] font-mono-data text-xs font-bold"
-                            >
-                              ≈ {eq}
-                            </span>
-                          ))}
+                        <div className="text-xs text-[#059669] font-bold mt-0.5">
+                          Đang hiển thị đầy đủ{' '}
+                          {
+                            listening179.filter(
+                              (it) =>
+                                !listening179Search.trim() ||
+                                it.word
+                                  .toLowerCase()
+                                  .includes(
+                                    listening179Search.trim().toLowerCase()
+                                  ) ||
+                                (it.viMeaning || '')
+                                  .toLowerCase()
+                                  .includes(
+                                    listening179Search.trim().toLowerCase()
+                                  )
+                            ).length
+                          }{' '}
+                          / {listening179.length} nhóm từ đồng nghĩa
                         </div>
                       </div>
-                    ))}
+
+                      <input
+                        type="search"
+                        value={listening179Search}
+                        onChange={(e) => setListening179Search(e.target.value)}
+                        placeholder="Tìm trong 179 nhóm từ..."
+                        className="px-3.5 py-2 rounded-xl bg-[#F8FBFF] border border-[#BAE6FD] text-xs w-64"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[680px] overflow-y-auto pr-1">
+                      {listening179
+                        .filter(
+                          (it) =>
+                            !listening179Search.trim() ||
+                            it.word
+                              .toLowerCase()
+                              .includes(
+                                listening179Search.trim().toLowerCase()
+                              ) ||
+                            (it.viMeaning || '')
+                              .toLowerCase()
+                              .includes(listening179Search.trim().toLowerCase())
+                        )
+                        .map((item) => (
+                          <div
+                            key={item.index}
+                            className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="font-display text-base font-extrabold text-[#0F172A]">
+                                #{item.index}. {item.word}
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  playPronunciation('', item.word, 'en-GB')
+                                }
+                                className="p-1.5 rounded-lg bg-[#E0F2FE] text-[#0284C7] cursor-pointer"
+                              >
+                                <Volume2 className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                            <p className="text-xs font-bold text-[#0284C7]">
+                              Nghĩa Tiếng Việt: {item.viMeaning}
+                            </p>
+                            <div className="flex flex-wrap gap-1.5 pt-1">
+                              {item.replace.map((eq, i) => (
+                                <span
+                                  key={i}
+                                  className="px-2 py-0.5 rounded bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] font-mono-data text-xs font-bold"
+                                >
+                                  ≈ {eq}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                    </div>
                   </div>
                 )}
               </BlurFade>
@@ -4583,39 +4852,151 @@ export default function IeltsConcourseClient({
                     </div>
                   </div>
                 ) : (
-                  <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {(readingTiers[0]?.words || []).slice(0, 12).map((item) => (
-                      <div
-                        key={item.no}
-                        className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-display text-base font-extrabold text-[#0F172A]">
-                            {item.word}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() => toggleSaveToNotebook(item.word)}
-                            className="px-2.5 py-1 rounded bg-[#0284C7] text-[#FFFFFF] text-xs font-bold cursor-pointer"
-                          >
-                            + Lưu Sổ
-                          </button>
-                        </div>
-                        <p className="text-xs font-bold text-[#0284C7]">
-                          Nghĩa Tiếng Việt: {item.viMeaning}
-                        </p>
-                        <div className="flex flex-wrap gap-1 pt-1">
-                          {item.synonyms.map((s, i) => (
-                            <span
-                              key={i}
-                              className="px-2 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs"
+                  <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
+                    {(() => {
+                      const rawTierWords =
+                        selectedReadingTier === 'ALL'
+                          ? readingTiers.flatMap((t) =>
+                              t.words.map((w) => ({
+                                ...w,
+                                tierLabel: t.tier
+                              }))
+                            )
+                          : (
+                              readingTiers[selectedReadingTier]?.words || []
+                            ).map((w) => ({
+                              ...w,
+                              tierLabel:
+                                readingTiers[selectedReadingTier]?.tier || ''
+                            }));
+
+                      const qFilter = readingKeywordSearch.trim().toLowerCase();
+                      const filteredReadingWords = qFilter
+                        ? rawTierWords.filter(
+                            (it) =>
+                              it.word.toLowerCase().includes(qFilter) ||
+                              (it.viMeaning || '')
+                                .toLowerCase()
+                                .includes(qFilter) ||
+                              it.synonyms.some((s) =>
+                                s.toLowerCase().includes(qFilter)
+                              )
+                          )
+                        : rawTierWords;
+
+                      return (
+                        <>
+                          <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#DCEBFA]">
+                            <div>
+                              <div className="font-display text-base font-black text-[#0F172A]">
+                                Kho 538 Từ Khóa Đồng Nghĩa IELTS Reading (Đầy Đủ 3 Cấp Độ Tần Suất)
+                              </div>
+                              <div className="text-xs text-[#059669] font-bold mt-0.5">
+                                Đang hiển thị đầy đủ{' '}
+                                <strong>{filteredReadingWords.length}</strong> /{' '}
+                                {rawTierWords.length} nhóm từ khóa đồng nghĩa
+                              </div>
+                            </div>
+
+                            <input
+                              type="search"
+                              value={readingKeywordSearch}
+                              onChange={(e) =>
+                                setReadingKeywordSearch(e.target.value)
+                              }
+                              placeholder="Tìm từ khóa hoặc từ đồng nghĩa..."
+                              className="px-3.5 py-2 rounded-xl bg-[#F8FBFF] border border-[#BAE6FD] text-xs w-64"
+                            />
+                          </div>
+
+                          <div className="flex flex-wrap gap-2">
+                            <button
+                              type="button"
+                              onClick={() => setSelectedReadingTier('ALL')}
+                              className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                                selectedReadingTier === 'ALL'
+                                  ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                  : 'bg-[#F8FBFF] border border-[#DCEBFA] text-[#0F172A]'
+                              }`}
                             >
-                              {s}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
+                              Tất Cả 3 Cấp Độ (
+                              {readingTiers.reduce(
+                                (acc, t) => acc + t.words.length,
+                                0
+                              )}{' '}
+                              nhóm • 538 từ)
+                            </button>
+                            {readingTiers.map((tier, tIdx) => (
+                              <button
+                                key={tier.tier}
+                                type="button"
+                                onClick={() => setSelectedReadingTier(tIdx)}
+                                className={`px-3 py-1.5 rounded-xl font-display text-xs font-bold cursor-pointer ${
+                                  selectedReadingTier === tIdx
+                                    ? 'bg-[#0284C7] text-[#FFFFFF]'
+                                    : 'bg-[#F8FBFF] border border-[#DCEBFA] text-[#0F172A]'
+                                }`}
+                              >
+                                Cấp Độ {tIdx + 1}: Tần suất {tier.probability} (
+                                {tier.words.length} nhóm)
+                              </button>
+                            ))}
+                          </div>
+
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[680px] overflow-y-auto pr-1">
+                            {filteredReadingWords.map((item, idx) => (
+                              <div
+                                key={`${item.no}-${item.word}-${idx}`}
+                                className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2"
+                              >
+                                <div className="flex items-center justify-between gap-2">
+                                  <span className="font-display text-base font-extrabold text-[#0F172A]">
+                                    #{item.no}. {item.word}
+                                  </span>
+                                  <div className="flex items-center gap-1.5">
+                                    <button
+                                      type="button"
+                                      onClick={() =>
+                                        playPronunciation(
+                                          '',
+                                          item.word,
+                                          'en-GB'
+                                        )
+                                      }
+                                      className="p-1.5 rounded-lg bg-[#E0F2FE] text-[#0284C7] cursor-pointer"
+                                    >
+                                      <Volume2 className="w-3.5 h-3.5" />
+                                    </button>
+                                    <button
+                                      type="button"
+                                      onClick={() =>
+                                        toggleSaveToNotebook(item.word)
+                                      }
+                                      className="px-2.5 py-1 rounded bg-[#0284C7] text-[#FFFFFF] text-xs font-bold cursor-pointer"
+                                    >
+                                      + Lưu Sổ
+                                    </button>
+                                  </div>
+                                </div>
+                                <p className="text-xs font-bold text-[#0284C7]">
+                                  Nghĩa Tiếng Việt: {item.viMeaning}
+                                </p>
+                                <div className="flex flex-wrap gap-1 pt-1">
+                                  {item.synonyms.map((s, i) => (
+                                    <span
+                                      key={i}
+                                      className="px-2 py-0.5 rounded bg-[#E0F2FE] text-[#0284C7] font-mono-data text-xs"
+                                    >
+                                      ≈ {s}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      );
+                    })()}
                   </div>
                 )}
               </BlurFade>
@@ -4633,7 +5014,7 @@ export default function IeltsConcourseClient({
                         PHÒNG 05 / SOẠN THẢO BÀI LUẬN WRITING TASK 2 & AI CHẤM ĐIỂM
                       </span>
                       <h1 className="font-display text-lg sm:text-xl font-black text-[#0F172A] mt-0.5">
-                        Khu Vực Học Viết (AI Writing Grader & 100 Mẫu Câu)
+                        Khu Vực Học Viết (AI Writing Grader & Đầy Đủ 100 Mẫu Câu)
                       </h1>
                     </div>
 
@@ -4658,7 +5039,7 @@ export default function IeltsConcourseClient({
                             : 'bg-[#F0F7FF] text-[#334155]'
                         }`}
                       >
-                        2. 100 Mẫu Câu Band 7.5+
+                        2. Đầy Đủ 100 Mẫu Câu Band 7.5+
                       </button>
                     </div>
                   </div>
@@ -4788,29 +5169,104 @@ export default function IeltsConcourseClient({
                   </div>
                 ) : (
                   <div className="bg-[#FFFFFF] p-6 rounded-2xl border border-[#DCEBFA] space-y-4">
-                    {writing100.slice(0, 10).map((item) => (
-                      <div
-                        key={item.no}
-                        className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] grid grid-cols-1 md:grid-cols-2 gap-3 text-xs"
-                      >
-                        <div className="p-3 rounded-lg bg-[#FFFBEB] border border-[#FDE68A]">
-                          <div className="font-bold text-[#D97706]">
-                            Câu thông thường (Band 6.0):
-                          </div>
-                          <p className="mt-1 text-[#0F172A]">
-                            {item.standardBand65}
-                          </p>
+                    <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#DCEBFA]">
+                      <div>
+                        <div className="font-display text-base font-black text-[#0F172A]">
+                          Đầy Đủ 100 Cấu Trúc Nâng Cấp Câu IELTS Writing (Band 6.0 → Band 7.5+)
                         </div>
-                        <div className="p-3 rounded-lg bg-[#ECFDF5] border border-[#A7F3D0]">
-                          <div className="font-bold text-[#059669]">
-                            Câu nâng cấp học thuật (Band 7.5+):
-                          </div>
-                          <p className="mt-1 text-[#0F172A] font-medium">
-                            {item.advancedBand75}
-                          </p>
+                        <div className="text-xs text-[#059669] font-bold mt-0.5">
+                          Đang hiển thị đầy đủ{' '}
+                          {
+                            writing100.filter(
+                              (it) =>
+                                !writingTemplateSearch.trim() ||
+                                it.standardBand65
+                                  .toLowerCase()
+                                  .includes(
+                                    writingTemplateSearch.trim().toLowerCase()
+                                  ) ||
+                                it.advancedBand75
+                                  .toLowerCase()
+                                  .includes(
+                                    writingTemplateSearch.trim().toLowerCase()
+                                  )
+                            ).length
+                          }{' '}
+                          / {writing100.length} mẫu câu học thuật
                         </div>
                       </div>
-                    ))}
+
+                      <input
+                        type="search"
+                        value={writingTemplateSearch}
+                        onChange={(e) =>
+                          setWritingTemplateSearch(e.target.value)
+                        }
+                        placeholder="Tìm trong 100 mẫu câu..."
+                        className="px-3.5 py-2 rounded-xl bg-[#F8FBFF] border border-[#BAE6FD] text-xs w-64"
+                      />
+                    </div>
+
+                    <div className="space-y-3 max-h-[680px] overflow-y-auto pr-1">
+                      {writing100
+                        .filter(
+                          (it) =>
+                            !writingTemplateSearch.trim() ||
+                            it.standardBand65
+                              .toLowerCase()
+                              .includes(
+                                writingTemplateSearch.trim().toLowerCase()
+                              ) ||
+                            it.advancedBand75
+                              .toLowerCase()
+                              .includes(
+                                writingTemplateSearch.trim().toLowerCase()
+                              )
+                        )
+                        .map((item) => (
+                          <div
+                            key={item.no}
+                            className="p-4 rounded-xl bg-[#F8FBFF] border border-[#DCEBFA] space-y-2.5 text-xs"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="font-mono-data font-bold text-[#0284C7]">
+                                Mẫu câu #{item.no} / 100 • Chủ điểm:{' '}
+                                {item.category}
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setEssayText(
+                                    (t) => `${t} ${item.advancedBand75}`
+                                  );
+                                  setWritingSubTab('ai_grader');
+                                }}
+                                className="px-3 py-1 rounded-lg bg-[#0284C7] text-[#FFFFFF] font-display font-bold cursor-pointer"
+                              >
+                                + Đưa Câu Này Vào Bài Viết
+                              </button>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                              <div className="p-3 rounded-lg bg-[#FFFBEB] border border-[#FDE68A]">
+                                <div className="font-bold text-[#D97706]">
+                                  Câu thông thường (Band 6.0):
+                                </div>
+                                <p className="mt-1 text-[#0F172A]">
+                                  {item.standardBand65}
+                                </p>
+                              </div>
+                              <div className="p-3 rounded-lg bg-[#ECFDF5] border border-[#A7F3D0]">
+                                <div className="font-bold text-[#059669]">
+                                  Câu nâng cấp học thuật (Band 7.5+):
+                                </div>
+                                <p className="mt-1 text-[#0F172A] font-medium">
+                                  {item.advancedBand75}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                    </div>
                   </div>
                 )}
               </BlurFade>
