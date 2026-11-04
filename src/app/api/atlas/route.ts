@@ -5,12 +5,29 @@ import type { WordAtlasEntry } from '@/types/atlas';
 
 let cachedWords: WordAtlasEntry[] | null = null;
 
-function getAtlasWords(): WordAtlasEntry[] {
+async function getAtlasWords(request: NextRequest): Promise<WordAtlasEntry[]> {
   if (!cachedWords) {
-    const filePath = path.join(process.cwd(), 'public/data/word-atlas-full.json');
-    cachedWords = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    try {
+      const filePath = path.join(process.cwd(), 'public/data/word-atlas-full.json');
+      if (fs.existsSync(filePath)) {
+        cachedWords = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        return cachedWords!;
+      }
+    } catch {
+      // ignore
+    }
+
+    try {
+      const origin = request.nextUrl.origin;
+      const res = await fetch(`${origin}/data/word-atlas-full.json`);
+      if (res.ok) {
+        cachedWords = (await res.json()) as WordAtlasEntry[];
+      }
+    } catch {
+      // fallback
+    }
   }
-  return cachedWords!;
+  return cachedWords || [];
 }
 
 export async function GET(request: NextRequest) {
@@ -21,7 +38,7 @@ export async function GET(request: NextRequest) {
   const page = Math.max(1, parseInt(searchParams.get('page') || '1', 10));
   const limit = Math.min(7500, Math.max(1, parseInt(searchParams.get('limit') || '60', 10)));
 
-  const allWords = getAtlasWords();
+  const allWords = await getAtlasWords(request);
 
   const filtered = allWords.filter((item) => {
     if (topic !== 'all' && item.topic !== topic) return false;

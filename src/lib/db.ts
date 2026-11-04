@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import defaultDb from '../../public/data/platform-db.json';
 
 export interface PlatformUser {
   id: string;
@@ -82,17 +83,30 @@ export interface PlatformDb {
   settings: PlatformSettings;
 }
 
-const DB_PATH = path.join(process.cwd(), 'public/data/platform-db.json');
+let inMemoryDb: PlatformDb | null = null;
 
 export function readPlatformDb(): PlatformDb {
-  const raw = fs.readFileSync(DB_PATH, 'utf8');
-  return JSON.parse(raw) as PlatformDb;
+  if (!inMemoryDb) {
+    try {
+      const DB_PATH = path.join(process.cwd(), 'public/data/platform-db.json');
+      if (fs.existsSync(DB_PATH)) {
+        inMemoryDb = JSON.parse(fs.readFileSync(DB_PATH, 'utf8'));
+      } else {
+        inMemoryDb = JSON.parse(JSON.stringify(defaultDb));
+      }
+    } catch {
+      inMemoryDb = JSON.parse(JSON.stringify(defaultDb));
+    }
+  }
+  return inMemoryDb!;
 }
 
 export function writePlatformDb(db: PlatformDb): void {
+  inMemoryDb = db;
   try {
+    const DB_PATH = path.join(process.cwd(), 'public/data/platform-db.json');
     fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2), 'utf8');
   } catch {
-    // Handle read-only serverless environments gracefully
+    // Graceful fallback for serverless read-only runtime
   }
 }
