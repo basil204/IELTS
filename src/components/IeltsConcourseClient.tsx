@@ -139,12 +139,14 @@ export default function IeltsConcourseClient({
     plan: string;
   } | null>(null);
 
-  // Interactive Cloze / Dictation inside Hero 02
-  const [practiceMode, setPracticeMode] = useState<'see' | 'cloze' | 'dictation'>('see');
+  // Interactive Cloze / Dictation / Quiz inside Hero 02
+  const [practiceMode, setPracticeMode] = useState<'see' | 'quiz' | 'cloze' | 'dictation'>('see');
   const [clozeInput, setClozeInput] = useState<string>('');
   const [clozeSolved, setClozeSolved] = useState<boolean>(false);
+  const [quizSelectedId, setQuizSelectedId] = useState<string | null>(null);
   const [playingVoice, setPlayingVoice] = useState<'uk' | 'us' | 'ex' | null>(null);
   const [imgErrorMap, setImgErrorMap] = useState<Record<string, boolean>>({});
+  const [stationCefrFilter, setStationCefrFilter] = useState<string>('ALL');
 
   // Section 2: 19 IELTS Topics Explorer & Full 7,298-word Browser
   const [activeTopic, setActiveTopic] = useState<string>('technology');
@@ -238,7 +240,54 @@ export default function IeltsConcourseClient({
 
     setClozeInput('');
     setClozeSolved(false);
+    setQuizSelectedId(null);
     setCurrentIndex((prev) => (prev + 1) % queueWords.length);
+  };
+
+  // Generate 4 Multiple Choice Quiz options for currentWord
+  const quizOptions = useMemo(() => {
+    if (!currentWord) return [];
+    const distractors = queueWords
+      .filter((w) => w.id !== currentWord.id && (w.vi || w.en))
+      .slice(0, 12);
+    const picked: WordAtlasEntry[] = [];
+    for (let i = 0; i < distractors.length && picked.length < 3; i++) {
+      const idx = (currentIndex * 3 + i * 5) % distractors.length;
+      const cand = distractors[idx];
+      if (cand && !picked.some((p) => p.id === cand.id)) {
+        picked.push(cand);
+      }
+    }
+    const combined = [currentWord, ...picked];
+    return combined.sort((a, b) => a.id.localeCompare(b.id));
+  }, [currentWord, queueWords, currentIndex]);
+
+  const handleLoadExplorerIntoStation = () => {
+    if (explorerWords.length > 0) {
+      setQueueWords(explorerWords);
+      setCurrentIndex(0);
+      setClozeInput('');
+      setClozeSolved(false);
+      setQuizSelectedId(null);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleFilterStationByCefr = (lvl: string) => {
+    setStationCefrFilter(lvl);
+    if (lvl === 'ALL') {
+      setQueueWords(initialPriorityWords);
+      setCurrentIndex(0);
+      return;
+    }
+    const filtered = initialPriorityWords.filter((w) => w.cefr === lvl);
+    if (filtered.length > 0) {
+      setQueueWords(filtered);
+      setCurrentIndex(0);
+      setClozeInput('');
+      setClozeSolved(false);
+      setQuizSelectedId(null);
+    }
   };
 
   const handleAudioTrigger = (type: 'uk' | 'us' | 'ex') => {
@@ -254,6 +303,28 @@ export default function IeltsConcourseClient({
     }
     setTimeout(() => setPlayingVoice(null), 1200);
   };
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement | null)?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.key === '1') {
+        e.preventDefault();
+        handleGradeCard('again');
+      } else if (e.key === '2') {
+        e.preventDefault();
+        handleGradeCard('hard');
+      } else if (e.key === '3') {
+        e.preventDefault();
+        handleGradeCard('good');
+      } else if (e.key === '4') {
+        e.preventDefault();
+        handleGradeCard('easy');
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  });
 
   const handleSelectWordForStation = useCallback(
     async (wordOrEntry: WordAtlasEntry | string) => {
@@ -620,11 +691,31 @@ export default function IeltsConcourseClient({
         >
           {/* Yellow Concourse Header Bar */}
           <div className="flex flex-wrap items-center justify-between gap-2 pb-3.5">
-            <h2 className="font-display text-sm sm:text-base font-black tracking-tight text-[#16181D]">
-              02 / HÔM NAY HỌC GÌ (FSRS QUEUE: {dueQueueCount} TỪ)
-            </h2>
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="font-display text-sm sm:text-base font-black tracking-tight text-[#16181D]">
+                {lang === 'vi'
+                  ? `02 / HÔM NAY HỌC GÌ (FSRS QUEUE: ${dueQueueCount} TỪ)`
+                  : `02 / TODAY FSRS QUEUE (${dueQueueCount} DUE)`}
+              </h2>
+              <div className="flex items-center gap-1 bg-[#16181D]/10 p-0.5 rounded-md">
+                {(['ALL', 'B2', 'C1', 'C2'] as const).map((lvl) => (
+                  <button
+                    key={lvl}
+                    type="button"
+                    onClick={() => handleFilterStationByCefr(lvl)}
+                    className={`px-2 py-0.5 rounded font-mono-data text-xs font-bold cursor-pointer transition-colors ${
+                      stationCefrFilter === lvl
+                        ? 'bg-[#16181D] text-[#FACC15]'
+                        : 'text-[#16181D] hover:bg-[#16181D]/15'
+                    }`}
+                  >
+                    {lvl}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5">
               <button
                 type="button"
                 onClick={() => setPracticeMode('see')}
@@ -635,6 +726,20 @@ export default function IeltsConcourseClient({
                 }`}
               >
                 See & Hear
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setPracticeMode('quiz');
+                  setQuizSelectedId(null);
+                }}
+                className={`px-2.5 py-1 rounded text-xs font-display font-bold transition-colors cursor-pointer ${
+                  practiceMode === 'quiz'
+                    ? 'bg-[#16181D] text-[#FACC15]'
+                    : 'bg-[#16181D]/10 text-[#16181D] hover:bg-[#16181D]/20'
+                }`}
+              >
+                {lang === 'vi' ? 'Quiz 4 Đáp Án' : '4-Option Quiz'}
               </button>
               <button
                 type="button"
@@ -668,7 +773,7 @@ export default function IeltsConcourseClient({
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
                 <div className="sm:col-span-7 space-y-3">
                   <div className="flex items-center justify-between sm:justify-start gap-2">
-                    <h3 className="font-display text-3xl sm:text-4xl md:text-[42px] font-black tracking-tight text-[#F4F1EA] leading-none">
+                    <h3 className="font-display text-3xl sm:text-4xl font-black tracking-tight text-[#F4F1EA] leading-none">
                       {practiceMode === 'dictation' && !clozeSolved
                         ? `${currentWord.w[0]}${'•'.repeat(Math.max(3, currentWord.w.length - 1))}`
                         : currentWord.w}
@@ -695,13 +800,52 @@ export default function IeltsConcourseClient({
                     )}
                   </div>
 
-                  <p className="text-base sm:text-lg font-medium text-[#F4F1EA] leading-snug">
-                    {currentWord.vi || currentWord.en}
-                  </p>
-                  {currentWord.vi && (
-                    <p className="text-xs text-[#B8B2A6] leading-relaxed">
-                      {currentWord.en}
-                    </p>
+                  {practiceMode === 'quiz' ? (
+                    <div className="space-y-1.5 pt-1">
+                      <div className="font-mono-data text-xs text-[#FACC15] font-bold">
+                        {lang === 'vi'
+                          ? 'CHỌN NGHĨA ĐÚNG CỦA TỪ (+20 XP):'
+                          : 'SELECT THE CORRECT MEANING (+20 XP):'}
+                      </div>
+                      <div className="grid grid-cols-1 gap-1.5">
+                        {quizOptions.map((opt) => {
+                          const isSelected = quizSelectedId === opt.id;
+                          const isRight = opt.id === currentWord.id;
+                          return (
+                            <button
+                              key={opt.id}
+                              type="button"
+                              onClick={() => {
+                                setQuizSelectedId(opt.id);
+                                if (isRight) {
+                                  setUserXp((x) => x + 20);
+                                }
+                              }}
+                              className={`text-left px-3 py-2 rounded-lg border text-xs transition-colors cursor-pointer ${
+                                isSelected
+                                  ? isRight
+                                    ? 'bg-[#065F46] border-[#10B981] text-[#F4F1EA] font-bold'
+                                    : 'bg-[#EA580C]/30 border-[#EA580C] text-[#F4F1EA]'
+                                  : 'bg-[#1F2229] border-[#363B47] text-[#F4F1EA] hover:border-[#FACC15]'
+                              }`}
+                            >
+                              {opt.vi || opt.en}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <p className="text-base sm:text-lg font-medium text-[#F4F1EA] leading-snug">
+                        {currentWord.vi || currentWord.en}
+                      </p>
+                      {currentWord.vi && (
+                        <p className="text-xs text-[#B8B2A6] leading-relaxed">
+                          {currentWord.en}
+                        </p>
+                      )}
+                    </>
                   )}
 
                   {/* UK / US Pronunciation Waveform Buttons */}
@@ -745,14 +889,24 @@ export default function IeltsConcourseClient({
                       />
                     ) : (
                       <div className="w-full h-full p-4 flex flex-col justify-between bg-[#1F2430] text-[#F4F1EA]">
-                        <span className="font-mono-data text-xs text-[#FACC15]">
-                          VISUAL CONTEXT • {currentWord.topic.toUpperCase()}
-                        </span>
-                        <div className="font-display text-2xl font-black text-[#F4F1EA]">
-                          {currentWord.w}
+                        <div className="flex items-center justify-between">
+                          <span className="font-mono-data text-xs text-[#FACC15]">
+                            LEXICAL BLUEPRINT • {currentWord.topic.toUpperCase()}
+                          </span>
+                          <span className="font-mono-data text-xs px-2 py-0.5 rounded bg-[#16181D] text-[#10B981]">
+                            {currentWord.cefr}
+                          </span>
                         </div>
-                        <span className="text-xs text-[#B8B2A6]">
-                          {currentWord.col[0] || currentWord.en}
+                        <div className="my-auto py-2 border-y border-[#2E3340]">
+                          <div className="font-display text-2xl font-black text-[#F4F1EA]">
+                            {currentWord.w}
+                          </div>
+                          <div className="font-mono-data text-xs text-[#FACC15] mt-1">
+                            {currentWord.uk || currentWord.us} • {currentWord.pos}
+                          </div>
+                        </div>
+                        <span className="text-xs text-[#B8B2A6] line-clamp-2">
+                          {currentWord.col.join(' • ') || currentWord.en}
                         </span>
                       </div>
                     )}
@@ -762,7 +916,7 @@ export default function IeltsConcourseClient({
                       className="absolute bottom-2 right-2 px-2.5 py-1 rounded bg-[#16181D]/85 text-[#FACC15] hover:bg-[#FACC15] hover:text-[#16181D] font-mono-data text-xs flex items-center gap-1 transition-colors cursor-pointer"
                     >
                       <Volume2 className="w-3 h-3" />
-                      <span>Nghe câu ví dụ</span>
+                      <span>{lang === 'vi' ? 'Nghe câu ví dụ' : 'Example Audio'}</span>
                     </button>
                   </div>
                 </div>
@@ -852,28 +1006,28 @@ export default function IeltsConcourseClient({
               onClick={() => handleGradeCard('again')}
               className="py-2.5 px-3 rounded-lg bg-[#EA580C] hover:bg-[#D9460F] text-[#F4F1EA] font-mono-data text-xs sm:text-sm font-bold text-center transition-colors cursor-pointer shadow-sm"
             >
-              [Again {intervals.again}]
+              [1] Again {intervals.again}
             </button>
             <button
               type="button"
               onClick={() => handleGradeCard('hard')}
               className="py-2.5 px-3 rounded-lg bg-[#16181D] hover:bg-[#232732] text-[#F4F1EA] font-mono-data text-xs sm:text-sm font-bold text-center transition-colors cursor-pointer shadow-sm"
             >
-              [Hard {intervals.hard}]
+              [2] Hard {intervals.hard}
             </button>
             <button
               type="button"
               onClick={() => handleGradeCard('good')}
               className="py-2.5 px-3 rounded-lg bg-[#15803D] hover:bg-[#166534] text-[#F4F1EA] font-mono-data text-xs sm:text-sm font-bold text-center transition-colors cursor-pointer shadow-sm"
             >
-              [Good {intervals.good}]
+              [3] Good {intervals.good}
             </button>
             <button
               type="button"
               onClick={() => handleGradeCard('easy')}
               className="py-2.5 px-3 rounded-lg bg-[#065F46] hover:bg-[#047857] text-[#F4F1EA] font-mono-data text-xs sm:text-sm font-bold text-center transition-colors cursor-pointer shadow-sm"
             >
-              [Easy {intervals.easy}]
+              [4] Easy {intervals.easy}
             </button>
           </div>
         </section>
@@ -1018,6 +1172,19 @@ export default function IeltsConcourseClient({
                 className="w-full bg-[#1F2229] border border-[#363B47] rounded-lg pl-9 pr-3 py-1.5 text-xs text-[#F4F1EA] placeholder:text-[#B8B2A6]/70"
               />
             </div>
+
+            <button
+              type="button"
+              onClick={handleLoadExplorerIntoStation}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#FACC15] text-[#16181D] hover:bg-[#EAB308] font-display text-xs font-extrabold transition-colors cursor-pointer"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>
+                {lang === 'vi'
+                  ? 'Nạp Chủ Đề Này Lên Trạm 02'
+                  : 'Load Topic into Station 02'}
+              </span>
+            </button>
 
             <button
               type="button"
@@ -1208,6 +1375,7 @@ export default function IeltsConcourseClient({
       {/* SECTION 4: SPLIT-SCREEN EXAM ROOM & LEAD GEN FOOTER */}
       <SplitScreenExamPreview
         onSelectVocabFromPassage={(wordText) => handleSelectWordForStation(wordText)}
+        lang={lang}
       />
     </div>
   );
